@@ -1,0 +1,2078 @@
+Type,File,Line,CLJ,CQL,CLJ_Code,CQL_Column,CQL_Code
+repurposed_variable,CFString.h,894,+,-,character -= 0x10000,,
+repurposed_variable,add-patch.c,385,+,+,len--,9,	while (len--)
+repurposed_variable,add-patch.c,386,-,+,,21,		if (*p < '0' || *(p++) > '7')
+repurposed_variable,add-patch.c,1368,+,+,start_index++,41,		struct hunk *hunk = file_diff->hunk + start_index++;
+repurposed_variable,add-patch.c,1369,+,-,start_index++,,
+repurposed_variable,add.c,190,+,+,"argc = setup_revisions(argc, argv, &rev, NULL)",2,"	argc = setup_revisions(argc, argv, &rev, NULL);"
+repurposed_variable,add.c,379,+,+,"argc = parse_options(argc, argv, prefix, builtin_add_options, builtin_add_usage, PARSE_OPT_KEEP_ARGV0)",2,"	argc = parse_options(argc, argv, prefix, builtin_add_options,
+			  builtin_add_usage, PARSE_OPT_KEEP_ARGV0);"
+repurposed_variable,add.c,396,+,-,argc--,,
+repurposed_variable,add.c,397,-,+,,2,	argv++;
+repurposed_variable,am.c,57,-,+,,15,	for (; *str; str++)
+repurposed_variable,am.c,747,-,+,,3,		paths = stdin_only;
+repurposed_variable,am.c,749,-,+,,22,"	for (i = 0; *paths; paths++, i++) {"
+repurposed_variable,am.c,963,+,+,keep_cr = 0,3,		keep_cr = 0;
+repurposed_variable,am.c,995,+,+,patch_format = detect_patch_format(paths),3,		patch_format = detect_patch_format(paths);
+repurposed_variable,am.c,1916,+,+,resume = 0,3,		resume = 0;
+repurposed_variable,am.c,2427,+,+,"argc = parse_options(argc, argv, prefix, options, usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, usage, 0);"
+repurposed_variable,apply.c,21,+,+,"argc = apply_parse_options(argc, argv, &state, &force_apply, &options, apply_usage)",2,"	argc = apply_parse_options(argc, argv,
+				   &state, &force_apply, &options,
+				   apply_usage);"
+repurposed_variable,apply.c,232,-,+,,3,		list = next;
+repurposed_variable,apply.c,256,-,+,,3,		list = next;
+repurposed_variable,apply.c,322,-,+,,5,				s1++;
+repurposed_variable,apply.c,324,-,+,,5,				s2++;
+repurposed_variable,apply.c,325,-,+,,15,		} else if (*s1++ != *s2++)
+repurposed_variable,apply.c,432,+,+,size--,9,	while (size--) {
+repurposed_variable,apply.c,434,-,+,,8,		if (*buffer++ == '\n')
+repurposed_variable,apply.c,491,+,+,p_value--,31,	for (cp = name.buf; p_value; p_value--) {
+repurposed_variable,apply.c,686,-,+,,3,		line++;
+repurposed_variable,apply.c,687,+,+,--p_value,20,		if (c == '/' && !--p_value)
+repurposed_variable,apply.c,874,-,+,,2,"	first += 4;	/* skip ""--- "" */"
+repurposed_variable,apply.c,875,-,+,,2,"	second += 4;	/* skip ""+++ "" */"
+repurposed_variable,apply.c,1111,-,+,,2,	line = ptr + 2;
+repurposed_variable,apply.c,1178,-,+,,2,"	line += strlen(""diff --git "");"
+repurposed_variable,apply.c,1179,+,+,"llen -= strlen(""diff --git "")",2,"	llen -= strlen(""diff --git "");"
+repurposed_variable,apply.c,1355,-,+,,2,	line += len;
+repurposed_variable,apply.c,1356,+,+,size -= len,2,	size -= len;
+repurposed_variable,apply.c,1362,+,+,size -= len,48,"	for (offset = len ; size > 0 ; offset += len, size -= len, line += len, (*linenr)++) {"
+repurposed_variable,apply.c,1387,+,+,"len = linelen(line, size)",3,"		len = linelen(line, size);"
+repurposed_variable,apply.c,1448,-,+,,2,	line += offset;
+repurposed_variable,apply.c,1449,+,+,len -= offset,2,	len -= offset;
+repurposed_variable,apply.c,1455,+,+,offset += digits,2,	offset += digits;
+repurposed_variable,apply.c,1456,-,+,,2,	line += digits;
+repurposed_variable,apply.c,1457,+,+,len -= digits,2,	len -= digits;
+repurposed_variable,apply.c,1465,+,+,offset += digits + 1,3,		offset += digits+1;
+repurposed_variable,apply.c,1466,-,+,,3,		line += digits+1;
+repurposed_variable,apply.c,1467,+,+,len -= digits + 1,3,		len -= digits+1;
+repurposed_variable,apply.c,1490,+,+,size -= len,3,		size -= len;
+repurposed_variable,apply.c,1491,-,+,,3,		line += len;
+repurposed_variable,apply.c,1568,+,+,size -= len,44,"	for (offset = 0; size > 0; offset += len, size -= len, line += len, state->linenr++) {"
+repurposed_variable,apply.c,1709,-,+,,2,	line += len;
+repurposed_variable,apply.c,1710,+,+,size -= len,2,	size -= len;
+repurposed_variable,apply.c,1715,+,+,size -= len,22,"	     offset += len, size -= len, line += len, state->linenr++) {"
+repurposed_variable,apply.c,1839,-,+,,3,		line += len;
+repurposed_variable,apply.c,1840,+,+,size -= len,3,		size -= len;
+repurposed_variable,apply.c,2226,-,+,,12,	for (; p; p = p->next) {
+repurposed_variable,apply.c,2712,+,+,match_beginning = 0,3,		match_beginning = 0;
+repurposed_variable,apply.c,2720,+,+,line = 0,3,		line = 0;
+repurposed_variable,apply.c,2722,+,+,line = img->nr - preimage->nr,3,		line = img->nr - preimage->nr;
+repurposed_variable,apply.c,2730,+,+,line = img->nr,3,		line = img->nr;
+repurposed_variable,apply.c,3382,-,+,,3,		patch = patch->next;
+repurposed_variable,apply.c,3876,-,+,,17,	for ( ; patch; patch = patch->next) {
+repurposed_variable,apply.c,4078,-,+,,3,		patch = patch->next;
+repurposed_variable,apply.c,4204,-,+,,41,	for (files = adds = dels = 0 ; patch ; patch = patch->next) {
+repurposed_variable,apply.c,4217,-,+,,17,	for ( ; patch; patch = patch->next) {
+repurposed_variable,apply.c,4423,+,+,size = nbuf.len,3,		size = nbuf.len;
+repurposed_variable,apply.c,4424,-,+,,3,		buf  = nbuf.buf;
+repurposed_variable,archive-tar.c,75,+,+,size -= chunk,3,		size -= chunk;
+repurposed_variable,archive-tar.c,82,+,+,size -= BLOCKSIZE,3,		size -= BLOCKSIZE;
+repurposed_variable,archive-tar.c,269,+,+,mode = (mode | 0777) & ~tar_umask,3,		mode = (mode | 0777) & ~tar_umask;
+repurposed_variable,archive-tar.c,272,+,+,mode |= 0777,3,		mode |= 0777;
+repurposed_variable,archive-tar.c,275,+,+,mode = (mode | ((mode & 0100) ? 0777 : 0666)) & ~tar_umask,3,		mode = (mode | ((mode & 0100) ? 0777 : 0666)) & ~tar_umask;
+repurposed_variable,archive-zip.c,188,+,+,size--,9,	while (size-- > 0) {
+repurposed_variable,archive-zip.c,190,+,+,n >>= 8,3,		n >>= 8;
+repurposed_variable,archive-zip.c,270,-,+,,12,		int c = *s++;
+repurposed_variable,archive.c,73,+,+,len -= c + 1 - src,3,		len -= c + 1 - src;
+repurposed_variable,archive.c,74,-,+,,3,		src  = c + 1;
+repurposed_variable,archive.c,96,+,+,"argc = parse_options(argc, argv, prefix, local_opts, NULL, PARSE_OPT_KEEP_ALL)",2,	path += args->baselen;
+repurposed_variable,archive.c,495,-,+,,4,			pathspec++;
+repurposed_variable,archive.c,674,+,+,"argc = parse_options(argc, argv, NULL, opts, archive_usage, 0)",2,"	argc = parse_options(argc, argv, NULL, opts, archive_usage, 0);"
+repurposed_variable,archive.c,750,+,+,"argc = parse_archive_args(argc, argv, &ar, &args, name_hint, remote)",2,"	argc = parse_archive_args(argc, argv, &ar, &args, name_hint, remote);"
+repurposed_variable,attr.c,204,+,+,namelen--,9,	while (namelen--) {
+repurposed_variable,attr.c,205,-,+,,14,		char ch = *name++;
+repurposed_variable,attr.c,325,-,+,,4,			cp++;
+repurposed_variable,attr.c,341,-,+,,4,			cp++;
+repurposed_variable,attr.c,698,-,+,,19,	while ((line = *(list++)) != NULL)
+repurposed_variable,attr.c,1113,+,+,rem--,4,			rem--;
+repurposed_variable,attr.c,1114,+,+,"rem = macroexpand_one(all_attrs, attr->attr_nr, rem)",4,"			rem = macroexpand_one(all_attrs, attr->attr_nr, rem);"
+repurposed_variable,attr.c,1124,-,+,,27,	for (; rem > 0 && stack; stack = stack->prev) {
+repurposed_variable,attr.c,1134,+,+,"rem = fill_one(all_attrs, a, rem)",5,"				rem = fill_one(all_attrs, a, rem);"
+repurposed_variable,attr.c,1159,-,+,,16,	for (; stack; stack = stack->prev) {
+repurposed_variable,base85.c,51,-,+,,10,			ch = *buffer++;
+repurposed_variable,base85.c,57,-,+,,9,		ch = *buffer++;
+repurposed_variable,base85.c,69,+,+,len -= cnt,3,		len -= cnt;
+repurposed_variable,base85.c,72,-,+,,5,			*dst++ = acc;
+repurposed_variable,base85.c,87,-,+,,19,			unsigned ch = *data++;
+repurposed_variable,base85.c,89,+,+,--bytes,8,			if (--bytes == 0)
+repurposed_variable,base85.c,98,-,+,,3,		buf += 5;
+repurposed_variable,bisect.c,56,-,+,,3,		entry = p;
+repurposed_variable,bisect.c,74,-,+,,3,		list = list->next;
+repurposed_variable,bisect.c,78,-,+,,,"define_commit_slab(commit_weight, int *);"
+repurposed_variable,bisect.c,554,-,+,,4,			tried = &list->next;
+repurposed_variable,bisect.c,569,-,+,,3,		list = next;
+repurposed_variable,bisect.c,588,+,+,count = count * 1103515245 + 12345,2,	count = count * 1103515245 + 12345;
+repurposed_variable,bisect.c,647,-,+,,2,"	list = filter_skipped(list, tried, 0, &count, &skipped_first);"
+repurposed_variable,bisect.c,700,-,+,,17,	for ( ; tried; tried = tried->next)
+repurposed_variable,bisect.c,938,-,+,,2,	argv++;
+repurposed_variable,bisect.c,939,+,+,argc--,2,	argc--;
+repurposed_variable,bisect.c,963,+,-,argc--,,
+repurposed_variable,bisect.c,1135,+,+,n >>= 1,16,	for (; n > 1; n >>= 1)
+repurposed_variable,bisect.c,1428,+,+,"argc = parse_options(argc, argv, prefix, options, git_bisect_usage, PARSE_OPT_SUBCOMMAND_OPTIONAL)",2,"	argc = parse_options(argc, argv, prefix, options, git_bisect_usage,
+			     PARSE_OPT_SUBCOMMAND_OPTIONAL);"
+repurposed_variable,bisect.c,1445,+,-,argc--,,
+repurposed_variable,bisect.c,1446,-,+,,3,		argv++;
+repurposed_variable,blame.c,24,-,+,,,"define_commit_slab(blame_suspects, struct blame_origin *);"
+repurposed_variable,blame.c,161,-,+,,3,"		tail = append_parent(r, tail, &oid);"
+repurposed_variable,blame.c,509,-,+,,2,	line_starts += first_line;
+repurposed_variable,blame.c,964,+,+,argc = parse_options_end(&ctx),2,	argc = parse_options_end(&ctx);
+repurposed_variable,blame.c,1070,+,-,--argc,,
+repurposed_variable,blame.c,1112,-,+,,,"DEFINE_LIST_SORT(static, sort_blame_entries, struct blame_entry, next);"
+repurposed_variable,blame.c,1619,-,+,,3,		tail = head;
+repurposed_variable,blame.c,1620,-,+,,3,		head = next;
+repurposed_variable,blame.c,1777,-,+,,3,		e = next;
+repurposed_variable,blame.c,2056,+,+,tlno += ent->s_lno,3,		tlno += ent->s_lno;
+repurposed_variable,blame.c,2057,+,+,same += ent->s_lno,3,		same += ent->s_lno;
+repurposed_variable,blame.c,2135,-,+,,4,			small = &p->next;
+repurposed_variable,blame.c,2139,-,+,,4,			source = &p->next;
+repurposed_variable,blame.c,2192,-,+,,3,"		toosmall = filter_small(sb, toosmall, &unblamed, sb->move_score);"
+repurposed_variable,blame.c,2325,-,+,,3,"		toosmall = filter_small(sb, toosmall, &unblamed, sb->copy_score);"
+repurposed_variable,blame.c,2395,-,+,,4,			blamed = next;
+repurposed_variable,block.c,45,+,+,is_restart = 0,3,		is_restart = 0;
+repurposed_variable,bloom.c,10,-,+,,,"define_commit_slab(bloom_filter_slab, struct bloom_filter);"
+repurposed_variable,bloom.c,22,+,+,count &= mask,2,	count &= mask;
+repurposed_variable,bloom.c,58,-,+,,3,		g = g->base_graph;
+repurposed_variable,bloom.c,127,+,+,seed ^= k,3,		seed ^= k;
+repurposed_variable,bloom.c,128,+,+,"seed = rotate_left(seed, r2) * m + n",3,"		seed = rotate_left(seed, r2) * m + n;"
+repurposed_variable,bloom.c,145,+,+,seed ^= k1,3,		seed ^= k1;
+repurposed_variable,bloom.c,149,+,+,seed ^= (uint32_t)len,2,	seed ^= (uint32_t)len;
+repurposed_variable,bloom.c,150,+,+,seed ^= (seed >> 16),2,	seed ^= (seed >> 16);
+repurposed_variable,bloom.c,151,+,+,seed *= 0x85ebca6b,2,	seed *= 0x85ebca6b;
+repurposed_variable,bloom.c,152,+,+,seed ^= (seed >> 13),2,	seed ^= (seed >> 13);
+repurposed_variable,bloom.c,153,+,+,seed *= 0xc2b2ae35,2,	seed *= 0xc2b2ae35;
+repurposed_variable,bloom.c,154,+,+,seed ^= (seed >> 16),2,	seed ^= (seed >> 16);
+repurposed_variable,branch.c,242,+,+,force = 1,3,		force = 1;
+repurposed_variable,branch.c,762,-,+,,3,		tracking_name = branch_point;
+repurposed_variable,branch.c,802,-,+,,2,"	argc = parse_options(argc, argv, prefix, options, builtin_branch_usage,
+			     0);"
+repurposed_variable,bugreport.c,127,+,+,"argc = parse_options(argc, argv, prefix, bugreport_options, bugreport_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, bugreport_options,
+			     bugreport_usage, 0);"
+repurposed_variable,bulk-checkin.c,196,+,+,size -= rsize,4,			size -= rsize;
+repurposed_variable,bundle-uri.c,352,-,+,,3,		uri = out;
+repurposed_variable,bundle.c,62,+,+,"argc = parse_options(argc, argv, NULL, options, usagestr, PARSE_OPT_STOP_AT_NON_OPTION)",2,"	argc = parse_options(argc, argv, NULL, options, usagestr,
+			     PARSE_OPT_STOP_AT_NON_OPTION);"
+repurposed_variable,bundle.c,97,+,+,"argc = parse_options_cmd_bundle(argc, argv, prefix, builtin_bundle_create_usage, options, &bundle_file)",2,"	argc = parse_options_cmd_bundle(argc, argv, prefix,
+			builtin_bundle_create_usage, options, &bundle_file);"
+repurposed_variable,bundle.c,139,+,+,fd = -1,2,"	argc = parse_options_cmd_bundle(argc, argv, prefix,
+			builtin_bundle_verify_usage, options, &bundle_file);"
+repurposed_variable,bundle.c,171,+,+,"argc = parse_options_cmd_bundle(argc, argv, prefix, builtin_bundle_list_heads_usage, options, &bundle_file)",2,"	argc = parse_options_cmd_bundle(argc, argv, prefix,
+			builtin_bundle_list_heads_usage, options, &bundle_file);"
+repurposed_variable,bundle.c,201,+,+,"argc = parse_options_cmd_bundle(argc, argv, prefix, builtin_bundle_unbundle_usage, options, &bundle_file)",2,"	argc = parse_options_cmd_bundle(argc, argv, prefix,
+			builtin_bundle_unbundle_usage, options, &bundle_file);"
+repurposed_variable,bundle.c,234,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_bundle_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, builtin_bundle_usage,
+			     0);"
+repurposed_variable,bundle.c,256,-,+,,3,		r = &header->references;
+repurposed_variable,bundle.c,263,-,+,,3,		r = &header->prerequisites;
+repurposed_variable,bundle.c,515,+,+,"argc = setup_revisions(argc, argv, &revs, NULL)",2,"	argc = setup_revisions(argc, argv, &revs, NULL);"
+repurposed_variable,bundle.c,540,+,+,version = min_version,3,		version = min_version;
+repurposed_variable,cache-tree.c,656,-,+,,3,		it = sub->cache_tree;
+repurposed_variable,cache-tree.c,658,-,+,,3,		path = slash;
+repurposed_variable,cache-tree.c,660,-,+,,4,			path++;
+repurposed_variable,cache-tree.c,673,+,+,cache_tree_valid = 0,3,		cache_tree_valid = 0;
+repurposed_variable,cat-file.c,364,-,+,,4,			start = end + 1;
+repurposed_variable,cat-file.c,998,+,+,"argc = parse_options(argc, argv, prefix, options, usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, usage, 0);"
+repurposed_variable,cbtree.c,24,-,+,,3,		p = q->child[direction];
+repurposed_variable,check-attr.c,121,+,+,"argc = parse_options(argc, argv, prefix, check_attr_options, check_attr_usage, PARSE_OPT_KEEP_DASHDASH)",2,"	argc = parse_options(argc, argv, prefix, check_attr_options,
+			     check_attr_usage, PARSE_OPT_KEEP_DASHDASH);"
+repurposed_variable,check-ignore.c,161,+,+,"argc = parse_options(argc, argv, prefix, check_ignore_options, check_ignore_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, check_ignore_options,
+			     check_ignore_usage, 0);"
+repurposed_variable,check-mailmap.c,49,+,+,"argc = parse_options(argc, argv, prefix, check_mailmap_options, check_mailmap_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, check_mailmap_options,
+			     check_mailmap_usage, 0);"
+repurposed_variable,check-ref-format.c,28,-,+,,16,	while ((ch = *refname++) != '\0') {
+repurposed_variable,checkout--worker.c,130,+,+,"argc = parse_options(argc, argv, prefix, checkout_worker_options, checkout_worker_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, checkout_worker_options,
+			     checkout_worker_usage, 0);"
+repurposed_variable,checkout-index.c,261,+,+,"argc = parse_options(argc, argv, prefix, builtin_checkout_index_options, builtin_checkout_index_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, builtin_checkout_index_options,
+			builtin_checkout_index_usage, 0);"
+repurposed_variable,checkout.c,192,+,+,++pos,9,	while (++pos < the_repository->index->cache_nr &&
+repurposed_variable,checkout.c,205,+,+,pos++,3,		pos++;
+repurposed_variable,checkout.c,221,-,+,,3,		ce = the_repository->index->cache[pos];
+repurposed_variable,checkout.c,225,+,+,pos++,3,		pos++;
+repurposed_variable,checkout.c,242,+,+,pos++,3,		pos++;
+repurposed_variable,checkout.c,279,+,+,pos++,3,		pos++;
+repurposed_variable,checkout.c,1439,-,+,,2,	argv++;
+repurposed_variable,checkout.c,1440,+,+,argc--,2,	argc--;
+repurposed_variable,checkout.c,1459,+,-,argc--,,
+repurposed_variable,checkout.c,1764,+,+,"argc = parse_options(argc, argv, prefix, options, usagestr, parseopt_flags)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     usagestr, parseopt_flags);"
+repurposed_variable,checkout.c,1857,-,+,,3,		argv += n;
+repurposed_variable,checkout.c,1858,+,-,argc -= n,,
+repurposed_variable,chunk-format.c,114,+,+,toc_length--,9,	while (toc_length--) {
+repurposed_variable,clean.c,949,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_clean_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, builtin_clean_usage,
+			     0);"
+repurposed_variable,clone.c,985,+,+,"argc = parse_options(argc, argv, prefix, builtin_clone_options, builtin_clone_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, builtin_clone_options,
+			     builtin_clone_usage, 0);"
+repurposed_variable,color.c,118,-,+,,3,		name += 6;
+repurposed_variable,color.c,119,+,+,len -= 6,3,		len -= 6;
+repurposed_variable,color.c,245,-,+,,3,"		out += xsnprintf(out, len, ""%d"", c->value + offset);"
+repurposed_variable,color.c,248,-,+,,3,"		out += xsnprintf(out, len, ""%d;5;%d"", COLOR_FOREGROUND_256 + offset,
+				 c->value);"
+repurposed_variable,color.c,252,-,+,,3,"		out += xsnprintf(out, len, ""%d;2;%d;%d;%d"",
+				 COLOR_FOREGROUND_RGB + offset,
+				 c->red, c->green, c->blue);"
+repurposed_variable,color.c,336,-,+,,3,		OUT('\033');
+repurposed_variable,color.c,337,-,+,,3,		OUT('[');
+repurposed_variable,color.c,348,-,+,,5,				OUT(';');
+repurposed_variable,color.c,349,-,+,,4,"			dst += xsnprintf(dst, end - dst, ""%d"", i);"
+repurposed_variable,color.c,353,-,+,,5,				OUT(';');
+repurposed_variable,color.c,354,-,+,,4,"			dst = color_output(dst, end - dst, &fg, 0);"
+repurposed_variable,color.c,358,-,+,,5,				OUT(';');
+repurposed_variable,color.c,359,-,+,,4,"			dst = color_output(dst, end - dst, &bg, 1);"
+repurposed_variable,color.c,361,-,+,,3,		OUT('m');
+repurposed_variable,color.c,363,-,+,,2,	OUT(0);
+repurposed_variable,color.c,420,+,+,var = git_use_color_default,3,		var = git_use_color_default;
+repurposed_variable,column.c,47,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_column_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, builtin_column_usage, 0);"
+repurposed_variable,column.c,217,+,+,stdout_is_tty = isatty(1),4,			stdout_is_tty = isatty(1);
+repurposed_variable,column.c,299,-,+,,4,			value += len;
+repurposed_variable,column.c,301,-,+,,3,"		value += strspn(value, sep);"
+repurposed_variable,combine-diff.c,155,+,+,len1--,52,		for (; len1 > 0 && XDL_ISSPACE(line1[len1 - 1]); len1--);
+repurposed_variable,combine-diff.c,156,+,+,len2--,52,		for (; len2 > 0 && XDL_ISSPACE(line2[len2 - 1]); len2--);
+repurposed_variable,combine-diff.c,163,+,+,len1--,3,		len1--;
+repurposed_variable,combine-diff.c,164,+,+,len2--,3,		len2--;
+repurposed_variable,combine-diff.c,170,+,+,len1--,49,			for (; len1 > 0 && XDL_ISSPACE(line1[len1]); len1--);
+repurposed_variable,combine-diff.c,171,+,+,len2--,49,			for (; len2 > 0 && XDL_ISSPACE(line2[len2]); len2--);
+repurposed_variable,combine-diff.c,179,+,+,len1--,52,		for (; len1 > 0 && XDL_ISSPACE(line1[len1 - 1]); len1--);
+repurposed_variable,combine-diff.c,180,+,+,len2--,52,		for (; len2 > 0 && XDL_ISSPACE(line2[len2 - 1]); len2--);
+repurposed_variable,combine-diff.c,273,-,+,,5,				newline = lline->next;
+repurposed_variable,combine-diff.c,289,-,+,,5,				base = lline;
+repurposed_variable,combine-diff.c,353,+,+,len--,3,		len--;
+repurposed_variable,combine-diff.c,364,-,+,,2,	sline->plost.len++;
+repurposed_variable,combine-diff.c,524,+,+,i--,3,		i--;
+repurposed_variable,combine-diff.c,547,+,+,i++,4,			i++;
+repurposed_variable,combine-diff.c,734,+,+,l0 = sline[l0].p_lno[n],2,	l0 = sline[l0].p_lno[n];
+repurposed_variable,combine-diff.c,735,+,+,l1 = sline[l1].p_lno[n],2,	l1 = sline[l1].p_lno[n];
+repurposed_variable,combine-diff.c,753,+,+,len = strlen(line),3,		len = strlen(line);
+repurposed_variable,combine-diff.c,908,-,+,,3,		sline++;
+repurposed_variable,commit-graph.c,75,-,+,,,"define_commit_slab(topo_level_slab, uint32_t);"
+repurposed_variable,commit-graph.c,78,-,+,,,"define_commit_slab(commit_pos, int);"
+repurposed_variable,commit-graph.c,91,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_commit_graph_verify_usage, 0)",2,"	argc = parse_options(argc, argv, prefix,
+			     options,
+			     builtin_commit_graph_verify_usage, 0);"
+repurposed_variable,commit-graph.c,100,-,+,,,"define_commit_slab(commit_graph_data_slab, struct commit_graph_data);"
+repurposed_variable,commit-graph.c,269,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_commit_graph_write_usage, 0)",2,"	argc = parse_options(argc, argv, prefix,
+			     options,
+			     builtin_commit_graph_write_usage, 0);"
+repurposed_variable,commit-graph.c,349,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_commit_graph_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     builtin_commit_graph_usage, 0);"
+repurposed_variable,commit-graph.c,540,-,+,,3,		g = g->base_graph;
+repurposed_variable,commit-graph.c,564,+,+,n--,3,		n--;
+repurposed_variable,commit-graph.c,830,-,+,,3,		g = g->base_graph;
+repurposed_variable,commit-graph.c,870,-,+,,3,		g = g->base_graph;
+repurposed_variable,commit-graph.c,922,-,+,,3,		g = g->base_graph;
+repurposed_variable,commit-graph.c,1077,-,+,,3,		g = g->base_graph;
+repurposed_variable,commit-graph.c,1575,+,+,max_gen = GENERATION_NUMBER_V1_MAX - 1,4,			max_gen = GENERATION_NUMBER_V1_MAX - 1;
+repurposed_variable,commit-graph.c,1580,+,+,max_gen = c->date - 1,4,			max_gen = c->date - 1;
+repurposed_variable,commit-graph.c,1825,-,+,,3,		oid = &peeled;
+repurposed_variable,commit-graph.c,2829,-,+,,12,	for (; g; g = g->base_graph) {
+repurposed_variable,commit-graph.c,2851,-,+,,3,		g = next;
+repurposed_variable,commit-reach.c,513,-,+,,4,			with_commit = with_commit->next;
+repurposed_variable,commit-reach.c,674,-,+,,15,	for (; want; want = want->next)
+repurposed_variable,commit-reach.c,926,-,+,,3,		from = from->next;
+repurposed_variable,commit-reach.c,931,-,+,,3,		to = to->next;
+repurposed_variable,commit-reach.c,1011,-,+,,,"define_commit_slab(bit_arrays, struct bitmap *);"
+repurposed_variable,commit-reach.c,1166,-,+,,3,		bases = bases->next;
+repurposed_variable,commit-reach.h,69,-,+,,,"define_commit_slab(contains_cache, enum contains_result);"
+repurposed_variable,commit-tree.c,34,-,+,,3,		parents_p = &parents->next;
+repurposed_variable,commit-tree.c,120,+,+,"argc = parse_options(argc, argv, prefix, options, commit_tree_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, commit_tree_usage, 0);"
+repurposed_variable,commit.c,106,-,+,,24,	while (buf < tail && *buf++ != '\n')
+repurposed_variable,commit.c,185,-,+,,3,		arg = arg + 1;
+repurposed_variable,commit.c,335,-,+,,,"define_commit_slab(buffer_slab, struct commit_buffer);"
+repurposed_variable,commit.c,669,-,+,,3,		list = list->next;
+repurposed_variable,commit.c,678,-,+,,12,	for (; l; l = l->next )
+repurposed_variable,commit.c,689,-,+,,3,		list = list->next;
+repurposed_variable,commit.c,736,-,+,,,"DEFINE_LIST_SORT(static, commit_list_sort, struct commit_list, next);"
+repurposed_variable,commit.c,780,-,+,,3,		commit = commit->parents->item;
+repurposed_variable,commit.c,788,+,+,nr--,9,	while (nr--) {
+repurposed_variable,commit.c,790,-,+,,3,		commit++;
+repurposed_variable,commit.c,818,-,+,,,"define_commit_slab(indegree_slab, int);"
+repurposed_variable,commit.c,820,-,+,,,"define_commit_slab(author_date_slab, timestamp_t);"
+repurposed_variable,commit.c,1152,-,+,,3,		keyid = get_signing_key();
+repurposed_variable,commit.c,1159,-,+,,3,"		u = ""no"";"
+repurposed_variable,commit.c,1162,-,+,,3,"		u = ""normal"";"
+repurposed_variable,commit.c,1278,+,+,"argc = parse_options(argc, argv, prefix, options, usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, usage, 0);"
+repurposed_variable,commit.c,1368,-,+,,3,		parents = parents->next;
+repurposed_variable,commit.c,1399,-,+,,3,		orig = orig->next;
+repurposed_variable,commit.c,1460,-,+,,3,		exclude++;
+repurposed_variable,commit.c,1515,-,+,,3,		extra = next;
+repurposed_variable,commit.c,1541,-,+,,22,		unsigned char c = *buf++;
+repurposed_variable,commit.c,1546,+,+,len--,3,		len--;
+repurposed_variable,commit.c,1553,+,+,"argc = parse_options(argc, argv, prefix, builtin_status_options, builtin_status_usage, 0)",2,"	argc = parse_options(argc, argv, prefix,
+			     builtin_status_options,
+			     builtin_status_usage, 0);"
+repurposed_variable,commit.c,1585,+,+,len -= bytes,3,		len -= bytes;
+repurposed_variable,commit.c,1591,-,+,,10,			if ((*buf++ & 0xc0) != 0x80)
+repurposed_variable,commit.c,1673,-,+,,3,		author = git_author_info(IDENT_STRICT);
+repurposed_variable,commit.c,1676,-,+,,3,		committer = git_committer_info(IDENT_STRICT);
+repurposed_variable,commit.c,1683,-,+,,3,		extra = extra->next;
+repurposed_variable,commit.c,1736,+,+,"argc = parse_and_validate_options(argc, argv, builtin_commit_options, builtin_commit_usage, prefix, current_head, &s)",2,"	argc = parse_and_validate_options(argc, argv, builtin_commit_options,
+					  builtin_commit_usage,
+					  prefix, current_head, &s);"
+repurposed_variable,commit.c,1814,-,+,,,"define_commit_slab(merge_desc_slab, struct merge_remote_desc *);"
+repurposed_variable,common-main.c,84,+,+,code &= 0xff,2,	code &= 0xff;
+repurposed_variable,config.c,162,-,+,,2,	path = expanded;
+repurposed_variable,config.c,415,-,+,,4,			regex_++;
+repurposed_variable,config.c,842,+,+,"argc = parse_options(argc, argv, prefix, opts, builtin_config_list_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, opts, builtin_config_list_usage, 0);"
+repurposed_variable,config.c,889,+,+,"argc = parse_options(argc, argv, prefix, opts, builtin_config_get_usage, PARSE_OPT_STOP_AT_NON_OPTION)",2,"	argc = parse_options(argc, argv, prefix, opts, builtin_config_get_usage,
+			     PARSE_OPT_STOP_AT_NON_OPTION);"
+repurposed_variable,config.c,936,+,+,c = get_next_char(cs),3,		c = get_next_char(cs);
+repurposed_variable,config.c,940,+,+,"argc = parse_options(argc, argv, prefix, opts, builtin_config_set_usage, PARSE_OPT_STOP_AT_NON_OPTION)",2,"	argc = parse_options(argc, argv, prefix, opts, builtin_config_set_usage,
+			     PARSE_OPT_STOP_AT_NON_OPTION);"
+repurposed_variable,config.c,951,+,+,c = get_next_char(cs),4,			c = get_next_char(cs);
+repurposed_variable,config.c,991,+,+,"argc = parse_options(argc, argv, prefix, opts, builtin_config_unset_usage, PARSE_OPT_STOP_AT_NON_OPTION)",2,"	argc = parse_options(argc, argv, prefix, opts, builtin_config_unset_usage,
+			     PARSE_OPT_STOP_AT_NON_OPTION);"
+repurposed_variable,config.c,1022,+,+,"argc = parse_options(argc, argv, prefix, opts, builtin_config_rename_section_usage, PARSE_OPT_STOP_AT_NON_OPTION)",2,"	argc = parse_options(argc, argv, prefix, opts, builtin_config_rename_section_usage,
+			     PARSE_OPT_STOP_AT_NON_OPTION);"
+repurposed_variable,config.c,1051,+,+,"argc = parse_options(argc, argv, prefix, opts, builtin_config_remove_section_usage, PARSE_OPT_STOP_AT_NON_OPTION)",2,"	argc = parse_options(argc, argv, prefix, opts, builtin_config_remove_section_usage,
+			     PARSE_OPT_STOP_AT_NON_OPTION);"
+repurposed_variable,config.c,1111,+,+,"argc = parse_options(argc, argv, prefix, opts, builtin_config_edit_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, opts, builtin_config_edit_usage, 0);"
+repurposed_variable,config.c,1178,+,+,"argc = parse_options(argc, argv, prefix, opts, builtin_config_usage, PARSE_OPT_STOP_AT_NON_OPTION)",2,"	argc = parse_options(argc, argv, prefix, opts,
+			     builtin_config_usage,
+			     PARSE_OPT_STOP_AT_NON_OPTION);"
+repurposed_variable,config.c,1184,-,+,,3,"		value = """";"
+repurposed_variable,config.c,1276,-,+,,3,"		string = string + strspn(string, "", \t\n\r"");"
+repurposed_variable,config.c,1286,-,+,,4,			string++;
+repurposed_variable,config.c,1315,-,+,,3,		string = ep;
+repurposed_variable,config.c,1417,+,+,"argc = parse_options(argc, argv, prefix, subcommand_opts, builtin_config_usage, PARSE_OPT_SUBCOMMAND_OPTIONAL | PARSE_OPT_KEEP_ARGV0 | PARSE_OPT_KEEP_UNKNOWN_OPT)",2,"	argc = parse_options(argc, argv, prefix, subcommand_opts, builtin_config_usage,
+			     PARSE_OPT_SUBCOMMAND_OPTIONAL|PARSE_OPT_KEEP_ARGV0|PARSE_OPT_KEEP_UNKNOWN_OPT);"
+repurposed_variable,config.c,1420,+,-,"argc = parse_options(argc, argv, prefix, subcommand_opts, builtin_config_usage, PARSE_OPT_SUBCOMMAND_OPTIONAL | PARSE_OPT_KEEP_UNKNOWN_OPT)",,
+repurposed_variable,config.c,2122,+,-,fn = git_config_include,,
+repurposed_variable,config.c,2133,+,+,fn = git_config_include,3,		fn = git_config_include;
+repurposed_variable,config.c,2134,-,+,,3,		data = &inc;
+repurposed_variable,config.c,3298,-,+,,3,"		config_filename = filename_buf = git_pathdup(""config"");"
+repurposed_variable,config.c,3347,-,+,,5,				value_pattern++;
+repurposed_variable,config.c,3615,-,+,,32,	for (; *name && *name != '.'; name++)
+repurposed_variable,config.c,3647,-,+,,3,"		config_filename = filename_buf = git_pathdup(""config"");"
+repurposed_variable,connect.c,222,-,+,,14,	for (; ref; ref = ref->next) {
+repurposed_variable,connect.c,610,-,+,,3,		feature_list += *offset;
+repurposed_variable,connect.c,642,-,+,,3,		feature_list = found + 1;
+repurposed_variable,connected.c,36,-,+,,3,		opt = &defaults;
+repurposed_variable,convert.c,569,-,+,,23,			unsigned char c = *src++;
+repurposed_variable,convert.c,572,+,+,--len,12,		} while (--len);
+repurposed_variable,convert.c,575,-,+,,23,			unsigned char c = *src++;
+repurposed_variable,convert.c,578,+,+,--len,12,		} while (--len);
+repurposed_variable,convert.c,612,+,+,len -= nl + 1 - src,3,		len -= nl + 1 - src;
+repurposed_variable,convert.c,613,-,+,,3,		src  = nl + 1;
+repurposed_variable,convert.c,1075,-,+,,9,		ch = *cp++;
+repurposed_variable,convert.c,1076,+,+,size--,3,		size--;
+repurposed_variable,convert.c,1084,-,+,,3,		cp += 3;
+repurposed_variable,convert.c,1085,+,+,size -= 3,3,		size -= 3;
+repurposed_variable,convert.c,1095,-,+,,10,			ch = *cp++;
+repurposed_variable,convert.c,1096,+,+,size--,4,			size--;
+repurposed_variable,convert.c,1129,+,+,len -= dollar + 1 - src,3,		len -= dollar + 1 - src;
+repurposed_variable,convert.c,1130,-,+,,3,		src  = dollar + 1;
+repurposed_variable,convert.c,1143,+,+,len -= dollar + 1 - src,4,			len -= dollar + 1 - src;
+repurposed_variable,convert.c,1144,-,+,,4,			src  = dollar + 1;
+repurposed_variable,convert.c,1178,+,+,len -= dollar + 1 - src,3,		len -= dollar + 1 - src;
+repurposed_variable,convert.c,1179,-,+,,3,		src  = dollar + 1;
+repurposed_variable,convert.c,1187,-,+,,4,			src += 3;
+repurposed_variable,convert.c,1188,+,+,len -= 3,4,			len -= 3;
+repurposed_variable,convert.c,1217,+,+,len -= dollar + 1 - src,4,			len -= dollar + 1 - src;
+repurposed_variable,convert.c,1218,-,+,,4,			src  = dollar + 1;
+repurposed_variable,convert.c,1426,-,+,,3,		src = dst->buf;
+repurposed_variable,convert.c,1427,+,+,len = dst->len,3,		len = dst->len;
+repurposed_variable,convert.c,1432,-,+,,3,		src = dst->buf;
+repurposed_variable,convert.c,1433,+,+,len = dst->len,3,		len = dst->len;
+repurposed_variable,convert.c,1439,-,+,,4,			src = dst->buf;
+repurposed_variable,convert.c,1440,+,+,len = dst->len,4,			len = dst->len;
+repurposed_variable,convert.c,1474,-,+,,3,		src = dst->buf;
+repurposed_variable,convert.c,1475,+,+,len = dst->len,3,		len = dst->len;
+repurposed_variable,convert.c,1485,-,+,,4,			src = dst->buf;
+repurposed_variable,convert.c,1486,+,+,len = dst->len,4,			len = dst->len;
+repurposed_variable,convert.c,1492,-,+,,3,		src = dst->buf;
+repurposed_variable,convert.c,1493,+,+,len = dst->len,3,		len = dst->len;
+repurposed_variable,convert.c,1533,-,+,,3,		src = dst->buf;
+repurposed_variable,convert.c,1534,+,+,len = dst->len,3,		len = dst->len;
+repurposed_variable,convert.c,1758,-,+,,4,			input += fed;
+repurposed_variable,convert.c,1883,-,+,,10,		ch = *(input++);
+repurposed_variable,copy.c,40,+,+,mode = (mode & 0111) ? 0777 : 0666,2,	mode = (mode & 0111) ? 0777 : 0666;
+repurposed_variable,count-objects.c,110,+,+,"argc = parse_options(argc, argv, prefix, opts, count_objects_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, opts, count_objects_usage, 0);"
+repurposed_variable,credential-cache--daemon.c,308,+,+,"argc = parse_options(argc, argv, prefix, options, usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, usage, 0);"
+repurposed_variable,credential-cache.c,155,+,+,"argc = parse_options(argc, argv, prefix, options, usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, usage, 0);"
+repurposed_variable,credential-store.c,191,+,+,"argc = parse_options(argc, (const char**)argv, prefix, options, usage, 0)",2,"	argc = parse_options(argc, (const char **)argv, prefix, options, usage, 0);"
+repurposed_variable,csum-file.c,133,+,+,count -= nr,3,		count -= nr;
+repurposed_variable,csum-file.c,134,-,+,,3,		buf = (char *) buf + nr;
+repurposed_variable,csum-file.h,74,+,+,data = htonl(data),2,	data = htonl(data);
+repurposed_variable,csum-file.h,80,+,+,data = htonll(data),2,	data = htonll(data);
+repurposed_variable,daemon.c,299,-,+,,3,"		msg = ""access denied or repository not exported"";"
+repurposed_variable,daemon.c,559,-,+,,14,	for (; *in; in++) {
+repurposed_variable,daemon.c,611,-,+,,4,			extra_args = val + vallen;
+repurposed_variable,daemon.c,627,-,+,,2,"	extra_args = parse_host_arg(hi, extra_args, buflen);"
+repurposed_variable,date.c,60,+,+,time += minutes * 60,2,	time += minutes * 60;
+repurposed_variable,date.c,310,+,+,tz = local_tzoffset(time),3,		tz = local_tzoffset(time);
+repurposed_variable,date.c,330,+,+,tz = 0,3,		tz = 0;
+repurposed_variable,date.c,354,+,+,tz = abs(tz),4,			tz = abs(tz);
+repurposed_variable,date.c,433,-,+,,21,"	for (i = 0; *date; date++, str++, i++) {"
+repurposed_variable,date.c,607,+,+,now = time(NULL),4,			now = time(NULL);
+repurposed_variable,date.c,838,+,+,offset = -offset,3,		offset = -offset;
+repurposed_variable,date.c,859,-,+,,2,	date = end + 2;
+repurposed_variable,date.c,881,-,+,,3,		timestamp = &dummy_timestamp;
+repurposed_variable,date.c,883,-,+,,3,		offset = &dummy_offset;
+repurposed_variable,date.c,919,-,+,,3,		date += match;
+repurposed_variable,date.c,1017,-,+,,4,			format = p;
+repurposed_variable,date.c,1019,-,+,,4,"			format = ""default"";"
+repurposed_variable,date.c,1024,-,+,,3,"		format = ""default-local"";"
+repurposed_variable,date.c,1359,-,+,,3,		date++;
+repurposed_variable,date.c,1362,-,+,,4,"			date = approxidate_digit(date-1, &tm, &number, time_sec);"
+repurposed_variable,date.c,1367,-,+,,4,"			date = approxidate_alpha(date-1, &tm, &now, &number, &touched);"
+repurposed_variable,date.c,1382,-,+,,3,		error_ret = &dummy;
+repurposed_variable,debug.c,70,+,+,type &= 0xf,2,	type &= 0xf; /* see refs.h REF_* */
+repurposed_variable,debug.c,71,+,+,flags &= REF_HAVE_NEW | REF_HAVE_OLD | REF_NO_DEREF | REF_FORCE_CREATE_REFLOG,2,"	flags &= REF_HAVE_NEW | REF_HAVE_OLD | REF_NO_DEREF |
+		REF_FORCE_CREATE_REFLOG;"
+repurposed_variable,debug.c,77,+,-,type &= 0xf,,
+repurposed_variable,debug.c,78,+,-,flags &= REF_HAVE_NEW | REF_HAVE_OLD | REF_NO_DEREF | REF_FORCE_CREATE_REFLOG,,
+repurposed_variable,default.c,71,-,+,,10,	while ((commit = prio_queue_get(&queue))) {
+repurposed_variable,delta-islands.c,20,-,+,,,"KHASH_INIT(str, const char *, void *, 1, kh_str_hash_func, kh_str_hash_equal)"
+repurposed_variable,describe.c,27,-,+,,,"define_commit_slab(commit_names, struct commit_name *);"
+repurposed_variable,describe.c,601,+,+,"argc = parse_options(argc, argv, prefix, options, describe_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, describe_usage, 0);"
+repurposed_variable,describe.c,702,+,-,argc--,,
+repurposed_variable,describe.c,703,-,+,,14,"			describe(*argv++, argc == 0);"
+repurposed_variable,diagnose.c,35,+,+,"argc = parse_options(argc, argv, prefix, diagnose_options, diagnose_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, diagnose_options,
+			     diagnose_usage, 0);"
+repurposed_variable,diff-files.c,43,-,+,,2,"	prefix = precompose_argv_prefix(argc, argv, prefix);"
+repurposed_variable,diff-files.c,45,+,+,"argc = setup_revisions(argc, argv, &rev, NULL)",2,"	argc = setup_revisions(argc, argv, &rev, NULL);"
+repurposed_variable,diff-files.c,57,+,+,argc--,3,		argv++; argc--;
+repurposed_variable,diff-index.c,30,-,+,,2,"	prefix = precompose_argv_prefix(argc, argv, prefix);"
+repurposed_variable,diff-index.c,38,+,+,"argc = setup_revisions(argc, argv, &rev, NULL)",2,"	argc = setup_revisions(argc, argv, &rev, NULL);"
+repurposed_variable,diff-lib.c,458,-,+,,3,		idx = NULL;
+repurposed_variable,diff-no-index.c,120,-,+,,3,"		name = ""/dev/null"";"
+repurposed_variable,diff-no-index.c,148,-,+,,4,			name2 = NULL;
+repurposed_variable,diff-no-index.c,154,-,+,,4,			name1 = NULL;
+repurposed_variable,diff-no-index.c,316,+,+,"argc = parse_options(argc, argv, revs->prefix, options, diff_no_index_usage, 0)",2,"	argc = parse_options(argc, argv, revs->prefix, options,
+			     diff_no_index_usage, 0);"
+repurposed_variable,diff-tree.c,30,-,+,,18,"	while (isspace(*p++) && !parse_oid_hex(p, &oid, &p)) {"
+repurposed_variable,diff-tree.c,50,-,+,,16,"	if (!isspace(*p++) || parse_oid_hex(p, &oid, &p) || *p)"
+repurposed_variable,diff-tree.c,137,-,+,,2,"	prefix = precompose_argv_prefix(argc, argv, prefix);"
+repurposed_variable,diff-tree.c,138,+,+,"argc = setup_revisions(argc, argv, opt, &s_r_opt)",2,"	argc = setup_revisions(argc, argv, opt, &s_r_opt);"
+repurposed_variable,diff-tree.c,148,+,-,--argc,,
+repurposed_variable,diff-tree.c,149,-,+,,22,		const char *arg = *++argv;
+repurposed_variable,diff.c,148,+,+,argc--,3,		argv++; argc--;
+repurposed_variable,diff.c,185,+,+,argc--,3,		argv++; argc--;
+repurposed_variable,diff.c,265,-,+,,4,			arg++;
+repurposed_variable,diff.c,268,+,+,argc--,3,		argv++; argc--;
+repurposed_variable,diff.c,447,-,+,,2,	prefix = setup_git_directory_gently(&nongit);
+repurposed_variable,diff.c,500,+,+,"argc = setup_revisions(argc, argv, &rev, NULL)",2,"	argc = setup_revisions(argc, argv, &rev, NULL);"
+repurposed_variable,diff.c,602,+,+,size--,13,	while (0 < size--) {
+repurposed_variable,diff.c,603,-,+,,9,		ch = *data++;
+repurposed_variable,diff.c,707,+,+,len--,3,		len--;
+repurposed_variable,diff.c,711,+,+,len--,3,		len--;
+repurposed_variable,diff.c,1098,-,+,,16,	for (; match; match = match->next_match) {
+repurposed_variable,diff.c,1698,+,+,len--,4,			len--;
+repurposed_variable,diff.c,1774,+,+,size -= len,3,		size -= len;
+repurposed_variable,diff.c,1775,-,+,,3,		data += len;
+repurposed_variable,diff.c,1805,-,+,,2,	name_a += (*name_a == '/');
+repurposed_variable,diff.c,1806,-,+,,2,	name_b += (*name_b == '/');
+repurposed_variable,diff.c,1873,-,+,,2,	line++;
+repurposed_variable,diff.c,1874,+,+,len--,2,	len--;
+repurposed_variable,diff.c,1937,+,+,count -= p + 1 - buf,3,		count -= p + 1 - buf;
+repurposed_variable,diff.c,1938,-,+,,3,		buf = p + 1;
+repurposed_variable,diff.c,2369,+,+,len = 1,3,		len = 1;
+repurposed_variable,diff.c,2375,+,+,"len = sane_truncate_line(line, len)",3,"		len = sane_truncate_line(line, len);"
+repurposed_variable,diff.c,3572,-,+,,2,	name_a = DIFF_FILE_VALID(one) ? name_a : name_b;
+repurposed_variable,diff.c,3573,-,+,,2,	name_b = DIFF_FILE_VALID(two) ? name_b : name_a;
+repurposed_variable,diff.c,3597,+,+,must_show_header = 1,3,		must_show_header = 1;
+repurposed_variable,diff.c,3604,+,+,must_show_header = 1,3,		must_show_header = 1;
+repurposed_variable,diff.c,3611,+,+,must_show_header = 1,4,			must_show_header = 1;
+repurposed_variable,diff.c,4284,-,+,,3,		blob = buf.buf;
+repurposed_variable,diff.c,4285,+,+,size = buf.len,3,		size = buf.len;
+repurposed_variable,diff.c,4425,+,+,abbrev = FALLBACK_DEFAULT_ABBREV,4,			abbrev = FALLBACK_DEFAULT_ABBREV;
+repurposed_variable,diff.c,4532,-,+,,3,		pgm = drv->external;
+repurposed_variable,diff.c,5135,-,+,,3,"		arg = """";"
+repurposed_variable,diff.c,5142,-,+,,3,		arg++;
+repurposed_variable,diff.c,5273,-,+,,3,"		arg = ""cumulative"";"
+repurposed_variable,diff.c,5287,-,+,,3,"		arg = """";"
+repurposed_variable,diff.c,5307,-,+,,3,"		arg = """";"
+repurposed_variable,diff.c,5338,-,+,,3,"		arg = ""all"";"
+repurposed_variable,diff.c,5474,-,+,,3,"		arg = ""log"";"
+repurposed_variable,diff.c,5854,-,+,,3,"		prefix = """";"
+repurposed_variable,diff.c,5856,+,+,"ac = parse_options(ac, av, prefix, parseopts, NULL, PARSE_OPT_KEEP_DASHDASH | PARSE_OPT_KEEP_UNKNOWN_OPT | PARSE_OPT_NO_INTERNAL_HELP | PARSE_OPT_ONE_SHOT | PARSE_OPT_STOP_AT_NON_OPTION)",2,"	ac = parse_options(ac, av, prefix, parseopts, NULL,
+			   PARSE_OPT_KEEP_DASHDASH |
+			   PARSE_OPT_KEEP_UNKNOWN_OPT |
+			   PARSE_OPT_NO_INTERNAL_HELP |
+			   PARSE_OPT_ONE_SHOT |
+			   PARSE_OPT_STOP_AT_NON_OPTION);"
+repurposed_variable,diff.c,7107,+,+,addremove = (addremove == '+' ? '-' : addremove == '-' ? '+' : addremove),3,"		addremove = (addremove == '+' ? '-' :
+			     addremove == '-' ? '+' : addremove);"
+repurposed_variable,diffcore-break.c,171,+,+,break_score = (break_score & 0xFFFF),2,	break_score = (break_score & 0xFFFF);
+repurposed_variable,diffcore-break.c,174,+,-,break_score = DEFAULT_BREAK_SCORE,,
+repurposed_variable,difftool.c,74,-,+,,20,"	if (parse_oid_hex(++p, oid1, (const char **)&p))"
+repurposed_variable,difftool.c,78,-,+,,20,"	if (parse_oid_hex(++p, oid2, (const char **)&p))"
+repurposed_variable,difftool.c,82,-,+,,13,	*status = *++p;
+repurposed_variable,difftool.c,729,+,+,"argc = parse_options(argc, argv, prefix, builtin_difftool_options, builtin_difftool_usage, PARSE_OPT_KEEP_UNKNOWN_OPT | PARSE_OPT_KEEP_DASHDASH)",2,"	argc = parse_options(argc, argv, prefix, builtin_difftool_options,
+			     builtin_difftool_usage, PARSE_OPT_KEEP_UNKNOWN_OPT |
+			     PARSE_OPT_KEEP_DASHDASH);"
+repurposed_variable,dir.c,83,-,+,,8,		if (*s++ == '/')
+repurposed_variable,dir.c,127,-,+,,3,		pattern += prefix;
+repurposed_variable,dir.c,128,-,+,,3,		string += prefix;
+repurposed_variable,dir.c,131,-,+,,28,		int pattern_len = strlen(++pattern);
+repurposed_variable,dir.c,167,+,+,flags |= WM_CASEFOLD,3,		flags |= WM_CASEFOLD;
+repurposed_variable,dir.c,265,+,+,depth++,3,		depth++;
+repurposed_variable,dir.c,500,-,+,,2,	name += prefix;
+repurposed_variable,dir.c,501,+,+,namelen -= prefix,2,	namelen -= prefix;
+repurposed_variable,dir.c,632,-,+,,22,		unsigned char c = *match++;
+repurposed_variable,dir.c,1004,+,+,len--,3,		len--;
+repurposed_variable,dir.c,1168,+,+,size -= buf - pl->filebuf,3,		size -= buf - pl->filebuf;
+repurposed_variable,dir.c,1286,-,+,,3,		pattern++;
+repurposed_variable,dir.c,1287,+,+,patternlen--,3,		patternlen--;
+repurposed_variable,dir.c,1288,+,+,prefix--,3,		prefix--;
+repurposed_variable,dir.c,1313,-,+,,3,		pattern += prefix;
+repurposed_variable,dir.c,1314,+,+,patternlen -= prefix,3,		patternlen -= prefix;
+repurposed_variable,dir.c,2075,-,+,,2,"	untracked = lookup_untracked(dir->untracked, untracked,
+				     dirname + baselen, len - baselen);"
+repurposed_variable,dir.c,2290,+,+,"dtype = get_index_dtype(istate, path, len)",2,"	dtype = get_index_dtype(istate, path, len);"
+repurposed_variable,dir.c,2756,+,+,len--,3,		len--;
+repurposed_variable,dir.c,3136,-,+,,3,		dir++;
+repurposed_variable,dir.c,3137,-,+,,3,		subdir++;
+repurposed_variable,dir.c,3328,+,+,flag &= ~REMOVE_DIR_KEEP_TOPLEVEL,2,	flag &= ~REMOVE_DIR_KEEP_TOPLEVEL;
+repurposed_variable,dir.c,3329,+,-,flag &= ~REMOVE_DIR_KEEP_TOPLEVEL,,
+repurposed_variable,dump.c,67,+,+,argc--,19,"	for (; argc > 1; argv++, argc--)"
+repurposed_variable,editor.c,143,-,+,,3,"		path = path2 = xstrdup(git_path(""%s"", path));"
+repurposed_variable,emmintrin.h,1889,+,-,"__a = __builtin_shufflevector((__v2df)__a, (__v2df)__a, 0, 0)",,
+repurposed_variable,emmintrin.h,1948,+,-,"__a = __builtin_shufflevector((__v2df)__a, (__v2df)__a, 1, 0)",,
+repurposed_variable,entry.c,86,+,+,mode = (mode & 0100) ? 0777 : 0666,2,	mode = (mode & 0100) ? 0777 : 0666;
+repurposed_variable,entry.c,492,-,+,,4,			ca = &ca_buf;
+repurposed_variable,entry.c,574,-,+,,3,		ca = &ca_buf;
+repurposed_variable,environment.c,269,-,+,,3,		new_work_tree = realpath.buf;
+repurposed_variable,environment.c,369,-,+,,3,		path = realpath.buf;
+repurposed_variable,ewah_bitmap.c,70,+,+,number -= can_add,2,	number -= can_add;
+repurposed_variable,ewah_bitmap.c,77,+,+,number -= RLW_LARGEST_RUNNING_COUNT,3,		number -= RLW_LARGEST_RUNNING_COUNT;
+repurposed_variable,ewah_bitmap.c,151,-,+,,3,		buffer += can_add;
+repurposed_variable,ewah_bitmap.c,152,+,+,number -= can_add,3,		number -= can_add;
+repurposed_variable,ewah_io.c,99,+,+,len -= sizeof (uint32_t),2,	len -= sizeof(uint32_t);
+repurposed_variable,ewah_io.c,105,+,+,len -= sizeof (uint32_t),2,	len -= sizeof(uint32_t);
+repurposed_variable,ewah_io.c,122,+,+,len -= data_len,2,	len -= data_len;
+repurposed_variable,ewah_io.c,131,+,+,len -= sizeof (uint32_t),2,	len -= sizeof(uint32_t);
+repurposed_variable,ewah_rlw.c,61,+,+,x -= it->rlw.running_len,3,		x -= it->rlw.running_len;
+repurposed_variable,ewah_rlw.c,68,+,+,x -= discard,3,		x -= discard;
+repurposed_variable,ewok.h,34,+,+,x = (x & 0x5555555555555555ULL) + ((x >> 1) & 0x5555555555555555ULL),2,	x = (x & 0x5555555555555555ULL) + ((x >>  1) & 0x5555555555555555ULL);
+repurposed_variable,ewok.h,35,+,-,x = (x & 0x3333333333333333ULL) + ((x >> 2) & 0x3333333333333333ULL),,
+repurposed_variable,ewok.h,36,+,-,x = (x & 0x0F0F0F0F0F0F0F0FULL) + ((x >> 4) & 0x0F0F0F0F0F0F0F0FULL),,
+repurposed_variable,ewok.h,47,+,-,x >>= 32,,
+repurposed_variable,ewok.h,48,+,-,x >>= 16,,
+repurposed_variable,ewok.h,49,+,-,x >>= 8,,
+repurposed_variable,ewok.h,50,+,-,x >>= 4,,
+repurposed_variable,ewok.h,51,+,-,x >>= 2,,
+repurposed_variable,ewok.h,52,+,-,x >>= 1,,
+repurposed_variable,fast-export.c,216,-,+,,3,		path = end_of_component;
+repurposed_variable,fast-export.c,218,-,+,,23,"			strbuf_addch(out, *path++);"
+repurposed_variable,fast-export.c,261,-,+,,3,		p = p->parents->item;
+repurposed_variable,fast-export.c,813,-,+,,3,		name = anonymize_refname(name);
+repurposed_variable,fast-export.c,1240,+,+,"argc = parse_options(argc, argv, prefix, options, fast_export_usage, PARSE_OPT_KEEP_ARGV0 | PARSE_OPT_KEEP_UNKNOWN_OPT)",2,"	argc = parse_options(argc, argv, prefix, options, fast_export_usage,
+			PARSE_OPT_KEEP_ARGV0 | PARSE_OPT_KEEP_UNKNOWN_OPT);"
+repurposed_variable,fast-export.c,1242,+,-,"argc = setup_revisions(argc, argv, &revs, NULL)",,
+repurposed_variable,fast-import.c,540,+,+,len--,9,	while (len-- > 0)
+repurposed_variable,fast-import.c,541,-,+,,17,		r = r * 31 + *s++;
+repurposed_variable,fast-import.c,557,+,+,idnum -= i << s->shift,3,		idnum -= i << s->shift;
+repurposed_variable,fast-import.c,576,+,+,idnum -= i << s->shift,4,			idnum -= i << s->shift;
+repurposed_variable,fast-import.c,577,-,+,,4,			s = s->data.sets[i];
+repurposed_variable,fast-import.c,642,+,+,cnt = cnt & 7 ? (cnt / 8) + 1 : cnt / 8,2,	cnt = cnt & 7 ? (cnt / 8) + 1 : cnt / 8;
+repurposed_variable,fast-import.c,662,+,+,cnt = cnt & 7 ? ((cnt / 8) + 1) * 8 : cnt,3,		cnt = cnt & 7 ? ((cnt / 8) + 1) * 8 : cnt;
+repurposed_variable,fast-import.c,1133,+,+,len -= n,4,			len -= n;
+repurposed_variable,fast-import.c,1530,-,+,,5,				backup_leaf = NULL;
+repurposed_variable,fast-import.c,1931,-,+,,2,	src = endp + 1;
+repurposed_variable,fast-import.c,1957,-,+,,3,		--buf;
+repurposed_variable,fast-import.c,2073,+,+,num_notes >>= 8,10,	while ((num_notes >>= 8))
+repurposed_variable,fast-import.c,2088,+,+,fanout--,3,		fanout--;
+repurposed_variable,fast-import.c,2227,-,+,,2,	p++;
+repurposed_variable,fast-import.c,2325,-,+,,2,"	p = parse_mode(p, &mode);"
+repurposed_variable,fast-import.c,2492,-,+,,8,		if (*p++ != ' ')
+repurposed_variable,fast-import.c,3042,-,+,,3,		oe = insert_object(oid);
+repurposed_variable,fetch-pack.c,27,-,+,,4,			name = p + 1;
+repurposed_variable,fetch-pack.c,147,-,+,,4,			oid = &tag->tagged->oid;
+repurposed_variable,fetch-pack.c,275,+,+,count <<= 1,4,			count <<= 1;
+repurposed_variable,fetch-pack.c,277,+,+,count = count * 11 / 10,4,			count = count * 11 / 10;
+repurposed_variable,fetch-pack.c,280,+,+,count <<= 1,4,			count <<= 1;
+repurposed_variable,fetch-pack.c,282,+,+,count += PIPESAFE_FLUSH,4,			count += PIPESAFE_FLUSH;
+repurposed_variable,fetch-pack.c,353,-,+,,17,	for ( ; refs ; refs = refs->next) {
+repurposed_variable,fetch-pack.c,630,-,+,,15,	for (; refs; refs = refs->next)
+repurposed_variable,fetch-pack.c,1078,-,+,,,"DEFINE_LIST_SORT(static, sort_ref_list, struct ref, next);"
+repurposed_variable,fetch-pack.c,1260,-,+,,18,	for ( ; wants ; wants = wants->next) {
+repurposed_variable,fetch-pack.c,2063,+,+,"nr_sought = remove_duplicates_in_refs(sought, nr_sought)",3,"		nr_sought = remove_duplicates_in_refs(sought, nr_sought);"
+repurposed_variable,fetch.c,665,-,+,,3,"		transaction = our_transaction = ref_store_transaction_begin(get_main_ref_store(the_repository),
+									    &err);"
+repurposed_variable,fetch.c,871,-,+,,3,		remote = prettify_refname(remote);
+repurposed_variable,fetch.c,872,-,+,,3,		local = prettify_refname(local);
+repurposed_variable,fetch.c,1428,-,+,,18,	for (; ref_map; ref_map = ref_map->next)
+repurposed_variable,fetch.c,1556,-,+,,3,		transport = gsecondary;
+repurposed_variable,fetch.c,1835,-,+,,4,			value += wordlen + (value[wordlen] != '\0');
+repurposed_variable,fetch.c,2265,+,+,"argc = parse_options(argc, argv, prefix, builtin_fetch_options, builtin_fetch_usage, 0)",2,"	argc = parse_options(argc, argv, prefix,
+			     builtin_fetch_options, builtin_fetch_usage, 0);"
+repurposed_variable,fetch.c,2393,+,-,argc--,,
+repurposed_variable,fetch.c,2394,-,+,,4,			argv++;
+repurposed_variable,files-backend.c,556,-,+,,4,			buf++;
+repurposed_variable,files-backend.c,1175,+,+,flags &= ~REMOVE_EMPTY_PARENTS_REF,4,			flags &= ~REMOVE_EMPTY_PARENTS_REF;
+repurposed_variable,files-backend.c,1180,+,+,flags &= ~REMOVE_EMPTY_PARENTS_REFLOG,4,			flags &= ~REMOVE_EMPTY_PARENTS_REFLOG;
+repurposed_variable,files-backend.c,1183,+,-,flags &= ~REMOVE_EMPTY_PARENTS_REF,,
+repurposed_variable,files-backend.c,1188,+,-,flags &= ~REMOVE_EMPTY_PARENTS_REFLOG,,
+repurposed_variable,files-backend.c,1986,-,+,,25,	while (bob < scan && *(--scan) != '\n')
+repurposed_variable,files-backend.c,3107,-,+,,3,		ooid = &cb->last_kept_oid;
+repurposed_variable,fmt-merge-msg.c,40,+,+,"argc = parse_options(argc, argv, prefix, options, fmt_merge_msg_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, fmt_merge_msg_usage,
+			     0);"
+repurposed_variable,fmt-merge-msg.c,146,-,+,,2,	line += hexsz + 2;
+repurposed_variable,for-each-repo.c,48,+,+,"argc = parse_options(argc, argv, prefix, options, for_each_repo_usage, PARSE_OPT_STOP_AT_NON_OPTION)",2,"	argc = parse_options(argc, argv, prefix, options, for_each_repo_usage,
+			     PARSE_OPT_STOP_AT_NON_OPTION);"
+repurposed_variable,fsck.c,73,+,+,"type = oid_object_info(the_repository, oid, NULL)",3,"		type = oid_object_info(the_repository, oid, NULL);"
+repurposed_variable,fsck.c,166,-,+,,4,"			msg_type_str = to_free =
+				xmemdupz(msg_type_str, colon - msg_type_str);"
+repurposed_variable,fsck.c,914,-,+,,2,	buffer = p + 1;
+repurposed_variable,fsck.c,937,+,+,"argc = parse_options(argc, argv, prefix, fsck_opts, fsck_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, fsck_opts, fsck_usage, 0);"
+repurposed_variable,fsck.c,988,-,+,,2,	buffer = p + 1;
+repurposed_variable,fsmonitor.c,362,+,+,"pos = index_name_pos(istate, work_path.buf, work_path.len)",3,"		pos = index_name_pos(istate, work_path.buf, work_path.len);"
+repurposed_variable,fsmonitor.c,418,+,+,pos = -pos - 1,3,		pos = -pos - 1;
+repurposed_variable,fuzz-date.c,26,-,+,,14,	local = !!(*data++ & 0x10);
+repurposed_variable,fuzz-date.c,27,-,+,,9,	num = *data++ % DATE_UNIX;
+repurposed_variable,fuzz-date.c,31,+,+,size -= 2,2,	size -= 2;
+repurposed_variable,fuzz-date.c,33,-,+,,8,	tz = *data++;
+repurposed_variable,fuzz-date.c,34,-,+,,20,	tz = (tz << 8) | *data++;
+repurposed_variable,fuzz-date.c,35,+,+,size -= 2,2,	size -= 2;
+repurposed_variable,gc.c,661,+,+,"argc = parse_options(argc, argv, prefix, builtin_gc_options, builtin_gc_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, builtin_gc_options,
+			     builtin_gc_usage, 0);"
+repurposed_variable,gc.c,850,-,+,,3,		oid = &peeled;
+repurposed_variable,gc.c,1491,+,+,"argc = parse_options(argc, argv, prefix, builtin_maintenance_run_options, builtin_maintenance_run_usage, PARSE_OPT_STOP_AT_NON_OPTION)",2,"	argc = parse_options(argc, argv, prefix,
+			     builtin_maintenance_run_options,
+			     builtin_maintenance_run_usage,
+			     PARSE_OPT_STOP_AT_NON_OPTION);"
+repurposed_variable,gc.c,1535,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_maintenance_register_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     builtin_maintenance_register_usage, 0);"
+repurposed_variable,gc.c,1604,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_maintenance_unregister_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     builtin_maintenance_unregister_usage, 0);"
+repurposed_variable,gc.c,2753,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_maintenance_start_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     builtin_maintenance_start_usage, 0);"
+repurposed_variable,gc.c,2779,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_maintenance_stop_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     builtin_maintenance_stop_usage, 0);"
+repurposed_variable,gc.c,2803,+,+,"argc = parse_options(argc, argv, prefix, builtin_maintenance_options, builtin_maintenance_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, builtin_maintenance_options,
+			     builtin_maintenance_usage, 0);"
+repurposed_variable,git-compat-util.h,724,-,+,,12,	} while (*str++ == *prefix++);
+repurposed_variable,git-compat-util.h,1273,-,+,,20,	} while (tolower(*str++) == tolower(*prefix++));
+repurposed_variable,git-compat-util.h,1292,+,+,len--,11,	} while (len-- > 0 && tolower(*buf++) == tolower(*prefix++));
+repurposed_variable,git.c,110,-,+,,3,		spec += len;
+repurposed_variable,git.c,112,-,+,,4,			spec++;
+repurposed_variable,git.c,723,+,+,argc++,3,		argc++;
+repurposed_variable,git.c,724,-,+,,3,		argv = args.v;
+repurposed_variable,git.c,899,-,+,,2,	argv++;
+repurposed_variable,git.c,900,+,+,argc--,2,	argc--;
+repurposed_variable,grep.c,151,-,+,,3,		w = &todo[todo_done];
+repurposed_variable,grep.c,762,-,+,,3,		x = x->u.binary.right;
+repurposed_variable,grep.c,869,-,+,,3,		cp++;
+repurposed_variable,grep.c,988,-,+,,4,			bol = pmatch[0].rm_so + bol + 1;
+repurposed_variable,grep.c,990,-,+,,5,				bol++;
+repurposed_variable,grep.c,991,+,+,eflags |= REG_NOTBOL,4,			eflags |= REG_NOTBOL;
+repurposed_variable,grep.c,1017,-,+,,3,		bol += len;
+repurposed_variable,grep.c,1039,+,+,"argc = parse_options(argc, argv, prefix, options, grep_usage, PARSE_OPT_KEEP_DASHDASH | PARSE_OPT_STOP_AT_NON_OPTION)",2,"	argc = parse_options(argc, argv, prefix, options, grep_usage,
+			     PARSE_OPT_KEEP_DASHDASH |
+			     PARSE_OPT_STOP_AT_NON_OPTION);"
+repurposed_variable,grep.c,1067,-,+,,3,		argv++;
+repurposed_variable,grep.c,1068,+,-,argc--,,
+repurposed_variable,grep.c,1075,-,+,,3,		argv++;
+repurposed_variable,grep.c,1076,+,-,argc--,,
+repurposed_variable,grep.c,1289,-,+,,4,			bol += match.rm_eo;
+repurposed_variable,grep.c,1290,+,+,cno += match.rm_eo,4,			cno += match.rm_eo;
+repurposed_variable,grep.c,1352,-,+,,21,		const char *eol = --bol;
+repurposed_variable,grep.c,1355,-,+,,4,			bol--;
+repurposed_variable,grep.c,1356,+,+,lno--,3,		lno--;
+repurposed_variable,grep.c,1392,-,+,,21,		const char *eol = --bol;
+repurposed_variable,grep.c,1395,-,+,,4,			bol--;
+repurposed_variable,grep.c,1403,-,+,,5,				bol = next_bol;
+repurposed_variable,grep.c,1428,-,+,,3,		bol = eol + 1;
+repurposed_variable,grep.c,1552,-,+,,3,		bol++;
+repurposed_variable,grep.c,1800,-,+,,3,		x = x->u.binary.right;
+repurposed_variable,grep.c,1812,-,+,,3,		x = x->u.binary.right;
+repurposed_variable,hash-object.c,118,+,+,"argc = parse_options(argc, argv, prefix, hash_object_options, hash_object_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, hash_object_options,
+			     hash_object_usage, 0);"
+repurposed_variable,hash-object.c,122,-,+,,3,		prefix = setup_git_directory();
+repurposed_variable,hash-object.c,124,-,+,,3,		prefix = setup_git_directory_gently(&nongit);
+repurposed_variable,hashmap.c,13,-,+,,31,	while ((c = (unsigned char) *str++))
+repurposed_variable,hashmap.c,21,-,+,,31,	while ((c = (unsigned char) *str++)) {
+repurposed_variable,hashmap.c,33,+,+,len--,9,	while (len--) {
+repurposed_variable,hashmap.c,44,+,+,len--,9,	while (len--) {
+repurposed_variable,hashmap.c,61,+,+,len--,9,	while (len--) {
+repurposed_variable,hashmap.c,164,+,+,initial_size = (unsigned int)((uint64_t)initial_size * 100 / HASHMAP_LOAD_FACTOR),2,"	initial_size = (unsigned int) ((uint64_t) initial_size * 100
+			/ HASHMAP_LOAD_FACTOR);"
+repurposed_variable,headless.c,29,+,-,dir_len -= suffix_len,,
+repurposed_variable,help.c,229,+,+,colopts = (colopts & ~COL_ENABLE_MASK) | COL_ENABLED,2,	colopts = (colopts & ~COL_ENABLE_MASK) | COL_ENABLED;
+repurposed_variable,help.c,249,-,+,,3,"		prefix = ""git-"";"
+repurposed_variable,help.c,276,-,+,,4,"			path = ""emacsclient"";"
+repurposed_variable,help.c,295,-,+,,5,"				path = xstrfmt(""%.*s/kfmclient"", (int)len, path);"
+repurposed_variable,help.c,298,-,+,,4,"			path = ""kfmclient"";"
+repurposed_variable,help.c,309,-,+,,3,"		path = ""man"";"
+repurposed_variable,help.c,501,+,+,longest = len,4,			longest = len;
+repurposed_variable,help.c,640,+,+,"argc = parse_options(argc, argv, prefix, builtin_help_options, builtin_help_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, builtin_help_options,
+			builtin_help_usage, 0);"
+repurposed_variable,help.c,777,+,+,"argc = parse_options(argc, argv, prefix, options, usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, usage, 0);"
+repurposed_variable,help.h,18,+,+,num--,9,	while (num--)
+repurposed_variable,hex-ll.c,41,+,+,len--,14,"	for (; len; len--, hex += 2) {"
+repurposed_variable,hex-ll.c,46,-,+,,4,		*binary++ = val;
+repurposed_variable,hex.c,13,-,+,,4,		*hash++ = val;
+repurposed_variable,hex.c,14,-,+,,3,		hex += 2;
+repurposed_variable,hex.c,87,-,+,,3,		algop = the_hash_algo;
+repurposed_variable,hex.c,90,-,+,,23,		unsigned int val = *hash++;
+repurposed_variable,hook.c,36,+,+,"argc = parse_options(argc, argv, prefix, run_options, builtin_hook_run_usage, PARSE_OPT_KEEP_DASHDASH)",2,"	argc = parse_options(argc, argv, prefix, run_options,
+			     builtin_hook_run_usage,
+			     PARSE_OPT_KEEP_DASHDASH);"
+repurposed_variable,hook.c,77,+,+,"argc = parse_options(argc, argv, NULL, builtin_hook_options, builtin_hook_usage, 0)",2,"	argc = parse_options(argc, argv, NULL, builtin_hook_options,
+			     builtin_hook_usage, 0);"
+repurposed_variable,http-push.c,1026,-,+,,2,	path += 2;
+repurposed_variable,http-push.c,1027,-,+,,2,	path++; /* skip '/' */
+repurposed_variable,http-push.c,1308,-,+,,2,"	p = add_one_object(obj, p);"
+repurposed_variable,http-push.c,1711,-,+,,2,	argv++;
+repurposed_variable,http.c,571,-,+,,3,"		headers = curl_slist_append(headers, auth.buf);"
+repurposed_variable,http.c,1861,-,+,,2,	raw += len;
+repurposed_variable,http.c,1865,-,+,,2,	raw++;
+repurposed_variable,http.c,2195,-,+,,4,			url = options->effective_url->buf;
+repurposed_variable,ident.c,218,-,+,,15,	for (; *str; str++) {
+repurposed_variable,ident.c,238,-,+,,3,		src++;
+repurposed_variable,ident.c,258,-,+,,8,		c = *src++;
+repurposed_variable,ident.c,466,-,+,,4,			email = git_author_email.buf;
+repurposed_variable,ident.c,468,-,+,,4,			email = git_committer_email.buf;
+repurposed_variable,ident.c,476,-,+,,3,		email = ident_default_email();
+repurposed_variable,ident.c,487,-,+,,5,				name = git_author_name.buf;
+repurposed_variable,ident.c,490,-,+,,5,				name = git_committer_name.buf;
+repurposed_variable,ident.c,498,-,+,,4,			name = ident_default_name();
+repurposed_variable,ident.c,513,-,+,,4,			name = pw->pw_name;
+repurposed_variable,imap-send.c,209,-,+,,3,		pattern += 2;
+repurposed_variable,imap-send.c,210,-,+,,9,"		if (!(host = strchr(host, '.')))"
+repurposed_variable,imap-send.c,212,-,+,,3,		host++;
+repurposed_variable,imap-send.c,658,-,+,,2,	s++;
+repurposed_variable,imap-send.c,1324,-,+,,5,				val += 5;
+repurposed_variable,imap-send.c,1326,-,+,,5,				val += 6;
+repurposed_variable,imap-send.c,1330,-,+,,5,				val += 2;
+repurposed_variable,imap-send.c,1507,+,+,"argc = parse_options(argc, (const char**)argv, """", imap_send_options, imap_send_usage, 0)",2,"	argc = parse_options(argc, (const char **)argv, """", imap_send_options, imap_send_usage, 0);"
+repurposed_variable,index-pack.c,350,-,+,,4,"			pack_name = strbuf_detach(&tmp_file, NULL);"
+repurposed_variable,index-pack.c,468,-,+,,3,		oid = NULL;
+repurposed_variable,index-pack.c,770,+,+,size -= len,3,		size -= len;
+repurposed_variable,index-pack.c,771,-,+,,3,		buf += len;
+repurposed_variable,index-pack.c,837,-,+,,4,			data = new_data = get_data_from_pack(obj_entry);
+repurposed_variable,index-pack.c,918,-,+,,4,			c = c->base;
+repurposed_variable,index-pack.c,928,-,+,,4,			c = delta[delta_nr - 1];
+repurposed_variable,index-pack.c,1344,+,+,size = stream.total_out,2,	size = stream.total_out;
+repurposed_variable,init-db.c,107,+,+,"argc = parse_options(argc, argv, prefix, init_db_options, init_db_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, init_db_options, init_db_usage, 0);"
+repurposed_variable,interpret-trailers.c,220,+,+,"argc = parse_options(argc, argv, prefix, options, git_interpret_trailers_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     git_interpret_trailers_usage, 0);"
+repurposed_variable,ipc-win32.c,109,+,-,timeout_ms -= step_ms,,
+repurposed_variable,ipc-win32.c,145,+,-,timeout_ms -= t_waited_ms,,
+repurposed_variable,ipc-win32.c,147,+,-,timeout_ms = 1,,
+repurposed_variable,iterator.c,334,-,+,,3,		refname++;
+repurposed_variable,iterator.c,335,-,+,,3,		prefix++;
+repurposed_variable,json-writer.c,24,-,+,,15,	while ((c = *in++) != '\0') {
+repurposed_variable,json-writer.c,367,-,+,,24,"		jw_array_string(jw, *argv++);"
+repurposed_variable,khash.h,54,-,+,,14,	if (h) for (++s ; *s; ++s) h = (h << 5) - h + (khint_t)*s;
+repurposed_variable,khash.h,332,+,+,"KHASH_INIT(oid_set, struct object_id, int, 0, oidhash_by_value, oideq_by_value)",,"KHASH_INIT(oid_set, struct object_id, int, 0, oidhash_by_value, oideq_by_value)"
+repurposed_variable,khash.h,334,+,+,"KHASH_INIT(oid_map, struct object_id, void *, 1, oidhash_by_value, oideq_by_value)",,"KHASH_INIT(oid_map, struct object_id, void *, 1, oidhash_by_value, oideq_by_value)"
+repurposed_variable,khash.h,336,+,+,"KHASH_INIT(oid_pos, struct object_id, int, 1, oidhash_by_value, oideq_by_value)",,"KHASH_INIT(oid_pos, struct object_id, int, 1, oidhash_by_value, oideq_by_value)"
+repurposed_variable,kwset.c,179,-,+,,3,  text += len;
+repurposed_variable,kwset.c,183,+,+,len--,10,  while (len--)
+repurposed_variable,kwset.c,185,-,+,,46,      label = kwset->trans ? kwset->trans[U(*--text)] : *--text;
+repurposed_variable,kwset.c,365,-,+,,7,      fail = fail->fail;
+repurposed_variable,kwset.c,398,-,+,,7,      a = a->llink;
+repurposed_variable,kwset.c,400,-,+,,7,      a = a->rlink;
+repurposed_variable,line-log.c,261,-,+,,3,		r = next;
+repurposed_variable,line-log.c,647,-,+,,2,	r = r->next;
+repurposed_variable,line-log.c,677,-,+,,4,			a = a->next;
+repurposed_variable,line-log.c,680,-,+,,4,			a = a->next;
+repurposed_variable,line-log.c,682,-,+,,4,			b = b->next;
+repurposed_variable,line-log.c,685,-,+,,4,			b = b->next;
+repurposed_variable,line-log.c,1018,-,+,,3,		range = range->next;
+repurposed_variable,line-log.c,1174,-,+,,3,		range = range->next;
+repurposed_variable,line-range.c,66,+,+,begin = -begin,4,			begin = -begin;
+repurposed_variable,line-range.c,68,+,+,begin = 1,4,			begin = 1;
+repurposed_variable,line-range.c,69,-,+,,4,			spec++;
+repurposed_variable,line-range.c,90,+,+,begin--,2,	begin--; /* input is in human terms */
+repurposed_variable,line-range.c,98,+,-,begin++,,
+repurposed_variable,line-range.c,161,-,+,,3,		start = eol;
+repurposed_variable,line-range.c,181,+,+,anchor = 1,3,		anchor = 1;
+repurposed_variable,line-range.c,182,-,+,,3,		arg++;
+repurposed_variable,line-range.c,199,+,+,anchor--,2,	anchor--; /* input is in human terms */
+repurposed_variable,line-range.c,254,+,+,anchor = 1,3,		anchor = 1;
+repurposed_variable,line-range.c,256,+,+,anchor = lines + 1,3,		anchor = lines + 1;
+repurposed_variable,line-range.c,259,-,+,,3,"		arg = parse_range_funcname(arg, nth_line_cb, cb_data,
+					   lines, anchor, begin, end,
+					   path, istate);"
+repurposed_variable,line-range.c,267,-,+,,2,"	arg = parse_loc(arg, nth_line_cb, cb_data, lines, -anchor, begin);"
+repurposed_variable,line-range.c,289,-,+,,2,"	arg = parse_loc(arg, NULL, NULL, 0, -1, NULL);"
+repurposed_variable,log-tree.c,558,-,+,,3,		bol = (*eol) ? (eol + 1) : eol;
+repurposed_variable,log.c,273,+,+,"argc = parse_options(argc, argv, prefix, builtin_log_options, builtin_log_usage, PARSE_OPT_KEEP_ARGV0 | PARSE_OPT_KEEP_UNKNOWN_OPT | PARSE_OPT_KEEP_DASHDASH)",2,"	argc = parse_options(argc, argv, prefix,
+			     builtin_log_options, builtin_log_usage,
+			     PARSE_OPT_KEEP_ARGV0 | PARSE_OPT_KEEP_UNKNOWN_OPT |
+			     PARSE_OPT_KEEP_DASHDASH);"
+repurposed_variable,log.c,280,+,-,"argc = setup_revisions(argc, argv, rev, opt)",,
+repurposed_variable,log.c,379,-,+,,3,		list = list->next;
+repurposed_variable,log.c,425,-,+,,3,		list = list->next;
+repurposed_variable,log.c,1362,-,+,,3,		branch_name = find_branch_name(rev);
+repurposed_variable,log.c,1769,-,+,,,"define_commit_slab(commit_base, int);"
+repurposed_variable,log.c,2054,+,+,"argc = parse_options(argc, argv, prefix, builtin_format_patch_options, builtin_format_patch_usage, PARSE_OPT_KEEP_ARGV0 | PARSE_OPT_KEEP_UNKNOWN_OPT | PARSE_OPT_KEEP_DASHDASH)",2,"	argc = parse_options(argc, argv, prefix, builtin_format_patch_options,
+			     builtin_format_patch_usage,
+			     PARSE_OPT_KEEP_ARGV0 | PARSE_OPT_KEEP_UNKNOWN_OPT |
+			     PARSE_OPT_KEEP_DASHDASH);"
+repurposed_variable,log.c,2134,+,-,"argc = setup_revisions(argc, argv, &rev, &s_r_opt)",,
+repurposed_variable,log.c,2510,+,+,"argc = parse_options(argc, argv, prefix, options, cherry_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, cherry_usage, 0);"
+repurposed_variable,ls-files.c,127,-,+,,3,		tag = alttag;
+repurposed_variable,ls-files.c,275,-,+,,4,			format += len;
+repurposed_variable,ls-files.c,331,-,+,,3,"		tag = get_tag(ce, tag);"
+repurposed_variable,ls-files.c,655,+,+,"argc = parse_options(argc, argv, prefix, builtin_ls_files_options, ls_files_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, builtin_ls_files_options,
+			ls_files_usage, 0);"
+repurposed_variable,ls-remote.c,31,-,+,,16,	while ((p = *(pattern++)) != NULL) {
+repurposed_variable,ls-remote.c,87,+,+,"argc = parse_options(argc, argv, prefix, options, ls_remote_usage, PARSE_OPT_STOP_AT_NON_OPTION)",2,"	argc = parse_options(argc, argv, prefix, options, ls_remote_usage,
+			     PARSE_OPT_STOP_AT_NON_OPTION);"
+repurposed_variable,ls-tree.c,375,+,+,"argc = parse_options(argc, argv, prefix, ls_tree_options, ls_tree_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, ls_tree_options,
+			     ls_tree_usage, 0);"
+repurposed_variable,ls-tree.c,380,-,+,,3,		prefix = NULL;
+repurposed_variable,mailinfo.c,67,-,+,,12,		int c = *in++;
+repurposed_variable,mailinfo.c,85,+,+,"argc = parse_options(argc, argv, prefix, options, mailinfo_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, mailinfo_usage, 0);"
+repurposed_variable,mailinfo.c,98,-,+,,12,		int c = *in++;
+repurposed_variable,mailmap.c,68,-,+,,3,		old_email = new_email;
+repurposed_variable,mailmap.c,69,-,+,,3,		new_email = NULL;
+repurposed_variable,mailmap.c,183,-,+,,3,		buf = end;
+repurposed_variable,mailsplit.c,23,-,+,,2,	line += 5;
+repurposed_variable,mailsplit.c,162,-,+,,4,			a++;
+repurposed_variable,mailsplit.c,163,-,+,,4,			b++;
+repurposed_variable,mailsplit.c,200,+,+,++skip,43,"		name = xstrfmt(""%s/%0*d"", dir, nr_prec, ++skip);"
+repurposed_variable,mailsplit.c,259,+,+,++skip,49,"		char *name = xstrfmt(""%s/%0*d"", dir, nr_prec, ++skip);"
+repurposed_variable,malloc.c.h,3800,+,-,p = (mchunkptr)((char*)p + offset),,
+repurposed_variable,malloc.c.h,3801,+,-,psize -= offset,,
+repurposed_variable,malloc.c.h,4190,+,-,pad += TOP_FOOT_SIZE,,
+repurposed_variable,malloc.c.h,4439,+,-,alignment = MIN_CHUNK_SIZE,,
+repurposed_variable,malloc.c.h,4443,+,-,alignment = a,,
+repurposed_variable,match-trees.c,269,+,+,depth_limit = 2,3,		depth_limit = 2;
+repurposed_variable,mem-pool.c,93,-,+,,2,"	len = DIV_ROUND_UP(len, GIT_MAX_ALIGNMENT) * GIT_MAX_ALIGNMENT;"
+repurposed_variable,merge-base.c,168,+,+,"argc = parse_options(argc, argv, prefix, options, merge_base_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, merge_base_usage, 0);"
+repurposed_variable,merge-base.c,199,+,-,argc--,,
+repurposed_variable,merge-base.c,200,-,+,,41,		rev[rev_nr++] = get_commit_reference(*argv++);
+repurposed_variable,merge-blobs.c,79,-,+,,4,			our = their;
+repurposed_variable,merge-file.c,98,+,+,"argc = parse_options(argc, argv, prefix, options, merge_file_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, merge_file_usage, 0);"
+repurposed_variable,merge-index.c,34,+,+,++pos,11,	} while (++pos < the_repository->index->cache_nr);
+repurposed_variable,merge-ll.c,412,-,+,,3,		opts = &default_opts;
+repurposed_variable,merge-ort.c,1439,+,+,dirmask >>= 1,4,			dirmask >>= 1;
+repurposed_variable,merge-ort.c,2640,-,+,,2,	new_path = (char *)cur_path;
+repurposed_variable,merge-ort.c,3215,-,+,,2,	new_path = xstrdup(new_path);
+repurposed_variable,merge-ort.c,3258,-,+,,4,			new_path = p->two->path;
+repurposed_variable,merge-ort.c,3546,-,+,,3,		one++;
+repurposed_variable,merge-ort.c,3547,-,+,,3,		two++;
+repurposed_variable,merge-ort.c,4001,-,+,,3,"		path = unique_path(opt, path, branch);"
+repurposed_variable,merge-ort.c,4021,-,+,,3,		ci = new_ci;
+repurposed_variable,merge-ort.c,4157,-,+,,5,				path = a_path;
+repurposed_variable,merge-ort.c,5015,-,+,,3,"		side2 = shift_tree_object(opt->repo, side1, side2,
+					  opt->subtree_shift);"
+repurposed_variable,merge-ort.c,5017,-,+,,3,"		merge_base = shift_tree_object(opt->repo, side1, merge_base,
+					       opt->subtree_shift);"
+repurposed_variable,merge-ort.c,5091,-,+,,3,		merge_bases = reverse_commit_list(merge_bases);
+repurposed_variable,merge-recursive.c,942,+,+,update_wd = 0,3,		update_wd = 0;
+repurposed_variable,merge-recursive.c,955,+,+,update_wd = 0,4,			update_wd = 0;
+repurposed_variable,merge-recursive.c,982,+,+,update_wd = 0,4,			update_wd = 0;
+repurposed_variable,merge-recursive.c,3531,-,+,,3,"		merge = shift_tree_object(opt->repo, head, merge,
+					  opt->subtree_shift);"
+repurposed_variable,merge-recursive.c,3533,-,+,,3,"		merge_base = shift_tree_object(opt->repo, head, merge_base,
+					       opt->subtree_shift);"
+repurposed_variable,merge-recursive.c,3650,-,+,,3,		merge_bases = reverse_commit_list(merge_bases);
+repurposed_variable,merge-tree.c,57,-,+,,2,	entry = entry->link;
+repurposed_variable,merge-tree.c,82,-,+,,3,		entry = entry->link;
+repurposed_variable,merge-tree.c,87,-,+,,3,		entry = entry->link;
+repurposed_variable,merge-tree.c,104,-,+,,3,		entry = entry->link;
+repurposed_variable,merge-tree.c,151,-,+,,3,		entry = link;
+repurposed_variable,merge-tree.c,577,+,+,"argc = parse_options(argc, argv, prefix, mt_options, merge_tree_usage, PARSE_OPT_STOP_AT_NON_OPTION)",2,"	argc = parse_options(argc, argv, prefix, mt_options,
+			     merge_tree_usage, PARSE_OPT_STOP_AT_NON_OPTION);"
+repurposed_variable,merge.c,177,-,+,,3,"		name = ""ort"";"
+repurposed_variable,merge.c,419,-,+,,10,	while ((commit = get_revision(&rev)) != NULL) {
+repurposed_variable,merge.c,495,-,+,,2,	remote = bname.buf;
+repurposed_variable,merge.c,1105,-,+,,2,	remoteheads = NULL;
+repurposed_variable,merge.c,1140,-,+,,3,		merge_names = &fetch_head_file;
+repurposed_variable,merge.c,1178,-,+,,3,"		remotes = &commit_list_insert(commit, remotes)->next;"
+repurposed_variable,merge.c,1310,+,+,"argc = parse_options(argc, argv, prefix, builtin_merge_options, builtin_merge_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, builtin_merge_options,
+			builtin_merge_usage, 0);"
+repurposed_variable,merge.c,1422,+,-,argc = setup_with_upstream(&argv),,
+repurposed_variable,midx-write.c,668,-,+,,3,		oid = &peeled;
+repurposed_variable,midx-write.c,1151,+,+,flags &= ~(MIDX_WRITE_REV_INDEX | MIDX_WRITE_BITMAP),3,		flags &= ~(MIDX_WRITE_REV_INDEX | MIDX_WRITE_BITMAP);
+repurposed_variable,midx.c,383,-,+,,3,		idx_name++;
+repurposed_variable,midx.c,384,-,+,,3,		idx_or_pack_name++;
+repurposed_variable,mingw.c,2495,+,-,options &= ~WNOHANG,,
+repurposed_variable,mingw.c,2542,+,-,wcslen--,,
+repurposed_variable,mingw.c,2544,+,-,utflen = INT_MAX,,
+repurposed_variable,mingw.c,2611,+,-,"utflen = WideCharToMultiByte(CP_UTF8, 0, wcs, -1, utf, utflen, NULL, NULL)",,
+repurposed_variable,mingw.c,3005,+,-,"len = xwcstoutf(buffer, wcs, len) + 1",,
+repurposed_variable,mktag.c,87,+,+,"argc = parse_options(argc, argv, prefix, builtin_mktag_options, builtin_mktag_usage, 0)",2,"	argc = parse_options(argc, argv, prefix,
+			     builtin_mktag_options,
+			     builtin_mktag_usage, 0);"
+repurposed_variable,mktree.c,100,+,+,allow_missing = 1,3,		allow_missing = 1;
+repurposed_variable,mktree.c,170,+,+,"ac = parse_options(ac, av, prefix, option, mktree_usage, 0)",2,"	ac = parse_options(ac, av, prefix, option, mktree_usage, 0);"
+repurposed_variable,mm_malloc.h,39,+,-,__align = sizeof (void*),,
+repurposed_variable,multi-pack-index.c,149,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_multi_pack_index_write_usage, 0)",2,"	argc = parse_options(argc, argv, prefix,
+			     options, builtin_multi_pack_index_write_usage,
+			     0);"
+repurposed_variable,multi-pack-index.c,192,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_multi_pack_index_verify_usage, 0)",2,"	argc = parse_options(argc, argv, prefix,
+			     options, builtin_multi_pack_index_verify_usage,
+			     0);"
+repurposed_variable,multi-pack-index.c,219,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_multi_pack_index_expire_usage, 0)",2,"	argc = parse_options(argc, argv, prefix,
+			     options, builtin_multi_pack_index_expire_usage,
+			     0);"
+repurposed_variable,multi-pack-index.c,249,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_multi_pack_index_repack_usage, 0)",2,"	argc = parse_options(argc, argv, prefix,
+			     options,
+			     builtin_multi_pack_index_repack_usage,
+			     0);"
+repurposed_variable,multi-pack-index.c,286,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_multi_pack_index_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     builtin_multi_pack_index_usage, 0);"
+repurposed_variable,mv.c,195,+,+,"argc = parse_options(argc, argv, prefix, builtin_mv_options, builtin_mv_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, builtin_mv_options,
+			     builtin_mv_usage, 0);"
+repurposed_variable,mv.c,197,+,-,--argc,,
+repurposed_variable,mv.c,351,+,-,argc += last - first,,
+repurposed_variable,mv.c,429,+,-,--argc,,
+repurposed_variable,name-hash.c,71,+,+,namelen--,3,		namelen--;
+repurposed_variable,name-hash.c,74,+,+,namelen--,2,	namelen--;
+repurposed_variable,name-hash.c,658,-,+,,23,		unsigned char c1 = *name1++;
+repurposed_variable,name-hash.c,659,-,+,,23,		unsigned char c2 = *name2++;
+repurposed_variable,name-hash.c,660,+,+,len1--,3,		len1--;
+repurposed_variable,name-rev.c,34,-,+,,,"define_commit_slab(commit_rev_name, struct rev_name);"
+repurposed_variable,name-rev.c,521,-,+,,24,	for (p_start = p; *p; p++) {
+repurposed_variable,name-rev.c,593,+,+,"argc = parse_options(argc, argv, prefix, opts, name_rev_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, opts, name_rev_usage, 0);"
+repurposed_variable,name-rev.c,609,+,+,argc--,23,"	for (; argc; argc--, argv++) {"
+repurposed_variable,notes-merge.c,44,-,+,,3,		path++;
+repurposed_variable,notes-merge.c,323,+,+,size -= ret,3,		size -= ret;
+repurposed_variable,notes-merge.c,324,-,+,,3,		buf += ret;
+repurposed_variable,notes-utils.c,46,-,+,,3,		t = &default_notes_tree;
+repurposed_variable,notes.c,446,+,+,"argc = parse_options(argc, argv, prefix, options, git_notes_list_usage, 0)",3,"		argc = parse_options(argc, argv, prefix, options,
+				     git_notes_list_usage, 0);"
+repurposed_variable,notes.c,508,+,+,"argc = parse_options(argc, argv, prefix, options, git_notes_add_usage, PARSE_OPT_KEEP_ARGV0)",2,"	argc = parse_options(argc, argv, prefix, options, git_notes_add_usage,
+			     PARSE_OPT_KEEP_ARGV0);"
+repurposed_variable,notes.c,551,+,+,fanout--,3,		fanout--;
+repurposed_variable,notes.c,566,+,+,"fanout = determine_fanout(tree, n, fanout)",2,"	fanout = determine_fanout(tree, n, fanout);"
+repurposed_variable,notes.c,589,+,+,"argc = parse_options(argc, argv, prefix, options, git_notes_copy_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, git_notes_copy_usage,
+			     0);"
+repurposed_variable,notes.c,685,+,+,"argc = parse_options(argc, argv, prefix, options, usage, PARSE_OPT_KEEP_ARGV0)",2,"	argc = parse_options(argc, argv, prefix, options, usage,
+			     PARSE_OPT_KEEP_ARGV0);"
+repurposed_variable,notes.c,703,-,+,,3,		tws = tws->next;
+repurposed_variable,notes.c,715,-,+,,3,		tws = tws->next;
+repurposed_variable,notes.c,761,+,+,"argc = parse_options(argc, argv, prefix, options, git_notes_show_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, git_notes_show_usage,
+			     0);"
+repurposed_variable,notes.c,904,+,+,"argc = parse_options(argc, argv, prefix, options, git_notes_merge_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     git_notes_merge_usage, 0);"
+repurposed_variable,notes.c,1011,-,+,,3,		t = &default_notes_tree;
+repurposed_variable,notes.c,1015,-,+,,3,		notes_ref = default_notes_ref();
+repurposed_variable,notes.c,1019,+,+,combine_notes = combine_notes_concatenate,3,		combine_notes = combine_notes_concatenate;
+repurposed_variable,notes.c,1030,+,+,"argc = parse_options(argc, argv, prefix, options, git_notes_remove_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     git_notes_remove_usage, 0);"
+repurposed_variable,notes.c,1040,-,+,,4,			argv++;
+repurposed_variable,notes.c,1068,+,+,"argc = parse_options(argc, argv, prefix, options, git_notes_prune_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, git_notes_prune_usage,
+			     0);"
+repurposed_variable,notes.c,1090,+,+,"argc = parse_options(argc, argv, prefix, options, git_notes_get_ref_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     git_notes_get_ref_usage, 0);"
+repurposed_variable,notes.c,1123,+,+,"argc = parse_options(argc, argv, prefix, options, git_notes_usage, PARSE_OPT_SUBCOMMAND_OPTIONAL)",2,"	argc = parse_options(argc, argv, prefix, options, git_notes_usage,
+			     PARSE_OPT_SUBCOMMAND_OPTIONAL);"
+repurposed_variable,notes.c,1131,-,+,,3,		t = &default_notes_tree;
+repurposed_variable,notes.c,1135,+,+,combine_notes = t->combine_notes,3,		combine_notes = t->combine_notes;
+repurposed_variable,notes.c,1147,-,+,,3,		t = &default_notes_tree;
+repurposed_variable,notes.c,1164,-,+,,3,		t = &default_notes_tree;
+repurposed_variable,notes.c,1174,-,+,,3,		t = &default_notes_tree;
+repurposed_variable,notes.c,1187,-,+,,3,		t = &default_notes_tree;
+repurposed_variable,notes.c,1214,-,+,,3,		t = &default_notes_tree;
+repurposed_variable,notes.c,1231,-,+,,3,		t = &default_notes_tree;
+repurposed_variable,notes.c,1266,-,+,,3,		t = &default_notes_tree;
+repurposed_variable,object-file-convert.c,108,+,+,size -= ((p + 1) - buffer),2,	size -= ((p + 1) - buffer);
+repurposed_variable,object-file-convert.c,109,-,+,,2,	buffer = p + 1;
+repurposed_variable,object-file.c,609,-,+,,3,"		alt = parse_alt_odb_entry(alt, sep, &entry);"
+repurposed_variable,object-file.c,1385,-,+,,13,		char c = *hdr++;
+repurposed_variable,object-file.c,1403,-,+,,10,	size = *hdr++ - '0';
+repurposed_variable,object-file.c,1411,-,+,,4,			hdr++;
+repurposed_variable,object-file.c,1572,-,+,,3,		oi = &blank_oi;
+repurposed_variable,object-file.c,2494,+,+,type = OBJ_BLOB,3,		type = OBJ_BLOB;
+repurposed_variable,object-file.c,2503,-,+,,4,"			buf = strbuf_detach(&nbuf, &size);"
+repurposed_variable,object-name.c,122,-,+,,3,		a++;
+repurposed_variable,object-name.c,123,-,+,,3,		b++;
+repurposed_variable,object-name.c,124,+,+,len -= 2,3,		len -= 2;
+repurposed_variable,object-name.c,661,+,+,val >>= 1,9,	while (val >>= 1)
+repurposed_variable,object-name.c,824,+,+,len = msb(count) + 1,3,		len = msb(count) + 1;
+repurposed_variable,object-name.c,831,+,+,"len = DIV_ROUND_UP(len, 2)",3,"		len = DIV_ROUND_UP(len, 2);"
+repurposed_variable,object-name.c,836,+,+,len = FALLBACK_DEFAULT_ABBREV,4,			len = FALLBACK_DEFAULT_ABBREV;
+repurposed_variable,object-name.c,883,-,+,,12,		switch (*path++) {
+repurposed_variable,object-name.c,979,+,+,len = at,6,					len = at;
+repurposed_variable,object-name.c,1052,-,+,,6,"					str = ""HEAD"";"
+repurposed_variable,object-name.c,1053,+,+,len = strlen(str),5,				len = strlen(str);
+repurposed_variable,object-name.c,1105,+,+,--idx,8,		if (!--idx) {
+repurposed_variable,object-name.c,1130,+,+,generation--,9,	while (generation--) {
+repurposed_variable,object-name.c,1143,+,+,namelen = strlen(name),3,		namelen = strlen(name);
+repurposed_variable,object-name.c,1150,-,+,,4,			o = ((struct tag*) o)->tagged;
+repurposed_variable,object-name.c,1152,-,+,,4,"			o = &(repo_get_commit_tree(r, ((struct commit *)o))->object);"
+repurposed_variable,object-name.c,1209,+,+,lookup_flags &= ~GET_OID_DISAMBIGUATORS,2,	lookup_flags &= ~GET_OID_DISAMBIGUATORS;
+repurposed_variable,object-name.c,1211,+,+,lookup_flags |= GET_OID_COMMITTISH,3,		lookup_flags |= GET_OID_COMMITTISH;
+repurposed_variable,object-name.c,1213,+,+,lookup_flags |= GET_OID_TREEISH,3,		lookup_flags |= GET_OID_TREEISH;
+repurposed_variable,object-name.c,1276,+,+,len -= cp - name,5,				len -= cp - name;
+repurposed_variable,object-name.c,1397,-,+,,3,		prefix++;
+repurposed_variable,object-name.c,1400,-,+,,4,			prefix++;
+repurposed_variable,object-name.c,1682,+,+,namelen = strlen(name),3,		namelen = strlen(name);
+repurposed_variable,object-name.c,1857,-,+,,3,"		prefix = """";"
+repurposed_variable,object-name.c,1893,-,+,,3,"		prefix = """";"
+repurposed_variable,object-store.h,8,-,+,,,"KHASH_INIT(odb_path_map, const char * /* key: odb_path */,
+	struct object_directory *, 1, fspathhash, fspatheq)"
+repurposed_variable,object.c,48,+,+,len = strlen(str),3,		len = strlen(str);
+repurposed_variable,object.c,354,-,+,,3,		list = list->next;
+repurposed_variable,object.h,203,-,+,,15,	while ((c = *str++) != ' ') {
+repurposed_variable,obstack.c,144,+,-,alignment = DEFAULT_ALIGNMENT,,
+repurposed_variable,obstack.c,159,+,-,size = 4096 - extra,,
+repurposed_variable,obstack.c,191,+,-,alignment = DEFAULT_ALIGNMENT,,
+repurposed_variable,obstack.c,206,+,-,size = 4096 - extra,,
+repurposed_variable,oid-array.h,131,+,+,cur++,3,		cur++;
+repurposed_variable,oidset.h,108,-,+,,42,	for (; iter->iter != kh_end(iter->set); iter->iter++) {
+repurposed_variable,oidset.h,110,-,+,,30,"			return &kh_key(iter->set, iter->iter++);"
+repurposed_variable,pack-bitmap-write.c,218,-,+,,,"define_commit_slab(bb_data, struct bb_commit);"
+repurposed_variable,pack-bitmap.c,633,-,+,,2,	p += sizeof(uint32_t);
+repurposed_variable,pack-bitmap.c,635,-,+,,2,	p += sizeof(uint64_t);
+repurposed_variable,pack-bitmap.c,1054,-,+,,3,		base = bitmap_new();
+repurposed_variable,pack-bitmap.c,1220,-,+,,3,		roots = roots->next;
+repurposed_variable,pack-bitmap.c,1238,-,+,,2,	roots = not_mapped;
+repurposed_variable,pack-bitmap.c,1402,-,+,,3,		roots = roots->next;
+repurposed_variable,pack-bitmap.c,2053,+,+,multi_pack_reuse = 0,3,		multi_pack_reuse = 0;
+repurposed_variable,pack-check.c,39,+,+,offset += avail,3,		offset += avail;
+repurposed_variable,pack-check.c,40,+,+,len -= avail,3,		len -= avail;
+repurposed_variable,pack-objects.c,33,+,+,v = v - 1,2,	v = v - 1;
+repurposed_variable,pack-objects.c,34,+,-,v |= v >> 1,,
+repurposed_variable,pack-objects.c,35,+,-,v |= v >> 2,,
+repurposed_variable,pack-objects.c,36,+,-,v |= v >> 4,,
+repurposed_variable,pack-objects.c,37,+,-,v |= v >> 8,,
+repurposed_variable,pack-objects.c,38,+,-,v |= v >> 16,,
+repurposed_variable,pack-objects.c,409,+,+,offset += stream.next_in - in,3,		offset += stream.next_in - in;
+repurposed_variable,pack-objects.c,431,+,+,offset += avail,3,		offset += avail;
+repurposed_variable,pack-objects.c,432,+,+,len -= avail,3,		len -= avail;
+repurposed_variable,pack-objects.c,826,-,+,,4,			e = DELTA_CHILD(e);
+repurposed_variable,pack-objects.c,831,-,+,,5,				e = DELTA_SIBLING(e);
+repurposed_variable,pack-objects.c,835,-,+,,4,			e = DELTA(e);
+repurposed_variable,pack-objects.c,839,-,+,,5,				e = DELTA(e);
+repurposed_variable,pack-objects.c,846,-,+,,4,			e = DELTA_SIBLING(e);
+repurposed_variable,pack-objects.c,1834,-,+,,4,			tree = pbase_tree_get(&entry.oid);
+repurposed_variable,pack-objects.c,2756,-,+,,12,		entry = *list++;
+repurposed_variable,pack-objects.c,3007,-,+,,3,		list += sub_size;
+repurposed_variable,pack-objects.c,3008,+,+,list_size -= sub_size,3,		list_size -= sub_size;
+repurposed_variable,pack-objects.c,3053,-,+,,4,			list = victim->list + victim->list_size - sub_size;
+repurposed_variable,pack-objects.c,3056,-,+,,5,				list++;
+repurposed_variable,pack-objects.c,3067,-,+,,5,				list -= sub_size;
+repurposed_variable,pack-objects.c,4085,-,+,,3,		oid = &peeled;
+repurposed_variable,pack-objects.c,4422,+,+,"argc = parse_options(argc, argv, prefix, pack_objects_options, pack_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, pack_objects_options,
+			     pack_usage, 0);"
+repurposed_variable,pack-objects.c,4427,+,-,argc--,,
+repurposed_variable,pack-objects.h,202,-,+,,15,	while ((c = *name++) != 0) {
+repurposed_variable,pack-redundant.c,165,-,+,,6,					hint = NULL;
+repurposed_variable,pack-redundant.c,213,-,+,,3,		pl = pl->next;
+repurposed_variable,pack-redundant.c,330,-,+,,3,		pl = pl->next;
+repurposed_variable,pack-redundant.c,341,-,+,,3,		pl = pl->next;
+repurposed_variable,pack-write.c,84,-,+,,4,"			index_name = strbuf_detach(&tmp_file, NULL);"
+repurposed_variable,pack-write.c,254,-,+,,4,"			rev_name = strbuf_detach(&tmp_file, NULL);"
+repurposed_variable,pack-write.c,404,+,+,partial_pack_offset -= sizeof (hdr),2,	partial_pack_offset -= sizeof(hdr);
+repurposed_variable,pack-write.c,427,+,+,partial_pack_offset -= n,3,		partial_pack_offset -= n;
+repurposed_variable,pack-write.c,440,+,+,partial_pack_offset = ~partial_pack_offset,4,			partial_pack_offset = ~partial_pack_offset;
+repurposed_variable,pack-write.c,441,+,+,"partial_pack_offset -= MSB(partial_pack_offset, 1)",4,"			partial_pack_offset -= MSB(partial_pack_offset, 1);"
+repurposed_variable,pack-write.c,498,+,+,size >>= 4,2,	size >>= 4;
+repurposed_variable,pack-write.c,502,-,+,,4,		*hdr++ = c | 0x80;
+repurposed_variable,pack-write.c,504,+,+,size >>= 7,3,		size >>= 7;
+repurposed_variable,packed-backend.c,426,-,+,,3,		p--;
+repurposed_variable,packed-backend.c,436,-,+,,9,	while (++p < end && (p[-1] != '\n' || p[0] == '^'))
+repurposed_variable,packfile.c,692,+,+,offset -= win->offset,2,	offset -= win->offset;
+repurposed_variable,packfile.c,778,+,+,first++,23,	for (; first < last; first++)
+repurposed_variable,packfile.c,949,-,+,,,"DEFINE_LIST_SORT(static, sort_packs, struct packed_git, next);"
+repurposed_variable,packfile.c,1137,+,+,curpos += stream.next_in - in,3,		curpos += stream.next_in - in;
+repurposed_variable,packfile.c,1319,+,+,curpos = obj_offset = base_offset,12,		curpos = obj_offset = base_offset;
+repurposed_variable,packfile.c,1320,+,+,"type = unpack_object_header(p, w_curs, &curpos, &size)",3,"		type = unpack_object_header(p, w_curs, &curpos, &size);"
+repurposed_variable,packfile.c,1324,+,+,"type = retry_bad_packed_offset(r, p, base_offset)",4,"			type = retry_bad_packed_offset(r, p, base_offset);"
+repurposed_variable,packfile.c,1341,+,+,type = OBJ_BAD,3,		type = OBJ_BAD;
+repurposed_variable,packfile.c,1351,+,+,obj_offset = poi_stack[--poi_stack_nr],3,		obj_offset = poi_stack[--poi_stack_nr];
+repurposed_variable,packfile.c,1352,+,+,"type = retry_bad_packed_offset(r, p, obj_offset)",3,"		type = retry_bad_packed_offset(r, p, obj_offset);"
+repurposed_variable,packfile.c,1356,+,+,type = OBJ_BAD,2,	type = OBJ_BAD;
+repurposed_variable,packfile.c,1638,+,+,curpos += stream.next_in - in,3,		curpos += stream.next_in - in;
+repurposed_variable,packfile.c,1752,+,+,obj_offset = base_offset,12,		curpos = obj_offset = base_offset;
+repurposed_variable,packfile.c,1821,+,+,obj_offset = delta_stack[i].obj_offset,3,		obj_offset = delta_stack[i].obj_offset;
+repurposed_variable,pager.c,222,+,+,number /= 10,3,		number /= 10;
+repurposed_variable,parallel-checkout.c,666,+,+,num_workers = parallel_checkout.nr,3,		num_workers = parallel_checkout.nr;
+repurposed_variable,parse-options-cb.c,43,-,+,,3,"		arg = ""never"";"
+repurposed_variable,parse-options-cb.c,55,-,+,,3,"		arg = unset ? ""never"" : (const char *)opt->defval;"
+repurposed_variable,parse-options-cb.c,172,-,+,,41,	for (; opt && opt->type != OPTION_END; opt++)
+repurposed_variable,parse-options.c,223,-,+,,35,	for (; opts->type != OPTION_END; opts++) {
+repurposed_variable,parse-options.c,292,-,+,,38,	for (; options->type != OPTION_END; options++) {
+repurposed_variable,parse-options.c,327,-,+,,21,"		if (!strcmp(it, *(array++)))"
+repurposed_variable,parse-options.c,398,-,+,,38,	for (; options->type != OPTION_END; options++) {
+repurposed_variable,parse-options.c,461,-,+,,38,	for (; options->type != OPTION_END; options++) {
+repurposed_variable,parse-options.c,473,-,+,,38,	for (; options->type != OPTION_END; options++)
+repurposed_variable,parse-options.c,493,-,+,,38,	for (; options->type != OPTION_END; options++) {
+repurposed_variable,parse-options.c,509,-,+,,35,	for (; opts->type != OPTION_END; opts++) {
+repurposed_variable,parse-options.c,577,-,+,,38,	for (; options->type != OPTION_END; options++)
+repurposed_variable,parse-options.c,591,-,+,,3,		ctx->argc--;
+repurposed_variable,parse-options.c,592,-,+,,3,		ctx->argv++;
+repurposed_variable,parse-options.c,637,-,+,,35,	for (; opts->type != OPTION_END; opts++) {
+repurposed_variable,parse-options.c,676,+,+,nr_noopts++,4,			nr_noopts++;
+repurposed_variable,parse-options.c,686,-,+,,35,	for (; opts->type != OPTION_END; opts++) {
+repurposed_variable,parse-options.c,1025,-,+,,3,		options = real_options;
+repurposed_variable,parse-options.c,1099,-,+,,35,	for (; opts->type != OPTION_END; opts++) {
+repurposed_variable,parse-options.c,1162,-,+,,24,		const char *str = _(*usagestr++);
+repurposed_variable,parse-options.c,1190,-,+,,35,	for (; opts->type != OPTION_END; opts++) {
+repurposed_variable,patch-id.c,237,+,+,"argc = parse_options(argc, argv, prefix, builtin_patch_id_options, patch_id_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, builtin_patch_id_options,
+			     patch_id_usage, 0);"
+repurposed_variable,path.c,48,-,+,,4,			path++;
+repurposed_variable,path.c,83,+,-,len--,,
+repurposed_variable,path.c,84,+,+,len--,3,"		len--;	 /* keep one char, to be replaced with '/'  */"
+repurposed_variable,path.c,283,-,+,,4,			key++;
+repurposed_variable,path.c,291,-,+,,2,	key += i;
+repurposed_variable,path.c,302,-,+,,3,		key++;
+repurposed_variable,path.c,821,+,-,mode = (mode & ~0777) | tweak,,
+repurposed_variable,path.c,823,+,-,mode |= tweak,,
+repurposed_variable,path.c,839,-,+,,3,		path = validated_path.buf;
+repurposed_variable,path.c,845,-,+,,4,			path = gitfile;
+repurposed_variable,path.c,874,+,+,mode = (mode & ~0777) | tweak,3,		mode = (mode & ~0777) | tweak;
+repurposed_variable,path.c,876,+,+,mode |= tweak,3,		mode |= tweak;
+repurposed_variable,path.c,1005,-,+,,2,	in += in_off;
+repurposed_variable,path.c,1119,-,+,,13,		char c = *src++;
+repurposed_variable,path.c,1122,-,+,,4,		*dst++ = c;
+repurposed_variable,path.c,1127,-,+,,3,		src++;
+repurposed_variable,path.c,1143,-,+,,5,				src++;
+repurposed_variable,path.c,1146,-,+,,5,				src += 2;
+repurposed_variable,path.c,1148,-,+,,6,					src++;
+repurposed_variable,path.c,1153,-,+,,6,					src += 2;
+repurposed_variable,path.c,1157,-,+,,6,					src += 3;
+repurposed_variable,path.c,1159,-,+,,7,						src++;
+repurposed_variable,path.c,1166,-,+,,16,		while ((c = *src++) != '\0' && !is_dir_sep(c))
+repurposed_variable,path.c,1167,-,+,,5,			*dst++ = c;
+repurposed_variable,path.c,1169,-,+,,5,			*dst++ = '/';
+repurposed_variable,path.c,1171,-,+,,10,				c = *src++;
+repurposed_variable,path.c,1172,-,+,,4,			src--;
+repurposed_variable,path.c,1182,-,+,,3,		dst--;	/* go to trailing '/' */
+repurposed_variable,path.c,1187,-,+,,4,			dst--;
+repurposed_variable,path.c,1214,+,-,len--,,
+repurposed_variable,path.c,1267,+,+,len--,3,		len--;
+repurposed_variable,path.c,1336,-,+,,2,	p++;
+repurposed_variable,path.c,1414,-,+,,8,	c = *(name++);
+repurposed_variable,path.c,1417,-,+,,15,		if (((c = *(name++)) != 'g' && c != 'G') ||
+repurposed_variable,path.c,1418,-,+,,15,		    ((c = *(name++)) != 'i' && c != 'I') ||
+repurposed_variable,path.c,1419,-,+,,15,		    ((c = *(name++)) != 't' && c != 'T'))
+repurposed_variable,path.c,1423,-,+,,15,		if (((c = *(name++)) != 'i' && c != 'I') ||
+repurposed_variable,path.c,1424,-,+,,15,		    ((c = *(name++)) != 't' && c != 'T') ||
+repurposed_variable,path.c,1425,-,+,,9,		    *(name++) != '~' ||
+repurposed_variable,path.c,1426,-,+,,9,		    *(name++) != '1')
+repurposed_variable,path.c,1432,-,+,,9,		c = *(name++);
+repurposed_variable,pathspec.c,483,+,+,prefixlen = pathspec_prefix,3,		prefixlen = pathspec_prefix;
+repurposed_variable,pathspec.c,486,+,+,prefixlen = 0,3,		prefixlen = 0;
+repurposed_variable,pathspec.c,770,-,+,,3,"		name = to_free = xmemdupz(name, namelen);"
+repurposed_variable,pkt-line.c,61,-,+,,3,"		buf = ""PACK ..."";"
+repurposed_variable,pkt-line.c,62,+,+,len = strlen(buf),3,		len = strlen(buf);
+repurposed_variable,pkt-line.c,393,-,+,,2,	buffer += 1;
+repurposed_variable,precompose_utf8.c,35,+,-,maxlen--,,
+repurposed_variable,pretty.c,219,-,+,,13,		char c = *msg++;
+repurposed_variable,pretty.c,240,-,+,,16,	while ((ch = *s++) != '\0') {
+repurposed_variable,pretty.c,630,-,+,,3,		msg += linelen;
+repurposed_variable,pretty.c,973,-,+,,3,		msg += linelen;
+repurposed_variable,pretty.c,1799,-,+,,3,		placeholder += consumed;
+repurposed_variable,pretty.c,1802,-,+,,3,		placeholder++;
+repurposed_variable,pretty.c,1904,-,+,,3,		placeholder++;
+repurposed_variable,pretty.c,1943,-,+,,3,		fmt = user_format;
+repurposed_variable,pretty.c,1945,-,+,,10,"	while ((fmt = strchr(fmt, '%'))) {"
+repurposed_variable,pretty.c,1946,-,+,,3,		fmt++;
+repurposed_variable,pretty.c,1951,-,+,,4,			fmt++;
+repurposed_variable,pretty.c,1992,-,+,,4,			format += len;
+repurposed_variable,pretty.c,2108,+,+,need_8bit_cte = 1,5,				need_8bit_cte = 1;
+repurposed_variable,pretty.c,2181,+,+,linelen -= tab + 1 - line,3,		linelen -= tab + 1 - line;
+repurposed_variable,pretty.c,2182,-,+,,3,		line = tab + 1;
+repurposed_variable,prune-packed.c,22,+,+,"argc = parse_options(argc, argv, prefix, prune_packed_options, prune_packed_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, prune_packed_options,
+			     prune_packed_usage, 0);"
+repurposed_variable,prune.c,171,+,+,"argc = parse_options(argc, argv, prefix, options, prune_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, prune_usage, 0);"
+repurposed_variable,prune.c,176,+,-,argc--,,
+repurposed_variable,prune.c,178,-,+,,23,		const char *name = *argv++;
+repurposed_variable,pull.c,501,-,+,,12,		*repo = *argv++;
+repurposed_variable,pull.c,502,+,+,argc--,3,		argc--;
+repurposed_variable,pull.c,856,-,+,,4,			fork_point = NULL;
+repurposed_variable,pull.c,1000,+,+,"argc = parse_options(argc, argv, prefix, pull_options, pull_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, pull_options, pull_usage, 0);"
+repurposed_variable,push.c,442,+,+,flags |= TRANSPORT_PUSH_OPTIONS,3,		flags |= TRANSPORT_PUSH_OPTIONS;
+repurposed_variable,push.c,630,+,+,"argc = parse_options(argc, argv, prefix, options, push_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, push_usage, 0);"
+repurposed_variable,quote.c,37,-,+,,3,		src += len;
+repurposed_variable,quote.c,40,-,+,,23,"			strbuf_addch(dst, *src++);"
+repurposed_variable,quote.c,301,+,+,maxlen -= len + 1,4,			maxlen -= len + 1;
+repurposed_variable,quote.c,358,-,+,,2,"	name = relative_path(name, prefix, &sb);"
+repurposed_variable,quote.c,406,-,+,,7,"	if (*quoted++ != '""')"
+repurposed_variable,quote.c,412,-,+,,3,		quoted += len;
+repurposed_variable,quote.c,414,-,+,,12,		switch (*quoted++) {
+repurposed_variable,quote.c,425,-,+,,18,		switch ((ch = *quoted++)) {
+repurposed_variable,quote.c,440,-,+,,15,			if ((ch = *quoted++) < '0' || '7' < ch)
+repurposed_variable,quote.c,443,-,+,,15,			if ((ch = *quoted++) < '0' || '7' < ch)
+repurposed_variable,quote.c,468,-,+,,15,	while ((c = *src++)) {
+repurposed_variable,quote.c,501,-,+,,15,	while ((c = *src++)) {
+repurposed_variable,quote.c,519,-,+,,15,	while ((c = *src++)) {
+repurposed_variable,quote.c,556,-,+,,21,"		strbuf_addch(sb, *src++);"
+repurposed_variable,quote.c,560,-,+,,21,"		strbuf_addch(sb, *src++);"
+repurposed_variable,quote.c,562,-,+,,15,	while ((c = *src++)) {
+repurposed_variable,range-diff.c,52,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_range_diff_usage, PARSE_OPT_KEEP_DASHDASH)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     builtin_range_diff_usage, PARSE_OPT_KEEP_DASHDASH);"
+repurposed_variable,read-cache.c,958,-,+,,4,			rest += 3;
+repurposed_variable,read-cache.c,1010,-,+,,9,			c = *path++;
+repurposed_variable,read-cache.c,1030,-,+,,8,		c = *path++;
+repurposed_variable,read-cache.c,1047,+,+,pos++,41,		struct cache_entry *p = istate->cache[pos++];
+repurposed_variable,read-cache.c,1048,+,-,pos++,,
+repurposed_variable,read-cache.c,1062,+,+,--pos,33,"		remove_index_entry_at(istate, --pos);"
+repurposed_variable,read-cache.c,1063,+,-,--pos,,
+repurposed_variable,read-cache.c,1168,+,+,"pos = index_name_stage_pos(istate, name, len, stage, EXPAND_SPARSE)",3,"		pos = index_name_stage_pos(istate, name, len, stage, EXPAND_SPARSE);"
+repurposed_variable,read-cache.c,1169,+,-,"pos = index_name_stage_pos(istate, name, len, stage, EXPAND_SPARSE)",,
+repurposed_variable,read-cache.c,1187,+,+,pos = -pos - 1,4,			pos = -pos-1;
+repurposed_variable,read-cache.c,1188,+,-,pos = -pos - 1,,
+repurposed_variable,read-cache.c,1208,+,+,pos++,4,			pos++;
+repurposed_variable,read-cache.c,1209,+,-,pos++,,
+repurposed_variable,read-cache.c,2056,-,+,,3,		previous_ce = ce;
+repurposed_variable,read-cache.c,2136,+,+,nr_threads = ieot->nr,3,		nr_threads = ieot->nr;
+repurposed_variable,read-cache.c,2137,+,-,nr_threads = ieot->nr,,
+repurposed_variable,read-cache.c,2567,+,+,ext = htonl(ext),3,		ext = htonl(ext);
+repurposed_variable,read-cache.c,2568,+,+,ext = htonl(ext),3,		sz = htonl(sz);
+repurposed_variable,read-cache.c,2569,+,-,sz = htonl(sz),,
+repurposed_variable,read-cache.c,3430,+,+,namelen--,3,		namelen--;
+repurposed_variable,read-cache.c,3431,+,-,namelen--,,
+repurposed_variable,read-cache.c,3647,+,+,offset += 8,3,		offset += 8;
+repurposed_variable,read-cache.c,3648,+,+,offset += 8,3,		offset += extsize;
+repurposed_variable,read-cache.c,3649,+,-,offset += extsize,,
+repurposed_variable,read-tree.c,166,+,+,"argc = parse_options(argc, argv, cmd_prefix, read_tree_options, read_tree_usage, 0)",2,"	argc = parse_options(argc, argv, cmd_prefix, read_tree_options,
+			     read_tree_usage, 0);"
+repurposed_variable,reader.c,66,+,+,sz = r->size - off,3,		sz = r->size - off;
+repurposed_variable,reader.c,254,-,+,,3,		data += header_size(version);
+repurposed_variable,reader.c,395,+,-,typ = BLOCK_TYPE_INDEX,,
+repurposed_variable,reader.c,416,+,+,typ = BLOCK_TYPE_INDEX,3,		typ = BLOCK_TYPE_INDEX;
+repurposed_variable,rebase-interactive.c,164,-,+,,,"define_commit_slab(commit_seen, unsigned char);"
+repurposed_variable,rebase.c,839,-,+,,3,		to = to->parents->item;
+repurposed_variable,rebase.c,1222,+,+,"argc = parse_options(argc, argv, prefix, builtin_rebase_options, builtin_rebase_usage, 0)",2,"	argc = parse_options(argc, argv, prefix,
+			     builtin_rebase_options,
+			     builtin_rebase_usage, 0);"
+repurposed_variable,rebase.c,1582,+,-,argc--,,
+repurposed_variable,rebase.c,1583,-,+,,4,			argv++;
+repurposed_variable,receive-pack.c,390,-,+,,4,			prefix++;
+repurposed_variable,receive-pack.c,392,-,+,,3,		prefix++;
+repurposed_variable,receive-pack.c,951,-,+,,15,	for (; list; list = list->next)
+repurposed_variable,receive-pack.c,1662,-,+,,2,	dst_name = strip_namespace(dst_name);
+repurposed_variable,receive-pack.c,2042,-,+,,3,		commands = next;
+repurposed_variable,receive-pack.c,2063,-,+,,3,"		tail = queue_command(tail, boc, eol ? eol - boc : eoc - boc);"
+repurposed_variable,receive-pack.c,2502,+,+,"argc = parse_options(argc, argv, prefix, options, receive_pack_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, receive_pack_usage, 0);"
+repurposed_variable,record.c,51,+,+,val >>= 7,3,		val >>= 7;
+repurposed_variable,record.c,55,+,+,val--,3,		val--;
+repurposed_variable,record.c,976,-,+,,3,		a = empty;
+repurposed_variable,record.c,979,-,+,,3,		b = empty;
+repurposed_variable,ref-cache.c,181,-,+,,4,			dir = NULL;
+repurposed_variable,ref-cache.c,184,-,+,,3,		dir = subdir;
+repurposed_variable,ref-cache.c,194,-,+,,2,"	dir = find_containing_dir(dir, refname);"
+repurposed_variable,ref-cache.c,275,-,+,,3,		dirname++;
+repurposed_variable,ref-cache.c,276,-,+,,3,		prefix++;
+repurposed_variable,ref-filter.c,772,-,+,,4,			arg++;
+repurposed_variable,ref-filter.c,1329,-,+,,5,				cp++; /* skip over two % */
+repurposed_variable,ref-filter.c,1332,-,+,,3,		cp++;
+repurposed_variable,ref-filter.c,1511,-,+,,3,		buf = eol;
+repurposed_variable,ref-filter.c,1830,-,+,,3,		buf = eol;
+repurposed_variable,ref-filter.c,1834,-,+,,3,		buf++;
+repurposed_variable,ref-filter.c,1848,-,+,,2,	buf = eol;
+repurposed_variable,ref-filter.c,2062,-,+,,4,		*dst++ = *src++;
+repurposed_variable,ref-filter.c,2568,-,+,,20,	for (; *patterns; patterns++) {
+repurposed_variable,ref-filter.c,2590,-,+,,19,	for (; *pattern; pattern++) {
+repurposed_variable,ref-filter.c,3283,-,+,,18,	for (; sorting; sorting = sorting->next) {
+repurposed_variable,ref-filter.c,3304,-,+,,5,				cp++;
+repurposed_variable,ref-filter.c,3309,-,+,,6,					cp += 3;
+repurposed_variable,ref-filter.c,3315,-,+,,3,		cp++;
+repurposed_variable,ref-filter.c,3433,-,+,,3,		arg++;
+repurposed_variable,ref-filter.c,3465,-,+,,3,		sorting = next;
+repurposed_variable,reflog.c,221,-,+,,3,"		commit = lookup_commit_reference_gently(the_repository, oid,
+							1);"
+repurposed_variable,reflog.c,263,+,+,"argc = parse_options(argc, argv, prefix, options, reflog_list_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, reflog_list_usage, 0);"
+repurposed_variable,reflog.c,318,+,+,"argc = parse_options(argc, argv, prefix, options, reflog_expire_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, reflog_expire_usage, 0);"
+repurposed_variable,reflog.c,416,+,+,"argc = parse_options(argc, argv, prefix, options, reflog_delete_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, reflog_delete_usage, 0);"
+repurposed_variable,reflog.c,434,+,+,"argc = parse_options(argc, argv, prefix, options, reflog_exists_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, reflog_exists_usage,
+			     0);"
+repurposed_variable,reflog.c,462,+,+,"argc = parse_options(argc, argv, prefix, options, reflog_usage, PARSE_OPT_SUBCOMMAND_OPTIONAL | PARSE_OPT_KEEP_DASHDASH | PARSE_OPT_KEEP_ARGV0 | PARSE_OPT_KEEP_UNKNOWN_OPT)",2,"	argc = parse_options(argc, argv, prefix, options, reflog_usage,
+			     PARSE_OPT_SUBCOMMAND_OPTIONAL |
+			     PARSE_OPT_KEEP_DASHDASH | PARSE_OPT_KEEP_ARGV0 |
+			     PARSE_OPT_KEEP_UNKNOWN_OPT);"
+repurposed_variable,refs.c,299,-,+,,3,		refname += component_len + 1;
+repurposed_variable,refs.c,352,-,+,,3,		refname++;
+repurposed_variable,refs.c,888,-,+,,3,		worktree_name = &name_dummy;
+repurposed_variable,refs.c,890,-,+,,3,		worktree_name_length = &name_length_dummy;
+repurposed_variable,refs.c,892,-,+,,3,		bare_refname = &ref_dummy;
+repurposed_variable,refs.c,970,-,+,,15,	while ((c = *msg++)) {
+repurposed_variable,refs.c,1220,+,-,flags &= REF_TRANSACTION_UPDATE_ALLOWED_FLAGS,,
+repurposed_variable,refs.c,1222,+,-,flags |= (new_oid ? REF_HAVE_NEW : 0) | (old_oid ? REF_HAVE_OLD : 0),,
+repurposed_variable,refs.c,1223,+,-,flags |= (new_target ? REF_HAVE_NEW : 0) | (old_target ? REF_HAVE_OLD : 0),,
+repurposed_variable,refs.c,1257,+,+,flags &= REF_TRANSACTION_UPDATE_ALLOWED_FLAGS,2,	flags &= REF_TRANSACTION_UPDATE_ALLOWED_FLAGS;
+repurposed_variable,refs.c,1259,+,+,flags |= (new_oid ? REF_HAVE_NEW : 0) | (old_oid ? REF_HAVE_OLD : 0),2,	flags |= (new_oid ? REF_HAVE_NEW : 0) | (old_oid ? REF_HAVE_OLD : 0);
+repurposed_variable,refs.c,1260,+,+,flags |= (new_target ? REF_HAVE_NEW : 0) | (old_target ? REF_HAVE_OLD : 0),2,	flags |= (new_target ? REF_HAVE_NEW : 0) | (old_target ? REF_HAVE_OLD : 0);
+repurposed_variable,refs.c,1367,-,+,,8,		if (*refname++ != *rule++)
+repurposed_variable,refs.c,1547,+,-,flags |= DO_FOR_EACH_INCLUDE_BROKEN,,
+repurposed_variable,refs.c,1548,+,-,flags |= DO_FOR_EACH_OMIT_DANGLING_SYMREFS,,
+repurposed_variable,refs.c,1584,+,+,flags |= DO_FOR_EACH_INCLUDE_BROKEN,4,			flags |= DO_FOR_EACH_INCLUDE_BROKEN;
+repurposed_variable,refs.c,1585,+,+,flags |= DO_FOR_EACH_OMIT_DANGLING_SYMREFS,4,			flags |= DO_FOR_EACH_OMIT_DANGLING_SYMREFS;
+repurposed_variable,refs.c,1853,-,+,,3,		oid = &unused_oid;
+repurposed_variable,refs.c,1855,-,+,,3,		flags = &unused_flags;
+repurposed_variable,refs.c,1913,-,+,,3,		refname = sb_refname.buf;
+repurposed_variable,refs.c,2085,-,+,,3,"		submodule = to_free = xmemdupz(submodule, len);"
+repurposed_variable,refs.c,2651,-,+,,3,		update = update->parent_update;
+repurposed_variable,regcomp_enhanced.c,7,+,-,cflags |= REG_ENHANCED,,
+repurposed_variable,regexec.c,413,+,-,range = length - start,,
+repurposed_variable,regexec.c,415,+,-,range = -start,,
+repurposed_variable,regexec.c,643,+,-,nmatch -= extra_nmatch,,
+repurposed_variable,regexec.c,666,+,-,start = range = 0,,
+repurposed_variable,remote-curl.c,756,-,+,,4,			ptr += digits_remaining;
+repurposed_variable,remote-curl.c,757,+,+,size -= digits_remaining,4,			size -= digits_remaining;
+repurposed_variable,remote-curl.c,779,-,+,,4,			ptr += remaining;
+repurposed_variable,remote-curl.c,780,+,+,size -= remaining,4,			size -= remaining;
+repurposed_variable,remote-curl.c,824,-,+,,3,		results = &results_buf;
+repurposed_variable,remote.c,121,+,+,len = strlen(name),3,		len = strlen(name);
+repurposed_variable,remote.c,183,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_remote_add_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     builtin_remote_add_usage, 0);"
+repurposed_variable,remote.c,274,-,+,,3,		s++;
+repurposed_variable,remote.c,284,-,+,,2,"	key += strlen(""branch."");"
+repurposed_variable,remote.c,310,-,+,,3,		value = abbrev_branch(value);
+repurposed_variable,remote.c,315,-,+,,4,			value = abbrev_branch(space + 1);
+repurposed_variable,remote.c,539,-,+,,19,		if (is_dir_sep(*name++))
+repurposed_variable,remote.c,681,-,+,,3,"		name = get_default(remote_state, remote_state->current_branch,
+				   &name_given);"
+repurposed_variable,remote.c,708,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_remote_rename_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     builtin_remote_rename_usage, 0);"
+repurposed_variable,remote.c,794,-,+,,3,		ref_map = ref_map->next;
+repurposed_variable,remote.c,878,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_remote_rm_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     builtin_remote_rm_usage, 0);"
+repurposed_variable,remote.c,1072,-,+,,3,		ref = ref->next;
+repurposed_variable,remote.c,1094,-,+,,3,		ref = next;
+repurposed_variable,remote.c,1108,-,+,,37,	for (weak_match = match = 0; refs; refs = refs->next) {
+repurposed_variable,remote.c,1158,-,+,,3,		ref = ref->next;
+repurposed_variable,remote.c,1286,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_remote_show_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     builtin_remote_show_usage,
+			     0);"
+repurposed_variable,remote.c,1296,+,+,argc--,23,"	for (; argc; argc--, argv++) {"
+repurposed_variable,remote.c,1394,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_remote_sethead_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     builtin_remote_sethead_usage, 0);"
+repurposed_variable,remote.c,1495,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_remote_prune_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     builtin_remote_prune_usage, 0);"
+repurposed_variable,remote.c,1501,+,+,argc--,23,"	for (; argc; argc--, argv++)"
+repurposed_variable,remote.c,1529,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_remote_update_usage, PARSE_OPT_KEEP_ARGV0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     builtin_remote_update_usage,
+			     PARSE_OPT_KEEP_ARGV0);"
+repurposed_variable,remote.c,1569,-,+,,16,	for ( ; list; list = list->next)
+repurposed_variable,remote.c,1570,-,+,,20,	for (; *branches; branches++)
+repurposed_variable,remote.c,1577,-,+,,15,	for ( ; ref; ref = ref->next)
+repurposed_variable,remote.c,1608,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_remote_setbranches_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     builtin_remote_setbranches_usage, 0);"
+repurposed_variable,remote.c,1633,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_remote_geturl_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     builtin_remote_geturl_usage, 0);"
+repurposed_variable,remote.c,1694,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_remote_seturl_usage, PARSE_OPT_KEEP_ARGV0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     builtin_remote_seturl_usage,
+			     PARSE_OPT_KEEP_ARGV0);"
+repurposed_variable,remote.c,1783,+,+,"argc = parse_options(argc, argv, prefix, options, builtin_remote_usage, PARSE_OPT_SUBCOMMAND_OPTIONAL)",2,"	argc = parse_options(argc, argv, prefix, options, builtin_remote_usage,
+			     PARSE_OPT_SUBCOMMAND_OPTIONAL);"
+repurposed_variable,remote.c,2140,-,+,,15,	for (; list; list = list->next)
+repurposed_variable,remote.c,2863,-,+,,4,			url += 3;
+repurposed_variable,remote.c,2866,-,+,,4,			url += 2;
+repurposed_variable,repack.c,677,-,+,,3,		oid = &peeled;
+repurposed_variable,repack.c,1203,+,+,"argc = parse_options(argc, argv, prefix, builtin_repack_options, git_repack_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, builtin_repack_options,
+				git_repack_usage, 0);"
+repurposed_variable,replace.c,84,-,+,,3,"		pattern = ""*"";"
+repurposed_variable,replace.c,574,+,+,"argc = parse_options(argc, argv, prefix, options, git_replace_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, git_replace_usage, 0);"
+repurposed_variable,replay.c,302,+,+,"argc = parse_options(argc, argv, prefix, replay_options, replay_usage, PARSE_OPT_KEEP_ARGV0 | PARSE_OPT_KEEP_UNKNOWN_OPT)",2,"	argc = parse_options(argc, argv, prefix, replay_options, replay_usage,
+			     PARSE_OPT_KEEP_ARGV0 | PARSE_OPT_KEEP_UNKNOWN_OPT);"
+repurposed_variable,replay.c,330,+,-,"argc = setup_revisions(argc, argv, &revs, NULL)",,
+repurposed_variable,rerere.c,62,+,+,"argc = parse_options(argc, argv, prefix, options, rerere_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, rerere_usage, 0);"
+repurposed_variable,rerere.c,67,+,+,variant++,2,	variant++;
+repurposed_variable,rerere.c,343,+,+,marker_size--,9,	while (marker_size--)
+repurposed_variable,rerere.c,344,-,+,,8,		if (*buf++ != marker_char)
+repurposed_variable,rerere.c,523,+,+,i++,3,		i++;
+repurposed_variable,rerere.c,539,+,+,i++,3,		i++;
+repurposed_variable,reset.c,265,-,+,,4,"			argv++; /* reset to HEAD, possibly with paths */"
+repurposed_variable,reset.c,268,-,+,,4,			argv += 2;
+repurposed_variable,reset.c,282,-,+,,11,			rev = *argv++;
+repurposed_variable,reset.c,376,+,+,"argc = parse_options(argc, argv, prefix, options, git_reset_usage, PARSE_OPT_KEEP_DASHDASH)",2,"	argc = parse_options(argc, argv, prefix, options, git_reset_usage,
+						PARSE_OPT_KEEP_DASHDASH);"
+repurposed_variable,resolve-undo.c,77,+,+,size -= len,3,		size -= len;
+repurposed_variable,resolve-undo.c,78,-,+,,3,		data += len;
+repurposed_variable,resolve-undo.c,87,+,+,size -= len,4,			size -= len;
+repurposed_variable,resolve-undo.c,88,-,+,,4,			data += len;
+repurposed_variable,resolve-undo.c,97,+,+,size -= rawsz,4,			size -= rawsz;
+repurposed_variable,resolve-undo.c,98,-,+,,4,			data += rawsz;
+repurposed_variable,rev-list.c,582,+,+,"argc = setup_revisions(argc, argv, &revs, &s_r_opt)",2,"	argc = setup_revisions(argc, argv, &revs, &s_r_opt);"
+repurposed_variable,rev-parse.c,116,-,+,,17,		while ((ch = *arg++)) {
+repurposed_variable,rev-parse.c,412,-,+,,3,		s++;
+repurposed_variable,rev-parse.c,418,-,+,,13,	for (; *s; s++)
+repurposed_variable,rev-parse.c,449,+,+,"argc = parse_options(argc, argv, prefix, parseopt_opts, parseopt_usage, PARSE_OPT_KEEP_DASHDASH)",2,"	argc = parse_options(argc, argv, prefix, parseopt_opts, parseopt_usage,
+	                     PARSE_OPT_KEEP_DASHDASH);"
+repurposed_variable,rev-parse.c,542,+,-,"argc = parse_options(argc, argv, prefix, opts, usage, (keep_dashdash ? PARSE_OPT_KEEP_DASHDASH : 0) | (stop_at_non_option ? PARSE_OPT_STOP_AT_NON_OPTION : 0) | PARSE_OPT_SHELL_EVAL)",,
+repurposed_variable,rev-parse.c,592,-,+,,8,		if (*arg++ == '=') {
+repurposed_variable,rev-parse.c,644,-,+,,3,		prefix = cwd = xgetcwd();
+repurposed_variable,rev-parse.c,658,-,+,,4,			path = realbuf.buf;
+repurposed_variable,rev-parse.c,662,-,+,,4,			prefix = prefixbuf.buf;
+repurposed_variable,rev-parse.c,751,-,+,,4,			prefix = setup_git_directory();
+repurposed_variable,rev-parse.c,812,-,+,,5,				prefix = argv[++i];
+repurposed_variable,revert.c,159,+,+,"argc = parse_options(argc, argv, prefix, options, usage_str, PARSE_OPT_KEEP_ARGV0 | PARSE_OPT_KEEP_UNKNOWN_OPT)",2,"	argc = parse_options(argc, argv, prefix, options, usage_str,
+			PARSE_OPT_KEEP_ARGV0 |
+			PARSE_OPT_KEEP_UNKNOWN_OPT);"
+repurposed_variable,revert.c,236,+,-,"argc = setup_revisions(argc, argv, opts->revs, &s_r_opt)",,
+repurposed_variable,revision.c,54,-,+,,,"implement_shared_commit_slab(revision_sources, char *);"
+repurposed_variable,revision.c,1552,-,+,,3,		commit_list = commit_list->next;
+repurposed_variable,revision.c,1899,+,+,flags ^= UNINTERESTING | BOTTOM,3,		flags ^= UNINTERESTING | BOTTOM;
+repurposed_variable,revision.c,1971,-,+,,3,		commit_list = commit_list->next;
+repurposed_variable,revision.c,2165,+,+,flags = flags & UNINTERESTING ? flags | BOTTOM : flags & ~BOTTOM,2,	flags = flags & UNINTERESTING ? flags | BOTTOM : flags & ~BOTTOM;
+repurposed_variable,revision.c,2957,+,+,argc = i,4,			argc = i;
+repurposed_variable,revision.c,3424,-,+,,4,"			tail = &commit_list_insert(p->item, tail)->next;"
+repurposed_variable,revision.c,3431,-,+,,3,"		tail = &commit_list_insert(commit, tail)->next;"
+repurposed_variable,revision.c,3575,-,+,,,"define_commit_slab(indegree_slab, int);"
+repurposed_variable,revision.c,3576,-,+,,,"define_commit_slab(author_date_slab, timestamp_t);"
+repurposed_variable,revision.c,3938,-,+,,4,			list = &p->next;
+repurposed_variable,revision.c,3941,-,+,,4,			list = &p->next; /* skip newly added item */
+repurposed_variable,revision.c,4131,-,+,,,"define_commit_slab(saved_parents, struct commit_list *);"
+repurposed_variable,rm.c,273,+,+,"argc = parse_options(argc, argv, prefix, builtin_rm_options, builtin_rm_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, builtin_rm_options,
+			     builtin_rm_usage, 0);"
+repurposed_variable,sane-ctype.h,51,+,+,x = (x & ~0x20) | high,3,		x = (x & ~0x20) | high;
+repurposed_variable,scalar.c,435,+,+,"argc = parse_options(argc, argv, NULL, clone_options, clone_usage, 0)",2,"	argc = parse_options(argc, argv, NULL, clone_options, clone_usage, 0);"
+repurposed_variable,scalar.c,563,+,+,"argc = parse_options(argc, argv, NULL, options, usage, 0)",2,"	argc = parse_options(argc, argv, NULL, options,
+			     usage, 0);"
+repurposed_variable,scalar.c,596,+,+,"argc = parse_options(argc, argv, NULL, options, usage, 0)",2,"	argc = parse_options(argc, argv, NULL, options,
+			     usage, 0);"
+repurposed_variable,scalar.c,650,+,+,"argc = parse_options(argc, argv, NULL, options, usage, 0)",2,"	argc = parse_options(argc, argv, NULL, options,
+			     usage, 0);"
+repurposed_variable,scalar.c,766,+,+,"argc = parse_options(argc, argv, NULL, options, usagestr, 0)",2,"	argc = parse_options(argc, argv, NULL, options,
+			     usagestr, 0);"
+repurposed_variable,scalar.c,784,+,-,argc--,,
+repurposed_variable,scalar.c,785,-,+,,2,	argv++;
+repurposed_variable,scalar.c,815,+,+,"argc = parse_options(argc, argv, NULL, options, usage, 0)",2,"	argc = parse_options(argc, argv, NULL, options,
+			     usage, 0);"
+repurposed_variable,scalar.c,864,+,+,"argc = parse_options(argc, argv, NULL, options, usage, 0)",2,"	argc = parse_options(argc, argv, NULL, options,
+			     usage, 0);"
+repurposed_variable,scalar.c,894,+,+,"argc = parse_options(argc, argv, NULL, options, usage, 0)",2,"	argc = parse_options(argc, argv, NULL, options,
+			     usage, 0);"
+repurposed_variable,scalar.c,918,+,+,"argc = parse_options(argc, argv, NULL, options, usage, 0)",2,"	argc = parse_options(argc, argv, NULL, options,
+			     usage, 0);"
+repurposed_variable,scalar.c,960,+,+,argc -= 2,4,			argc -= 2;
+repurposed_variable,scalar.c,961,-,+,,4,			argv += 2;
+repurposed_variable,scalar.c,966,+,+,argc -= 2,4,			argc -= 2;
+repurposed_variable,scalar.c,967,-,+,,4,			argv += 2;
+repurposed_variable,scalar.c,973,-,+,,3,		argv++;
+repurposed_variable,scalar.c,974,+,+,argc--,3,		argc--;
+repurposed_variable,send-pack.c,33,-,+,,14,	for (; ref; ref = ref->next) {
+repurposed_variable,send-pack.c,114,-,+,,3,		refs = refs->next;
+repurposed_variable,send-pack.c,212,+,+,"argc = parse_options(argc, argv, prefix, options, send_pack_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, send_pack_usage, 0);"
+repurposed_variable,sequencer.c,891,-,+,,4,			message = eol + 1;
+repurposed_variable,sequencer.c,900,-,+,,25,"			strbuf_addch(&buf, *(message++));"
+repurposed_variable,sequencer.c,902,-,+,,34,"			strbuf_addf(&buf, ""'\\%c'"", *(message++));"
+repurposed_variable,sequencer.c,908,-,+,,25,"			strbuf_addch(&buf, *(message++));"
+repurposed_variable,sequencer.c,910,-,+,,34,"			strbuf_addf(&buf, ""'\\%c'"", *(message++));"
+repurposed_variable,sequencer.c,914,-,+,,25,"			strbuf_addch(&buf, *(message++));"
+repurposed_variable,sequencer.c,916,-,+,,34,"			strbuf_addf(&buf, ""'\\%c'"", *(message++));"
+repurposed_variable,sequencer.c,942,-,+,,3,		buf = np + (*np == '\n');
+repurposed_variable,sequencer.c,1569,-,+,,4,			msg = &commit_msg;
+repurposed_variable,sequencer.c,1573,-,+,,3,		author = amend_author = get_author(message);
+repurposed_variable,sequencer.c,1626,-,+,,3,		msg = &commit_msg;
+repurposed_variable,sequencer.c,1690,-,+,,3,"		author = fmt_ident(name, email, WANT_AUTHOR_IDENT, NULL,
+				   IDENT_STRICT);"
+repurposed_variable,sequencer.c,1926,+,+,len -= count,3,		len -= count;
+repurposed_variable,sequencer.c,2639,-,+,,2,"	bol += strspn(bol, "" \t"");"
+repurposed_variable,sequencer.c,2660,-,+,,2,	bol += padding;
+repurposed_variable,sequencer.c,2695,-,+,,4,"			bol += strspn(bol, "" \t"");"
+repurposed_variable,sequencer.c,2698,-,+,,4,"			bol += strspn(bol, "" \t"");"
+repurposed_variable,sequencer.c,2705,-,+,,4,"			bol += strspn(bol, "" \t"");"
+repurposed_variable,sequencer.c,2707,-,+,,4,"			bol += strspn(bol, "" \t"");"
+repurposed_variable,sequencer.c,2726,-,+,,2,"	bol = end_of_object_name + strspn(end_of_object_name, "" \t"");"
+repurposed_variable,sequencer.c,3946,+,+,len = i,3,		len = i;
+repurposed_variable,sequencer.c,5577,-,+,,3,		label = p = state->buf.buf;
+repurposed_variable,sequencer.c,5620,-,+,,44,		for (; *label && buf->len + 1 < max_len; label++)
+repurposed_variable,sequencer.c,5632,-,+,,6,					label = p - 1;
+repurposed_variable,sequencer.c,5644,-,+,,3,		label = buf->buf;
+repurposed_variable,sequencer.c,5668,-,+,,4,			label = buf->buf;
+repurposed_variable,sequencer.c,6445,-,+,,,"define_commit_slab(commit_todo_item, struct todo_item *);"
+repurposed_variable,serve.c,67,-,+,,3,"		client_sid = """";"
+repurposed_variable,setup.c,74,-,+,,2,	path += off;
+repurposed_variable,setup.c,78,-,+,,3,		path++;
+repurposed_variable,setup.c,175,-,+,,3,		prefix = NULL;
+repurposed_variable,setup.c,183,-,+,,3,"		arg = to_free = prefix_filename(prefix, arg);"
+repurposed_variable,setup.c,924,-,+,,2,	path = realpath.buf;
+repurposed_variable,setup.c,952,-,+,,3,		gitdirenv = gitfile;
+repurposed_variable,setup.c,1049,-,+,,4,"			gitdir = to_free = real_pathdup(gitdir, 1);"
+repurposed_variable,setup.c,1076,+,+,offset++,3,		offset++;
+repurposed_variable,setup.c,1129,+,-,offset++,,
+repurposed_variable,setup.c,1740,-,+,,3,		fmt = &repo_fmt;
+repurposed_variable,setup.c,2063,-,+,,4,			initial_branch = git_default_branch_name(quiet);
+repurposed_variable,setup.c,2252,+,+,format = ref_storage_format_by_name(name),3,		format = ref_storage_format_by_name(name);
+repurposed_variable,setup.c,2280,-,+,,3,		git_dir = get_git_dir();
+repurposed_variable,setup.c,2285,-,+,,3,		git_dir = get_git_dir();
+repurposed_variable,setup.c,2308,+,-,format = ref_storage_format_by_name(name),,
+repurposed_variable,sh-i18n--envsubst.c,129,-,+,,10,    if (*string++ == '$')
+repurposed_variable,sh-i18n--envsubst.c,137,-,+,,4,	  string++;
+repurposed_variable,sh-i18n--envsubst.c,144,-,+,,13,	      c = *++string;
+repurposed_variable,sh-i18n--envsubst.c,153,-,+,,7,		    string++;
+repurposed_variable,sha1-chunked.c,17,+,-,len -= nr,,
+repurposed_variable,sha1.c,198,+,-,len -= left,,
+repurposed_variable,sha1.c,207,+,-,len -= 64,,
+repurposed_variable,sha1.c,1836,-,+,,3,		buf += fill;
+repurposed_variable,sha1.c,1837,+,+,len -= fill,3,		len -= fill;
+repurposed_variable,sha1.c,1850,-,+,,3,		buf += 64;
+repurposed_variable,sha1.c,1851,+,+,len -= 64,3,		len -= 64;
+repurposed_variable,sha1dc_git.c,37,+,+,len -= INT_MAX,3,		len -= INT_MAX;
+repurposed_variable,sha256.c,69,-,+,,27,"	for (i = 0; i < 16; i++, buf += sizeof(uint32_t))"
+repurposed_variable,sha256.c,164,+,+,len -= left,3,		len -= left;
+repurposed_variable,sha256.c,165,-,+,,3,		data = ((const char *)data + left);
+repurposed_variable,sha256.c,172,-,+,,3,		data = ((const char *)data + 64);
+repurposed_variable,sha256.c,173,+,+,len -= 64,3,		len -= 64;
+repurposed_variable,sha256.c,194,-,+,,26,"	for (i = 0; i < 8; i++, digest += sizeof(uint32_t))"
+repurposed_variable,shallow.c,125,-,+,,,"define_commit_slab(commit_depth, int *);"
+repurposed_variable,shallow.c,508,-,+,,,"define_commit_slab(ref_bitmap, uint32_t *);"
+repurposed_variable,shell.c,17,-,+,,16,	if (!arg || !(arg = sq_dequote(arg)) || *arg == '-')
+repurposed_variable,shell.c,171,-,+,,3,		argv--;
+repurposed_variable,shortlog.c,73,-,+,,4,			oneline++;
+repurposed_variable,shortlog.c,80,-,+,,5,				oneline = eob + 1;
+repurposed_variable,shortlog.c,83,-,+,,4,			oneline++;
+repurposed_variable,shortlog.c,431,+,+,argc = parse_options_end(&ctx),2,	argc = parse_options_end(&ctx);
+repurposed_variable,show-branch.c,63,-,+,,3,		list = list->next;
+repurposed_variable,show-branch.c,76,-,+,,,"define_commit_slab(commit_name_slab, struct commit_name *);"
+repurposed_variable,show-branch.c,134,-,+,,3,		c = p;
+repurposed_variable,show-branch.c,251,+,+,extra--,5,				extra--;
+repurposed_variable,show-branch.c,351,-,+,,3,"		a = find_digit_prefix(a, &va);"
+repurposed_variable,show-branch.c,352,-,+,,3,"		b = find_digit_prefix(b, &vb);"
+repurposed_variable,show-branch.c,367,-,+,,4,			a++;
+repurposed_variable,show-branch.c,368,-,+,,4,			b++;
+repurposed_variable,show-branch.c,622,-,+,,3,"		arg = """";"
+repurposed_variable,show-branch.c,702,+,+,ac = default_args.nr,3,		ac = default_args.nr;
+repurposed_variable,show-branch.c,703,-,+,,3,		av = default_args.v;
+repurposed_variable,show-branch.c,706,+,+,"ac = parse_options(ac, av, prefix, builtin_show_branch_options, show_branch_usage, PARSE_OPT_STOP_AT_NON_OPTION)",2,"	ac = parse_options(ac, av, prefix, builtin_show_branch_options,
+			   show_branch_usage, PARSE_OPT_STOP_AT_NON_OPTION);"
+repurposed_variable,show-branch.c,752,-,+,,4,			av = fake_av;
+repurposed_variable,show-branch.c,753,+,-,ac = 1,,
+repurposed_variable,show-branch.c,817,+,+,ac--,10,			ac--; av++;
+repurposed_variable,show-index.c,29,+,+,"argc = parse_options(argc, argv, prefix, show_index_options, show_index_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, show_index_options, show_index_usage, 0);"
+repurposed_variable,show-ref.c,184,-,+,,3,		refs++;
+repurposed_variable,show-ref.c,241,-,+,,9,	ref = *refs++;
+repurposed_variable,show-ref.c,321,+,+,"argc = parse_options(argc, argv, prefix, show_ref_options, show_ref_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, show_ref_options,
+			     show_ref_usage, 0);"
+repurposed_variable,sideband.c,88,-,+,,3,		src++;
+repurposed_variable,sideband.c,89,+,+,n--,3,		n--;
+repurposed_variable,sideband.c,109,+,+,n -= len,4,			n -= len;
+repurposed_variable,sideband.c,110,-,+,,4,			src += len;
+repurposed_variable,sideband.c,167,+,+,len--,2,	len--;
+repurposed_variable,sideband.c,281,+,+,sz -= n,3,		sz -= n;
+repurposed_variable,snprintf.c,40,+,-,maxsize = 128,,
+repurposed_variable,snprintf.c,43,+,-,maxsize *= 4,,
+repurposed_variable,sparse-checkout.c,64,+,+,"argc = parse_options(argc, argv, prefix, builtin_sparse_checkout_list_options, builtin_sparse_checkout_list_usage, 0)",2,"	argc = parse_options(argc, argv, prefix,
+			     builtin_sparse_checkout_list_options,
+			     builtin_sparse_checkout_list_usage, 0);"
+repurposed_variable,sparse-checkout.c,459,+,+,"argc = parse_options(argc, argv, prefix, builtin_sparse_checkout_init_options, builtin_sparse_checkout_init_usage, 0)",2,"	argc = parse_options(argc, argv, prefix,
+			     builtin_sparse_checkout_init_options,
+			     builtin_sparse_checkout_init_usage, 0);"
+repurposed_variable,sparse-checkout.c,774,+,+,"argc = parse_options(argc, argv, prefix, builtin_sparse_checkout_add_options, builtin_sparse_checkout_add_usage, 0)",2,"	argc = parse_options(argc, argv, prefix,
+			     builtin_sparse_checkout_add_options,
+			     builtin_sparse_checkout_add_usage, 0);"
+repurposed_variable,sparse-checkout.c,820,+,+,"argc = parse_options(argc, argv, prefix, builtin_sparse_checkout_set_options, builtin_sparse_checkout_set_usage, 0)",2,"	argc = parse_options(argc, argv, prefix,
+			     builtin_sparse_checkout_set_options,
+			     builtin_sparse_checkout_set_usage, 0);"
+repurposed_variable,sparse-checkout.c,833,-,+,,3,		argv = default_patterns;
+repurposed_variable,sparse-checkout.c,834,+,-,argc = default_patterns_nr,,
+repurposed_variable,sparse-checkout.c,870,+,+,"argc = parse_options(argc, argv, prefix, builtin_sparse_checkout_reapply_options, builtin_sparse_checkout_reapply_usage, 0)",2,"	argc = parse_options(argc, argv, prefix,
+			     builtin_sparse_checkout_reapply_options,
+			     builtin_sparse_checkout_reapply_usage, 0);"
+repurposed_variable,sparse-checkout.c,908,+,+,"argc = parse_options(argc, argv, prefix, builtin_sparse_checkout_disable_options, builtin_sparse_checkout_disable_usage, 0)",2,"	argc = parse_options(argc, argv, prefix,
+			     builtin_sparse_checkout_disable_options,
+			     builtin_sparse_checkout_disable_usage, 0);"
+repurposed_variable,sparse-checkout.c,991,+,+,"argc = parse_options(argc, argv, prefix, builtin_sparse_checkout_check_rules_options, builtin_sparse_checkout_check_rules_usage, 0)",2,"	argc = parse_options(argc, argv, prefix,
+			     builtin_sparse_checkout_check_rules_options,
+			     builtin_sparse_checkout_check_rules_usage, 0);"
+repurposed_variable,sparse-checkout.c,1031,+,+,"argc = parse_options(argc, argv, prefix, builtin_sparse_checkout_options, builtin_sparse_checkout_usage, 0)",2,"	argc = parse_options(argc, argv, prefix,
+			     builtin_sparse_checkout_options,
+			     builtin_sparse_checkout_usage, 0);"
+repurposed_variable,sparse-index.c,68,+,+,num_converted++,17,		istate->cache[num_converted++] = se;
+repurposed_variable,sparse-index.c,88,+,+,num_converted++,18,			istate->cache[num_converted++] = ce;
+repurposed_variable,sparse-index.c,101,+,+,num_converted += count,3,		num_converted += count;
+repurposed_variable,sparse-index.c,313,-,+,,3,		pl = NULL;
+repurposed_variable,sparse-index.c,328,-,+,,4,			pl = NULL;
+repurposed_variable,split-index.c,34,+,+,sz -= the_hash_algo->rawsz,2,	sz -= the_hash_algo->rawsz;
+repurposed_variable,split-index.c,42,+,+,sz -= ret,2,	sz -= ret;
+repurposed_variable,stack.c,144,-,+,,3,		names++;
+repurposed_variable,stack.c,225,-,+,,17,		char *name = *names++;
+repurposed_variable,stack.c,1240,+,-,factor = DEFAULT_GEOMETRIC_FACTOR,,
+repurposed_variable,stack_test.c,857,+,+,sz /= 2,13,	for (; sz; sz /= 2)
+repurposed_variable,stash.c,256,+,+,"argc = parse_options(argc, argv, prefix, options, git_stash_clear_usage, PARSE_OPT_STOP_AT_NON_OPTION)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     git_stash_clear_usage,
+			     PARSE_OPT_STOP_AT_NON_OPTION);"
+repurposed_variable,stash.c,666,+,+,"argc = parse_options(argc, argv, prefix, options, git_stash_apply_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     git_stash_apply_usage, 0);"
+repurposed_variable,stash.c,737,+,+,"argc = parse_options(argc, argv, prefix, options, git_stash_drop_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     git_stash_drop_usage, 0);"
+repurposed_variable,stash.c,762,+,+,"argc = parse_options(argc, argv, prefix, options, git_stash_pop_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     git_stash_pop_usage, 0);"
+repurposed_variable,stash.c,789,+,+,"argc = parse_options(argc, argv, prefix, options, git_stash_branch_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     git_stash_branch_usage, 0);"
+repurposed_variable,stash.c,824,+,+,"argc = parse_options(argc, argv, prefix, options, git_stash_list_usage, PARSE_OPT_KEEP_UNKNOWN_OPT)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     git_stash_list_usage,
+			     PARSE_OPT_KEEP_UNKNOWN_OPT);"
+repurposed_variable,stash.c,918,+,+,"argc = parse_options(argc, argv, prefix, options, git_stash_show_usage, PARSE_OPT_KEEP_ARGV0 | PARSE_OPT_KEEP_UNKNOWN_OPT | PARSE_OPT_KEEP_DASHDASH)",2,"	argc = parse_options(argc, argv, prefix, options, git_stash_show_usage,
+			     PARSE_OPT_KEEP_ARGV0 | PARSE_OPT_KEEP_UNKNOWN_OPT |
+			     PARSE_OPT_KEEP_DASHDASH);"
+repurposed_variable,stash.c,950,+,-,"argc = setup_revisions(revision_args.nr, revision_args.v, &rev, NULL)",,
+repurposed_variable,stash.c,1000,-,+,,3,"		stash_msg = ""Created via \""git stash store\""."";"
+repurposed_variable,stash.c,1029,+,+,"argc = parse_options(argc, argv, prefix, options, git_stash_store_usage, PARSE_OPT_KEEP_UNKNOWN_OPT)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     git_stash_store_usage,
+			     PARSE_OPT_KEEP_UNKNOWN_OPT);"
+repurposed_variable,stash.c,1493,-,+,,45,"	strbuf_join_argv(&stash_msg_buf, argc - 1, ++argv, ' ');"
+repurposed_variable,stash.c,1519,+,+,keep_index = 1,3,		keep_index = 1;
+repurposed_variable,stash.c,1530,+,+,only_staged = 0,3,		only_staged = 0;
+repurposed_variable,stash.c,1755,+,+,"argc = parse_options(argc, argv, prefix, options, push_assumed ? git_stash_usage : git_stash_push_usage, PARSE_OPT_KEEP_DASHDASH)",3,"		argc = parse_options(argc, argv, prefix, options,
+				     push_assumed ? git_stash_usage :
+				     git_stash_push_usage,
+				     PARSE_OPT_KEEP_DASHDASH);"
+repurposed_variable,stash.c,1763,+,+,argc--,4,			argc--;
+repurposed_variable,stash.c,1764,-,+,,4,			argv++;
+repurposed_variable,stash.c,1830,+,+,"argc = parse_options(argc, argv, prefix, options, git_stash_save_usage, PARSE_OPT_KEEP_DASHDASH)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     git_stash_save_usage,
+			     PARSE_OPT_KEEP_DASHDASH);"
+repurposed_variable,stash.c,1868,+,+,"argc = parse_options(argc, argv, prefix, options, git_stash_usage, PARSE_OPT_SUBCOMMAND_OPTIONAL | PARSE_OPT_KEEP_UNKNOWN_OPT | PARSE_OPT_KEEP_DASHDASH)",2,"	argc = parse_options(argc, argv, prefix, options, git_stash_usage,
+			     PARSE_OPT_SUBCOMMAND_OPTIONAL |
+			     PARSE_OPT_KEEP_UNKNOWN_OPT |
+			     PARSE_OPT_KEEP_DASHDASH);"
+repurposed_variable,strbuf.c,11,-,+,,11,"	for (; ; str++, prefix++)"
+repurposed_variable,strbuf.c,20,-,+,,11,"	for (; ; str++, prefix++)"
+repurposed_variable,strbuf.c,30,-,+,,11,"	for (; ; str++, prefix++) {"
+repurposed_variable,strbuf.c,199,-,+,,3,		str += len;
+repurposed_variable,strbuf.c,200,+,+,slen -= len,3,		slen -= len;
+repurposed_variable,strbuf.c,330,+,+,--argc,9,	while (--argc) {
+repurposed_variable,strbuf.c,332,-,+,,24,"		strbuf_addstr(buf, *(++argv));"
+repurposed_variable,strbuf.c,366,+,+,size -= next - buf,3,		size -= next - buf;
+repurposed_variable,strbuf.c,367,-,+,,3,		buf = next;
+repurposed_variable,strbuf.c,563,+,+,hint = 32,3,		hint = 32;
+repurposed_variable,strbuf.c,579,+,+,hint *= 2,3,		hint *= 2;
+repurposed_variable,strbuf.c,784,-,+,,3,		s += len;
+repurposed_variable,strbuf.c,801,-,+,,3,		s++;
+repurposed_variable,strbuf.c,809,+,+,len--,9,	while (len--) {
+repurposed_variable,strbuf.c,810,-,+,,14,		char ch = *s++;
+repurposed_variable,strbuf.c,976,-,+,,2,	fmt = munged_fmt.buf;
+repurposed_variable,strbuf.c,1013,+,+,len--,3,		len--;
+repurposed_variable,streaming.c,104,+,+,sz -= to_move,4,			sz -= to_move;
+repurposed_variable,stripspace.c,48,+,+,"argc = parse_options(argc, argv, prefix, options, stripspace_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, stripspace_usage, 0);"
+repurposed_variable,strvec.c,55,-,+,,17,	for (; *items; items++)
+repurposed_variable,strvec.c,71,-,+,,3,		to_split++;
+repurposed_variable,strvec.c,84,-,+,,3,		to_split = p;
+repurposed_variable,sub-process.c,125,-,+,,3,		chosen_version = &version_scratch;
+repurposed_variable,submodule--helper.c,418,+,+,"argc = parse_options(argc, argv, prefix, module_foreach_options, git_submodule_helper_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, module_foreach_options,
+			     git_submodule_helper_usage, 0);"
+repurposed_variable,submodule--helper.c,561,+,+,"argc = parse_options(argc, argv, prefix, module_init_options, git_submodule_helper_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, module_init_options,
+			     git_submodule_helper_usage, 0);"
+repurposed_variable,submodule--helper.c,753,+,+,"argc = parse_options(argc, argv, prefix, module_status_options, git_submodule_helper_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, module_status_options,
+			     git_submodule_helper_usage, 0);"
+repurposed_variable,submodule--helper.c,1184,+,+,"argc = parse_options(argc, argv, prefix, module_summary_options, git_submodule_helper_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, module_summary_options,
+			     git_submodule_helper_usage, 0);"
+repurposed_variable,submodule--helper.c,1192,-,+,,4,			argv++;
+repurposed_variable,submodule--helper.c,1193,+,-,argc--,,
+repurposed_variable,submodule--helper.c,1199,-,+,,4,			argv++;
+repurposed_variable,submodule--helper.c,1200,+,-,argc--,,
+repurposed_variable,submodule--helper.c,1356,+,+,"argc = parse_options(argc, argv, prefix, module_sync_options, git_submodule_helper_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, module_sync_options,
+			     git_submodule_helper_usage, 0);"
+repurposed_variable,submodule--helper.c,1502,+,+,"argc = parse_options(argc, argv, prefix, module_deinit_options, git_submodule_helper_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, module_deinit_options,
+			     git_submodule_helper_usage, 0);"
+repurposed_variable,submodule--helper.c,1879,+,+,"argc = parse_options(argc, argv, prefix, module_clone_options, git_submodule_helper_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, module_clone_options,
+			     git_submodule_helper_usage, 0);"
+repurposed_variable,submodule--helper.c,2798,+,+,"argc = parse_options(argc, argv, prefix, module_update_options, git_submodule_helper_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, module_update_options,
+			     git_submodule_helper_usage, 0);"
+repurposed_variable,submodule--helper.c,2876,-,+,,2,	argv++;
+repurposed_variable,submodule--helper.c,2877,-,+,,2,	argc--;
+repurposed_variable,submodule--helper.c,2953,+,+,"argc = parse_options(argc, argv, prefix, embed_gitdir_options, git_submodule_helper_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, embed_gitdir_options,
+			     git_submodule_helper_usage, 0);"
+repurposed_variable,submodule--helper.c,2986,+,+,"argc = parse_options(argc, argv, prefix, options, usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, usage, 0);"
+repurposed_variable,submodule--helper.c,3035,+,+,"argc = parse_options(argc, argv, prefix, options, usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, usage, 0);"
+repurposed_variable,submodule--helper.c,3083,+,+,"argc = parse_options(argc, argv, prefix, options, usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, usage, 0);"
+repurposed_variable,submodule--helper.c,3392,+,+,"argc = parse_options(argc, argv, prefix, options, usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, usage, 0);"
+repurposed_variable,submodule--helper.c,3509,+,+,"argc = parse_options(argc, argv, prefix, options, usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, usage, 0);"
+repurposed_variable,submodule-config.c,221,-,+,,13,		char c = *name++;
+repurposed_variable,submodule-config.c,267,-,+,,4,"			url += strlen(""../"");"
+repurposed_variable,submodule-config.c,271,-,+,,4,"			url += strlen(""./"");"
+repurposed_variable,symbolic-ref.c,59,-,+,,2,"	argc = parse_options(argc, argv, prefix, options,
+			     git_symbolic_ref_usage, 0);"
+repurposed_variable,tag.c,79,-,+,,4,"			o = parse_object(r, last_oid);"
+repurposed_variable,tag.c,82,-,+,,4,			o = NULL;
+repurposed_variable,tag.c,88,+,+,warnlen = strlen(warn),4,			warnlen = strlen(warn);
+repurposed_variable,tag.c,97,-,+,,3,"		o = parse_object(the_repository, &o->oid);"
+repurposed_variable,tag.c,99,-,+,,4,			o = ((struct tag *)o)->tagged;
+repurposed_variable,tag.c,101,-,+,,4,			o = NULL;
+repurposed_variable,tag.c,118,-,+,,24,	while (buf < tail && *buf++ != '>')
+repurposed_variable,tag.c,123,-,+,,24,	while (buf < tail && *buf++ != '\n')
+repurposed_variable,tag.c,548,+,+,"argc = parse_options(argc, argv, prefix, options, git_tag_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, git_tag_usage, 0);"
+repurposed_variable,test-bundle-uri.c,37,+,+,"argc = parse_options(argc, argv, NULL, options, usage, PARSE_OPT_STOP_AT_NON_OPTION)",2,"	argc = parse_options(argc, argv, NULL, options, usage,
+			     PARSE_OPT_STOP_AT_NON_OPTION);"
+repurposed_variable,test-bundle-uri.c,119,+,+,"argc = parse_options(argc, argv, NULL, options, usage, PARSE_OPT_STOP_AT_NON_OPTION | PARSE_OPT_KEEP_ARGV0)",2,"	argc = parse_options(argc, argv, NULL, options, usage,
+			     PARSE_OPT_STOP_AT_NON_OPTION |
+			     PARSE_OPT_KEEP_ARGV0);"
+repurposed_variable,test-cache-tree.c,35,+,+,"argc = parse_options(argc, argv, NULL, options, test_cache_tree_usage, 0)",2,"	argc = parse_options(argc, argv, NULL, options, test_cache_tree_usage, 0);"
+repurposed_variable,test-date.c,20,-,+,,16,	for (; *argv; argv++) {
+repurposed_variable,test-date.c,30,-,+,,16,	for (; *argv; argv++) {
+repurposed_variable,test-date.c,41,-,+,,16,	for (; *argv; argv++) {
+repurposed_variable,test-date.c,65,-,+,,16,	for (; *argv; argv++) {
+repurposed_variable,test-date.c,82,-,+,,16,	for (; *argv; argv++) {
+repurposed_variable,test-date.c,91,-,+,,16,	for (; *argv; argv++) {
+repurposed_variable,test-date.c,111,-,+,,2,	argv++;
+repurposed_variable,test-delete-gpgsig.c,16,-,+,,3,		argv++;
+repurposed_variable,test-delete-gpgsig.c,17,+,+,argc--,3,		argc--;
+repurposed_variable,test-dir-iterator.c,26,+,+,--argc,7,"	for (++argv, --argc; *argv && starts_with(*argv, ""--""); ++argv, --argc) {"
+repurposed_variable,test-env-helper.c,52,+,+,"argc = parse_options(argc, argv, NULL, opts, env__helper_usage, PARSE_OPT_KEEP_UNKNOWN_OPT)",2,"	argc = parse_options(argc, argv, NULL, opts, env__helper_usage,
+			     PARSE_OPT_KEEP_UNKNOWN_OPT);"
+repurposed_variable,test-find-pack.c,33,+,+,"argc = parse_options(argc, argv, prefix, options, find_pack_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, find_pack_usage, 0);"
+repurposed_variable,test-getcwd.c,17,+,+,"argc = parse_options(argc, argv, ""test-tools"", options, getcwd_usage, 0)",2,"	argc = parse_options(argc, argv, ""test-tools"", options, getcwd_usage, 0);"
+repurposed_variable,test-json-writer.c,456,-,+,,3,		buf++;
+repurposed_variable,test-json-writer.c,580,+,+,argc--,2,"	argc--; /* skip over ""json-writer"" arg */"
+repurposed_variable,test-json-writer.c,581,-,+,,2,	argv++;
+repurposed_variable,test-lazy-init-name-hash.c,214,+,+,"argc = parse_options(argc, argv, prefix, options, usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, usage, 0);"
+repurposed_variable,test-lib.c,388,-,+,,20,"			print_one_char(*str++, '""');"
+repurposed_variable,test-mergesort.c,17,-,+,,,"DEFINE_LIST_SORT(static, sort_lines, struct line, next);"
+repurposed_variable,test-mergesort.c,282,-,+,,,"DEFINE_LIST_SORT_DEBUG(static, sort_numbers, struct number, next,
+		       stats.get_next++, stats.set_next++);"
+repurposed_variable,test-mergesort.c,297,-,+,,3,		list = next;
+repurposed_variable,test-mergesort.c,370,+,+,argc--,9,	while (argc--) {
+repurposed_variable,test-mergesort.c,371,-,+,,28,"		int i, j, m, n = strtol(*argv++, NULL, 10);"
+repurposed_variable,test-parse-options.c,182,+,+,"argc = parse_options(argc, (const char**)argv, prefix, options, usage, 0)",2,"	argc = parse_options(argc, (const char **)argv, prefix, options, usage, 0);"
+repurposed_variable,test-parse-options.c,234,+,+,"argc = parse_options(argc, argv, NULL, options, usage, test_flags)",2,"	argc = parse_options(argc, argv, NULL, options, usage, test_flags);"
+repurposed_variable,test-parse-options.c,273,+,+,"argc = parse_options(argc, argv, NULL, test_flag_options, usage, PARSE_OPT_STOP_AT_NON_OPTION)",2,"	argc = parse_options(argc, argv, NULL, test_flag_options, usage,
+			     PARSE_OPT_STOP_AT_NON_OPTION);"
+repurposed_variable,test-parse-options.c,317,+,+,"argc = parse_options(argc, argv, NULL, options, usage, test_flags)",2,"	argc = parse_options(argc, argv, NULL, options, usage, test_flags);"
+repurposed_variable,test-parse-options.c,331,+,+,"argc = parse_options(argc, argv, NULL, test_flag_options, usage, PARSE_OPT_STOP_AT_NON_OPTION)",2,"	argc = parse_options(argc, argv, NULL, test_flag_options, usage,
+			     PARSE_OPT_STOP_AT_NON_OPTION);"
+repurposed_variable,test-path-utils.c,187,-,+,,16,	for (; *argv; argv++) {
+repurposed_variable,test-path-utils.c,253,+,+,argc--,3,		argc--;
+repurposed_variable,test-path-utils.c,254,-,+,,3,		argv++;
+repurposed_variable,test-path-utils.c,316,+,+,argc--,4,			argc--;
+repurposed_variable,test-path-utils.c,317,-,+,,4,			argv++;
+repurposed_variable,test-path-utils.c,326,+,+,argc--,4,			argc--;
+repurposed_variable,test-path-utils.c,327,-,+,,4,			argv++;
+repurposed_variable,test-path-utils.c,369,+,+,argc--,4,			argc--;
+repurposed_variable,test-path-utils.c,370,-,+,,4,			argv++;
+repurposed_variable,test-pkt-line.c,86,+,+,"argc = parse_options(argc, argv, """", cmd_options, unpack_sideband_usage, 0)",2,"	argc = parse_options(argc, argv, """", cmd_options, unpack_sideband_usage,
+			     0);"
+repurposed_variable,test-proc-receive.c,159,+,+,"argc = parse_options(argc, argv, ""test-tools"", options, proc_receive_usage, 0)",2,"	argc = parse_options(argc, argv, ""test-tools"", options, proc_receive_usage, 0);"
+repurposed_variable,test-progress.c,42,+,+,"argc = parse_options(argc, argv, NULL, options, usage, 0)",2,"	argc = parse_options(argc, argv, NULL, options, usage, 0);"
+repurposed_variable,test-reach.c,19,-,+,,3,		list = list->next;
+repurposed_variable,test-read-cache.c,15,+,+,argc--,3,		argc--;
+repurposed_variable,test-read-cache.c,16,-,+,,3,		argv++;
+repurposed_variable,test-ref-store.c,117,-,+,,33,"	const char *refname = notnull(*argv++, ""refname"");"
+repurposed_variable,test-ref-store.c,118,-,+,,32,"	const char *target = notnull(*argv++, ""target"");"
+repurposed_variable,test-ref-store.c,119,-,+,,24,	const char *logmsg = *argv++;
+repurposed_variable,test-ref-store.c,134,-,+,,34,"	unsigned int flags = arg_flags(*argv++, ""flags"", transaction_flags);"
+repurposed_variable,test-ref-store.c,135,-,+,,21,	const char *msg = *argv++;
+repurposed_variable,test-ref-store.c,140,-,+,,34,"		string_list_append(&refnames, *argv++);"
+repurposed_variable,test-ref-store.c,149,-,+,,32,"	const char *oldref = notnull(*argv++, ""oldref"");"
+repurposed_variable,test-ref-store.c,150,-,+,,32,"	const char *newref = notnull(*argv++, ""newref"");"
+repurposed_variable,test-ref-store.c,151,-,+,,24,	const char *logmsg = *argv++;
+repurposed_variable,test-ref-store.c,165,-,+,,32,"	const char *prefix = notnull(*argv++, ""prefix"");"
+repurposed_variable,test-ref-store.c,172,-,+,,32,"	const char *prefix = notnull(*argv++, ""prefix"");"
+repurposed_variable,test-ref-store.c,182,-,+,,33,"	const char *refname = notnull(*argv++, ""refname"");"
+repurposed_variable,test-ref-store.c,183,-,+,,33,"	int resolve_flags = arg_flags(*argv++, ""resolve-flags"", empty_flags);"
+repurposed_variable,test-ref-store.c,195,-,+,,33,"	const char *refname = notnull(*argv++, ""refname"");"
+repurposed_variable,test-ref-store.c,229,-,+,,33,"	const char *refname = notnull(*argv++, ""refname"");"
+repurposed_variable,test-ref-store.c,236,-,+,,33,"	const char *refname = notnull(*argv++, ""refname"");"
+repurposed_variable,test-ref-store.c,243,-,+,,33,"	const char *refname = notnull(*argv++, ""refname"");"
+repurposed_variable,test-ref-store.c,250,-,+,,33,"	const char *refname = notnull(*argv++, ""refname"");"
+repurposed_variable,test-ref-store.c,262,-,+,,33,"	const char *refname = notnull(*argv++, ""refname"");"
+repurposed_variable,test-ref-store.c,269,-,+,,29,"	const char *msg = notnull(*argv++, ""msg"");"
+repurposed_variable,test-ref-store.c,270,-,+,,33,"	const char *refname = notnull(*argv++, ""refname"");"
+repurposed_variable,test-ref-store.c,271,-,+,,34,"	const char *sha1_buf = notnull(*argv++, ""old-sha1"");"
+repurposed_variable,test-ref-store.c,272,-,+,,34,"	unsigned int flags = arg_flags(*argv++, ""flags"", transaction_flags);"
+repurposed_variable,test-ref-store.c,283,-,+,,29,"	const char *msg = notnull(*argv++, ""msg"");"
+repurposed_variable,test-ref-store.c,284,-,+,,33,"	const char *refname = notnull(*argv++, ""refname"");"
+repurposed_variable,test-ref-store.c,285,-,+,,38,"	const char *new_sha1_buf = notnull(*argv++, ""new-sha1"");"
+repurposed_variable,test-ref-store.c,286,-,+,,38,"	const char *old_sha1_buf = notnull(*argv++, ""old-sha1"");"
+repurposed_variable,test-ref-store.c,287,-,+,,34,"	unsigned int flags = arg_flags(*argv++, ""flags"", transaction_flags);"
+repurposed_variable,test-ref-store.c,339,-,+,,2,"	argv = get_store(argv + 1, &refs);"
+repurposed_variable,test-regex.c,50,-,+,,2,	argv++;
+repurposed_variable,test-regex.c,51,+,+,argc--,2,	argc--;
+repurposed_variable,test-regex.c,65,+,-,argc--,,
+repurposed_variable,test-run-command.c,164,+,+,"argc = parse_options(argc, argv, NULL, options, testsuite_usage, PARSE_OPT_STOP_AT_NON_OPTION)",2,"	argc = parse_options(argc, argv, NULL, options,
+			testsuite_usage, PARSE_OPT_STOP_AT_NON_OPTION);"
+repurposed_variable,test-run-command.c,263,+,+,"argc = parse_options(argc, argv, NULL, options, usage, 0)",2,"	argc = parse_options(argc, argv, NULL, options, usage, 0);"
+repurposed_variable,test-run-command.c,352,-,+,,3,		argv++;
+repurposed_variable,test-run-command.c,353,+,+,argc--,3,		argc--;
+repurposed_variable,test-run-command.c,427,-,+,,3,		argv += 2;
+repurposed_variable,test-run-command.c,428,+,+,argc -= 2,3,		argc -= 2;
+repurposed_variable,test-run-command.c,450,-,+,,3,		argv += 1;
+repurposed_variable,test-run-command.c,451,+,+,argc -= 1,3,		argc -= 1;
+repurposed_variable,test-serve-v2.c,26,+,+,"argc = parse_options(argc, argv, prefix, options, serve_usage, PARSE_OPT_KEEP_DASHDASH | PARSE_OPT_KEEP_UNKNOWN_OPT)",2,"	argc = parse_options(argc, argv, prefix, options, serve_usage,
+			     PARSE_OPT_KEEP_DASHDASH |
+			     PARSE_OPT_KEEP_UNKNOWN_OPT);"
+repurposed_variable,test-simple-ipc.c,623,-,+,,2,	argc--;
+repurposed_variable,test-simple-ipc.c,624,-,+,,2,	argv++;
+repurposed_variable,test-submodule.c,69,+,+,"argc = parse_options(argc, argv, ""test-tools"", options, submodule_check_name_usage, 0)",2,"	argc = parse_options(argc, argv, ""test-tools"", options,
+			     submodule_check_name_usage, 0);"
+repurposed_variable,test-submodule.c,82,+,+,"argc = parse_options(argc, argv, ""test-tools"", options, submodule_check_url_usage, 0)",2,"	argc = parse_options(argc, argv, ""test-tools"", options,
+			     submodule_check_url_usage, 0);"
+repurposed_variable,test-submodule.c,95,+,+,"argc = parse_options(argc, argv, ""test-tools"", options, submodule_is_active_usage, 0)",2,"	argc = parse_options(argc, argv, ""test-tools"", options,
+			     submodule_is_active_usage, 0);"
+repurposed_variable,test-submodule.c,112,+,+,"argc = parse_options(argc, argv, ""test-tools"", options, submodule_resolve_relative_url_usage, 0)",2,"	argc = parse_options(argc, argv, ""test-tools"", options,
+			     submodule_resolve_relative_url_usage, 0);"
+repurposed_variable,test-submodule.c,140,+,+,"argc = parse_options(argc, argv, ""test-tools"", options, usage, PARSE_OPT_KEEP_ARGV0)",2,"	argc = parse_options(argc, argv, ""test-tools"", options, usage,
+			     PARSE_OPT_KEEP_ARGV0);"
+repurposed_variable,test-submodule.c,159,+,+,"argc = parse_options(argc, argv, ""test-tools"", options, usage, PARSE_OPT_KEEP_ARGV0)",2,"	argc = parse_options(argc, argv, ""test-tools"", options, usage,
+			     PARSE_OPT_KEEP_ARGV0);"
+repurposed_variable,test-submodule.c,229,+,+,"argc = parse_options(argc, argv, ""test-tools"", options, submodule_usage, PARSE_OPT_STOP_AT_NON_OPTION)",2,"	argc = parse_options(argc, argv, ""test-tools"", options, submodule_usage,
+			     PARSE_OPT_STOP_AT_NON_OPTION);"
+repurposed_variable,test-subprocess.c,15,-,+,,3,		argv++;
+repurposed_variable,test-tool.c,120,+,+,"argc = parse_options(argc, argv, NULL, options, test_tool_usage, PARSE_OPT_STOP_AT_NON_OPTION | PARSE_OPT_KEEP_ARGV0)",2,"	argc = parse_options(argc, argv, NULL, options, test_tool_usage,
+			     PARSE_OPT_STOP_AT_NON_OPTION |
+			     PARSE_OPT_KEEP_ARGV0);"
+repurposed_variable,test-tool.c,132,-,+,,4,			argv++;
+repurposed_variable,test-tool.c,133,+,-,argc--,,
+repurposed_variable,test-trace2.c,197,-,+,,3,		argv += 3;
+repurposed_variable,test-trace2.c,198,+,+,argc -= 3,3,		argc -= 3;
+repurposed_variable,test-trace2.c,544,+,+,argc--,2,"	argc--; /* skip over ""trace2"" arg */"
+repurposed_variable,test-trace2.c,545,-,+,,2,	argv++;
+repurposed_variable,test-urlmatch-normalization.c,23,+,+,argc--,3,		argc--;
+repurposed_variable,test-urlmatch-normalization.c,24,-,+,,3,		argv++;
+repurposed_variable,test-urlmatch-normalization.c,27,+,+,argc--,3,		argc--;
+repurposed_variable,test-urlmatch-normalization.c,28,-,+,,3,		argv++;
+repurposed_variable,tmp-objdir.c,87,-,+,,3,		val = quoted.buf;
+repurposed_variable,tr2_tgt_event.c,278,-,+,,25,	while ((parent_name = *parent_names++))
+repurposed_variable,tr2_tgt_normal.c,175,-,+,,25,	while ((parent_name = *parent_names++)) {
+repurposed_variable,trace.c,293,-,+,,3,		path++;
+repurposed_variable,trailer.c,98,+,+,len--,3,		len--;
+repurposed_variable,trailer.c,207,-,+,,3,"		in_tok = list_entry(next_head, struct trailer_item, list);"
+repurposed_variable,transport-helper.c,1189,-,+,,3,		attrs = space + 1;
+repurposed_variable,transport.c,506,-,+,,14,	for (; ref; ref = ref->next) {
+repurposed_variable,transport.c,521,-,+,,14,	for (; ref; ref = ref->next) {
+repurposed_variable,transport.c,800,-,+,,15,	for (; refs; refs = refs->next) {
+repurposed_variable,transport.c,1084,+,+,"from_user = git_env_bool(""GIT_PROTOCOL_FROM_USER"", 1)",4,"			from_user = git_env_bool(""GIT_PROTOCOL_FROM_USER"", 1);"
+repurposed_variable,transport.c,1131,-,+,,3,		url = remote->url[0];
+repurposed_variable,tree-diff.c,242,-,+,,3,"		p = path_appendnew(p, nparent, base, path, pathlen, mode, oid);"
+repurposed_variable,tree-diff.c,289,-,+,,4,			p = pprev;
+repurposed_variable,tree-diff.c,307,-,+,,3,"		p = ll_diff_tree_paths(p, oid, parents_oid, nparent, base, opt,
+				       depth + 1);"
+repurposed_variable,tree-diff.c,531,-,+,,4,"			p = emit_path(p, base, opt, nparent,
+					&t, tp, imin, depth);"
+repurposed_variable,tree-diff.c,543,-,+,,4,"			p = emit_path(p, base, opt, nparent,
+					&t, /*tp=*/NULL, -1, depth);"
+repurposed_variable,tree-diff.c,559,-,+,,4,"			p = emit_path(p, base, opt, nparent,
+					/*t=*/NULL, tp, imin, depth);"
+repurposed_variable,tree-diff.c,582,-,+,,2,"	p = ll_diff_tree_paths(p, oid, parents_oid, nparent, base, opt, 0);"
+repurposed_variable,tree-walk.c,232,-,+,,3,		name = info->name;
+repurposed_variable,tree-walk.c,233,+,+,namelen = info->namelen,3,		namelen = info->namelen;
+repurposed_variable,tree-walk.c,234,-,+,,3,		info = info->prev;
+repurposed_variable,tree-walk.c,936,-,+,,3,		base += n;
+repurposed_variable,tree-walk.c,937,-,+,,3,		match += n;
+repurposed_variable,tree-walk.c,938,+,+,len -= n,3,		len -= n;
+repurposed_variable,unix-socket.c,57,-,+,,3,		path = slash + 1;
+repurposed_variable,unix-stream-server.c,45,+,+,timeout_ms = DEFAULT_LOCK_TIMEOUT,3,		timeout_ms = DEFAULT_LOCK_TIMEOUT;
+repurposed_variable,unpack-trees.c,216,+,+,clear |= CE_HASHED,2,	clear |= CE_HASHED;
+repurposed_variable,unpack-trees.c,219,+,+,set |= CE_WT_REMOVE,3,		set |= CE_WT_REMOVE;
+repurposed_variable,unpack-trees.c,924,+,+,dirmask >>= 1,26,"	for (i = 0; i < n; i++, dirmask >>= 1) {"
+repurposed_variable,unpack-trees.c,1695,-,+,,4,			cache++;
+repurposed_variable,unpack-trees.c,1696,+,+,progress_nr++,4,			progress_nr++;
+repurposed_variable,unpack-trees.c,1722,-,+,,5,				cache += processed;
+repurposed_variable,unpack-trees.c,1723,+,+,progress_nr += processed,5,				progress_nr += processed;
+repurposed_variable,unpack-trees.c,1734,-,+,,4,			cache += processed;
+repurposed_variable,unpack-trees.c,1735,+,+,progress_nr += processed,4,			progress_nr += processed;
+repurposed_variable,unpack-trees.c,1750,-,+,,3,		cache++;
+repurposed_variable,unpack-trees.c,1751,+,+,progress_nr++,3,		progress_nr++;
+repurposed_variable,unpack-trees.c,2138,-,+,,3,"		pl = xcalloc(1, sizeof(*pl));"
+repurposed_variable,update-index.c,101,-,+,,2,	path = get_mtime_path(path);
+repurposed_variable,update-index.c,116,-,+,,2,	path = get_mtime_path(path);
+repurposed_variable,update-index.c,123,-,+,,2,	path = get_mtime_path(path);
+repurposed_variable,update-index.c,130,-,+,,2,	path = get_mtime_path(path);
+repurposed_variable,update-index.c,1097,-,+,,4,			ctx.argc--;
+repurposed_variable,update-index.c,1098,-,+,,4,			ctx.argv++;
+repurposed_variable,update-index.c,1109,+,+,argc = parse_options_end(&ctx),2,	argc = parse_options_end(&ctx);
+repurposed_variable,update-ref.c,41,-,+,,23,"			strbuf_addch(arg, *next++);"
+repurposed_variable,update-ref.c,521,-,+,,2,"	argc = parse_options(argc, argv, prefix, options, git_update_ref_usage,
+			     0);"
+repurposed_variable,update-server-info.c,21,+,+,"argc = parse_options(argc, argv, prefix, options, update_server_info_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options,
+			     update_server_info_usage, 0);"
+repurposed_variable,upload-pack.c,45,+,+,"argc = parse_options(argc, argv, prefix, options, upload_pack_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, options, upload_pack_usage, 0);"
+repurposed_variable,upload-pack.c,185,+,+,fd = 2,3,		fd = 2;
+repurposed_variable,upload-pack.c,820,-,+,,3,		result = result->next;
+repurposed_variable,url.c,24,-,+,,36,"	if (!url || !is_urlschemechar(1, *url++))"
+repurposed_variable,url.c,27,-,+,,29,"		if (!is_urlschemechar(0, *url++))"
+repurposed_variable,url.c,47,+,+,len--,4,			len--;
+repurposed_variable,url.c,56,+,+,len -= 3,5,				len -= 3;
+repurposed_variable,url.c,66,+,+,len--,3,		len--;
+repurposed_variable,url.c,85,+,+,len -= colon - url,3,		len -= colon - url;
+repurposed_variable,url.c,86,-,+,,3,		url = colon;
+repurposed_variable,urlmatch.c,43,-,+,,13,		int ch = *from++;
+repurposed_variable,urlmatch.c,46,+,+,from_len--,3,		from_len--;
+repurposed_variable,urlmatch.c,53,-,+,,4,			from += 2;
+repurposed_variable,urlmatch.c,54,+,+,from_len -= 2,4,			from_len -= 2;
+repurposed_variable,urlmatch.c,175,-,+,,32,"		strbuf_addch(&norm, tolower(*url++));"
+repurposed_variable,urlmatch.c,206,-,+,,3,		url = at_ptr;
+repurposed_variable,urlmatch.c,256,-,+,,32,"		strbuf_addch(&norm, tolower(*url++));"
+repurposed_variable,urlmatch.c,267,-,+,,3,		url++;
+repurposed_variable,urlmatch.c,268,-,+,,3,"		url += strspn(url, ""0"");"
+repurposed_variable,urlmatch.c,270,-,+,,4,			url--;
+repurposed_variable,urlmatch.c,317,-,+,,3,		url = slash_ptr;
+repurposed_variable,urlmatch.c,332,-,+,,3,		url++;
+repurposed_variable,urlmatch.c,388,-,+,,3,		url = next_slash;
+repurposed_variable,urlmatch.c,392,-,+,,3,		url++;
+repurposed_variable,urlmatch.c,465,+,+,url_prefix_len--,3,		url_prefix_len--;
+repurposed_variable,utf8.c,44,+,+,max = mid - 1,4,			max = mid - 1;
+repurposed_variable,utf8.c,220,-,+,,4,			string += skip;
+repurposed_variable,utf8.c,243,-,+,,4,			text++;
+repurposed_variable,utf8.c,257,+,+,indent = 0,3,		indent = 0;
+repurposed_variable,utf8.c,264,-,+,,3,		text = eol;
+repurposed_variable,utf8.c,265,+,+,indent = indent2,3,		indent = indent2;
+repurposed_variable,utf8.c,301,-,+,,4,			text += skip;
+repurposed_variable,utf8.c,331,-,+,,5,				text++;
+repurposed_variable,utf8.c,336,-,+,,5,				text = bol = space + isspace(*space);
+repurposed_variable,utf8.c,346,-,+,,5,				text = start;
+repurposed_variable,utf8.c,352,-,+,,4,			text++;
+repurposed_variable,utf8.c,402,-,+,,5,				subst = NULL;
+repurposed_variable,utf8.c,445,-,+,,3,		src = utf8;
+repurposed_variable,utf8.c,447,-,+,,3,		dst = utf8;
+repurposed_variable,utf8.c,563,-,+,,3,"		in_encoding = ""UTF-16"";"
+repurposed_variable,utf8.c,576,-,+,,3,"		out_encoding = ""UTF-16LE"";"
+repurposed_variable,utf8.c,580,-,+,,3,"		out_encoding = ""UTF-16BE"";"
+repurposed_variable,utf8.c,595,-,+,,3,		in_encoding = fallback_encoding(in_encoding);
+repurposed_variable,utf8.c,596,-,+,,3,		out_encoding = fallback_encoding(out_encoding);
+repurposed_variable,utf8.c,740,+,+,needle_len--,25,"	for (; needle_len > 0; needle++, needle_len--) {"
+repurposed_variable,varint.c,25,+,+,value >>= 7,9,	while (value >>= 7)
+repurposed_variable,varint.c,26,+,+,--value,26,		varint[--pos] = 128 | (--value & 127);
+repurposed_variable,verify-commit.c,66,+,+,"argc = parse_options(argc, argv, prefix, verify_commit_options, verify_commit_usage, PARSE_OPT_KEEP_ARGV0)",2,"	argc = parse_options(argc, argv, prefix, verify_commit_options,
+			     verify_commit_usage, PARSE_OPT_KEEP_ARGV0);"
+repurposed_variable,verify-pack.c,81,+,+,"argc = parse_options(argc, argv, prefix, verify_pack_options, verify_pack_usage, 0)",2,"	argc = parse_options(argc, argv, prefix, verify_pack_options,
+			     verify_pack_usage, 0);"
+repurposed_variable,verify-tag.c,36,+,+,"argc = parse_options(argc, argv, prefix, verify_tag_options, verify_tag_usage, PARSE_OPT_KEEP_ARGV0)",2,"	argc = parse_options(argc, argv, prefix, verify_tag_options,
+			     verify_tag_usage, PARSE_OPT_KEEP_ARGV0);"
+repurposed_variable,walker.c,267,+,+,targets--,9,	while (targets--) {
+repurposed_variable,wildmatch.c,64,-,+,,31,"	for ( ; (p_ch = *p) != '\0'; text++, p++) {"
+repurposed_variable,wildmatch.c,77,-,+,,12,			p_ch = *++p;
+repurposed_variable,wildmatch.c,89,-,+,,9,			if (*++p == '*') {
+repurposed_variable,wildmatch.c,91,-,+,,13,				while (*++p == '*') {}
+repurposed_variable,wildmatch.c,133,-,+,,5,				text = (const uchar*)slash;
+repurposed_variable,wildmatch.c,158,-,+,,7,						text++;
+repurposed_variable,wildmatch.c,172,-,+,,13,				t_ch = *++text;
+repurposed_variable,wildmatch.c,176,-,+,,12,			p_ch = *++p;
+repurposed_variable,wildmatch.c,185,-,+,,13,				p_ch = *++p;
+repurposed_variable,wildmatch.c,193,-,+,,14,					p_ch = *++p;
+repurposed_variable,wildmatch.c,199,-,+,,14,					p_ch = *++p;
+repurposed_variable,wildmatch.c,201,-,+,,15,						p_ch = *++p;
+repurposed_variable,wildmatch.c,216,-,+,,15,					for (s = p += 2; (p_ch = *p) && p_ch != ']'; p++) {} /*SHARED ITERATOR*/
+repurposed_variable,wildmatch.c,222,-,+,,7,						p = s - 2;
+repurposed_variable,wildmatch.c,271,-,+,,38,"			} while (prev_ch = p_ch, (p_ch = *++p) != ']');"
+repurposed_variable,win32mmap.c,17,+,-,length = xsize_t(len.QuadPart - offset),,
+repurposed_variable,worktree.c,194,-,+,,32,	for (; *list && nr_found < 2; list++) {
+repurposed_variable,worktree.c,220,-,+,,3,"		arg = to_free = prefix_filename(prefix, arg);"
+repurposed_variable,worktree.c,233,-,+,,16,	for (; *list; list++) {
+repurposed_variable,worktree.c,245,+,+,"ac = parse_options(ac, av, prefix, options, git_worktree_prune_usage, 0)",2,"	ac = parse_options(ac, av, prefix, options, git_worktree_prune_usage,
+			   0);"
+repurposed_variable,worktree.c,618,+,+,fn = repair_noop,3,		fn = repair_noop;
+repurposed_variable,worktree.c,620,+,-,fn = repair_noop,,
+repurposed_variable,worktree.c,693,+,+,fn = repair_noop,3,		fn = repair_noop;
+repurposed_variable,worktree.c,695,+,-,fn = repair_noop,,
+repurposed_variable,worktree.c,803,+,+,"ac = parse_options(ac, av, prefix, options, git_worktree_add_usage, 0)",2,"	ac = parse_options(ac, av, prefix, options, git_worktree_add_usage, 0);"
+repurposed_variable,worktree.c,1052,+,+,"ac = parse_options(ac, av, prefix, options, git_worktree_list_usage, 0)",2,"	ac = parse_options(ac, av, prefix, options, git_worktree_list_usage, 0);"
+repurposed_variable,worktree.c,1091,+,+,"ac = parse_options(ac, av, prefix, options, git_worktree_lock_usage, 0)",2,"	ac = parse_options(ac, av, prefix, options, git_worktree_lock_usage, 0);"
+repurposed_variable,worktree.c,1124,+,+,"ac = parse_options(ac, av, prefix, options, git_worktree_unlock_usage, 0)",2,"	ac = parse_options(ac, av, prefix, options, git_worktree_unlock_usage, 0);"
+repurposed_variable,worktree.c,1194,+,+,"ac = parse_options(ac, av, prefix, options, git_worktree_move_usage, 0)",2,"	ac = parse_options(ac, av, prefix, options, git_worktree_move_usage,
+			   0);"
+repurposed_variable,worktree.c,1323,+,+,"ac = parse_options(ac, av, prefix, options, git_worktree_remove_usage, 0)",2,"	ac = parse_options(ac, av, prefix, options, git_worktree_remove_usage, 0);"
+repurposed_variable,worktree.c,1383,+,+,"ac = parse_options(ac, av, prefix, options, git_worktree_repair_usage, 0)",2,"	ac = parse_options(ac, av, prefix, options, git_worktree_repair_usage, 0);"
+repurposed_variable,worktree.c,1409,-,+,,3,"		prefix = """";"
+repurposed_variable,worktree.c,1411,+,+,"ac = parse_options(ac, av, prefix, options, git_worktree_usage, 0)",2,"	ac = parse_options(ac, av, prefix, options, git_worktree_usage, 0);"
+repurposed_variable,wrapper.c,229,+,+,len = MAX_IO_SIZE,3,		len = MAX_IO_SIZE;
+repurposed_variable,wrapper.c,251,+,+,len = MAX_IO_SIZE,3,		len = MAX_IO_SIZE;
+repurposed_variable,wrapper.c,274,+,+,len = MAX_IO_SIZE,3,		len = MAX_IO_SIZE;
+repurposed_variable,wrapper.c,294,+,+,count -= loaded,3,		count -= loaded;
+repurposed_variable,wrapper.c,315,+,+,count -= written,3,		count -= written;
+repurposed_variable,wrapper.c,334,+,+,count -= loaded,3,		count -= loaded;
+repurposed_variable,wrapper.c,337,+,+,offset += loaded,3,		offset += loaded;
+repurposed_variable,wrapper.c,431,-,+,,4,			filename_template = origtemplate;
+repurposed_variable,wrapper.c,521,-,+,,4,			filename_template = origtemplate;
+repurposed_variable,wrapper.c,808,+,+,len -= res,3,		len -= res;
+repurposed_variable,write-tree.c,41,+,+,"argc = parse_options(argc, argv, cmd_prefix, write_tree_options, write_tree_usage, 0)",2,"	argc = parse_options(argc, argv, cmd_prefix, write_tree_options,
+			     write_tree_usage, 0);"
+repurposed_variable,ws.c,39,-,+,,3,"		string = string + strspn(string, "", \t\n\r"");"
+repurposed_variable,ws.c,45,-,+,,4,			string++;
+repurposed_variable,ws.c,70,-,+,,3,		string = ep;
+repurposed_variable,ws.c,157,+,+,len--,3,		len--;
+repurposed_variable,ws.c,162,+,+,len--,3,		len--;
+repurposed_variable,ws.c,267,+,+,len--,9,	while (len-- > 0) {
+repurposed_variable,ws.c,270,-,+,,3,		line++;
+repurposed_variable,ws.c,297,+,+,len--,4,			len--;
+repurposed_variable,ws.c,300,+,+,len--,5,				len--;
+repurposed_variable,ws.c,305,+,+,len--,5,				len--;
+repurposed_variable,ws.c,361,+,+,len -= last,3,		len -= last;
+repurposed_variable,ws.c,362,-,+,,3,		src += last;
+repurposed_variable,ws.c,376,+,+,len -= last,3,		len -= last;
+repurposed_variable,ws.c,377,-,+,,3,		src += last;
+repurposed_variable,wt-status.c,101,+,+,at_bol = 1,3,		at_bol = 1;
+repurposed_variable,wt-status.c,1097,+,+,len = 0,3,		len = 0;
+repurposed_variable,wt-status.c,1101,+,+,len = newlen,4,			len = newlen;
+repurposed_variable,xdiff-interface.c,47,+,+,size -= this_size,3,		size -= this_size;
+repurposed_variable,xdiff-interface.c,48,-,+,,3,		s += this_size;
+repurposed_variable,xdiff-interface.c,197,+,+,size = FIRST_FEW_BYTES,3,		size = FIRST_FEW_BYTES;
+repurposed_variable,xdiff-interface.c,220,+,+,len -= 2,4,			len -= 2;
+repurposed_variable,xdiff-interface.c,222,+,+,len--,4,			len--;
+repurposed_variable,xdiff-interface.c,236,-,+,,2,	line += pmatch[i].rm_so;
+repurposed_variable,xdiff-interface.c,270,-,+,,4,			value++;
+repurposed_variable,xdiff-interface.c,278,-,+,,3,		value = ep ? ep + 1 : NULL;
+repurposed_variable,xdiffi.c,264,+,+,off1++,63,"	for (; off1 < lim1 && off2 < lim2 && ha1[off1] == ha2[off2]; off1++, off2++);"
+repurposed_variable,xdiffi.c,265,+,+,lim1--,71,"	for (; off1 < lim1 && off2 < lim2 && ha1[lim1 - 1] == ha2[lim2 - 1]; lim1--, lim2--);"
+repurposed_variable,xdiffi.c,275,+,+,off2++,23,		for (; off2 < lim2; off2++)
+repurposed_variable,xdiffi.c,281,+,+,off1++,23,		for (; off1 < lim1; off1++)
+repurposed_variable,xdiffi.c,971,-,+,,3,		xscr = xscr->next;
+repurposed_variable,xemit.c,105,+,+,len = sz,4,			len = sz;
+repurposed_variable,xemit.c,107,+,+,len--,4,			len--;
+repurposed_variable,xhistogram.c,320,+,+,count2--,9,		while(count2--)
+repurposed_variable,xhistogram.c,321,+,+,line2++,19,			env->xdf2.rchg[line2++ - 1] = 1;
+repurposed_variable,xhistogram.c,324,+,+,count1--,9,		while(count1--)
+repurposed_variable,xhistogram.c,325,+,+,line1++,19,			env->xdf1.rchg[line1++ - 1] = 1;
+repurposed_variable,xhistogram.c,337,+,+,count1--,11,			while (count1--)
+repurposed_variable,xhistogram.c,338,+,+,line1++,20,				env->xdf1.rchg[line1++ - 1] = 1;
+repurposed_variable,xhistogram.c,339,+,+,count2--,11,			while (count2--)
+repurposed_variable,xhistogram.c,340,+,+,line2++,20,				env->xdf2.rchg[line2++ - 1] = 1;
+repurposed_variable,xhistogram.c,354,+,+,count1 = LINE_END(1) - lcs.end1,4,			count1 = LINE_END(1) - lcs.end1;
+repurposed_variable,xhistogram.c,355,+,+,line1 = lcs.end1 + 1,4,			line1 = lcs.end1 + 1;
+repurposed_variable,xhistogram.c,356,+,+,count2 = LINE_END(2) - lcs.end2,4,			count2 = LINE_END(2) - lcs.end2;
+repurposed_variable,xhistogram.c,357,+,+,line2 = lcs.end2 + 1,4,			line2 = lcs.end2 + 1;
+repurposed_variable,xmerge.c,87,-,+,,12,	for (; c; c = next_c) {
+repurposed_variable,xmerge.c,122,+,+,i = 0,7,	for (i = 0; i < count; size += recs[i++]->size)
+repurposed_variable,xmerge.c,126,+,+,i = recs[count - 1]->size,3,		i = recs[count - 1]->size;
+repurposed_variable,xmerge.c,208,+,+,marker_size = DEFAULT_CONFLICT_MARKER_SIZE,3,		marker_size = DEFAULT_CONFLICT_MARKER_SIZE;
+repurposed_variable,xmerge.c,211,+,+,"size += xdl_recs_copy(xe1, i, m->i1 - i, 0, 0, dest ? dest + size : NULL)",2,"	size += xdl_recs_copy(xe1, i, m->i1 - i, 0, 0,
+			      dest ? dest + size : NULL);"
+repurposed_variable,xmerge.c,215,+,+,size += marker_size + 1 + needs_cr + marker1_size,3,		size += marker_size + 1 + needs_cr + marker1_size;
+repurposed_variable,xmerge.c,218,+,+,size += marker_size,3,		size += marker_size;
+repurposed_variable,xmerge.c,222,+,+,size += marker1_size,4,			size += marker1_size;
+repurposed_variable,xmerge.c,225,+,+,size++,9,			dest[size++] = '\r';
+repurposed_variable,xmerge.c,226,+,+,size++,8,		dest[size++] = '\n';
+repurposed_variable,xmerge.c,230,+,+,"size += xdl_recs_copy(xe1, m->i1, m->chg1, needs_cr, 1, dest ? dest + size : NULL)",2,"	size += xdl_recs_copy(xe1, m->i1, m->chg1, needs_cr, 1,
+			      dest ? dest + size : NULL);"
+repurposed_variable,xmerge.c,236,+,+,size += marker_size + 1 + needs_cr + marker3_size,4,			size += marker_size + 1 + needs_cr + marker3_size;
+repurposed_variable,xmerge.c,239,+,+,size += marker_size,4,			size += marker_size;
+repurposed_variable,xmerge.c,243,+,+,size += marker3_size,5,				size += marker3_size;
+repurposed_variable,xmerge.c,246,+,+,size++,10,				dest[size++] = '\r';
+repurposed_variable,xmerge.c,247,+,+,size++,9,			dest[size++] = '\n';
+repurposed_variable,xmerge.c,249,+,+,"size += xdl_orig_copy(xe1, m->i0, m->chg0, needs_cr, 1, dest ? dest + size : NULL)",3,"		size += xdl_orig_copy(xe1, m->i0, m->chg0, needs_cr, 1,
+				      dest ? dest + size : NULL);"
+repurposed_variable,xmerge.c,254,+,+,size += marker_size + 1 + needs_cr,3,		size += marker_size + 1 + needs_cr;
+repurposed_variable,xmerge.c,257,+,+,size += marker_size,3,		size += marker_size;
+repurposed_variable,xmerge.c,259,+,+,size++,9,			dest[size++] = '\r';
+repurposed_variable,xmerge.c,260,+,+,size++,8,		dest[size++] = '\n';
+repurposed_variable,xmerge.c,264,+,+,"size += xdl_recs_copy(xe2, m->i2, m->chg2, needs_cr, 1, dest ? dest + size : NULL)",2,"	size += xdl_recs_copy(xe2, m->i2, m->chg2, needs_cr, 1,
+			      dest ? dest + size : NULL);"
+repurposed_variable,xmerge.c,267,+,+,size += marker_size + 1 + needs_cr + marker2_size,3,		size += marker_size + 1 + needs_cr + marker2_size;
+repurposed_variable,xmerge.c,270,+,+,size += marker_size,3,		size += marker_size;
+repurposed_variable,xmerge.c,274,+,+,size += marker2_size,4,			size += marker2_size;
+repurposed_variable,xmerge.c,277,+,+,size++,9,			dest[size++] = '\r';
+repurposed_variable,xmerge.c,278,+,+,size++,8,		dest[size++] = '\n';
+repurposed_variable,xmerge.c,292,-,+,,24,	for (size = i = 0; m; m = m->next) {
+repurposed_variable,xmerge.c,338,-,+,,12,	for (; m; m = m->next) {
+repurposed_variable,xmerge.c,366,-,+,,12,	for (; m; m = m->next) {
+repurposed_variable,xmerge.c,419,-,+,,4,			m = m2;
+repurposed_variable,xmerge.c,434,+,+,size--,9,	while (size--)
+repurposed_variable,xmerge.c,435,-,+,,32,		if (isalnum((unsigned char)*(ptr++)))
+repurposed_variable,xmerge.c,442,+,+,chg--,14,"	for (; chg; chg--, i++)"
+repurposed_variable,xmerge.c,488,-,+,,4,			m = next_m;
+repurposed_variable,xmerge.c,560,-,+,,4,			xscr1 = xscr1->next;
+repurposed_variable,xmerge.c,575,-,+,,4,			xscr2 = xscr2->next;
+repurposed_variable,xmerge.c,616,-,+,,4,			xscr2 = xscr2->next;
+repurposed_variable,xmerge.c,618,-,+,,4,			xscr1 = xscr1->next;
+repurposed_variable,xmerge.c,634,-,+,,3,		xscr1 = xscr1->next;
+repurposed_variable,xmerge.c,650,-,+,,3,		xscr2 = xscr2->next;
+repurposed_variable,xmmintrin.h,2029,+,-,"__a = __builtin_shufflevector((__v4sf)__a, (__v4sf)__a, 0, 0, 0, 0)",,
+repurposed_variable,xmmintrin.h,2068,+,-,"__a = __builtin_shufflevector((__v4sf)__a, (__v4sf)__a, 3, 2, 1, 0)",,
+repurposed_variable,xmmintrin.h,2884,+,-,"__a = _mm_movehl_ps(__a, __a)",,
+repurposed_variable,xpatience.c,154,+,+,count1--,9,	while (count1--)
+repurposed_variable,xpatience.c,155,+,+,line1++,22,"		insert_record(xpp, line1++, result, 1);"
+repurposed_variable,xpatience.c,158,+,+,count2--,9,	while (count2--)
+repurposed_variable,xpatience.c,159,+,+,line2++,22,"		insert_record(xpp, line2++, result, 2);"
+repurposed_variable,xpatience.c,278,+,+,line1++,4,			line1++;
+repurposed_variable,xpatience.c,279,+,+,line2++,4,			line2++;
+repurposed_variable,xpatience.c,296,-,+,,4,			first = first->next;
+repurposed_variable,xpatience.c,298,+,+,line1 = first->line1 + 1,3,		line1 = first->line1 + 1;
+repurposed_variable,xpatience.c,299,+,+,line2 = first->line2 + 1,3,		line2 = first->line2 + 1;
+repurposed_variable,xpatience.c,301,-,+,,3,		first = first->next;
+repurposed_variable,xpatience.c,332,+,+,count2--,9,		while(count2--)
+repurposed_variable,xpatience.c,333,+,+,line2++,19,			env->xdf2.rchg[line2++ - 1] = 1;
+repurposed_variable,xpatience.c,336,+,+,count1--,9,		while(count1--)
+repurposed_variable,xpatience.c,337,+,+,line1++,19,			env->xdf1.rchg[line1++ - 1] = 1;
+repurposed_variable,xpatience.c,348,+,+,count1--,9,		while(count1--)
+repurposed_variable,xpatience.c,349,+,+,line1++,19,			env->xdf1.rchg[line1++ - 1] = 1;
+repurposed_variable,xpatience.c,350,+,+,count2--,9,		while(count2--)
+repurposed_variable,xpatience.c,351,+,+,line2++,19,			env->xdf2.rchg[line2++ - 1] = 1;
+repurposed_variable,xprepare.c,314,+,+,s = i - XDL_SIMSCAN_WINDOW,3,		s = i - XDL_SIMSCAN_WINDOW;
+repurposed_variable,xprepare.c,316,+,+,e = i + XDL_SIMSCAN_WINDOW,3,		e = i + XDL_SIMSCAN_WINDOW;
+repurposed_variable,xutils.c,32,+,+,n >>= 2,21,	for (i = 1; n > 0; n >>= 2)
+repurposed_variable,xutils.c,164,+,+,s--,3,		s--;
+repurposed_variable,xutils.c,329,+,+,val = -val,3,		val = -val;
+repurposed_variable,xutils.c,331,+,+,val /= 10,27,	for (; val && ptr > buf; val /= 10)
+repurposed_variable,xutils.c,379,+,+,funclen = sizeof (buf) - nb - 1,4,			funclen = sizeof(buf) - nb - 1;

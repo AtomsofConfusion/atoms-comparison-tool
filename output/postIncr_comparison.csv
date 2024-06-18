@@ -1,0 +1,1348 @@
+Type,File,Line,CLJ,CQL,CNL,CLJ_Code,CQL_Column,CQL_Code,CNL_Column,CNL_Code
+postIncr,abspath.c,142,+,+,+,num_symlinks++ > MAXSYMLINKS,8.0,			if (num_symlinks++ > MAXSYMLINKS) {,7.0,num_symlinks ++
+postIncr,add-interactive.c,182,+,+,+,item->string[(*len)++],26.0,			char c = item->string[(*len)++];,25.0,( * len ) ++
+postIncr,add-interactive.c,379,+,+,+,p[sep++],7.0,				p[sep++] = '\0';,6.0,sep ++
+postIncr,add-interactive.c,807,+,+,+,paths[j++],10.0,			paths[j++] = files->items.items[i].string;,9.0,j ++
+postIncr,add-interactive.c,954,+,+,+,files->items.items[j++],24.0,				files->items.items[j++] = files->items.items[i];,23.0,j ++
+postIncr,add-patch.c,385,+,+,+,"while (len--)
+    if (*p < '0' || *(p++) > '7')
+        return 0;
+",9.0,	while (len--),8.0,len --
+postIncr,add-patch.c,386,+,+,+,*(p++),21.0,		if (*p < '0' || *(p++) > '7'),20.0,p ++
+postIncr,add-patch.c,1368,+,+,+,file_diff->hunk + start_index++,41.0,		struct hunk *hunk = file_diff->hunk + start_index++;,40.0,start_index ++
+postIncr,add-patch.c,1369,+,-,-,file_diff->hunk + start_index++,,,,
+postIncr,add.c,102,+,+,+,*src++,30.0,		struct dir_entry *entry = *src++;,29.0,src ++
+postIncr,add.c,104,+,+,+,*dst++,5.0,			*dst++ = entry;,4.0,dst ++
+postIncr,alias.c,84,+,+,+,(*argv)[count++],10.0,	(*argv)[count++] = cmdline;,9.0,count ++
+postIncr,alias.c,88,+,+,+,cmdline[dst++],12.0,			cmdline[dst++] = 0;,11.0,dst ++
+postIncr,alias.c,93,+,+,+,(*argv)[count++],12.0,			(*argv)[count++] = cmdline + dst;,11.0,count ++
+postIncr,alias.c,109,+,+,+,cmdline[dst++],12.0,			cmdline[dst++] = c;,11.0,dst ++
+postIncr,alloc.c,63,+,+,+,s->slabs[s->slab_nr++],12.0,		s->slabs[s->slab_nr++] = s->p;,11.0,s -> slab_nr ++
+postIncr,alloc.c,109,+,+,+,"return parsed_commits_count++;
+",9.0,	return parsed_commits_count++;,8.0,parsed_commits_count ++
+postIncr,am.c,749,-,-,+,,,,30.0,i ++
+postIncr,apply.c,325,+,+,+,*s1++,15.0,		} else if (*s1++ != *s2++),14.0,s1 ++
+postIncr,apply.c,432,+,+,+,"while (size--){
+    len++;
+    if (*buffer++ == '\n')
+        break;
+}
+",9.0,	while (size--) {,8.0,size --
+postIncr,apply.c,434,+,+,+,*buffer++,8.0,		if (*buffer++ == '\n'),7.0,buffer ++
+postIncr,apply.c,467,+,+,+,name[j++],13.0,		if ((name[j++] = name[i++]) == '/'),24.0,i ++
+postIncr,apply.c,535,+,+,+,*p++,43.0,	if (!isdigit(*p++) || !isdigit(*p++) || *p++ != ':' ||,15.0,p ++
+postIncr,apply.c,536,+,-,+,*p++,,,15.0,p ++
+postIncr,apply.c,550,+,+,+,*p++,43.0,	if (!isdigit(*p++) || !isdigit(*p++) || *p++ != '-' ||,15.0,p ++
+postIncr,apply.c,551,+,+,+,*p++,43.0,	    !isdigit(*p++) || !isdigit(*p++) || *p++ != '-' ||,15.0,p ++
+postIncr,apply.c,552,+,-,+,*p++,,,15.0,p ++
+postIncr,apply.c,571,+,+,+,*p++,7.0,	if (*p++ != ' ' ||,6.0,p ++
+postIncr,apply.c,572,+,+,+,*p++,43.0,	    !isdigit(*p++) || !isdigit(*p++) || *p++ != ':' ||,15.0,p ++
+postIncr,apply.c,573,+,+,+,*p++,43.0,	    !isdigit(*p++) || !isdigit(*p++) || *p++ != ':' ||,15.0,p ++
+postIncr,apply.c,574,+,-,+,*p++,,,15.0,p ++
+postIncr,apply.c,1362,-,-,+,,,,73.0,( * linenr ) ++
+postIncr,apply.c,1568,-,-,+,,,,69.0,state -> linenr ++
+postIncr,apply.c,1715,-,-,+,,,,47.0,state -> linenr ++
+postIncr,apply.c,2931,+,+,+,*old++,5.0,			*old++ = '\n';,4.0,old ++
+postIncr,apply.c,3078,+,+,+,"while (new_blank_lines_at_end--)
+    remove_last_line(&postimage);
+",12.0,				while (new_blank_lines_at_end--),11.0,new_blank_lines_at_end --
+postIncr,apply.c,4684,-,-,+,,,,6.0,cnt ++
+postIncr,archive-tar.c,197,+,+,+,*p++,14.0,		chksum += *p++;,13.0,p ++
+postIncr,archive-tar.c,201,+,+,+,*p++,14.0,		chksum += *p++;,13.0,p ++
+postIncr,archive-tar.c,393,-,+,+,,15.0,		tar_filters[nr_tar_filters++] = ar;,14.0,nr_tar_filters ++
+postIncr,archive-zip.c,188,+,+,+,size-- > 0,9.0,	while (size-- > 0) {,8.0,size --
+postIncr,archive-zip.c,270,+,+,+,*s++,12.0,		int c = *s++;,11.0,s ++
+postIncr,archive.c,39,+,+,+,archivers[nr_archivers++],12.0,	archivers[nr_archivers++] = ar;,11.0,nr_archivers ++
+postIncr,attr.c,204,+,+,+,"while (namelen--){
+    char ch = *name++;
+    if (!(ch == '-' || ch == '.' || ch == '_' || ('0' <= ch && ch <= '9') || ('a' <= ch && ch <= 'z') || ('A' <= ch && ch <= 'Z')))
+        return 0;
+}
+",9.0,	while (namelen--) {,8.0,namelen --
+postIncr,attr.c,205,+,+,+,*name++,14.0,		char ch = *name++;,13.0,name ++
+postIncr,attr.c,530,+,+,+,check_vector.checks[check_vector.nr++],22.0,	check_vector.checks[check_vector.nr++] = c;,21.0,check_vector . nr ++
+postIncr,attr.c,638,+,+,+,check->items[check->nr++],23.0,	item = &check->items[check->nr++];,22.0,check -> nr ++
+postIncr,attr.c,698,+,+,+,*(list++),19.0,	while ((line = *(list++)) != NULL),18.0,list ++
+postIncr,base85.c,51,+,+,+,*buffer++,10.0,			ch = *buffer++;,9.0,buffer ++
+postIncr,base85.c,57,+,+,+,*buffer++,9.0,		ch = *buffer++;,8.0,buffer ++
+postIncr,base85.c,72,+,+,+,*dst++,5.0,			*dst++ = acc;,4.0,dst ++
+postIncr,base85.c,87,+,+,+,*data++,19.0,			unsigned ch = *data++;,18.0,data ++
+postIncr,basename.c,51,+,-,+,*(p++),,,15.0,p ++
+postIncr,basics.c,95,+,+,+,names[names_len++],10.0,			names[names_len++] = xstrdup(p);,9.0,names_len ++
+postIncr,bisect.c,291,+,+,+,weights[n++],57.0,"		*commit_weight_at(&commit_weight, p->item) = &weights[n++];",56.0,n ++
+postIncr,bisect.c,623,-,-,+,,,,35.0,i ++
+postIncr,bisect.c,773,+,+,+,rev[n++],6.0,"	rev[n++] = get_commit_reference(r, current_bad_oid);",5.0,n ++
+postIncr,bisect.c,775,+,+,+,rev[n++],7.0,"		rev[n++] = get_commit_reference(r, good_revs.oid + i);",6.0,n ++
+postIncr,bisect.c,963,-,-,+,,,,14.0,argc --
+postIncr,bitmap.c,114,+,+,+,bitmap->words[i++],17.0,		bitmap->words[i++] = blowup;,16.0,i ++
+postIncr,bitmap.c,159,+,+,+,self->words[i++],15.0,		self->words[i++] |= word;,14.0,i ++
+postIncr,blame.c,348,+,+,+,*lineno++,4.0,		*lineno++ = p - buf;,3.0,lineno ++
+postIncr,blame.c,382,+,+,+,*cp++,10.0,			ch = *cp++;,9.0,cp ++
+postIncr,blame.c,545,+,+,+,*cp++,10.0,			ch = *cp++;,9.0,cp ++
+postIncr,blame.c,569,+,+,+,suspect->guilty && count++,28.0,				if (suspect->guilty && count++) {,27.0,count ++
+postIncr,blame.c,2218,+,+,+,blame_list[i++],15.0,			blame_list[i++].ent = e;,14.0,i ++
+postIncr,blame.c,2437,-,-,+,,,,22.0,i ++
+postIncr,blame.c,2469,-,-,+,,,,21.0,i ++
+postIncr,blame.c,2488,-,-,+,,,,22.0,i ++
+postIncr,blame.c,2513,-,-,+,,,,23.0,i ++
+postIncr,blame.c,2540,-,-,+,,,,22.0,i ++
+postIncr,block.c,55,+,+,+,w->restarts[w->restart_len++],15.0,		w->restarts[w->restart_len++] = w->next;,14.0,w -> restart_len ++
+postIncr,branch.c,256,-,-,+,,,,23.0,i ++
+postIncr,branch.c,400,+,+,+,worktrees[i++],35.0,		struct worktree *wt = worktrees[i++];,34.0,i ++
+postIncr,bulk-checkin.c,314,+,+,+,state->written[state->nr_written++],18.0,		state->written[state->nr_written++] = idx;,17.0,state -> nr_written ++
+postIncr,bundle-uri.c,466,+,+,+,list->items[list->nr++],14.0,	list->items[list->nr++] = bundle;,13.0,list -> nr ++
+postIncr,bundle.c,207,+,+,+,iter->list->items[iter->cur++],27.0,	return iter->list->items[iter->cur++].util;,26.0,iter -> cur ++
+postIncr,bundle.c,304,+,+,+,!line++,7.0,	if (!line++),6.0,line ++
+postIncr,bundle.c,308,+,+,+,!line++,7.0,	if (!line++),6.0,line ++
+postIncr,cache-tree.c,223,+,+,+,down[dst++],9.0,			down[dst++] = s;,8.0,dst ++
+postIncr,cat-file.c,753,+,+,+,queued_cmd[nr++],15.0,			queued_cmd[nr++] = call;,14.0,nr ++
+postIncr,cat-file.c,869,+,+,+,*p++,7.0,					*p++ = '\0';,6.0,p ++
+postIncr,check-ref-format.c,28,+,+,+,*refname++,16.0,	while ((ch = *refname++) != '\0') {,15.0,refname ++
+postIncr,check-ref-format.c,32,+,+,+,*cp++,4.0,		*cp++ = ch;,3.0,cp ++
+postIncr,checkout--worker.c,96,+,+,+,items[nr++],48.0,"		packet_to_pc_item(packet_buffer, len, &items[nr++]);",47.0,nr ++
+postIncr,chunk-format.c,114,+,+,+,<!!!>,9.0,	while (toc_length--) {,8.0,toc_length --
+postIncr,clean.c,364,-,-,+,,,,29.0,i ++
+postIncr,clean.c,419,-,-,+,,,,34.0,i ++
+postIncr,clean.c,441,-,-,+,,,,34.0,i ++
+postIncr,clean.c,492,+,+,+,*p++,13.0,		} while (*p++);,12.0,p ++
+postIncr,clean.c,660,+,+,+,result[j++],12.0,				result[j++] = i;,11.0,j ++
+postIncr,clean.c,901,+,+,+,dir->entries[src++],41.0,			struct dir_entry *ent = dir->entries[src++];,40.0,src ++
+postIncr,clean.c,904,+,+,+,dir->entries[dst++],17.0,			dir->entries[dst++] = ent;,16.0,dst ++
+postIncr,clean.c,909,+,+,+,dir->entries[src++],23.0,				free(dir->entries[src++]);,22.0,src ++
+postIncr,color.c,329,-,-,+,,,,2.0,dst ++
+postIncr,color.c,347,+,+,+,"if (sep++)
+    OUT(';');
+",8.0,			if (sep++),7.0,sep ++
+postIncr,color.c,352,+,+,+,"if (sep++)
+    OUT(';');
+",8.0,			if (sep++),7.0,sep ++
+postIncr,color.c,357,+,+,+,"if (sep++)
+    OUT(';');
+",8.0,			if (sep++),7.0,sep ++
+postIncr,combine-diff.c,579,+,+,+,sline[j++],10.0,			sline[j++].flag |= mark;,9.0,j ++
+postIncr,combine-diff.c,599,+,+,+,sline[j++],11.0,				sline[j++].flag |= mark;,10.0,j ++
+postIncr,combine-diff.c,611,+,+,+,sline[j++],10.0,			sline[j++].flag |= mark;,9.0,j ++
+postIncr,combine-diff.c,847,+,+,+,sline[lno++],30.0,			struct sline *sl = &sline[lno++];,29.0,lno ++
+postIncr,combine-diff.c,1362,+,+,+,q.queue[i++],11.0,"		q.queue[i++] = combined_pair(p, num_parent);",10.0,i ++
+postIncr,combine-diff.c,1363,+,-,-,q.queue[i++],,,,
+postIncr,combine-diff.c,1602,-,-,+,,,,41.0,i ++
+postIncr,commit-graph.c,89,+,+,+,"*commit_pos_at(&commit_pos, commit) = max_pos++",40.0,"	*commit_pos_at(&commit_pos, commit) = max_pos++;",39.0,max_pos ++
+postIncr,commit-graph.c,1185,-,-,+,,,,42.0,count ++
+postIncr,commit-reach.c,237,+,+,+,work[filled++],9.0,			work[filled++] = array[j];,8.0,filled ++
+postIncr,commit-reach.c,267,+,+,+,array[filled++],10.0,			array[filled++] = work[i];,9.0,filled ++
+postIncr,commit-reach.c,309,+,+,+,walk_start[walk_start_nr++],16.0,				walk_start[walk_start_nr++] = parents->item;,15.0,walk_start_nr ++
+postIncr,commit-reach.c,382,+,+,+,array[count_non_stale++],10.0,			array[count_non_stale++] = array[i];,9.0,count_non_stale ++
+postIncr,commit-reach.c,446,+,+,+,rslt[i++],8.0,		rslt[i++] = list->item;,7.0,i ++
+postIncr,commit-reach.c,600,+,+,+,array[i++],10.0,			array[i++] = p->item;,9.0,i ++
+postIncr,commit-reach.c,714,+,+,+,contains_stack->contains_stack[contains_stack->nr++],33.0,	contains_stack->contains_stack[contains_stack->nr++].parents = candidate->parents;,32.0,contains_stack -> nr ++
+postIncr,commit.c,106,+,+,+,*buf++,24.0,	while (buf < tail && *buf++ != '\n'),23.0,buf ++
+postIncr,commit.c,239,+,-,+,*tail++,,,17.0,tail ++
+postIncr,commit.c,788,+,+,+,"while (nr--){
+    clear_commit_marks_1(&list, *commit, mark);
+    commit++;
+}
+",9.0,	while (nr--) {,8.0,nr --
+postIncr,commit.c,964,+,+,+,"ident_shown++ ? """" : ""\n""",5.0,"				ident_shown++ ? """" : ""\n"",",4.0,ident_shown ++
+postIncr,commit.c,972,+,+,+,"ident_shown++ ? """" : ""\n""",5.0,"				ident_shown++ ? """" : ""\n"",",4.0,ident_shown ++
+postIncr,commit.c,979,+,+,+,"ident_shown++ ? """" : ""\n""",5.0,"				ident_shown++ ? """" : ""\n"",",4.0,ident_shown ++
+postIncr,commit.c,1033,+,+,+,revs->commit[revs->nr++],15.0,	revs->commit[revs->nr++] = commit;,14.0,revs -> nr ++
+postIncr,commit.c,1141,+,+,+,"strbuf_insertstr(buf, inspos++, "" "")",25.0,"		strbuf_insertstr(buf, inspos++, "" "");",24.0,inspos ++
+postIncr,commit.c,1541,+,+,+,*buf++,22.0,		unsigned char c = *buf++;,21.0,buf ++
+postIncr,commit.c,1591,+,+,+,*buf++,10.0,			if ((*buf++ & 0xc0) != 0x80),9.0,buf ++
+postIncr,commit.c,1720,+,+,+,parent_buf[i++],22.0,"		oidcpy(&parent_buf[i++], &parent->object.oid);",21.0,i ++
+postIncr,config.c,101,+,+,+,conf->u.buf.buf[conf->u.buf.pos++],26.0,		return conf->u.buf.buf[conf->u.buf.pos++];,25.0,conf -> u . buf . pos ++
+postIncr,config.c,357,+,+,+,values->items[values->nr++],58.0,"	return format_config(data->display_opts, &values->items[values->nr++],",57.0,values -> nr ++
+postIncr,config.c,437,+,+,+,values.items[values.nr++],24.0,		item = &values.items[values.nr++];,23.0,values . nr ++
+postIncr,config.c,2270,+,-,-,set->list.items[set->list.nr++],,,,
+postIncr,config.c,2281,+,+,+,set->list.items[set->list.nr++],28.0,	l_item = &set->list.items[set->list.nr++];,27.0,set -> list . nr ++
+postIncr,config.c,3563,+,-,-,name[j++],,,,
+postIncr,config.c,3574,+,+,+,name[j++],13.0,			if (name[j++] != '.'),12.0,j ++
+postIncr,config.c,3576,-,-,+,,,,8.0,i ++
+postIncr,config.c,3578,+,-,-,name[j++],,,,
+postIncr,config.c,3585,-,-,+,,,,8.0,i ++
+postIncr,config.c,3589,+,+,+,name[j++],22.0,		if (buf[i] != name[j++]),21.0,j ++
+postIncr,connect.c,117,+,+,+,*(out++),19.0,		    (!*out || *(out++) == '=')) {,18.0,out ++
+postIncr,connect.c,193,+,+,+,*(target++),4.0,	*(target++) = '\0';,3.0,target ++
+postIncr,connect.c,415,+,+,+,line_sections.items[i++],43.0,"		    !strcmp(""HEAD"", line_sections.items[i++].string)) {",42.0,i ++
+postIncr,connect.c,431,+,+,+,line_sections.items[i++],46.0,"	if (parse_oid_hex_algop(line_sections.items[i++].string, &old_oid, &end, reader->hash_algo) ||",45.0,i ++
+postIncr,connect.c,437,+,+,+,line_sections.items[i++],38.0,	ref = alloc_ref(line_sections.items[i++].string);,37.0,i ++
+postIncr,connect.c,832,-,-,+,,,,38.0,cnt ++
+postIncr,connect.c,903,-,-,+,,,,42.0,ap ++
+postIncr,convert.c,569,+,+,+,*src++,23.0,			unsigned char c = *src++;,22.0,src ++
+postIncr,convert.c,571,+,+,+,*dst++,6.0,				*dst++ = c;,5.0,dst ++
+postIncr,convert.c,575,+,+,+,*src++,23.0,			unsigned char c = *src++;,22.0,src ++
+postIncr,convert.c,577,+,+,+,*dst++,6.0,				*dst++ = c;,5.0,dst ++
+postIncr,convert.c,1075,+,+,+,*cp++,9.0,		ch = *cp++;,8.0,cp ++
+postIncr,convert.c,1095,+,+,+,*cp++,10.0,			ch = *cp++;,9.0,cp ++
+postIncr,convert.c,1621,+,+,+,output[o++],10.0,		output[o++] = lf_to_crlf->held;,9.0,o ++
+postIncr,convert.c,1645,+,+,+,output[o++],12.0,				output[o++] = '\r';,11.0,o ++
+postIncr,convert.c,1652,+,+,+,output[o++],12.0,				output[o++] = '\r';,11.0,o ++
+postIncr,convert.c,1673,+,+,+,output[o++],11.0,			output[o++] = ch;,10.0,o ++
+postIncr,convert.c,1883,+,+,+,*(input++),10.0,		ch = *(input++);,9.0,input ++
+postIncr,credential-cache--daemon.c,27,+,+,+,entries[entries_nr++],15.0,	e = &entries[entries_nr++];,14.0,entries_nr ++
+postIncr,credential.c,298,+,+,+,*value++,4.0,		*value++ = '\0';,3.0,value ++
+postIncr,credential.c,638,+,+,+,*p--,5.0,			*p-- = '\0';,4.0,p --
+postIncr,daemon.c,763,+,+,+,*arg++,8.0,		    *arg++ == ' ') {,7.0,arg ++
+postIncr,daemon.c,1034,+,+,+,socklist->list[socklist->nr++],18.0,		socklist->list[socklist->nr++] = sockfd;,17.0,socklist -> nr ++
+postIncr,daemon.c,1096,-,-,+,,,,16.0,socklist -> nr ++
+postIncr,date.c,433,-,-,+,,,,20.0,date ++
+postIncr,delta.h,96,+,+,-,*data++,10.0,		cmd = *data++;,,
+postIncr,describe.c,370,+,+,+,all_matches[match_cnt++],43.0,				struct possible_tag *t = &all_matches[match_cnt++];,42.0,match_cnt ++
+postIncr,describe.c,702,+,+,+,argc-- > 0,10.0,		while (argc-- > 0),9.0,argc --
+postIncr,describe.c,703,+,+,+,*argv++,14.0,"			describe(*argv++, argc == 0);",13.0,argv ++
+postIncr,diff-delta.c,199,+,+,+,hash[i] = entry++,14.0,			hash[i] = entry++;,13.0,entry ++
+postIncr,diff-delta.c,286,+,+,+,*packed_entry++,5.0,			*packed_entry++ = entry->entry;,4.0,packed_entry ++
+postIncr,diff-delta.c,345,+,+,+,out[outpos++],7.0,		out[outpos++] = l | 0x80;,6.0,outpos ++
+postIncr,diff-delta.c,348,+,+,+,out[outpos++],6.0,	out[outpos++] = l;,5.0,outpos ++
+postIncr,diff-delta.c,353,+,+,+,out[outpos++],7.0,		out[outpos++] = l | 0x80;,6.0,outpos ++
+postIncr,diff-delta.c,356,+,+,+,out[outpos++],6.0,	out[outpos++] = l;,5.0,outpos ++
+postIncr,diff-delta.c,365,-,-,+,,,,50.0,data ++
+postIncr,diff-delta.c,366,+,+,+,out[outpos++],7.0,		out[outpos++] = *data;,6.0,outpos ++
+postIncr,diff-delta.c,389,+,+,+,ref_size-- && *src++ == *ref,12.0,				while (ref_size-- && *src++ == *ref),11.0,ref_size --
+postIncr,diff-delta.c,404,+,+,+,out[outpos++],8.0,			out[outpos++] = *data++;,20.0,data ++
+postIncr,diff-delta.c,436,+,+,+,out + outpos++,15.0,			op = out + outpos++;,14.0,outpos ++
+postIncr,diff-delta.c,440,+,+,+,out[outpos++],9.0,"				out[outpos++] = moff >> 0,  i |= 0x01;",8.0,outpos ++
+postIncr,diff-delta.c,442,+,+,+,out[outpos++],9.0,"				out[outpos++] = moff >> 8,  i |= 0x02;",8.0,outpos ++
+postIncr,diff-delta.c,444,+,+,+,out[outpos++],9.0,"				out[outpos++] = moff >> 16, i |= 0x04;",8.0,outpos ++
+postIncr,diff-delta.c,446,+,+,+,out[outpos++],9.0,"				out[outpos++] = moff >> 24, i |= 0x08;",8.0,outpos ++
+postIncr,diff-delta.c,449,+,+,+,out[outpos++],9.0,"				out[outpos++] = msize >> 0, i |= 0x10;",8.0,outpos ++
+postIncr,diff-delta.c,451,+,+,+,out[outpos++],9.0,"				out[outpos++] = msize >> 8, i |= 0x20;",8.0,outpos ++
+postIncr,diff-no-index.c,207,+,+,+,p1.items[i1++],38.0,"				strbuf_addstr(&buffer1, p1.items[i1++].string);",37.0,i1 ++
+postIncr,diff-no-index.c,214,+,+,+,p2.items[i2++],38.0,"				strbuf_addstr(&buffer2, p2.items[i2++].string);",37.0,i2 ++
+postIncr,diff-tree.c,30,+,-,+,*p++,,,17.0,p ++
+postIncr,diff-tree.c,50,+,-,+,*p++,,,15.0,p ++
+postIncr,diff.c,602,+,+,+,0 < size--,13.0,	while (0 < size--) {,12.0,size --
+postIncr,diff.c,603,+,+,+,*data++,9.0,		ch = *data++;,8.0,data ++
+postIncr,diff.c,841,+,+,+,o->emitted_symbols->buf[o->emitted_symbols->nr++],31.0,	f = &o->emitted_symbols->buf[o->emitted_symbols->nr++];,30.0,o -> emitted_symbols -> nr ++
+postIncr,diff.c,1078,+,+,+,pmb[j++],8.0,			pmb[j++].match = cur;,7.0,j ++
+postIncr,diff.c,1105,+,+,+,pmb[pmb_nr++],7.0,		pmb[pmb_nr++].match = match;,6.0,pmb_nr ++
+postIncr,diff.c,2516,+,+,+,diffstat->files[diffstat->nr++],18.0,	diffstat->files[diffstat->nr++] = x;,17.0,diffstat -> nr ++
+postIncr,diff.c,3372,+,+,+,line[len++],8.0,		line[len++] = '\n';,7.0,len ++
+postIncr,diff.c,5111,+,+,+,options->anchors[options->anchors_nr++],19.0,	options->anchors[options->anchors_nr++] = xstrdup(arg);,18.0,options -> anchors_nr ++
+postIncr,diff.c,5430,+,+,+,options->ignore_regex[options->ignore_regex_nr++],24.0,	options->ignore_regex[options->ignore_regex_nr++] = regex;,23.0,options -> ignore_regex_nr ++
+postIncr,diff.c,5908,+,+,+,queue->queue[queue->nr++],15.0,	queue->queue[queue->nr++] = dp;,14.0,queue -> nr ++
+postIncr,diff.c,6346,+,+,+,*dst++,5.0,			*dst++ = c;,4.0,dst ++
+postIncr,diffcore-delta.c,67,+,+,+,new_spanhash->data[bucket++],46.0,			struct spanhash *h = &(new_spanhash->data[bucket++]);,45.0,bucket ++
+postIncr,diffcore-delta.c,91,+,+,+,top->data[bucket++],19.0,		h = &(top->data[bucket++]);,18.0,bucket ++
+postIncr,diffcore-delta.c,143,+,+,+,*buf++,21.0,		unsigned int c = *buf++;,20.0,buf ++
+postIncr,dir-iterator.c,91,+,+,+,iter->levels[iter->levels_nr++],24.0,	level = &iter->levels[iter->levels_nr++];,23.0,iter -> levels_nr ++
+postIncr,dir-iterator.c,230,+,+,+,level->entries.items[level->entries_idx++],32.0,			name = level->entries.items[level->entries_idx++].string;,31.0,level -> entries_idx ++
+postIncr,dir.c,83,+,+,+,*s++,8.0,		if (*s++ == '/'),7.0,s ++
+postIncr,dir.c,263,+,+,+,*cp++,8.0,		if (*cp++ != '/'),7.0,cp ++
+postIncr,dir.c,312,+,+,+,data[sz++],8.0,		data[sz++] = '\n';,7.0,sz ++
+postIncr,dir.c,632,+,+,+,*match++,22.0,		unsigned char c = *match++;,21.0,match ++
+postIncr,dir.c,924,+,+,+,pl->patterns[pl->nr++],15.0,	pl->patterns[pl->nr++] = pattern;,14.0,pl -> nr ++
+postIncr,dir.c,1129,+,+,+,buf[size++],7.0,		buf[size++] = '\n';,6.0,size ++
+postIncr,dir.c,1219,+,+,+,group->pl[group->nr++],18.0,	pl = &group->pl[group->nr++];,17.0,group -> nr ++
+postIncr,dir.c,1771,+,+,+,dir->entries[dir->nr++],22.0,"	return dir->entries[dir->nr++] = dir_entry_new(pathname, len);",21.0,dir -> nr ++
+postIncr,dir.c,1782,+,+,+,dir->ignored[dir->ignored_nr++],22.0,"	return dir->ignored[dir->ignored_nr++] = dir_entry_new(pathname, len);",21.0,dir -> ignored_nr ++
+postIncr,dir.c,1830,+,+,+,istate->cache[pos++],48.0,		const struct cache_entry *ce = istate->cache[pos++];,47.0,pos ++
+postIncr,dir.c,2236,+,+,+,istate->cache[pos++],22.0,		ce = istate->cache[pos++];,21.0,pos ++
+postIncr,dir.c,2435,+,+,+,dir->untracked[dir->untracked_nr++],17.0,	dir->untracked[dir->untracked_nr++] = xstrdup(name);,16.0,dir -> untracked_nr ++
+postIncr,dir.c,2540,+,+,+,d->untracked[cdir->nr_files++],29.0,		cdir->file = d->untracked[cdir->nr_files++];,28.0,cdir -> nr_files ++
+postIncr,dir.c,3292,+,+,+,*out++,5.0,			*out++ = ch;,4.0,out ++
+postIncr,dir.c,3534,+,+,+, = wd->index++,10.0,	int i = wd->index++;,9.0,wd -> index ++
+postIncr,dir.c,3535,+,-,-, = wd->index++,,,,
+postIncr,dir.c,3726,+,+,+,rd->ucd[rd->index++],10.0,	rd->ucd[rd->index++] = untracked;,9.0,rd -> index ++
+postIncr,dir.c,3727,+,-,-,rd->ucd[rd->index++],,,,
+postIncr,dir.c,4083,+,+,+,*p++,7.0,	if (*p++ != '.'),6.0,p ++
+postIncr,dir.c,4084,+,-,-,*p++,,,,
+postIncr,dir.c,4086,+,+,+,*p++,7.0,	    *p++ != '.'),6.0,p ++
+postIncr,dir.c,4087,+,-,-,*p++,,,,
+postIncr,dirent.c,35,+,-,+,pattern[len++],,,10.0,len ++
+postIncr,dirent.c,36,+,-,+,pattern[len++],,,9.0,len ++
+postIncr,dump.c,67,-,-,+,,,,26.0,argc --
+postIncr,ewah_bitmap.c,43,+,+,+,self->buffer[self->buffer_size++],15.0,	self->buffer[self->buffer_size++] = value;,14.0,self -> buffer_size ++
+postIncr,ewah_bitmap.c,138,+,+,+,self->buffer[self->buffer_size++],18.0,				self->buffer[self->buffer_size++] = ~buffer[i];,17.0,self -> buffer_size ++
+postIncr,ewah_bitmap.c,463,+,+,+,bitmap_pool[bitmap_pool_size++],14.0,	bitmap_pool[bitmap_pool_size++] = self;,13.0,bitmap_pool_size ++
+postIncr,ewah_bitmap.c,472,+,+,+,"while (size--)
+    crc = (crc << 5) - crc + (uint32_t) * p++;
+",9.0,	while (size--),8.0,size --
+postIncr,ewah_bitmap.c,473,+,+,+,(uint32_t) * p++,39.0,		crc = (crc << 5) - crc + (uint32_t)*p++;,38.0,p ++
+postIncr,exec-cmd.c,363,-,+,+,,14.0,"		arg = argv[argc++] = va_arg(param, char *);",13.0,argc ++
+postIncr,fast-export.c,218,+,+,+,*path++,23.0,"			strbuf_addch(out, *path++);",22.0,path ++
+postIncr,fast-export.c,290,+,+,+,"strbuf_addf(&out, ""anonymous blob %d"", counter++)",41.0,"	strbuf_addf(&out, ""anonymous blob %d"", counter++);",40.0,counter ++
+postIncr,fast-export.c,393,+,+,+,"strbuf_addf(&out, ""path%d"", counter++)",30.0,"	strbuf_addf(&out, ""path%d"", counter++);",29.0,counter ++
+postIncr,fast-export.c,419,+,+,+,"put_be32(oid.hash + hashsz - 4, counter++)",34.0,"	put_be32(oid.hash + hashsz - 4, counter++);",33.0,counter ++
+postIncr,fast-export.c,528,+,+,+,"strbuf_addf(&out, ""ref%d"", counter++)",29.0,"	strbuf_addf(&out, ""ref%d"", counter++);",28.0,counter ++
+postIncr,fast-export.c,567,+,+,+,"xstrfmt(""subject %d\n\nbody\n"", counter++)",41.0,"	return xstrfmt(""subject %d\n\nbody\n"", counter++);",40.0,counter ++
+postIncr,fast-export.c,594,+,+,+,buffers[which_buffer++],17.0,	out = &buffers[which_buffer++];,16.0,which_buffer ++
+postIncr,fast-export.c,758,+,+,+,"strbuf_addf(&out, ""tag message %d"", counter++)",38.0,"	strbuf_addf(&out, ""tag message %d"", counter++);",37.0,counter ++
+postIncr,fast-import.c,484,+,+,+,e = blocks->next_free++,6.0,	e = blocks->next_free++;,5.0,blocks -> next_free ++
+postIncr,fast-import.c,540,+,+,+,len-- > 0,9.0,	while (len-- > 0),8.0,len --
+postIncr,fast-import.c,541,+,+,+,*s++,17.0,		r = r * 31 + *s++;,16.0,s ++
+postIncr,fast-import.c,711,+,+,+,n-- > 1,10.0,		while (n-- > 1) {,9.0,n --
+postIncr,fast-import.c,789,+,+,+,e-- != o->entries,26.0,		for (e = o->next_free; e-- != o->entries;),25.0,e --
+postIncr,fast-import.c,791,+,+,+,*c++,6.0,				*c++ = &e->idx;,5.0,c ++
+postIncr,fast-import.c,1273,+,+,+,t->entries[t->entry_count++],14.0,		t->entries[t->entry_count++] = e;,13.0,t -> entry_count ++
+postIncr,fast-import.c,1372,+,+,+,t->entries[j++],15.0,			t->entries[j++] = e;,14.0,j ++
+postIncr,fast-import.c,1471,+,+,+,t->entries[t->entry_count++],13.0,	t->entries[t->entry_count++] = e;,12.0,t -> entry_count ++
+postIncr,fast-import.c,2085,+,+,+,path[i++],8.0,		path[i++] = hex_sha1[j++];,7.0,i ++
+postIncr,fast-import.c,2086,+,+,+,path[i++],8.0,		path[i++] = hex_sha1[j++];,7.0,i ++
+postIncr,fast-import.c,2087,+,+,+,path[i++],8.0,		path[i++] = '/';,7.0,i ++
+postIncr,fast-import.c,2135,+,+,+,fullpath[tmp_fullpath_len++],13.0,			fullpath[tmp_fullpath_len++] = '/';,12.0,tmp_fullpath_len ++
+postIncr,fast-import.c,2259,+,+,+,*end++,7.0,	if (*end++ != ' '),6.0,end ++
+postIncr,fast-import.c,2353,+,+,+,*p++,8.0,		if (*p++ != ' '),7.0,p ++
+postIncr,fast-import.c,2492,+,+,+,*p++,8.0,		if (*p++ != ' '),7.0,p ++
+postIncr,fast-import.c,3134,+,+,+,*(*p)++,8.0,		if (*(*p)++ != ' '),7.0,( * p ) ++
+postIncr,fetch-pack.c,103,+,+,+,cache->items[cache->nr++],15.0,	cache->items[cache->nr++] = obj;,14.0,cache -> nr ++
+postIncr,fetch-pack.c,178,-,+,+,,15.0,		dest = argv[i++];,14.0,i ++
+postIncr,fetch-pack.c,1595,+,+,+,*end++,51.0,"		if (parse_oid_hex(reader->line, &oid, &end) || *end++ != ' ')",50.0,end ++
+postIncr,fetch.c,1918,-,+,+,,33.0,	remote = state->remotes->items[state->next++].string;,32.0,state -> next ++
+postIncr,files-backend.c,432,+,+,+,remaining_retries-- <= 0,6.0,	if (remaining_retries-- <= 0),5.0,remaining_retries --
+postIncr,files-backend.c,440,+,-,-,remaining_retries-- <= 0,,,,
+postIncr,files-backend.c,1024,+,+,+,remove_directories_remaining-- > 0,25.0,	if (errno == EISDIR && remove_directories_remaining-- > 0) {,24.0,remove_directories_remaining --
+postIncr,files-backend.c,1032,+,-,-,remove_directories_remaining-- > 0,,,,
+postIncr,files-backend.c,1034,+,+,+,create_directories_remaining-- > 0,32.0,	} else if (errno == ENOENT && create_directories_remaining-- > 0) {,31.0,create_directories_remaining --
+postIncr,files-backend.c,1042,+,-,-,create_directories_remaining-- > 0,,,,
+postIncr,files-backend.c,1050,+,+,+,create_directories_remaining-- > 0,44.0,		} while (scld_result == SCLD_VANISHED && create_directories_remaining-- > 0);,43.0,create_directories_remaining --
+postIncr,files-backend.c,1058,+,-,-,create_directories_remaining-- > 0,,,,
+postIncr,files-backend.c,1965,+,+,+,*p++,38.0,"	    parse_oid_hex(p, &ooid, &p) || *p++ != ' ' ||",37.0,p ++
+postIncr,files-backend.c,1966,+,+,+,*p++,38.0,"	    parse_oid_hex(p, &noid, &p) || *p++ != ' ' ||",37.0,p ++
+postIncr,files-backend.c,1976,+,-,-,*p++,,,,
+postIncr,files-backend.c,1977,+,-,-,*p++,,,,
+postIncr,fmt-merge-msg.c,550,+,+,+,!tag_number++,8.0,		if (!tag_number++) {,7.0,tag_number ++
+postIncr,fsck.c,59,+,+,+,*(q)++,6.0,				*(q)++ = tolower(*(p)++);,22.0,( p ) ++
+postIncr,fsck.c,69,+,+,+,*q++,7.0,					*q++ = *p++;,13.0,p ++
+postIncr,fsck.c,71,+,+,+,*q++,6.0,				*q++ = tolower(*p++);,20.0,p ++
+postIncr,fsck.c,416,+,+,+,"if (counter++)
+    fsck_put_object_name(options, oid, ""%s^%d"", name, counter);
+else
+    if (generation > 0)
+        fsck_put_object_name(options, oid, ""%.*s~%d"", name_prefix_len, name, generation + 1);
+    else
+        fsck_put_object_name(options, oid, ""%s^"", name);
+",8.0,			if (counter++),7.0,counter ++
+postIncr,fsck.c,479,+,+,+,stack->names[stack->nr++],15.0,	stack->names[stack->nr++] = name;,14.0,stack -> nr ++
+postIncr,fsm-listen-darwin.c,435,+,-,+,dir_array[data->nr_paths_watching++],,,11.0,data -> nr_paths_watching ++
+postIncr,fsm-listen-darwin.c,441,+,-,+,dir_array[data->nr_paths_watching++],,,12.0,data -> nr_paths_watching ++
+postIncr,fsm-listen-win32.c,330,+,-,+,wpath_longname[len_longname++],,,17.0,len_longname ++
+postIncr,fsm-path-utils-win32.c,91,+,-,+,wpath[wlen++],,,8.0,wlen ++
+postIncr,fsmonitor--daemon.c,159,-,-,+,,,,17.0,state -> cookie_seq ++
+postIncr,fsmonitor--daemon.c,389,-,-,+,,,,7.0,flush_count ++
+postIncr,fsmonitor--daemon.c,395,-,-,+,,,,45.0,test_env_value ++
+postIncr,fsmonitor--daemon.c,465,-,-,+,,,,23.0,batch -> nr ++
+postIncr,fsmonitor--daemon.c,478,-,-,+,,,,29.0,batch_dest -> nr ++
+postIncr,fsmonitor--daemon.c,642,-,-,+,,,,36.0,p ++
+postIncr,fsmonitor--daemon.c,643,-,-,+,,,,7.0,p ++
+postIncr,fuzz-date.c,26,+,+,+,*data++,14.0,	local = !!(*data++ & 0x10);,13.0,data ++
+postIncr,fuzz-date.c,27,+,+,+,*data++,9.0,	num = *data++ % DATE_UNIX;,8.0,data ++
+postIncr,fuzz-date.c,33,+,+,+,*data++,8.0,	tz = *data++;,7.0,data ++
+postIncr,fuzz-date.c,34,+,+,+,*data++,20.0,	tz = (tz << 8) | *data++;,19.0,data ++
+postIncr,gc.c,596,+,+,+,"if (done++)
+    return;
+",6.0,	if (done++),5.0,done ++
+postIncr,git-compat-util.h,724,+,+,-,*str++,12.0,	} while (*str++ == *prefix++);,,
+postIncr,git-compat-util.h,1273,+,-,-,*str++,,,,
+postIncr,git-compat-util.h,1292,+,+,-,len-- > 0,11.0,	} while (len-- > 0 && tolower(*buf++) == tolower(*prefix++));,,
+postIncr,git-credential-libsecret.c,342,+,-,+,*value++,,,3.0,value ++
+postIncr,git-credential-libsecret.c,352,+,-,+,*value++,,,5.0,value ++
+postIncr,git-credential-libsecret.c,368,+,-,+,*value++,,,5.0,value ++
+postIncr,git-credential-libsecret.c,373,+,-,+,*value++,,,5.0,value ++
+postIncr,git-credential-libsecret.c,413,+,-,+,(try_op++)->name,,,25.0,try_op ++
+postIncr,git-credential-osxkeychain.c,347,+,-,+,*v++,,,3.0,v ++
+postIncr,git-credential-osxkeychain.c,374,+,-,+,*colon++,,,5.0,colon ++
+postIncr,git-credential-wincred.c,286,+,-,+,*v++,,,3.0,v ++
+postIncr,gpg-interface.c,253,+,+,+,"if (seen_exclusive_status++)
+    goto error;
+",10.0,					if (seen_exclusive_status++),9.0,seen_exclusive_status ++
+postIncr,graph.c,556,+,+,+,i = graph->num_new_columns++,7.0,		i = graph->num_new_columns++;,6.0,graph -> num_new_columns ++
+postIncr,grep.c,160,+,+,+,*p++,11.0,					if (*p++ == '\n'),10.0,p ++
+postIncr,grep.c,253,-,-,+,,,,61.0,count ++
+postIncr,grep.c,263,-,-,+,,,,58.0,count ++
+postIncr,grep.c,458,+,+,+,repos_to_free[repos_to_free_nr++],16.0,	repos_to_free[repos_to_free_nr++] = subrepo;,15.0,repos_to_free_nr ++
+postIncr,hashmap.c,13,+,+,+,*str++,31.0,	while ((c = (unsigned char) *str++)),30.0,str ++
+postIncr,hashmap.c,21,+,+,+,*str++,31.0,	while ((c = (unsigned char) *str++)) {,30.0,str ++
+postIncr,hashmap.c,33,+,+,+,"while (len--){
+    unsigned int c = *ucbuf++;
+    hash = (hash * FNV32_PRIME) ^ c;
+}
+",9.0,	while (len--) {,8.0,len --
+postIncr,hashmap.c,34,+,+,+,*ucbuf++,21.0,		unsigned int c = *ucbuf++;,20.0,ucbuf ++
+postIncr,hashmap.c,44,+,+,+,"while (len--){
+    unsigned int c = *ucbuf++;
+    if (c >= 'a' && c <= 'z')
+        c -= 'a' - 'A';
+
+    hash = (hash * FNV32_PRIME) ^ c;
+}
+",9.0,	while (len--) {,8.0,len --
+postIncr,hashmap.c,45,+,+,+,*ucbuf++,21.0,		unsigned int c = *ucbuf++;,20.0,ucbuf ++
+postIncr,hashmap.c,61,+,+,+,"while (len--){
+    unsigned int c = *ucbuf++;
+    if (c >= 'a' && c <= 'z')
+        c -= 'a' - 'A';
+
+    hash = (hash * FNV32_PRIME) ^ c;
+}
+",9.0,	while (len--) {,8.0,len --
+postIncr,hashmap.c,62,+,+,+,*ucbuf++,21.0,		unsigned int c = *ucbuf++;,20.0,ucbuf ++
+postIncr,hashmap.c,306,+,+,+,iter->map->table[iter->tablepos++],30.0,		current = iter->map->table[iter->tablepos++];,29.0,iter -> tablepos ++
+postIncr,help.c,130,-,-,+,,,,27.0,i ++
+postIncr,help.c,157,+,+,+,cmds->names[cmds->cnt++],14.0,	cmds->names[cmds->cnt++] = ent;,13.0,cmds -> cnt ++
+postIncr,help.c,188,+,+,+,cmds->names[j++],16.0,			cmds->names[j++] = cmds->names[i];,15.0,j ++
+postIncr,help.c,203,+,+,+,cmds->names[cj++],16.0,			cmds->names[cj++] = cmds->names[ci++];,35.0,ci ++
+postIncr,help.c,206,+,+,+,cmds->names[ci++],21.0,			free(cmds->names[ci++]);,20.0,ci ++
+postIncr,help.c,212,+,+,+,cmds->names[cj++],15.0,		cmds->names[cj++] = cmds->names[ci++];,34.0,ci ++
+postIncr,help.c,592,+,+,+,cmds->names[cmds->cnt++],15.0,		cmds->names[cmds->cnt++] = old->names[i];,14.0,cmds -> cnt ++
+postIncr,help.c,683,+,+,+,main_cmds.names[n++],42.0,		for (best_similarity = main_cmds.names[n++]->len;,41.0,n ++
+postIncr,help.h,18,+,+,-,"while (num--)
+    putchar(c);
+",9.0,	while (num--),,
+postIncr,hex-ll.c,41,-,-,+,,,,13.0,len --
+postIncr,hex-ll.c,46,+,+,+,*binary++,4.0,		*binary++ = val;,3.0,binary ++
+postIncr,hex.c,13,+,+,+,*hash++,4.0,		*hash++ = val;,3.0,hash ++
+postIncr,hex.c,90,+,+,+,*hash++,23.0,		unsigned int val = *hash++;,22.0,hash ++
+postIncr,hex.c,91,+,+,+,*buf++,4.0,		*buf++ = hex[val >> 4];,3.0,buf ++
+postIncr,hex.c,92,+,+,+,*buf++,4.0,		*buf++ = hex[val & 0xf];,3.0,buf ++
+postIncr,http-backend.c,690,+,+,+,dead++ > 1,9.0,	return dead++ > 1;,8.0,dead ++
+postIncr,http-fetch.c,164,+,+,+,argv[arg++],31.0,		commit_id = (char **) &argv[arg++];,30.0,arg ++
+postIncr,http-push.c,1712,-,-,+,,,,28.0,argv ++
+postIncr,http.c,1868,+,+,+,*raw++,22.0,"		strbuf_addch(out, *raw++);",21.0,raw ++
+postIncr,http.c,1964,+,+,+,*s++,12.0,	} while (*s++);,11.0,s ++
+postIncr,http.c,1975,+,+,+,language_tags[num_langs++],17.0,"		language_tags[num_langs++] = ""*""; /* it's OK; this won't be freed */",16.0,num_langs ++
+postIncr,http.c,1980,-,-,+,,,,7.0,decimal_places ++
+postIncr,ident.c,258,+,+,+,*src++,8.0,		c = *src++;,7.0,src ++
+postIncr,ident.c,263,+,+,+,sb->buf[sb->len++],11.0,		sb->buf[sb->len++] = c;,10.0,sb -> len ++
+postIncr,imap-send.c,479,+,+,+,*(*s)++,5.0,			*(*s)++ = 0;,4.0,( * s ) ++
+postIncr,imap-send.c,663,+,+,+,*p++,3.0,	*p++ = 0;,2.0,p ++
+postIncr,imap-send.c,1182,+,+,+,new_msg[j++],12.0,			new_msg[j++] = '\r';,11.0,j ++
+postIncr,imap-send.c,1183,+,+,+,new_msg[j++],19.0,		lastc = new_msg[j++] = msg->buf[i];,18.0,j ++
+postIncr,index-pack.c,917,+,+,+,delta[delta_nr++],10.0,			delta[delta_nr++] = c;,9.0,delta_nr ++
+postIncr,index-pack.c,1045,+,+,+,objects[nr_dispatched++],25.0,			child_obj = &objects[nr_dispatched++];,24.0,nr_dispatched ++
+postIncr,index-pack.c,1055,+,+,+,ref_deltas[parent->ref_first++],29.0,				int offset = ref_deltas[parent->ref_first++].obj_no;,28.0,parent -> ref_first ++
+postIncr,index-pack.c,1064,+,+,+,ofs_deltas[parent->ofs_first++],17.0,					ofs_deltas[parent->ofs_first++].obj_no;,16.0,parent -> ofs_first ++
+postIncr,index-pack.c,1353,+,+,+,objects[nr_objects++],38.0,	struct object_entry *obj = &objects[nr_objects++];,37.0,nr_objects ++
+postIncr,index-pack.c,1360,+,+,+,header[n++],10.0,		header[n++] = c | 0x80;,9.0,n ++
+postIncr,index-pack.c,1364,+,+,+,header[n++],9.0,	header[n++] = c;,8.0,n ++
+postIncr,index-pack.c,1643,+,+,+,opts->anomaly[opts->anomaly_nr++],17.0,		opts->anomaly[opts->anomaly_nr++] = ntohl(idx2[off * 2 + 1]);,16.0,opts -> anomaly_nr ++
+postIncr,inet_ntop.c,128,+,-,+,*tp++,,,5.0,tp ++
+postIncr,inet_ntop.c,133,+,-,+,*tp++,,,4.0,tp ++
+postIncr,inet_ntop.c,147,+,-,+,*tp++,,,3.0,tp ++
+postIncr,inet_ntop.c,148,+,-,+,*tp++,,,2.0,tp ++
+postIncr,inet_pton.c,62,+,-,+,*src++,,,22.0,src ++
+postIncr,inet_pton.c,125,+,-,+,*src++,,,22.0,src ++
+postIncr,inet_pton.c,148,+,-,+,*tp++,,,25.0,tp ++
+postIncr,inet_pton.c,149,+,-,+,*tp++,,,25.0,tp ++
+postIncr,inet_pton.c,165,+,-,+,*tp++,,,17.0,tp ++
+postIncr,inet_pton.c,166,+,-,+,*tp++,,,17.0,tp ++
+postIncr,iter.c,108,+,+,+,it->offsets[it->offset_idx++],20.0,	off = it->offsets[it->offset_idx++];,19.0,it -> offset_idx ++
+postIncr,iter.c,116,+,-,-,it->offsets[it->offset_idx++],,,,
+postIncr,json-writer.c,24,+,+,+,*in++,15.0,	while ((c = *in++) != '\0') {,14.0,in ++
+postIncr,json-writer.c,367,+,+,+,*argv++,24.0,"		jw_array_string(jw, *argv++);",23.0,argv ++
+postIncr,kwset.c,183,+,+,+,"while (len--){
+    label = kwset->trans ? kwset->trans[U(*--text)] : *--text;
+    link = trie->links;
+    links[0] = (struct tree*)&trie->links;
+    dirs[0] = L;
+    depth = 1;
+    while (link && label != link->label){
+        links[depth] = link;
+        if (label < link->label)
+            dirs[depth++] = L, link = link->llink;
+        else
+            dirs[depth++] = R, link = link->rlink;
+    }
+    if (!link){
+        link = (struct tree*)obstack_alloc(&kwset->obstack, sizeof (struct tree));
+        if (!link)
+            return ""memory exhausted"";
+
+        link->llink = NULL;
+        link->rlink = NULL;
+        link->trie = (struct trie*)obstack_alloc(&kwset->obstack, sizeof (struct trie));
+        if (!link->trie){
+            obstack_free(&kwset->obstack, link);
+            return ""memory exhausted"";
+        }
+        link->trie->accepting = 0;
+        link->trie->links = NULL;
+        link->trie->parent = trie;
+        link->trie->next = NULL;
+        link->trie->fail = NULL;
+        link->trie->depth = trie->depth + 1;
+        link->trie->shift = 0;
+        link->label = label;
+        link->balance = 0;
+        if (dirs[--depth] == L)
+            links[depth]->llink = link;
+        else
+            links[depth]->rlink = link;
+
+        while (depth && !links[depth]->balance){
+            if (dirs[depth] == L)
+                --links[depth]->balance;
+            else
+                ++links[depth]->balance;
+
+            --depth;
+        }
+        if (depth && ((dirs[depth] == L && --links[depth]->balance) || (dirs[depth] == R && ++links[depth]->balance))){
+            switch (links[depth]->balance){
+                case (char)-2:
+                    switch (dirs[depth + 1]){
+                        case L:
+                            r = links[depth], t = r->llink, rl = t->rlink;
+                            t->rlink = r, r->llink = rl;
+                            t->balance = r->balance = 0;
+                            break;
+                        case R:
+                            r = links[depth], l = r->llink, t = l->rlink;
+                            rl = t->rlink, lr = t->llink;
+                            t->llink = l, l->rlink = lr, t->rlink = r, r->llink = rl;
+                            l->balance = t->balance != 1 ? 0 : -1;
+                            r->balance = t->balance != (char)-1 ? 0 : 1;
+                            t->balance = 0;
+                            break;
+                        default:
+                            abort();
+                    }
+                    break;
+                case 2:
+                    switch (dirs[depth + 1]){
+                        case R:
+                            l = links[depth], t = l->rlink, lr = t->llink;
+                            t->llink = l, l->rlink = lr;
+                            t->balance = l->balance = 0;
+                            break;
+                        case L:
+                            l = links[depth], r = l->rlink, t = r->llink;
+                            lr = t->llink, rl = t->rlink;
+                            t->llink = l, l->rlink = lr, t->rlink = r, r->llink = rl;
+                            l->balance = t->balance != 1 ? 0 : -1;
+                            r->balance = t->balance != (char)-1 ? 0 : 1;
+                            t->balance = 0;
+                            break;
+                        default:
+                            abort();
+                    }
+                    break;
+                default:
+                    abort();
+            }
+            if (dirs[depth - 1] == L)
+                links[depth - 1]->llink = t;
+            else
+                links[depth - 1]->rlink = t;
+        }
+    }
+    trie = link->trie;
+}
+",10.0,  while (len--),9.0,len --
+postIncr,kwset.c,199,+,+,+,dirs[depth++],11.0,"	    dirs[depth++] = L, link = link->llink;",10.0,depth ++
+postIncr,kwset.c,201,+,+,+,dirs[depth++],11.0,"	    dirs[depth++] = R, link = link->rlink;",10.0,depth ++
+postIncr,line-log.c,159,+,+,+,ra[i++],21.0,				new_range = &ra[i++];,20.0,i ++
+postIncr,line-log.c,161,+,+,+,rb[j++],21.0,				new_range = &rb[j++];,20.0,j ++
+postIncr,line-log.c,163,+,+,+,ra[i++],21.0,				new_range = &ra[i++];,20.0,i ++
+postIncr,line-log.c,165,+,+,+,rb[j++],21.0,				new_range = &rb[j++];,20.0,j ++
+postIncr,line-log.c,167,+,+,+,ra[i++],20.0,			new_range = &ra[i++];,19.0,i ++
+postIncr,line-log.c,169,+,+,+,rb[j++],20.0,			new_range = &rb[j++];,19.0,j ++
+postIncr,line-log.c,528,+,+,+,ends[cur++],7.0,	ends[cur++] = 0;,6.0,cur ++
+postIncr,line-log.c,533,+,+,+,ends[cur++],9.0,			ends[cur++] = num;,8.0,cur ++
+postIncr,line-log.c,748,-,-,+,,,,47.0,i ++
+postIncr,line-range.c,98,+,+,+,begin++ < lines,10.0,		while (begin++ < lines) {,9.0,begin ++
+postIncr,line-range.c,106,+,+,+,*term++,4.0,		*term++ = '/';,3.0,term ++
+postIncr,linear-assignment.c,56,+,+,+,free_row[free_count++],13.0,			free_row[free_count++] = i;,12.0,free_count ++
+postIncr,linear-assignment.c,85,+,+,+,free_row[k++],17.0,			i = free_row[k++];,16.0,k ++
+postIncr,linear-assignment.c,120,+,+,+,free_row[free_count++],15.0,					free_row[free_count++] = i0;,14.0,free_count ++
+postIncr,linear-assignment.c,145,+,+,+,col[up++],16.0,			min = d[col[up++]];,15.0,up ++
+postIncr,linear-assignment.c,155,+,+,+,col[up++],10.0,					col[up++] = j;,9.0,up ++
+postIncr,linear-assignment.c,164,+,+,+,col[low++],18.0,				int j1 = col[low++];,17.0,low ++
+postIncr,linear-assignment.c,178,+,+,+,col[up++],12.0,							col[up++] = j;,11.0,up ++
+postIncr,lockfile.c,55,+,+,-,"while (depth--){
+    if (strbuf_readlink(&link, path->buf, path->len) < 0)
+        break;
+
+    if (is_absolute_path(link.buf))
+        strbuf_reset(path);
+    else
+        trim_last_path_component(path);
+
+    strbuf_addbuf(path, &link);
+}
+",9.0,	while (depth--) {,,
+postIncr,log.c,701,+,+,+,buf[new_offset++],35.0,		while (new_offset < size && buf[new_offset++] != '\n'),34.0,new_offset ++
+postIncr,loose.c,91,+,+,+,*p++,8.0,		    *p++ != ' ' ||,7.0,p ++
+postIncr,ls-remote.c,31,+,+,+,*(pattern++),16.0,	while ((p = *(pattern++)) != NULL) {,15.0,pattern ++
+postIncr,mailinfo.c,65,+,-,+,*in++,,,14.0,in ++
+postIncr,mailinfo.c,67,+,+,+,*in++,12.0,		int c = *in++;,11.0,in ++
+postIncr,mailinfo.c,93,+,-,+,*in++,,,14.0,in ++
+postIncr,mailinfo.c,98,+,+,+,*in++,12.0,		int c = *in++;,11.0,in ++
+postIncr,mailinfo.c,120,+,-,+,*in++,,,14.0,in ++
+postIncr,mailinfo.c,125,+,+,+,*in++,15.0,	while ((c = *in++) != 0) {,14.0,in ++
+postIncr,mailinfo.c,359,+,+,+,*val++,7.0,	    *val++ != ':'),6.0,val ++
+postIncr,mailinfo.c,379,+,-,+,*in++,,,14.0,in ++
+postIncr,mailinfo.c,390,+,+,+,*in++,15.0,	while ((c = *in++) != 0) {,14.0,in ++
+postIncr,mailinfo.c,407,+,-,+,*in++,,,14.0,in ++
+postIncr,mailinfo.c,418,+,+,+,*in++,15.0,	while ((c = *in++) != 0) {,14.0,in ++
+postIncr,mailinfo.c,420,+,-,+,"switch (pos++){
+    case 0:
+        acc = (c << 2);
+        break;
+    case 1:
+        strbuf_addch(out, (acc | (c >> 4)));
+        acc = (c & 15) << 4;
+        break;
+    case 2:
+        strbuf_addch(out, (acc | (c >> 2)));
+        acc = (c & 3) << 6;
+        break;
+    case 3:
+        strbuf_addch(out, (acc | c));
+        acc = pos = 0;
+        break;
+}
+",,,10.0,pos ++
+postIncr,mailinfo.c,431,+,+,+,"switch (pos++){
+    case 0:
+        acc = (c << 2);
+        break;
+    case 1:
+        strbuf_addch(out, (acc | (c >> 4)));
+        acc = (c & 15) << 4;
+        break;
+    case 2:
+        strbuf_addch(out, (acc | (c >> 2)));
+        acc = (c & 3) << 6;
+        break;
+    case 3:
+        strbuf_addch(out, (acc | c));
+        acc = pos = 0;
+        break;
+}
+",11.0,		switch (pos++) {,10.0,pos ++
+postIncr,mailinfo.c,865,+,-,+,*cp++,,,15.0,cp ++
+postIncr,mailinfo.c,883,+,+,+,*cp++,16.0,	while ((ch = *cp++)) {,15.0,cp ++
+postIncr,mailmap.c,124,+,+,+,*right++,3.0,	*right++ = '\0';,2.0,right ++
+postIncr,mailmap.c,180,+,+,+,*end++,5.0,			*end++ = '\0';,4.0,end ++
+postIncr,mailsplit.c,336,+,+,+,*argp++,22.0,		const char *arg = *argp++;,21.0,argp ++
+postIncr,memmem.c,25,+,-,+,*tail++,,,10.0,tail ++
+postIncr,merge-base.c,199,+,+,+,argc-- > 0,9.0,	while (argc-- > 0),8.0,argc --
+postIncr,merge-base.c,200,+,+,+,rev[rev_nr++],7.0,		rev[rev_nr++] = get_commit_reference(*argv++);,40.0,argv ++
+postIncr,merge-file.c,28,+,+,+,names[label_count++],8.0,	names[label_count++] = arg;,7.0,label_count ++
+postIncr,merge-index.c,102,-,+,+,,13.0,	pgm = argv[i++];,12.0,i ++
+postIncr,merge-ort.c,817,-,-,+,,,,35.0,i_sb ++
+postIncr,merge-ort.c,891,+,+,+,"strbuf_addf(&newpath, ""_%d"", suffix++)",32.0,"		strbuf_addf(&newpath, ""_%d"", suffix++);",31.0,suffix ++
+postIncr,merge-ort.c,1574,-,-,+,,,,22.0,i ++
+postIncr,merge-ort.c,3390,+,+,+,result->queue[result->nr++],17.0,		result->queue[result->nr++] = p;,16.0,result -> nr ++
+postIncr,merge-recursive.c,55,-,+,+,,10.0,			bases[bases_count++] = oid;,9.0,bases_count ++
+postIncr,merge-recursive.c,752,+,+,+,"strbuf_addf(&newpath, ""_%d"", suffix++)",32.0,"		strbuf_addf(&newpath, ""_%d"", suffix++);",31.0,suffix ++
+postIncr,merge-recursive.c,2780,+,+,+,b_renames->items[j++],28.0,			ren2 = b_renames->items[j++].util;,27.0,j ++
+postIncr,merge-recursive.c,2782,+,+,+,a_renames->items[i++],28.0,			ren1 = a_renames->items[i++].util;,27.0,i ++
+postIncr,merge-recursive.c,2787,+,+,+,a_renames->items[i++],29.0,				ren1 = a_renames->items[i++].util;,28.0,i ++
+postIncr,merge-recursive.c,2789,+,+,+,b_renames->items[j++],29.0,				ren2 = b_renames->items[j++].util;,28.0,j ++
+postIncr,merge.c,70,+,+,+,trees[nr_trees++],13.0,	if (!trees[nr_trees++]) {,12.0,nr_trees ++
+postIncr,merge.c,75,+,+,+,trees[nr_trees++],13.0,	if (!trees[nr_trees++]) {,12.0,nr_trees ++
+postIncr,merge.c,225,+,+,+,use_strategies[use_strategies_nr++],17.0,	use_strategies[use_strategies_nr++] = s;,16.0,use_strategies_nr ++
+postIncr,merge.c,669,+,+,+,trees[nr_trees++],13.0,	if (!trees[nr_trees++]),12.0,nr_trees ++
+postIncr,merge.c,672,+,+,+,trees[nr_trees++],13.0,	if (!trees[nr_trees++]),12.0,nr_trees ++
+postIncr,merge.c,675,+,+,+,trees[nr_trees++],13.0,	if (!trees[nr_trees++]),12.0,nr_trees ++
+postIncr,merged_test.c,239,+,+,+,out[len++],7.0,		out[len++] = ref;,6.0,len ++
+postIncr,merged_test.c,370,+,+,+,out[len++],7.0,		out[len++] = log;,6.0,len ++
+postIncr,midx-write.c,463,+,+,+, = list++,33.0,		struct pack_midx_entry *obj = list++;,32.0,list ++
+postIncr,midx-write.c,487,+,+,+, = list++,33.0,		struct pack_midx_entry *obj = list++;,32.0,list ++
+postIncr,midx-write.c,497,-,+,+,,49.0,"			hashwrite_be32(f, MIDX_LARGE_OFFSET_NEEDED | nr_large_offset++);",48.0,nr_large_offset ++
+postIncr,midx-write.c,524,+,+,+,obj = list++,9.0,		obj = list++;,8.0,list ++
+postIncr,midx-write.c,704,+,+,+,data->commits[data->commits_nr++],16.0,	data->commits[data->commits_nr++] = commit;,15.0,data -> commits_nr ++
+postIncr,midx-write.c,955,+,+,+,ctx.info[ctx.nr++],29.0,"			fill_pack_info(&ctx.info[ctx.nr++], ctx.m->packs[i],",28.0,ctx . nr ++
+postIncr,mingw.c,1213,+,-,+,*d++,,,2.0,d ++
+postIncr,mingw.c,1216,+,-,+,*d++,,,4.0,d ++
+postIncr,mingw.c,1221,+,-,+,*d++,,,12.0,arg ++
+postIncr,mingw.c,1224,+,-,+,count-- > 0,,,11.0,count --
+postIncr,mingw.c,1225,+,-,+,*d++,,,6.0,d ++
+postIncr,mingw.c,1229,+,-,+,*d++,,,5.0,d ++
+postIncr,mingw.c,1232,+,-,+,*d++,,,10.0,arg ++
+postIncr,mingw.c,1234,+,-,+,*d++,,,2.0,d ++
+postIncr,mingw.c,1235,+,-,+,*d++,,,2.0,d ++
+postIncr,mingw.c,1437,+,-,+,array[nr++],,,8.0,nr ++
+postIncr,mingw.c,1451,+,-,+,array[nr++],,,8.0,nr ++
+postIncr,mingw.c,1630,+,-,+,stdhandles[stdhandles_count++],,,13.0,stdhandles_count ++
+postIncr,mingw.c,1633,+,-,+,stdhandles[stdhandles_count++],,,13.0,stdhandles_count ++
+postIncr,mingw.c,1637,+,-,+,stdhandles[stdhandles_count++],,,13.0,stdhandles_count ++
+postIncr,mingw.c,1993,+,-,+,values[value_counter++],,,8.0,value_counter ++
+postIncr,mingw.c,2547,+,-,+,utf[upos++],,,14.0,upos ++
+postIncr,mingw.c,2559,+,-,+,wcs[wpos++],,,7.0,wpos ++
+postIncr,mingw.c,2564,+,-,+,utf[upos++],,,13.0,upos ++
+postIncr,mingw.c,2565,+,-,+,wcs[wpos++],,,7.0,wpos ++
+postIncr,mingw.c,2572,+,-,+,utf[upos++],,,14.0,upos ++
+postIncr,mingw.c,2573,+,-,+,utf[upos++],,,13.0,upos ++
+postIncr,mingw.c,2574,+,-,+,wcs[wpos++],,,7.0,wpos ++
+postIncr,mingw.c,2584,+,-,+,utf[upos++],,,14.0,upos ++
+postIncr,mingw.c,2585,+,-,+,utf[upos++],,,14.0,upos ++
+postIncr,mingw.c,2586,+,-,+,utf[upos++],,,13.0,upos ++
+postIncr,mingw.c,2588,+,-,+,wcs[wpos++],,,7.0,wpos ++
+postIncr,mingw.c,2589,+,-,+,wcs[wpos++],,,7.0,wpos ++
+postIncr,mingw.c,2592,+,-,+,wcs[wpos++],,,7.0,wpos ++
+postIncr,mingw.c,2596,+,-,+,wcs[wpos++],,,7.0,wpos ++
+postIncr,mingw.c,2598,+,-,+,wcs[wpos++],,,8.0,wpos ++
+postIncr,mingw.c,2869,+,-,+,*(path++),,,13.0,path ++
+postIncr,mktree.c,36,+,+,+,entries[used++],10.0,	entries[used++] = ent;,9.0,used ++
+postIncr,mktree.c,103,+,+,+,*ntr++,3.0,	*ntr++ = 0; /* now at the beginning of SHA1 */,2.0,ntr ++
+postIncr,mv.c,85,+,+,+,with_slash[len++],14.0,		with_slash[len++] = '/';,13.0,len ++
+postIncr,mv.c,330,+,+,+,src_dir[src_dir_nr++],12.0,			src_dir[src_dir_nr++] = src;,11.0,src_dir_nr ++
+postIncr,name-hash.c,95,+,+,+,!(dir->nr++),18.0,	while (dir && !(dir->nr++)),17.0,dir -> nr ++
+postIncr,name-hash.c,658,+,+,+,*name1++,23.0,		unsigned char c1 = *name1++;,22.0,name1 ++
+postIncr,name-hash.c,659,+,+,+,*name2++,23.0,		unsigned char c2 = *name2++;,22.0,name2 ++
+postIncr,name-rev.c,211,-,-,+,,,,29.0,parent_number ++
+postIncr,name-rev.c,609,-,-,+,,,,14.0,argc --
+postIncr,notes-merge.c,43,+,+,+,hex_oid[i++],12.0,			hex_oid[i++] = *path;,11.0,i ++
+postIncr,notes.c,135,+,+,+,"while (d->msg_nr--){
+    strbuf_release(&d->messages[d->msg_nr]->buf);
+    free(d->messages[d->msg_nr]);
+}
+",9.0,	while (d->msg_nr--) {,8.0,d -> msg_nr --
+postIncr,notes.c,439,+,+,+,object_oid.hash + len++,39.0,"			if (hex_to_bytes(object_oid.hash + len++, entry.path, 1))",38.0,len ++
+postIncr,notes.c,485,+,+,+,*q++,35.0,"				strbuf_addch(&non_note_path, *q++);",34.0,q ++
+postIncr,notes.c,486,+,+,+,*q++,35.0,"				strbuf_addch(&non_note_path, *q++);",34.0,q ++
+postIncr,notes.c,548,+,+,+,path[i++],8.0,		path[i++] = hex_hash[j++];,7.0,i ++
+postIncr,notes.c,549,+,+,+,path[i++],8.0,		path[i++] = hex_hash[j++];,7.0,i ++
+postIncr,notes.c,550,+,+,+,path[i++],8.0,		path[i++] = '/';,7.0,i ++
+postIncr,notes.c,603,+,+,+,path[path_len++],11.0,					path[path_len++] = '/';,10.0,path_len ++
+postIncr,notes.c,1053,+,+,+,trees[counter++],9.0,		trees[counter++] = t;,8.0,counter ++
+postIncr,object-file.c,298,-,-,+,,,,40.0,co ++
+postIncr,object-file.c,1385,+,+,+,*hdr++,13.0,		char c = *hdr++;,12.0,hdr ++
+postIncr,object-file.c,1403,+,+,+,*hdr++,10.0,	size = *hdr++ - '0';,9.0,hdr ++
+postIncr,object-file.c,1787,+,+,+,cached_objects[cached_object_nr++],23.0,	co = &cached_objects[cached_object_nr++];,22.0,cached_object_nr ++
+postIncr,object-name.c,883,+,+,+,*path++,12.0,		switch (*path++) {,11.0,path ++
+postIncr,object-name.c,1130,+,+,+,"while (generation--){
+    if (repo_parse_commit(r, commit) || !commit->parents)
+        return MISSING_OBJECT;
+
+    commit = commit->parents->item;
+}
+",9.0,	while (generation--) {,8.0,generation --
+postIncr,object-name.c,1311,+,+,+,*cp++,26.0,			unsigned int digit = *cp++ - '0';,25.0,cp ++
+postIncr,object.c,477,-,-,+,,,,21.0,i ++
+postIncr,object.h,203,+,+,-,*str++,15.0,	while ((c = *str++) != ' ') {,,
+postIncr,oid-array.c,8,+,+,+,array->oid[array->nr++],21.0,"	oidcpy(&array->oid[array->nr++], oid);",20.0,array -> nr ++
+postIncr,oidset.h,110,+,-,-,"kh_key(iter->set, iter->iter++)",,,,
+postIncr,pack-bitmap-write.c,297,+,+,+,bb->commits[bb->commits_nr++],16.0,			bb->commits[bb->commits_nr++] = commit;,15.0,bb -> commits_nr ++
+postIncr,pack-bitmap-write.c,345,+,+,+,bb->commits[bb->commits_nr++],15.0,		bb->commits[bb->commits_nr++] = r->item;,14.0,bb -> commits_nr ++
+postIncr,pack-bitmap.c,251,+,+,+,buffer[(*pos)++],16.0,	return buffer[(*pos)++];,15.0,( * pos ) ++
+postIncr,pack-bitmap.c,2069,+,+,+,packs[packs_nr++],18.0,"			memcpy(&packs[packs_nr++], &pack, sizeof(pack));",17.0,packs_nr ++
+postIncr,pack-bitmap.c,2096,+,+,+,packs[packs_nr++],22.0,		objects_nr = packs[packs_nr++].bitmap_nr;,21.0,packs_nr ++
+postIncr,pack-bitmap.c,2165,+,+,+,objects->words[i++],33.0,		eword_t word = objects->words[i++] & filter;,32.0,i ++
+postIncr,pack-objects.c,97,+,+,+,mapping[cnt++],10.0,	mapping[cnt++] = NULL;,9.0,cnt ++
+postIncr,pack-objects.c,98,-,-,+,,,,54.0,cnt ++
+postIncr,pack-objects.c,193,+,+,+,pdata->objects + pdata->nr_objects++,31.0,	new_entry = pdata->objects + pdata->nr_objects++;,30.0,pdata -> nr_objects ++
+postIncr,pack-objects.c,232,+,+,+,pdata->ext_bases[pdata->nr_ext++],27.0,	base = &pdata->ext_bases[pdata->nr_ext++];,26.0,pdata -> nr_ext ++
+postIncr,pack-objects.c,290,+,+,+,indexed_commits[indexed_commits_nr++],18.0,	indexed_commits[indexed_commits_nr++] = commit;,17.0,indexed_commits_nr ++
+postIncr,pack-objects.c,765,+,+,+,written_list[nr_written++],15.0,	written_list[nr_written++] = &e->idx;,14.0,nr_written ++
+postIncr,pack-objects.c,804,+,+,+,wo[(*endp)++],5.0,	wo[(*endp)++] = e;,4.0,( * endp ) ++
+postIncr,pack-objects.c,1912,+,+,+,window <= num_preferred_base++,16.0,	if (window <= num_preferred_base++),15.0,num_preferred_base ++
+postIncr,pack-objects.c,2090,+,+,+,buf[used_0++],12.0,			c = buf[used_0++];,11.0,used_0 ++
+postIncr,pack-objects.c,2099,+,+,+,buf[used_0++],13.0,				c = buf[used_0++];,12.0,used_0 ++
+postIncr,pack-objects.c,2276,-,-,+,,,,24.0,total_depth ++
+postIncr,pack-objects.c,2371,+,+,+,(total_depth--) % (depth + 1),17.0,		cur->depth = (total_depth--) % (depth + 1);,16.0,total_depth --
+postIncr,pack-objects.c,2639,+,+,+,!warned++,10.0,				if (!warned++),9.0,warned ++
+postIncr,pack-objects.c,2663,+,+,+,!warned++,9.0,			if (!warned++),8.0,warned ++
+postIncr,pack-objects.c,2756,+,+,+,*list++,12.0,		entry = *list++;,11.0,list ++
+postIncr,pack-objects.c,2856,+,+,+,"while (dist--){
+    int src = (dst + 1) % window;
+    array[dst] = array[src];
+    dst = src;
+}
+",11.0,			while (dist--) {,10.0,dist --
+postIncr,pack-objects.c,3198,+,+,+,delta_list[n++],14.0,		delta_list[n++] = entry;,13.0,n ++
+postIncr,pack-objects.h,202,+,+,-,*name++,15.0,	while ((c = *name++) != 0) {,,
+postIncr,pack-redundant.c,380,+,+,+,ary[n++],7.0,		ary[n++] = p;,6.0,n ++
+postIncr,pack-redundant.c,615,-,+,+,,27.0,			add_pack_file(*(argv + i++));,26.0,i ++
+postIncr,pack-revindex.c,148,+,-,+,*off_32++,,,31.0,off_32 ++
+postIncr,pack-write.c,125,+,+,+,*list++,33.0,		struct pack_idx_entry *obj = *list++;,32.0,list ++
+postIncr,pack-write.c,141,+,+,+,*list++,34.0,			struct pack_idx_entry *obj = *list++;,33.0,list ++
+postIncr,pack-write.c,148,+,+,+,*list++,34.0,			struct pack_idx_entry *obj = *list++;,33.0,list ++
+postIncr,pack-write.c,152,+,+,+,0x80000000 | nr_large_offset++,23.0,				  ? (0x80000000 | nr_large_offset++),22.0,nr_large_offset ++
+postIncr,pack-write.c,160,+,+,+,*list++,34.0,			struct pack_idx_entry *obj = *list++;,33.0,list ++
+postIncr,pack-write.c,502,+,+,+,*hdr++,4.0,		*hdr++ = c | 0x80;,3.0,hdr ++
+postIncr,packed-backend.c,863,+,-,+,*p++,,,15.0,p ++
+postIncr,packed-backend.c,880,+,-,-,*p++,,,,
+postIncr,packed-backend.c,893,+,+,+,*p++,8.0,		    *p++ != '\n'),7.0,p ++
+postIncr,packed-backend.c,910,+,-,-,*p++,,,,
+postIncr,packed-backend.c,1035,+,+,+,iter->jump[iter->jump_nr++],19.0,		e = &iter->jump[iter->jump_nr++];,18.0,iter -> jump_nr ++
+postIncr,packed-backend.c,1049,+,-,-,iter->jump[iter->jump_nr++],,,,
+postIncr,packed-backend.c,1072,+,+,+,iter->jump[j++],15.0,			iter->jump[j++] = *ours;,14.0,j ++
+postIncr,packed-backend.c,1086,+,-,-,iter->jump[j++],,,,
+postIncr,packfile.c,688,+,+,+,win->last_used = pack_used_ctr++,20.0,		win->last_used = pack_used_ctr++;,19.0,pack_used_ctr ++
+postIncr,packfile.c,1085,+,+,+,buf[used++],10.0,	c = buf[used++];,9.0,used ++
+postIncr,packfile.c,1095,+,+,+,buf[used++],11.0,		c = buf[used++];,10.0,used ++
+postIncr,packfile.c,1217,+,+,+,base_info[used++],31.0,		unsigned char c = base_info[used++];,30.0,used ++
+postIncr,packfile.c,1223,+,+,+,base_info[used++],18.0,			c = base_info[used++];,17.0,used ++
+postIncr,packfile.c,1314,+,+,+,poi_stack[poi_stack_nr++],13.0,		poi_stack[poi_stack_nr++] = obj_offset;,12.0,poi_stack_nr ++
+postIncr,packfile.c,1747,+,+,+,i = delta_stack_nr++,7.0,		i = delta_stack_nr++;,6.0,delta_stack_nr ++
+postIncr,packfile.c,2098,+,+,+,packs[nr++],11.0,				packs[nr++] = p;,10.0,nr ++
+postIncr,parse-options.c,327,+,+,+,*(array++),21.0,"		if (!strcmp(it, *(array++)))",20.0,array ++
+postIncr,parse-options.c,517,+,+,+,"if (short_opts[opts->short_name]++)
+    optbug(opts, ""short name already used"");
+",13.0,			else if (short_opts[opts->short_name]++),12.0,short_opts [ opts -> short_name ] ++
+postIncr,parse-options.c,835,-,-,+,,,,19.0,ctx -> argc --
+postIncr,parse-options.c,848,+,+,+,ctx->out[ctx->cpidx++],14.0,				ctx->out[ctx->cpidx++] = ctx->argv[0];,13.0,ctx -> cpidx ++
+postIncr,parse-options.c,991,+,+,+,ctx->out[ctx->cpidx++],12.0,		ctx->out[ctx->cpidx++] = ctx->argv[0];,11.0,ctx -> cpidx ++
+postIncr,parse-options.c,1162,+,+,+,*usagestr++,24.0,		const char *str = _(*usagestr++);,23.0,usagestr ++
+postIncr,parse-options.c,1309,+,+,+,options[count++],11.0,		options[count++] = opt1_name;,10.0,count ++
+postIncr,parse-options.c,1311,+,+,+,options[count++],11.0,		options[count++] = opt2_name;,10.0,count ++
+postIncr,parse-options.c,1313,+,+,+,options[count++],11.0,		options[count++] = opt3_name;,10.0,count ++
+postIncr,parse-options.c,1315,+,+,+,options[count++],11.0,		options[count++] = opt4_name;,10.0,count ++
+postIncr,patch-delta.c,40,+,+,+,*data++,10.0,		cmd = *data++;,9.0,data ++
+postIncr,patch-delta.c,47,-,-,+,,,,24.0,data ++
+postIncr,patch-id.c,21,+,+,+,*src++,15.0,	while ((c = *src++) != '\0') {,14.0,src ++
+postIncr,patch-id.c,23,+,+,+,*dst++,5.0,			*dst++ = c;,4.0,dst ++
+postIncr,path.c,1066,+,-,-,*src++,,,,
+postIncr,path.c,1069,+,-,-,*dst++,,,,
+postIncr,path.c,1113,+,-,-,*src++,,,,
+postIncr,path.c,1114,+,-,-,*dst++,,,,
+postIncr,path.c,1116,+,-,-,*dst++,,,,
+postIncr,path.c,1118,+,-,-,*src++,,,,
+postIncr,path.c,1119,+,+,+,*src++,13.0,		char c = *src++;,12.0,src ++
+postIncr,path.c,1122,+,+,+,*dst++,4.0,		*dst++ = c;,3.0,dst ++
+postIncr,path.c,1166,+,+,+,*src++,16.0,		while ((c = *src++) != '\0' && !is_dir_sep(c)),15.0,src ++
+postIncr,path.c,1167,+,+,+,*dst++,5.0,			*dst++ = c;,4.0,dst ++
+postIncr,path.c,1169,+,+,+,*dst++,5.0,			*dst++ = '/';,4.0,dst ++
+postIncr,path.c,1171,+,+,+,*src++,10.0,				c = *src++;,9.0,src ++
+postIncr,path.c,1286,+,-,-,*p++,,,,
+postIncr,path.c,1339,+,+,+,*p++,14.0,		char ch = *p++;,13.0,p ++
+postIncr,path.c,1361,+,-,-,*(name++),,,,
+postIncr,path.c,1364,+,-,-,*(name++),,,,
+postIncr,path.c,1365,+,-,-,*(name++),,,,
+postIncr,path.c,1366,+,-,-,*(name++),,,,
+postIncr,path.c,1370,+,-,-,*(name++),,,,
+postIncr,path.c,1371,+,-,-,*(name++),,,,
+postIncr,path.c,1372,+,-,-,*(name++),,,,
+postIncr,path.c,1373,+,-,-,*(name++),,,,
+postIncr,path.c,1379,+,-,-,*(name++),,,,
+postIncr,path.c,1399,+,-,-,name[i++],,,,
+postIncr,path.c,1414,+,+,+,*(name++),8.0,	c = *(name++);,7.0,name ++
+postIncr,path.c,1417,+,+,+,*(name++),15.0,		if (((c = *(name++)) != 'g' && c != 'G') ||,14.0,name ++
+postIncr,path.c,1418,+,+,+,*(name++),15.0,		    ((c = *(name++)) != 'i' && c != 'I') ||,14.0,name ++
+postIncr,path.c,1419,+,+,+,*(name++),15.0,		    ((c = *(name++)) != 't' && c != 'T')),14.0,name ++
+postIncr,path.c,1423,+,+,+,*(name++),15.0,		if (((c = *(name++)) != 'i' && c != 'I') ||,14.0,name ++
+postIncr,path.c,1424,+,+,+,*(name++),15.0,		    ((c = *(name++)) != 't' && c != 'T') ||,14.0,name ++
+postIncr,path.c,1425,+,+,+,*(name++),9.0,		    *(name++) != '~' ||,8.0,name ++
+postIncr,path.c,1426,+,+,+,*(name++),9.0,		    *(name++) != '1'),8.0,name ++
+postIncr,path.c,1432,+,+,+,*(name++),9.0,		c = *(name++);,8.0,name ++
+postIncr,path.c,1452,+,+,+,name[i++],18.0,			char c = name[i++];,17.0,i ++
+postIncr,pathspec.c,176,-,-,+,,,,43.0,dst ++
+postIncr,pathspec.c,213,+,+,+, = item->attr_match_nr++,11.0,		int j = item->attr_match_nr++;,10.0,item -> attr_match_nr ++
+postIncr,poll.c,505,-,-,+,,,,18.0,nhandles ++
+postIncr,pq.c,58,+,+,+,pq->heap[pq->len++],11.0,	pq->heap[pq->len++] = *e;,10.0,pq -> len ++
+postIncr,preload-index.c,57,+,+,+,*cep++,29.0,		struct cache_entry *ce = *cep++;,28.0,cep ++
+postIncr,pretty.c,219,+,+,+,*msg++,13.0,		char c = *msg++;,12.0,msg ++
+postIncr,pretty.c,240,+,+,+,*s++,16.0,	while ((ch = *s++) != '\0') {,15.0,s ++
+postIncr,pretty.c,1110,+,+,+,*ch++,11.0,	switch (*ch++) {,10.0,ch ++
+postIncr,prio-queue.c,42,+,+,+,queue->array[queue->nr].ctr = queue->insertion_ctr++,32.0,	queue->array[queue->nr].ctr = queue->insertion_ctr++;,31.0,queue -> insertion_ctr ++
+postIncr,promisor-remote.c,238,+,+,+,new_oids[j++],22.0,"				oidcpy(&new_oids[j++], &old_oids[i]);",21.0,j ++
+postIncr,prune.c,176,+,+,+,"while (argc--){
+    struct object_id oid;
+    const char* name = *argv++;
+    if (!repo_get_oid(the_repository, name, &oid)){
+        struct object* object = parse_object_or_die(&oid, name);
+        add_pending_object(&revs, object, """");
+    }else
+        die(""unrecognized argument: %s"", name);
+}
+",9.0,	while (argc--) {,8.0,argc --
+postIncr,prune.c,178,+,+,+,*argv++,23.0,		const char *name = *argv++;,22.0,argv ++
+postIncr,pull.c,277,+,+,+,force-- > 0,9.0,	while (force-- > 0),8.0,force --
+postIncr,pull.c,501,+,+,+,*argv++,12.0,		*repo = *argv++;,11.0,argv ++
+postIncr,quote.c,40,+,+,+,*src++,23.0,"			strbuf_addch(dst, *src++);",22.0,src ++
+postIncr,quote.c,134,+,+,+,*dst++,5.0,			*dst++ = c;,4.0,dst ++
+postIncr,quote.c,152,+,+,+,*dst++,6.0,				*dst++ = src[1];,5.0,dst ++
+postIncr,quote.c,194,+,+,+,(*argv)[(*nr)++],12.0,			(*argv)[(*nr)++] = dequoted;,11.0,( * nr ) ++
+postIncr,quote.c,273,-,-,+,,,,2.0,count ++
+postIncr,quote.c,299,+,+,+,*p++,24.0,		ch = (unsigned char)*p++;,23.0,p ++
+postIncr,quote.c,406,+,+,+,*quoted++,7.0,"	if (*quoted++ != '""')",6.0,quoted ++
+postIncr,quote.c,414,+,+,+,*quoted++,12.0,		switch (*quoted++) {,11.0,quoted ++
+postIncr,quote.c,425,+,+,+,*quoted++,18.0,		switch ((ch = *quoted++)) {,17.0,quoted ++
+postIncr,quote.c,440,+,+,+,*quoted++,15.0,			if ((ch = *quoted++) < '0' || '7' < ch),14.0,quoted ++
+postIncr,quote.c,443,+,+,+,*quoted++,15.0,			if ((ch = *quoted++) < '0' || '7' < ch),14.0,quoted ++
+postIncr,quote.c,468,+,+,+,*src++,15.0,	while ((c = *src++)) {,14.0,src ++
+postIncr,quote.c,501,+,+,+,*src++,15.0,	while ((c = *src++)) {,14.0,src ++
+postIncr,quote.c,519,+,+,+,*src++,15.0,	while ((c = *src++)) {,14.0,src ++
+postIncr,quote.c,556,+,+,+,*src++,21.0,"		strbuf_addch(sb, *src++);",20.0,src ++
+postIncr,quote.c,560,+,+,+,*src++,21.0,"		strbuf_addch(sb, *src++);",20.0,src ++
+postIncr,quote.c,562,+,+,+,*src++,15.0,	while ((c = *src++)) {,14.0,src ++
+postIncr,read-cache.c,601,+,+,+,ce_array[j++],13.0,			ce_array[j++] = ce_array[i];,12.0,j ++
+postIncr,read-cache.c,602,+,-,-,ce_array[j++],,,,
+postIncr,read-cache.c,1010,+,+,+,*path++,9.0,			c = *path++;,8.0,path ++
+postIncr,read-cache.c,1011,+,-,-,*path++,,,,
+postIncr,read-cache.c,1030,+,+,+,*path++,8.0,		c = *path++;,7.0,path ++
+postIncr,read-cache.c,1031,+,-,-,*path++,,,,
+postIncr,read-cache.c,1047,+,+,+,istate->cache[pos++],41.0,		struct cache_entry *p = istate->cache[pos++];,40.0,pos ++
+postIncr,read-cache.c,1048,+,-,-,istate->cache[pos++],,,,
+postIncr,read-tree.c,38,+,+,+,trees[nr_trees++],8.0,	trees[nr_trees++] = tree;,7.0,nr_trees ++
+postIncr,readwrite_test.c,561,+,+,+,want_names[want_names_len++],15.0,			want_names[want_names_len++] = xstrdup(name);,14.0,want_names_len ++
+postIncr,rebase.c,1408,+,-,+,*(p++),,,19.0,p ++
+postIncr,receive-pack.c,454,+,+,+,msg[sz++],6.0,	msg[sz++] = '\n';,5.0,sz ++
+postIncr,receive-pack.c,994,+,+,+,*p++,4.0,		*p++ = '\0';,3.0,p ++
+postIncr,receive-pack.c,999,+,+,+,!once++,10.0,				if (!once++),9.0,once ++
+postIncr,receive-pack.c,1020,+,+,+,*p++,6.0,				*p++ = '\0';,5.0,p ++
+postIncr,receive-pack.c,1043,+,+,+,*p++,5.0,			*p++ = '\0';,4.0,p ++
+postIncr,receive-pack.c,2022,+,+,+,*p++,7.0,	    *p++ != ' ' ||,6.0,p ++
+postIncr,receive-pack.c,2024,+,+,+,*p++,7.0,	    *p++ != ' '),6.0,p ++
+postIncr,receive-pack.c,2447,+,+,+,count++ > 0,8.0,			if (count++ > 0),7.0,count ++
+postIncr,ref-cache.c,12,+,+,+,dir->entries[dir->nr++],15.0,	dir->entries[dir->nr++] = entry;,14.0,dir -> nr ++
+postIncr,ref-cache.c,251,+,+,+,dir->entries[i++],24.0,			last = dir->entries[i++] = entry;,23.0,i ++
+postIncr,ref-cache.c,426,+,+,+,iter->levels[iter->levels_nr++],26.0,			level = &iter->levels[iter->levels_nr++];,25.0,iter -> levels_nr ++
+postIncr,ref-filter.c,2062,+,+,+,*dst++,4.0,		*dst++ = *src++;,3.0,dst ++
+postIncr,ref-filter.c,2077,+,+,+,p[i] == '/' ? i++ : *p++,42.0,		for (i = 0; p[i]; p[i] == '/' ? i++ : *p++),34.0,i ++
+postIncr,ref-filter.c,2089,+,+,+,*start++,12.0,		switch (*start++) {,11.0,start ++
+postIncr,ref-filter.c,2115,+,+,+,p[i] == '/' ? i++ : *p++,42.0,		for (i = 0; p[i]; p[i] == '/' ? i++ : *p++),34.0,i ++
+postIncr,ref-filter.c,2126,+,+,+,remaining-- > 0,9.0,	while (remaining-- > 0) {,8.0,remaining --
+postIncr,ref-filter.c,2477,+,+,+,ref->counts[ahead_behind_atoms++],25.0,				count = ref->counts[ahead_behind_atoms++];,24.0,ahead_behind_atoms ++
+postIncr,ref-filter.c,2734,+,+,+,array->items[array->nr++],15.0,	array->items[array->nr++] = ref;,14.0,array -> nr ++
+postIncr,ref-filter.c,2997,+,+,+,array->items[array->nr++],17.0,			array->items[array->nr++] = array->items[i];,16.0,array -> nr ++
+postIncr,ref-filter.c,3040,+,+,+,array->counts[array->counts_nr++],27.0,			count = &array->counts[array->counts_nr++];,26.0,array -> counts_nr ++
+postIncr,ref-filter.c,3193,-,-,+,,,,18.0,s1 ++
+postIncr,reflog-walk.c,228,+,+,+,info->logs[info->nr++],13.0,	info->logs[info->nr++] = commit_reflog;,12.0,info -> nr ++
+postIncr,refs.c,723,+,-,-,!refs_found++,,,,
+postIncr,refs.c,755,+,+,+,!refs_found++,9.0,			if (!refs_found++),8.0,refs_found ++
+postIncr,refs.c,765,+,-,-,!logs_found++,,,,
+postIncr,refs.c,797,+,+,+,!logs_found++,8.0,		if (!logs_found++) {,7.0,logs_found ++
+postIncr,refs.c,933,+,-,-,*msg++,,,,
+postIncr,refs.c,970,+,+,+,*msg++,15.0,	while ((c = *msg++)) {,14.0,msg ++
+postIncr,refs.c,1170,+,-,-,transaction->updates[transaction->nr++],,,,
+postIncr,refs.c,1207,+,+,+,transaction->updates[transaction->nr++],23.0,	transaction->updates[transaction->nr++] = update;,22.0,transaction -> nr ++
+postIncr,refs.c,1330,+,-,-,*refname++,,,,
+postIncr,refs.c,1367,+,+,+,*refname++,8.0,		if (*refname++ != *rule++),7.0,refname ++
+postIncr,refspec.c,200,+,+,+,rs->items[rs->nr++],12.0,	rs->items[rs->nr++] = item;,11.0,rs -> nr ++
+postIncr,refspec.c,203,+,+,+,rs->raw[rs->raw_nr++],10.0,	rs->raw[rs->raw_nr++] = refspec;,9.0,rs -> raw_nr ++
+postIncr,reftable-backend.c,652,+,+,+,tx_data->args[tx_data->args_nr++],24.0,		arg = &tx_data->args[tx_data->args_nr++];,23.0,tx_data -> args_nr ++
+postIncr,reftable-backend.c,695,+,+,+,arg->updates[arg->updates_nr++],39.0,	update->backend_data = &arg->updates[arg->updates_nr++];,38.0,arg -> updates_nr ++
+postIncr,reftable-backend.c,711,+,-,-,tx_data->args[tx_data->args_nr++],,,,
+postIncr,reftable-backend.c,754,+,-,-,arg->updates[arg->updates_nr++],,,,
+postIncr,reftable-backend.c,1074,+,+,+,logs[logs_nr++],23.0,				tombstone = &logs[logs_nr++];,22.0,logs_nr ++
+postIncr,reftable-backend.c,1105,+,+,+,logs[logs_nr++],17.0,				log = &logs[logs_nr++];,16.0,logs_nr ++
+postIncr,reftable-backend.c,1133,+,-,-,logs[logs_nr++],,,,
+postIncr,reftable-backend.c,1164,+,-,-,logs[logs_nr++],,,,
+postIncr,reftable-backend.c,1757,+,+,+,logs[logs_nr++],8.0,		logs[logs_nr++] = log;,7.0,logs_nr ++
+postIncr,reftable-backend.c,1760,+,+,+,"for (i = logs_nr;i--;){
+    ret = yield_log_record(&logs[i], fn, cb_data);
+    if (ret)
+        goto done;
+}
+",20.0,	for (i = logs_nr; i--;) {,19.0,i --
+postIncr,reftable-backend.c,1812,+,-,-,logs[logs_nr++],,,,
+postIncr,reftable-backend.c,1815,+,-,-,"for (i = logs_nr;i--;){
+    ret = yield_log_record(&logs[i], fn, cb_data);
+    if (ret)
+        goto done;
+}
+",,,,
+postIncr,reftable-backend.c,2100,+,+,-,logs[logs_nr++],8.0,		logs[logs_nr++] = log;,,
+postIncr,reftable-backend.c,2114,+,+,-,"for (i = logs_nr;i--;){
+    struct reftable_log_record* dest = &rewritten[i];
+    struct object_id old_oid, new_oid;
+    *dest = logs[i];
+    oidread(&old_oid, logs[i].value.update.old_hash);
+    oidread(&new_oid, logs[i].value.update.new_hash);
+    if (should_prune_fn(&old_oid, &new_oid, logs[i].value.update.email, (timestamp_t)logs[i].value.update.time, logs[i].value.update.tz_offset, logs[i].value.update.message, policy_cb_data)){
+        dest->value_type = REFTABLE_LOG_DELETION;
+    }else{
+        if ((flags & EXPIRE_REFLOGS_REWRITE) && last_hash)
+            memcpy(dest->value.update.old_hash, last_hash, GIT_MAX_RAWSZ);
+
+        last_hash = logs[i].value.update.new_hash;
+    }
+}
+",20.0,	for (i = logs_nr; i--;) {,,
+postIncr,reftable-backend.c,2157,+,-,-,logs[logs_nr++],,,,
+postIncr,reftable-backend.c,2171,+,-,-,"for (i = logs_nr;i--;){
+    struct reftable_log_record* dest = &rewritten[i];
+    struct object_id old_oid, new_oid;
+    *dest = logs[i];
+    oidread(&old_oid, logs[i].value.update.old_hash);
+    oidread(&new_oid, logs[i].value.update.new_hash);
+    if (should_prune_fn(&old_oid, &new_oid, logs[i].value.update.email, (timestamp_t)logs[i].value.update.time, logs[i].value.update.tz_offset, logs[i].value.update.message, policy_cb_data)){
+        dest->value_type = REFTABLE_LOG_DELETION;
+    }else{
+        if ((flags & EXPIRE_REFLOGS_REWRITE) && last_hash)
+            memcpy(dest->value.update.old_hash, last_hash, GIT_MAX_RAWSZ);
+
+        last_hash = logs[i].value.update.new_hash;
+    }
+}
+",,,,
+postIncr,regcomp.c,347,-,-,+,,,,8.0,p ++
+postIncr,regcomp.c,351,-,-,+,,,,3.0,p ++
+postIncr,regcomp.c,2453,+,-,+,cur_nsub = preg->re_nsub++,,,13.0,preg -> re_nsub ++
+postIncr,regcomp.c,2723,-,-,+,,,,20.0,mbcset -> nranges ++
+postIncr,regcomp.c,3509,-,-,+,,,,28.0,mbcset -> nequiv_classes ++
+postIncr,regcomp.c,3560,-,-,+,,,,23.0,mbcset -> nchar_classes ++
+postIncr,regcomp.c,3791,+,-,+,dfa->str_tree_storage->data[dfa->str_tree_storage_idx++],,,38.0,dfa -> str_tree_storage_idx ++
+postIncr,regex_internal.c,265,-,-,+,,,,16.0,byte_idx ++
+postIncr,regex_internal.c,268,-,-,+,,,,11.0,byte_idx ++
+postIncr,regex_internal.c,340,-,-,+,,,,17.0,byte_idx ++
+postIncr,regex_internal.c,343,-,-,+,,,,12.0,byte_idx ++
+postIncr,regex_internal.c,351,-,-,+,,,,17.0,byte_idx ++
+postIncr,regex_internal.c,455,-,-,+,,,,15.0,byte_idx ++
+postIncr,regex_internal.c,458,-,-,+,,,,17.0,byte_idx ++
+postIncr,regex_internal.c,474,-,-,+,,,,15.0,byte_idx ++
+postIncr,regex_internal.c,1130,-,-,+,,,,22.0,delta --
+postIncr,regex_internal.c,1179,-,-,+,,,,35.0,i2 ++
+postIncr,regex_internal.c,1184,-,-,+,,,,38.0,i1 ++
+postIncr,regex_internal.c,1235,-,-,+,,,,7.0,id --
+postIncr,regex_internal.c,1237,-,-,+,,,,35.0,is --
+postIncr,regex_internal.c,1263,-,-,+,,,,20.0,delta --
+postIncr,regex_internal.c,1361,-,-,+,,,,13.0,set -> nelem ++
+postIncr,regex_internal.c,1464,-,-,+,,,,9.0,dfa -> nodes_len ++
+postIncr,regex_internal.c,1599,+,-,+,spot->array[spot->num++],,,14.0,spot -> num ++
+postIncr,regexec.c,1355,-,-,+,,,,12.0,fs -> num ++
+postIncr,regexec.c,1987,-,-,+,,,,14.0,ent ++
+postIncr,regexec.c,2213,-,-,+,,,,13.0,enabled_idx ++
+postIncr,regexec.c,2698,-,-,+,,,,13.0,entry ++
+postIncr,regexec.c,2785,-,-,+,,,,16.0,bkref_str_off ++
+postIncr,regexec.c,3303,-,-,+,,,,9.0,ent ++
+postIncr,regexec.c,4269,-,-,+,,,,19.0,mctx -> nbkref_ents ++
+postIncr,regexec.c,4324,-,-,+,,,,17.0,mctx -> nsub_tops ++
+postIncr,remote-curl.c,1274,+,+,+,to_fetch[nr_heads++],13.0,			to_fetch[nr_heads++] = ref;,12.0,nr_heads ++
+postIncr,remote-curl.c,1595,+,+,+,*value++,6.0,				*value++ = '\0';,5.0,value ++
+postIncr,remote.c,67,+,+,+,remote->url[remote->url_nr++],14.0,	remote->url[remote->url_nr++] = url;,13.0,remote -> url_nr ++
+postIncr,remote.c,73,+,+,+,remote->pushurl[remote->pushurl_nr++],18.0,	remote->pushurl[remote->pushurl_nr++] = pushurl;,17.0,remote -> pushurl_nr ++
+postIncr,remote.c,140,+,+,+,remote_state->remotes[remote_state->remotes_nr++],24.0,	remote_state->remotes[remote_state->remotes_nr++] = ret;,23.0,remote_state -> remotes_nr ++
+postIncr,remote.c,172,+,+,+,branch->merge_name[branch->merge_nr++],21.0,	branch->merge_name[branch->merge_nr++] = name;,20.0,branch -> merge_nr ++
+postIncr,remote.c,257,+,+,+,r->rewrite[r->rewrite_nr++],13.0,	r->rewrite[r->rewrite_nr++] = ret;,12.0,r -> rewrite_nr ++
+postIncr,remote.c,334,+,+,+,*(frag++),5.0,		*(frag++) = '\0';,4.0,frag ++
+postIncr,remote.c,539,+,+,+,*name++,19.0,		if (is_dir_sep(*name++)),18.0,name ++
+postIncr,remote.c,541,+,-,-,*name++,,,,
+postIncr,remote.c,1296,-,-,+,,,,14.0,argc --
+postIncr,remote.c,1454,+,+,+,tips->tip[tips->nr++],12.0,	tips->tip[tips->nr++] = commit;,11.0,tips -> nr ++
+postIncr,remote.c,1456,+,-,-,tips->tip[tips->nr++],,,,
+postIncr,remote.c,1501,-,-,+,,,,14.0,argc --
+postIncr,remote.c,1524,+,+,+,src_commits[nr_src_commits++],16.0,			src_commits[nr_src_commits++] = commit;,15.0,nr_src_commits ++
+postIncr,remote.c,1526,+,-,-,src_commits[nr_src_commits++],,,,
+postIncr,remote.c,2501,+,+,+,cas->entry[cas->nr++],22.0,	entry = &cas->entry[cas->nr++];,21.0,cas -> nr ++
+postIncr,remote.c,2505,+,-,-,cas->entry[cas->nr++],,,,
+postIncr,remote.c,2586,+,+,+,arr->item[arr->nr++],12.0,	arr->item[arr->nr++] = commit;,11.0,arr -> nr ++
+postIncr,remote.c,2590,+,-,-,arr->item[arr->nr++],,,,
+postIncr,repack.c,1018,+,+,+,existing_cruft[existing_cruft_nr++],18.0,		existing_cruft[existing_cruft_nr++] = p;,17.0,existing_cruft_nr ++
+postIncr,replace-object.c,78,+,+,+,depth-- > 0,9.0,	while (depth-- > 0) {,8.0,depth --
+postIncr,replace-object.c,80,+,-,-,depth-- > 0,,,,
+postIncr,repo-settings.c,30,+,+,+,"if (r->settings.initialized++)
+    return;
+",6.0,	if (r->settings.initialized++),5.0,r -> settings . initialized ++
+postIncr,rerere.c,217,+,+,+,*(path++),9.0,		if (*(path++) != '\t'),8.0,path ++
+postIncr,rerere.c,343,+,+,+,"while (marker_size--)
+    if (*buf++ != marker_char)
+        return 0;
+",9.0,	while (marker_size--),8.0,marker_size --
+postIncr,rerere.c,344,+,+,+,*buf++,8.0,		if (*buf++ != marker_char),7.0,buf ++
+postIncr,rerere.c,973,+,+,+,istate->cache[pos++],22.0,		ce = istate->cache[pos++];,21.0,pos ++
+postIncr,reset.c,148,+,+,+,desc[nr++],52.0,"	if (!reset_hard && !fill_tree_descriptor(r, &desc[nr++], &head_oid)) {",51.0,nr ++
+postIncr,reset.c,154,+,+,+,desc[nr++],37.0,"	if (!fill_tree_descriptor(r, &desc[nr++], oid)) {",36.0,nr ++
+postIncr,reset.c,282,+,+,+,*argv++,11.0,			rev = *argv++;,10.0,argv ++
+postIncr,rev-parse.c,98,+,+,+,*p++,22.0,		const char *str = *p++;,21.0,p ++
+postIncr,rev-parse.c,116,+,+,+,*arg++,17.0,		while ((ch = *arg++)) {,16.0,arg ++
+postIncr,rev-parse.c,373,-,-,+,,,,31.0,parent_number ++
+postIncr,rev-parse.c,465,+,+,+,usage[unb++],9.0,"		usage[unb++] = strbuf_detach(&sb, NULL);",8.0,unb ++
+postIncr,rev-parse.c,480,+,+,+,opts[onb++],13.0,		o = &opts[onb++];,12.0,onb ++
+postIncr,rev-parse.c,515,+,+,+,*s++,13.0,			switch (*s++) {,12.0,s ++
+postIncr,rev-parse.c,592,+,+,+,*arg++,8.0,		if (*arg++ == '=') {,7.0,arg ++
+postIncr,revision.c,268,+,+,+,stack->items[stack->nr++],15.0,	stack->items[stack->nr++] = commit;,14.0,stack -> nr ++
+postIncr,revision.c,753,+,+,+,revs->bloom_keys[path_component_nr++],30.0,"				       &revs->bloom_keys[path_component_nr++],",29.0,path_component_nr ++
+postIncr,revision.c,943,-,-,+,,,,38.0,n ++
+postIncr,revision.c,1005,-,-,+,,,,26.0,nth_parent ++
+postIncr,revision.c,1922,-,-,+,,,,31.0,parent_number ++
+postIncr,revision.c,2305,+,+,+,unkv[(*unkc)++],8.0,		unkv[(*unkc)++] = arg;,7.0,( * unkc ) ++
+postIncr,revision.c,2673,+,+,+,unkv[(*unkc)++],9.0,			unkv[(*unkc)++] = arg;,8.0,( * unkc ) ++
+postIncr,revision.c,2985,+,+,+,argv[left++],11.0,					argv[left++] = arg;,10.0,left ++
+postIncr,revision.c,2988,+,+,+,"if (revs->read_from_stdin++)
+    die(""--stdin given twice?"");
+",9.0,				if (revs->read_from_stdin++),8.0,revs -> read_from_stdin ++
+postIncr,revision.c,3308,-,-,+,,,,50.0,n ++
+postIncr,rm.c,323,+,+,+,list.entry[list.nr++],18.0,		if (list.entry[list.nr++].is_submodule &&,17.0,list . nr ++
+postIncr,run-command.c,1097,-,-,+,,,,27.0,git_atexit_hdlrs . nr ++
+postIncr,run-command.c,1309,+,+,+,pfd[pollsize++],18.0,		io->pfd = &pfd[pollsize++];,17.0,pollsize ++
+postIncr,scalar.c,304,+,+,+,*(value++),5.0,		*(value++) = '\0';,4.0,value ++
+postIncr,send-pack.c,109,+,+,+,count++ > 0,9.0,				if (count++ > 0),8.0,count ++
+postIncr,send-pack.c,187,+,+,+,*p++,4.0,		*p++ = '\0';,3.0,p ++
+postIncr,send-pack.c,193,+,+,+,!once++,10.0,				if (!once++),9.0,once ++
+postIncr,send-pack.c,214,+,+,+,*p++,6.0,				*p++ = '\0';,5.0,p ++
+postIncr,send-pack.c,239,+,+,+,*p++,5.0,			*p++ = '\0';,4.0,p ++
+postIncr,sequencer.c,734,+,+,+,istate->cache[i++],48.0,		const struct cache_entry *ce = istate->cache[i++];,47.0,i ++
+postIncr,sequencer.c,900,+,+,+,*(message++),25.0,"			strbuf_addch(&buf, *(message++));",24.0,message ++
+postIncr,sequencer.c,902,+,+,+,*(message++),34.0,"			strbuf_addf(&buf, ""'\\%c'"", *(message++));",33.0,message ++
+postIncr,sequencer.c,908,+,+,+,*(message++),25.0,"			strbuf_addch(&buf, *(message++));",24.0,message ++
+postIncr,sequencer.c,910,+,+,+,*(message++),34.0,"			strbuf_addf(&buf, ""'\\%c'"", *(message++));",33.0,message ++
+postIncr,sequencer.c,914,+,+,+,*(message++),25.0,"			strbuf_addch(&buf, *(message++));",24.0,message ++
+postIncr,sequencer.c,916,+,+,+,*(message++),34.0,"			strbuf_addf(&buf, ""'\\%c'"", *(message++));",33.0,message ++
+postIncr,sequencer.c,939,+,+,+,*cp++,4.0,		*cp++ = '\0';,3.0,cp ++
+postIncr,sequencer.c,1219,+,-,+,sb->buf[i++],,,24.0,i ++
+postIncr,sequencer.c,1984,+,+,+,*next++,24.0,"				strbuf_addch(msg, *next++);",23.0,next ++
+postIncr,sequencer.c,2581,+,+,+,todo_list->items + todo_list->nr++,28.0,	return todo_list->items + todo_list->nr++;,27.0,todo_list -> nr ++
+postIncr,sequencer.c,2596,+,+,+,*p++,47.0,"	return (skip_prefix(p, str, &p) || (nick && *p++ == nick)) &&",46.0,p ++
+postIncr,sequencer.c,2773,-,-,+,,,,17.0,i ++
+postIncr,sequencer.c,6055,+,+,+,items[nr++],9.0,		items[nr++] = todo_list->items[i];,8.0,nr ++
+postIncr,sequencer.c,6085,-,-,+,,,,47.0,i ++
+postIncr,sequencer.c,6300,+,+,+,ctx.items[ctx.items_nr++],13.0,		ctx.items[ctx.items_nr++] = todo_list->items[i++];,47.0,i ++
+postIncr,sequencer.c,6591,+,+,+,items[nr++],11.0,				items[nr++] = todo_list->items[cur];,10.0,nr ++
+postIncr,serve.c,209,+,+,+,*out++,8.0,		if (*out++ == '=') {,7.0,out ++
+postIncr,server-info.c,247,+,+,+,"parse_pack_def(arg, old_cnt++)",28.0,"			if (parse_pack_def(arg, old_cnt++))",27.0,old_cnt ++
+postIncr,server-info.c,305,+,+,+,i = num_pack++,7.0,		i = num_pack++;,6.0,num_pack ++
+postIncr,sh-i18n--envsubst.c,129,+,+,+,*string++,10.0,    if (*string++ == '$'),9.0,string ++
+postIncr,sh-i18n--envsubst.c,217,+,+,+,slp->item[slp->nitems++],13.0,  slp->item[slp->nitems++] = s;,12.0,slp -> nitems ++
+postIncr,sh-i18n--envsubst.c,353,+,+,+,buffer[buflen++],12.0,		  buffer[buflen++] = c;,11.0,buflen ++
+postIncr,sha256.c,69,-,-,+,,,,21.0,i ++
+postIncr,sha256.c,194,-,-,+,,,,20.0,i ++
+postIncr,shallow.c,148,+,+,+,heads->objects[i++],24.0,"						  heads->objects[i++].item,",23.0,i ++
+postIncr,shallow.c,480,+,+,+,info->ours[info->nr_ours++],15.0,			info->ours[info->nr_ours++] = i;,14.0,info -> nr_ours ++
+postIncr,shallow.c,482,+,+,+,info->theirs[info->nr_theirs++],17.0,			info->theirs[info->nr_theirs++] = i;,16.0,info -> nr_theirs ++
+postIncr,shallow.c,655,+,+,+,shallow[nr_shallow++],11.0,		shallow[nr_shallow++] = info->ours[i];,10.0,nr_shallow ++
+postIncr,shallow.c,657,+,+,+,shallow[nr_shallow++],11.0,		shallow[nr_shallow++] = info->theirs[i];,10.0,nr_shallow ++
+postIncr,show-branch.c,408,+,+,+,ref_name[ref_name_cnt++],11.0,	ref_name[ref_name_cnt++] = xstrdup(refname);,10.0,ref_name_cnt ++
+postIncr,show-branch.c,464,+,+,+,*tail++,8.0,		if (*tail++ == '/'),7.0,tail ++
+postIncr,show-ref.c,77,-,+,+,,16.0,		while ((m = *p++) != NULL) {,15.0,p ++
+postIncr,show-ref.c,241,+,+,+,*refs++,9.0,	ref = *refs++;,8.0,refs ++
+postIncr,sparse-index.c,68,+,+,+,istate->cache[num_converted++],17.0,		istate->cache[num_converted++] = se;,16.0,num_converted ++
+postIncr,sparse-index.c,88,+,+,+,istate->cache[num_converted++],18.0,			istate->cache[num_converted++] = ce;,17.0,num_converted ++
+postIncr,sparse-index.c,285,+,+,+,"set_index_entry(ctx->write, ctx->write->cache_nr++, ce)",30.0,"	set_index_entry(ctx->write, ctx->write->cache_nr++, ce);",29.0,ctx -> write -> cache_nr ++
+postIncr,sparse-index.c,366,+,+,+,"set_index_entry(full, full->cache_nr++, ce)",26.0,"			set_index_entry(full, full->cache_nr++, ce);",25.0,full -> cache_nr ++
+postIncr,sparse-index.c,375,+,+,+,"set_index_entry(full, full->cache_nr++, ce)",26.0,"			set_index_entry(full, full->cache_nr++, ce);",25.0,full -> cache_nr ++
+postIncr,split-index.c,361,+,+,+,entries[nr_entries++],13.0,				entries[nr_entries++] = ce;,12.0,nr_entries ++
+postIncr,split-index.c,373,+,+,+,entries[nr_entries++],12.0,			entries[nr_entries++] = ce;,11.0,nr_entries ++
+postIncr,stack.c,225,+,+,+,*names++,17.0,		char *name = *names++;,16.0,names ++
+postIncr,stack.c,242,+,-,-,*names++,,,,
+postIncr,stack.c,809,+,+,+,add->new_tables[add->new_tables_len++],18.0,"	add->new_tables[add->new_tables_len++] = strbuf_detach(&next_name, NULL);",17.0,add -> new_tables_len ++
+postIncr,stack.c,826,+,-,-,add->new_tables[add->new_tables_len++],,,,
+postIncr,stack.c,900,+,+,+,subtabs[j++],39.0,"		reftable_table_from_reader(&subtabs[j++], t);",38.0,j ++
+postIncr,stack.c,917,+,-,-,subtabs[j++],,,,
+postIncr,strbuf.c,11,-,-,+,,,,17.0,prefix ++
+postIncr,strbuf.c,20,-,-,+,,,,17.0,prefix ++
+postIncr,strbuf.c,30,-,-,+,,,,17.0,prefix ++
+postIncr,strbuf.c,198,+,+,+,ret[nr++],7.0,		ret[nr++] = t;,6.0,nr ++
+postIncr,strbuf.c,230,+,+,+,*s++,9.0,		free(*s++);,8.0,s ++
+postIncr,strbuf.c,678,+,-,+,sb->buf[sb->len++],,,10.0,sb -> len ++
+postIncr,strbuf.c,809,+,+,+,"while (len--){
+    char ch = *s++;
+    if (allow_unencoded_fn(ch))
+        strbuf_addch(sb, ch);
+    else
+        strbuf_addf(sb, ""%%%02x"", (unsigned char)ch);
+}
+",9.0,	while (len--) {,8.0,len --
+postIncr,strbuf.c,810,+,+,+,*s++,14.0,		char ch = *s++;,13.0,s ++
+postIncr,strbuf.c,1057,+,+,+,sb->buf[j++],13.0,				sb->buf[j++] = '\n';,12.0,j ++
+postIncr,strbuf.c,1060,+,+,+,newlen + j++,21.0,			sb->buf[newlen + j++] = '\n';,20.0,j ++
+postIncr,strbuf.h,236,+,+,-,sb->buf[sb->len++],10.0,	sb->buf[sb->len++] = c;,,
+postIncr,string-list.c,126,+,+,+,list->items[dst++],17.0,				list->items[dst++] = list->items[src];,16.0,dst ++
+postIncr,string-list.c,148,+,+,+,list->items[dst++],16.0,			list->items[dst++] = list->items[src];,15.0,dst ++
+postIncr,string-list.c,219,+,+,+,list->items[list->nr++],24.0,	retval = &list->items[list->nr++];,23.0,list -> nr ++
+postIncr,strvec.c,19,+,+,+,array->v[array->nr++],11.0,	array->v[array->nr++] = value;,10.0,array -> nr ++
+postIncr,submodule--helper.c,218,+,+,+,list->entries[list->nr++],17.0,		list->entries[list->nr++] = ce;,16.0,list -> nr ++
+postIncr,submodule--helper.c,250,+,+,+,active_modules.entries[active_modules.nr++],26.0,		active_modules.entries[active_modules.nr++] = ce;,25.0,active_modules . nr ++
+postIncr,submodule--helper.c,1088,-,+,+,,17.0,		list->entries[list->nr++] = temp;,16.0,list -> nr ++
+postIncr,submodule--helper.c,2245,+,+,+,suc->failed_clones[suc->failed_clones_nr++],22.0,		suc->failed_clones[suc->failed_clones_nr++] = ce;,21.0,suc -> failed_clones_nr ++
+postIncr,submodule-config.c,221,+,+,+,*name++,13.0,		char c = *name++;,12.0,name ++
+postIncr,submodule-config.c,915,+,+,+,out->entries[out->entry_nr++],29.0,			st_entry = &out->entries[out->entry_nr++];,28.0,out -> entry_nr ++
+postIncr,tag.c,118,+,+,+,*buf++,24.0,	while (buf < tail && *buf++ != '>'),23.0,buf ++
+postIncr,tag.c,123,+,+,+,*buf++,24.0,	while (buf < tail && *buf++ != '\n'),23.0,buf ++
+postIncr,tag.c,162,+,+,+,*bufptr++,83.0,"	if (memcmp(""object "", bufptr, 7) || parse_oid_hex(bufptr + 7, &oid, &bufptr) || *bufptr++ != '\n')",82.0,bufptr ++
+postIncr,test-config.c,52,-,+,+,,6.0,	if (nr++),5.0,nr ++
+postIncr,test-genrandom.c,23,+,+,+,*c++,12.0,	} while (*c++);,11.0,c ++
+postIncr,test-genrandom.c,27,+,+,+,"while (count--){
+    next = next * 1103515245 + 12345;
+    if (putchar((next >> 16) & 0xff) == EOF)
+        return -1;
+}
+",9.0,	while (count--) {,8.0,count --
+postIncr,test-json-writer.c,408,+,+,+,line->parts->items[line->consumed_nr++],29.0,	*s_in = line->parts->items[line->consumed_nr++].string;,28.0,line -> consumed_nr ++
+postIncr,test-json-writer.c,500,+,+,+,parts.items[state.consumed_nr++],22.0,		verb = parts.items[state.consumed_nr++].string;,21.0,state . consumed_nr ++
+postIncr,test-lib.c,388,+,+,+,*str++,20.0,"			print_one_char(*str++, '""');",19.0,str ++
+postIncr,test-mergesort.c,133,-,-,+,,,,31.0,i ++
+postIncr,test-mergesort.c,172,+,+,+,arr[j++],7.0,		arr[j++] = tmp[i];,6.0,j ++
+postIncr,test-mergesort.c,174,+,+,+,arr[j++],7.0,		arr[j++] = tmp[i];,6.0,j ++
+postIncr,test-mergesort.c,283,-,-,+,,,,9.0,stats . get_next ++
+postIncr,test-mergesort.c,327,-,-,+,,,,41.0,i ++
+postIncr,test-mergesort.c,370,+,+,+,"while (argc--){
+    int i, j, m, n = strtol(*argv++, NULL, 10);
+    for (i = 0;i < ARRAY_SIZE(dist);i++){
+        for (j = 0;j < ARRAY_SIZE(mode);j++){
+            for (m = 1;m < 2 * n;m *= 2){
+                if (test(&dist[i], &mode[j], n, m))
+                    return 1;
+            }
+        }
+    }
+}
+",9.0,	while (argc--) {,8.0,argc --
+postIncr,test-mergesort.c,371,+,+,+,*argv++,28.0,"		int i, j, m, n = strtol(*argv++, NULL, 10);",27.0,argv ++
+postIncr,test-mergesort.c,399,-,-,+,,,,60.0,i ++
+postIncr,test-mergesort.c,402,-,-,+,,,,52.0,i ++
+postIncr,test-proc-receive.c,96,+,+,+,*p++,8.0,		    *p++ != ' ' ||,7.0,p ++
+postIncr,test-proc-receive.c,98,+,+,+,*p++,8.0,		    *p++ != ' '),7.0,p ++
+postIncr,test-reach.c,91,+,+,+,X_array[X_nr++],13.0,				X_array[X_nr++] = c;,12.0,X_nr ++
+postIncr,test-reach.c,98,+,+,+,Y_array[Y_nr++],13.0,				Y_array[Y_nr++] = c;,12.0,Y_nr ++
+postIncr,test-ref-store.c,117,+,+,+,*argv++,33.0,"	const char *refname = notnull(*argv++, ""refname"");",32.0,argv ++
+postIncr,test-ref-store.c,118,+,+,+,*argv++,32.0,"	const char *target = notnull(*argv++, ""target"");",31.0,argv ++
+postIncr,test-ref-store.c,119,+,+,+,*argv++,24.0,	const char *logmsg = *argv++;,23.0,argv ++
+postIncr,test-ref-store.c,134,+,+,+,*argv++,34.0,"	unsigned int flags = arg_flags(*argv++, ""flags"", transaction_flags);",33.0,argv ++
+postIncr,test-ref-store.c,135,+,+,+,*argv++,21.0,	const char *msg = *argv++;,20.0,argv ++
+postIncr,test-ref-store.c,140,+,+,+,*argv++,34.0,"		string_list_append(&refnames, *argv++);",33.0,argv ++
+postIncr,test-ref-store.c,149,+,+,+,*argv++,32.0,"	const char *oldref = notnull(*argv++, ""oldref"");",31.0,argv ++
+postIncr,test-ref-store.c,150,+,+,+,*argv++,32.0,"	const char *newref = notnull(*argv++, ""newref"");",31.0,argv ++
+postIncr,test-ref-store.c,151,+,+,+,*argv++,24.0,	const char *logmsg = *argv++;,23.0,argv ++
+postIncr,test-ref-store.c,165,+,+,+,*argv++,32.0,"	const char *prefix = notnull(*argv++, ""prefix"");",31.0,argv ++
+postIncr,test-ref-store.c,172,+,+,+,*argv++,32.0,"	const char *prefix = notnull(*argv++, ""prefix"");",31.0,argv ++
+postIncr,test-ref-store.c,182,+,+,+,*argv++,33.0,"	const char *refname = notnull(*argv++, ""refname"");",32.0,argv ++
+postIncr,test-ref-store.c,183,+,+,+,*argv++,33.0,"	int resolve_flags = arg_flags(*argv++, ""resolve-flags"", empty_flags);",32.0,argv ++
+postIncr,test-ref-store.c,195,+,+,+,*argv++,33.0,"	const char *refname = notnull(*argv++, ""refname"");",32.0,argv ++
+postIncr,test-ref-store.c,229,+,+,+,*argv++,33.0,"	const char *refname = notnull(*argv++, ""refname"");",32.0,argv ++
+postIncr,test-ref-store.c,236,+,+,+,*argv++,33.0,"	const char *refname = notnull(*argv++, ""refname"");",32.0,argv ++
+postIncr,test-ref-store.c,243,+,+,+,*argv++,33.0,"	const char *refname = notnull(*argv++, ""refname"");",32.0,argv ++
+postIncr,test-ref-store.c,250,+,+,+,*argv++,33.0,"	const char *refname = notnull(*argv++, ""refname"");",32.0,argv ++
+postIncr,test-ref-store.c,262,+,+,+,*argv++,33.0,"	const char *refname = notnull(*argv++, ""refname"");",32.0,argv ++
+postIncr,test-ref-store.c,269,+,+,+,*argv++,29.0,"	const char *msg = notnull(*argv++, ""msg"");",28.0,argv ++
+postIncr,test-ref-store.c,270,+,+,+,*argv++,33.0,"	const char *refname = notnull(*argv++, ""refname"");",32.0,argv ++
+postIncr,test-ref-store.c,271,+,+,+,*argv++,34.0,"	const char *sha1_buf = notnull(*argv++, ""old-sha1"");",33.0,argv ++
+postIncr,test-ref-store.c,272,+,+,+,*argv++,34.0,"	unsigned int flags = arg_flags(*argv++, ""flags"", transaction_flags);",33.0,argv ++
+postIncr,test-ref-store.c,283,+,+,+,*argv++,29.0,"	const char *msg = notnull(*argv++, ""msg"");",28.0,argv ++
+postIncr,test-ref-store.c,284,+,+,+,*argv++,33.0,"	const char *refname = notnull(*argv++, ""refname"");",32.0,argv ++
+postIncr,test-ref-store.c,285,+,+,+,*argv++,38.0,"	const char *new_sha1_buf = notnull(*argv++, ""new-sha1"");",37.0,argv ++
+postIncr,test-ref-store.c,286,+,+,+,*argv++,38.0,"	const char *old_sha1_buf = notnull(*argv++, ""old-sha1"");",37.0,argv ++
+postIncr,test-ref-store.c,287,+,+,+,*argv++,34.0,"	unsigned int flags = arg_flags(*argv++, ""flags"", transaction_flags);",33.0,argv ++
+postIncr,test-ref-store.c,341,-,+,+,,10.0,	func = *argv++;,9.0,argv ++
+postIncr,test-regex.c,70,+,+,+,*argv++,9.0,	pat = *argv++;,8.0,argv ++
+postIncr,test-regex.c,74,+,+,+,*argv++,10.0,		str = *argv++;,9.0,argv ++
+postIncr,test-run-command.c,83,+,+,+,suite->tests.items[suite->next++],28.0,	test = suite->tests.items[suite->next++].string;,27.0,suite -> next ++
+postIncr,tr2_tgt_event.c,278,+,+,+,*parent_names++,25.0,	while ((parent_name = *parent_names++)),24.0,parent_names ++
+postIncr,tr2_tgt_normal.c,175,+,+,+,*parent_names++,25.0,	while ((parent_name = *parent_names++)) {,24.0,parent_names ++
+postIncr,tr2_tls.c,49,+,+,+,ctx->array_us_start[ctx->nr_open_regions++],22.0,	ctx->array_us_start[ctx->nr_open_regions++] = us_thread_start;,21.0,ctx -> nr_open_regions ++
+postIncr,tr2_tls.c,112,+,+,+,ctx->array_us_start[ctx->nr_open_regions++],22.0,	ctx->array_us_start[ctx->nr_open_regions++] = us_now;,21.0,ctx -> nr_open_regions ++
+postIncr,trace2_win32_process_info.c,99,+,-,+,pid_list[nr_pids++],,,11.0,nr_pids ++
+postIncr,trailer.c,957,+,+,+,val->buf[i++],21.0,		char c = val->buf[i++];,20.0,i ++
+postIncr,trailer.c,1195,+,+,+,iter->internal.info->trailers[iter->internal.cur++],46.0,		char *line = iter->internal.info->trailers[iter->internal.cur++];,45.0,iter -> internal . cur ++
+postIncr,transport-helper.c,784,+,+,+,*p++,5.0,			*p++ = '\0';,4.0,p ++
+postIncr,transport-helper.c,817,+,+,+,*msg++,4.0,		*msg++ = '\0';,3.0,msg ++
+postIncr,transport.c,782,+,+,+,count + n++,44.0,"		print_one_push_report(ref, dest, count + n++,",43.0,n ++
+postIncr,transport.c,1516,+,+,+,heads[nr_heads++],9.0,		heads[nr_heads++] = rm;,8.0,nr_heads ++
+postIncr,transport.c,1529,+,+,+,heads[nr_heads++],10.0,			heads[nr_heads++] = rm;,9.0,nr_heads ++
+postIncr,tree-walk.c,784,+,+,+,follows_remaining-- == 0,8.0,			if (follows_remaining-- == 0) {,7.0,follows_remaining --
+postIncr,unpack-trees.c,924,-,-,+,,,,20.0,i ++
+postIncr,unpack-trees.c,933,+,+,+,buf[nr_buf++],8.0,"			buf[nr_buf++] = fill_tree_descriptor(the_repository, t + i, oid);",7.0,nr_buf ++
+postIncr,update-index.c,364,+,+,+,the_repository->index->cache[pos++],63.0,		const struct cache_entry *ce = the_repository->index->cache[pos++];,62.0,pos ++
+postIncr,update-ref.c,41,+,+,+,*next++,23.0,"			strbuf_addch(arg, *next++);",22.0,next ++
+postIncr,url.c,24,+,+,+,*url++,36.0,"	if (!url || !is_urlschemechar(1, *url++))",35.0,url ++
+postIncr,url.c,27,+,+,+,*url++,29.0,"		if (!is_urlschemechar(0, *url++))",28.0,url ++
+postIncr,urlmatch.c,43,+,+,+,*from++,13.0,		int ch = *from++;,12.0,from ++
+postIncr,urlmatch.c,174,+,+,+,"while (spanned--)
+    strbuf_addch(&norm, tolower(*url++));
+",9.0,	while (spanned--),8.0,spanned --
+postIncr,urlmatch.c,175,+,-,+,*url++,,,31.0,url ++
+postIncr,urlmatch.c,256,+,-,+,*url++,,,31.0,url ++
+postIncr,urlmatch.c,567,+,+,+,*(key++),53.0,"	if (!skip_prefix(var, collect->section, &key) || *(key++) != '.') {",52.0,key ++
+postIncr,usage.c,33,+,+,+,*(p++),4.0,	*(p++) = '\n'; /* we no longer need a NUL */,3.0,p ++
+postIncr,usage.c,196,+,+,+,str_error[j++],18.0,		if ((str_error[j++] = err[i++]) != '%'),28.0,i ++
+postIncr,usage.c,199,+,+,+,str_error[j++],14.0,			str_error[j++] = '%';,13.0,j ++
+postIncr,userdiff.c,435,+,+,+,drivers[ndrivers++],18.0,		drv = &drivers[ndrivers++];,17.0,ndrivers ++
+postIncr,utf8.c,20,+,+,+,*p++,7.0,	if (*p++ != '\033'),6.0,p ++
+postIncr,utf8.c,22,+,+,+,*p++,7.0,	if (*p++ != '['),6.0,p ++
+postIncr,utf8.c,26,+,+,+,*p++,7.0,	if (*p++ != 'm'),6.0,p ++
+postIncr,utf8.c,740,-,-,+,,,,24.0,needle ++
+postIncr,varint.c,7,+,+,+,*buf++,21.0,	unsigned char c = *buf++;,20.0,buf ++
+postIncr,varint.c,13,+,+,+,*buf++,8.0,		c = *buf++;,7.0,buf ++
+postIncr,verify-commit.c,78,+,+,+,argv[i++],26.0,"		if (verify_commit(argv[i++], flags))",25.0,i ++
+postIncr,verify-tag.c,53,+,+,+,argv[i++],27.0,		const char *name = argv[i++];,26.0,i ++
+postIncr,versioncmp.c,149,+,+,+,*p1++,8.0,	c1 = *p1++;,7.0,p1 ++
+postIncr,versioncmp.c,150,+,+,+,*p2++,8.0,	c2 = *p2++;,7.0,p2 ++
+postIncr,versioncmp.c,159,+,+,+,*p1++,9.0,		c1 = *p1++;,8.0,p1 ++
+postIncr,versioncmp.c,160,+,+,+,*p2++,9.0,		c2 = *p2++;,8.0,p2 ++
+postIncr,versioncmp.c,192,+,-,+,*p1++,,,19.0,p1 ++
+postIncr,versioncmp.c,193,+,-,+,*p2++,,,18.0,p2 ++
+postIncr,walker.c,250,+,+,+,*rf_one++,5.0,			*rf_one++ = 0;,4.0,rf_one ++
+postIncr,walker.c,267,+,+,+,"while (targets--){
+    free(target[targets]);
+    if (write_ref)
+        free((char*)write_ref[targets]);
+}
+",9.0,	while (targets--) {,8.0,targets --
+postIncr,wildmatch.c,64,-,-,+,,,,38.0,p ++
+postIncr,winansi.c,366,-,-,+,,,,14.0,end ++
+postIncr,worktree.c,146,+,+,+,list[counter++],7.0,	list[counter++] = get_main_worktree(skip_reading_head);,6.0,counter ++
+postIncr,worktree.c,148,+,-,-,list[counter++],,,,
+postIncr,worktree.c,157,+,+,+,list[counter++],10.0,				list[counter++] = linked;,9.0,counter ++
+postIncr,worktree.c,159,+,-,-,list[counter++],,,,
+postIncr,worktree.c,1031,+,+,+,*p++,10.0,	while (*p++),9.0,p ++
+postIncr,writer.c,215,+,+,+,key->offsets[key->offset_len++],15.0,	key->offsets[key->offset_len++] = off;,14.0,key -> offset_len ++
+postIncr,writer.c,216,+,-,-,key->offsets[key->offset_len++],,,,
+postIncr,ws.c,267,+,+,+,len-- > 0,9.0,	while (len-- > 0) {,8.0,len --
+postIncr,ws.c,359,+,+,+,0 < consecutive_spaces--,14.0,		while (0 < consecutive_spaces--),13.0,consecutive_spaces --
+postIncr,wt-status.c,534,+,+,+,istate->cache[pos++],22.0,		ce = istate->cache[pos++];,21.0,pos ++
+postIncr,wt-status.c,2445,+,+,+,istate->cache[pos++],22.0,		ce = istate->cache[pos++];,21.0,pos ++
+postIncr,xdiff-interface.c,110,+,+,+,ap[recovered++],10.0,		if (ap[recovered++] == '\n'),9.0,recovered ++
+postIncr,xdiffi.c,90,-,-,+,,,,56.0,i1 ++
+postIncr,xdiffi.c,127,-,-,+,,,,64.0,i1 --
+postIncr,xdiffi.c,264,-,-,+,,,,62.0,off1 ++
+postIncr,xdiffi.c,265,-,-,+,,,,70.0,lim1 --
+postIncr,xdiffi.c,764,+,+,+,xdf->rchg[g->start++],13.0,		xdf->rchg[g->start++] = 0;,12.0,g -> start ++
+postIncr,xdiffi.c,765,+,+,+,xdf->rchg[g->end++],13.0,		xdf->rchg[g->end++] = 1;,12.0,g -> end ++
+postIncr,xdiffi.c,949,-,-,+,,,,66.0,i1 --
+postIncr,xemit.c,297,-,-,+,,,,40.0,s1 ++
+postIncr,xhistogram.c,320,+,+,+,"while (count2--)
+    env->xdf2.rchg[line2++ - 1] = 1;
+",9.0,		while(count2--),8.0,count2 --
+postIncr,xhistogram.c,321,+,+,+,line2++ - 1,19.0,			env->xdf2.rchg[line2++ - 1] = 1;,18.0,line2 ++
+postIncr,xhistogram.c,324,+,+,+,"while (count1--)
+    env->xdf1.rchg[line1++ - 1] = 1;
+",9.0,		while(count1--),8.0,count1 --
+postIncr,xhistogram.c,325,+,+,+,line1++ - 1,19.0,			env->xdf1.rchg[line1++ - 1] = 1;,18.0,line1 ++
+postIncr,xhistogram.c,337,+,+,+,"while (count1--)
+    env->xdf1.rchg[line1++ - 1] = 1;
+",11.0,			while (count1--),10.0,count1 --
+postIncr,xhistogram.c,338,+,+,+,line1++ - 1,20.0,				env->xdf1.rchg[line1++ - 1] = 1;,19.0,line1 ++
+postIncr,xhistogram.c,339,+,+,+,"while (count2--)
+    env->xdf2.rchg[line2++ - 1] = 1;
+",11.0,			while (count2--),10.0,count2 --
+postIncr,xhistogram.c,340,+,+,+,line2++ - 1,20.0,				env->xdf2.rchg[line2++ - 1] = 1;,19.0,line2 ++
+postIncr,xmerge.c,122,+,+,+,recs[i++],38.0,	for (i = 0; i < count; size += recs[i++]->size),37.0,i ++
+postIncr,xmerge.c,225,+,+,+,dest[size++],9.0,			dest[size++] = '\r';,8.0,size ++
+postIncr,xmerge.c,226,+,+,+,dest[size++],8.0,		dest[size++] = '\n';,7.0,size ++
+postIncr,xmerge.c,246,+,+,+,dest[size++],10.0,				dest[size++] = '\r';,9.0,size ++
+postIncr,xmerge.c,247,+,+,+,dest[size++],9.0,			dest[size++] = '\n';,8.0,size ++
+postIncr,xmerge.c,259,+,+,+,dest[size++],9.0,			dest[size++] = '\r';,8.0,size ++
+postIncr,xmerge.c,260,+,+,+,dest[size++],8.0,		dest[size++] = '\n';,7.0,size ++
+postIncr,xmerge.c,277,+,+,+,dest[size++],9.0,			dest[size++] = '\r';,8.0,size ++
+postIncr,xmerge.c,278,+,+,+,dest[size++],8.0,		dest[size++] = '\n';,7.0,size ++
+postIncr,xmerge.c,434,+,+,+,"while (size--)
+    if (isalnum((unsigned char)*(ptr++)))
+        return 1;
+",9.0,	while (size--),8.0,size --
+postIncr,xmerge.c,435,+,-,+,*(ptr++),,,31.0,ptr ++
+postIncr,xmerge.c,442,-,-,+,,,,13.0,chg --
+postIncr,xpatience.c,154,+,+,+,"while (count1--)
+    insert_record(xpp, line1++, result, 1);
+",9.0,	while (count1--),8.0,count1 --
+postIncr,xpatience.c,155,+,+,+,"insert_record(xpp, line1++, result, 1)",22.0,"		insert_record(xpp, line1++, result, 1);",21.0,line1 ++
+postIncr,xpatience.c,158,+,+,+,"while (count2--)
+    insert_record(xpp, line2++, result, 2);
+",9.0,	while (count2--),8.0,count2 --
+postIncr,xpatience.c,159,+,+,+,"insert_record(xpp, line2++, result, 2)",22.0,"		insert_record(xpp, line2++, result, 2);",21.0,line2 ++
+postIncr,xpatience.c,332,+,+,+,"while (count2--)
+    env->xdf2.rchg[line2++ - 1] = 1;
+",9.0,		while(count2--),8.0,count2 --
+postIncr,xpatience.c,333,+,+,+,line2++ - 1,19.0,			env->xdf2.rchg[line2++ - 1] = 1;,18.0,line2 ++
+postIncr,xpatience.c,336,+,+,+,"while (count1--)
+    env->xdf1.rchg[line1++ - 1] = 1;
+",9.0,		while(count1--),8.0,count1 --
+postIncr,xpatience.c,337,+,+,+,line1++ - 1,19.0,			env->xdf1.rchg[line1++ - 1] = 1;,18.0,line1 ++
+postIncr,xpatience.c,348,+,+,+,"while (count1--)
+    env->xdf1.rchg[line1++ - 1] = 1;
+",9.0,		while(count1--),8.0,count1 --
+postIncr,xpatience.c,349,+,+,+,line1++ - 1,19.0,			env->xdf1.rchg[line1++ - 1] = 1;,18.0,line1 ++
+postIncr,xpatience.c,350,+,+,+,"while (count2--)
+    env->xdf2.rchg[line2++ - 1] = 1;
+",9.0,		while(count2--),8.0,count2 --
+postIncr,xpatience.c,351,+,+,+,line2++ - 1,19.0,			env->xdf2.rchg[line2++ - 1] = 1;,18.0,line2 ++
+postIncr,xprepare.c,128,+,+,+,rcrec->idx = cf->count++,16.0,		rcrec->idx = cf->count++;,15.0,cf -> count ++
+postIncr,xprepare.c,140,+,-,+,(pass == 1) ? rcrec->len1++ : rcrec->len2++,,,15.0,rcrec -> len1 ++
+postIncr,xprepare.c,193,+,+,+,recs[nrec++],9.0,			recs[nrec++] = crec;,8.0,nrec ++
+postIncr,xprepare.c,379,-,-,+,,,,75.0,i ++
+postIncr,xprepare.c,387,-,-,+,,,,75.0,i ++
+postIncr,xprepare.c,394,-,-,+,,,,23.0,i ++
+postIncr,xprepare.c,406,-,-,+,,,,23.0,i ++
+postIncr,xprepare.c,433,-,-,+,,,,6.0,i ++
+postIncr,xprepare.c,441,-,-,+,,,,32.0,i ++
+postIncr,xutils.c,196,+,+,+,l1[i1++],11.0,			if (l1[i1++] != l2[i2++]),10.0,i1 ++
+postIncr,xutils.c,214,+,+,+,l1[i1++],11.0,			if (l1[i1++] != l2[i2++]),10.0,i1 ++
+postIncr,xutils.c,316,-,-,+,,,,73.0,bits ++
+postIncr,xutils.c,334,-,-,+,,,,15.0,ptr ++
+postIncr,xutils.c,337,+,+,+,*str++,4.0,		*str++ = '0';,3.0,str ++
+postIncr,xutils.c,377,+,+,+,buf[nb++],7.0,		buf[nb++] = ' ';,6.0,nb ++
+postIncr,xutils.c,383,+,+,+,buf[nb++],6.0,	buf[nb++] = '\n';,5.0,nb ++
