@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # atoms_comparison_tool
 
 atoms_comparison_tool is an intermediate data processing script to represent the outputs of the different softwares being used to detect atoms.
@@ -9,3 +10,6 @@ These files are cleaned and processed, with the end results stored in the "outpu
 
 ## Author
 - [Anuraag Pandhi](https://github.com/Anumon6395)
+=======
+# atoms-comparison-tool
+>>>>>>> origin/main
