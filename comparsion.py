@@ -64,16 +64,19 @@ def compare_and_output(input_directory, output_directory, clojure_system_path):
     # Load Clojure dataset and print the atoms
 
     clojure_master = pd.read_csv(clojure_directory)
-    print(clojure_master.at[0, "file"])
     # clojure_master['file'] = clojure_master['file'].str.split('/').str[-1]
     for i in range(clojure_master["file"].__len__()):   
         if clojure_master.at[i, 'file'].startswith(clojure_system_path):
-            clojure_master.at[i, 'file'].replace(clojure_system_path, '', 1)  # Replace only the first occurrence
+            print(clojure_master.at[i, "file"])
+            temp_path = clojure_master.at[i, 'file']
+            temp_path = temp_path.replace(clojure_system_path, '', 1)
+            clojure_master.at[i, 'file'] = temp_path  # Replace only the first occurrence
+            print(clojure_master.at[i, "file"])
+
         else:
             print(f"Clojure input does not match absolute file path, current file path is:{clojure_master.at[i, 'file']}, input path is:{clojure_system_path}")
             exit(1)
 
-    print(clojure_master.at[0, "file"])
 
     # Prepare Clojure dataset for merge
 
@@ -139,7 +142,6 @@ def compare_and_output(input_directory, output_directory, clojure_system_path):
         print(f"DataFrame '{key}' has been saved to {file_name}.")
 
 
-# fixes for upcoming patch, and these comments will be removed
+# possible fixes for upcoming patch, then these comments will be removed
 # file_path = Path("/some/path/src/file")
 # relative_path = file_path.relative_to('/some/path')
-
