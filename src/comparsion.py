@@ -27,7 +27,7 @@ coccinelle_mapping = {
     'comma-operator': 'comma_atoms',
 }
 
-def compare_and_output(input_directory, output_directory, clojure_system_path):
+def compare_and_output(input_directory, output_directory, codeql_system_path, clojure_system_path, coccinelle_system_path):
     codeQL_directory = Path(input_directory, "codeQL_data")
     clojure_directory = Path(input_directory, "clojure_data/atomsClojure.csv")
     coccinelle_directory = Path(input_directory, "coccinelle_data")
@@ -58,7 +58,8 @@ def compare_and_output(input_directory, output_directory, clojure_system_path):
         # These lines convert these columns to string format
         p["CQL_Code"] = p["CQL_Code"].apply(lambda x: '\n'.join(x) if isinstance(x, list) else x)
         p["File"] = p["File"].apply(lambda x: '\n'.join(x) if isinstance(x, list) else x)
-        p["File"] = p["File"].str.split('/').str[-1]
+        p["File"] = p["File"].str.replace(codeql_system_path, '', 1)
+        # p["File"] = p["File"].str.split('/').str[-1]
         dataframes[dataframe_key] = p
             
     # Load Clojure dataset and print the atoms
@@ -68,7 +69,7 @@ def compare_and_output(input_directory, output_directory, clojure_system_path):
     for i in range(clojure_master["file"].__len__()):   
         if clojure_master.at[i, 'file'].startswith(clojure_system_path):
             temp_path = clojure_master.at[i, 'file']
-            temp_path = temp_path.replace(clojure_system_path, '', 1) # replace only first occurrence
+            temp_path = temp_path.replace(codeql_system_path, '', 1) # replace only first occurrence
             clojure_master.at[i, 'file'] = temp_path
 
         # else:
@@ -107,7 +108,8 @@ def compare_and_output(input_directory, output_directory, clojure_system_path):
         dataframe_key = filename
         p = pd.read_csv(file_path)
         p.columns = ["Type", "File", "Line", "CNL_Column", "CNL_Code"]
-        p["File"] = p["File"].str.split('/').str[-1]
+        p["File"] = p["File"].str.replace(coccinelle_system_path, '', 1)
+        # p["File"] = p["File"].str.split('/').str[-1]
         p["CNL"] = '+'
         coccinelle_dataframes[dataframe_key] = p
 
@@ -138,8 +140,4 @@ def compare_and_output(input_directory, output_directory, clojure_system_path):
         df.to_csv(path, index = False)
         print(f"DataFrame '{key}' has been saved to {file_name}.")
 
-
-# fixes for upcoming patch, and these comments will be removed
-# file_path = Path("/some/path/src/file")
-# relative_path = file_path.relative_to('/some/path')
 
