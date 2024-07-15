@@ -11,7 +11,7 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'compare = src.__main__:main',
+            'compare = src.cli:cli',
         ],
     },
 )
