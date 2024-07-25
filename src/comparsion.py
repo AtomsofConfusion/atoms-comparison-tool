@@ -1,8 +1,14 @@
 import pandas as pd
-import json
-from pathlib import Path
+pd.set_option('display.max_columns', None)
+pd.set_option('display.width', 1000)
 
-clojure_mapping = {
+import json
+import re
+from pathlib import Path
+from collections import Counter
+
+# orginally clojure_mapping
+combined_mapping = {
     'pre-increment': 'preIncr',
     'operator-precedence': 'operator_precedence',
     'conditional': 'conditional',
@@ -17,14 +23,6 @@ clojure_mapping = {
     'omitted-curly-braces' : 'omitted_curly_braces',
     'macro-operator-precedence' : 'macro_operator_precedence',
     'literal-encoding' : 'literal_encoding'
-}
-
-coccinelle_mapping = {
-    'post-increment': 'postIncr',
-    'assignment-as-value': 'assignment_as_value',
-    'conditional' : 'conditional',
-    'pre-increment': 'preIncr',
-    'comma-operator': 'comma_atoms',
 }
 
 def compare_and_output(input_directory, output_directory, codeql_system_path, clojure_system_path, coccinelle_system_path):
@@ -58,27 +56,18 @@ def compare_and_output(input_directory, output_directory, codeql_system_path, cl
         # These lines convert these columns to string format
         p["CQL_Code"] = p["CQL_Code"].apply(lambda x: '\n'.join(x) if isinstance(x, list) else x)
         p["File"] = p["File"].apply(lambda x: '\n'.join(x) if isinstance(x, list) else x)
-        p["File"] = p["File"].str.replace(codeql_system_path, '', 1)
+        p["File"] = p["File"].apply(lambda x: re.sub(codeql_system_path, '', x, count=1))
         # p["File"] = p["File"].str.split('/').str[-1]
         dataframes[dataframe_key] = p
             
     # Load Clojure dataset and print the atoms
 
     clojure_master = pd.read_csv(clojure_directory)
-    # clojure_master['file'] = clojure_master['file'].str.split('/').str[-1]
-    for i in range(clojure_master["file"].__len__()):   
-        if clojure_master.at[i, 'file'].startswith(clojure_system_path):
-            temp_path = clojure_master.at[i, 'file']
-            temp_path = temp_path.replace(codeql_system_path, '', 1) # replace only first occurrence
-            clojure_master.at[i, 'file'] = temp_path
-
-        # else:
-        #     print(f"Clojure input does not match absolute file path, current file path is:{clojure_master.at[i, 'file']}, input path is:{clojure_system_path}")
-
+    clojure_master["file"] = clojure_master["file"].apply(lambda x: re.sub(clojure_system_path, '', x, count=1))
 
     # Prepare Clojure dataset for merge
 
-    clojure_master['atom'] = clojure_master['atom'].map(clojure_mapping)
+    clojure_master['atom'] = clojure_master['atom'].map(combined_mapping)
     clojure_master.rename(columns = {
         'atom': 'Type',
         'file': 'File',
@@ -108,13 +97,13 @@ def compare_and_output(input_directory, output_directory, codeql_system_path, cl
         dataframe_key = filename
         p = pd.read_csv(file_path)
         p.columns = ["Type", "File", "Line", "CNL_Column", "CNL_Code"]
-        p["File"] = p["File"].str.replace(coccinelle_system_path, '', 1)
+        p["File"] = p["File"].apply(lambda x: re.sub(coccinelle_system_path, '', x, count=1))
         # p["File"] = p["File"].str.split('/').str[-1]
         p["CNL"] = '+'
         coccinelle_dataframes[dataframe_key] = p
 
     for i in coccinelle_dataframes.values():
-        i['Type'] = i['Type'].map(coccinelle_mapping)
+        i['Type'] = i['Type'].map(combined_mapping)
 
     # Merge Coccinelle DataFrames
 
@@ -132,12 +121,16 @@ def compare_and_output(input_directory, output_directory, codeql_system_path, cl
         k["CQL_Column"] = k["CQL_Column"].astype(float)
         dataframes[key] = k.sort_values(by = ["File", "Line"]).reset_index().drop("index", axis = 1)
 
+    # Filter out rows with zero or one "+" for "CLJ", "CQL", and "CNL" combined
+    
+    for item, item_df in dataframes.items():
+        item_df = item_df.reindex(columns=["Type", "File", "Line", "CLJ", "CQL", "CNL", "CLJ_Code", "CQL_Column", "CQL_Code", "CNL_Column", "CNL_Code"])
+        dataframes[item] = item_df[(item_df[['CLJ', 'CQL', 'CNL']] == '+').sum(axis=1) >= 2]
+
     # Output merged CSVs to output_directory
 
     for key, df in dataframes.items():
         file_name = f'{key}_comparison.csv'
         path = Path(output_directory, file_name)
         df.to_csv(path, index = False)
-        print(f"DataFrame '{key}' has been saved to {file_name}.")
-
-
+        print(f"{key} has been saved to {file_name}.")
