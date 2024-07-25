@@ -25,31 +25,22 @@ def validate_paths(input_path: str, output_path: str) -> None:
     return input_path, output_path
 
 @click.command()
-@click.argument('input_path', type = click.STRING)
-@click.argument('output_path', nargs = -1, type = click.STRING)
-@click.argument('clojure_path', type = click.STRING)
-@click.argument('codeql_path', type = click.STRING)
-@click.argument('coccinelle_path', type = click.STRING)
-def cli(input_path, output_path, clojure_path, codeql_path, coccinelle_path):
-    if len(output_path)==0:
-        output_path = None
-    else:
-        output_path = output_path[0]
-    
+@click.option('--input', type = str)
+@click.option('--output', type = str)
+@click.option('--codeql', type = str)
+@click.option('--clojure', type = str)
+@click.option('--coccinelle', type = str)
+# @click.option(help='You will provide five arguments corresponding to 1) input_path, 2) output_path, 3) codeql_path, 4) clojure_path, 5) coccinelle_path. The output_path can be optional by inputting "" indicating an empty string.')
+
+
+def cli(input, output, codeql, clojure, coccinelle):
+
     try:
-        checked_input_path, checked_output_path = validate_paths(input_path, output_path)
+        checked_input_path, checked_output_path = validate_paths(input, output)
     except FileNotFoundError as e:
         print(e)
         sys.exit(1)
 
-    print(f"Input path: {checked_input_path}")
-    print(f"Output path: {checked_output_path}")
-    print(f"CodeQL_path is:{codeql_path}")
-    print(f"Clojure_path is:{clojure_path}")
-    print(f"Coccinelle_path is:{coccinelle_path}")
-
-    compare_and_output(checked_input_path, checked_output_path, codeql_path, clojure_path, coccinelle_path)
+    compare_and_output(checked_input_path, checked_output_path, codeql, clojure, coccinelle)
 
     print(f"Process completed, check output at: \033[1m{checked_output_path}\033[0m")
-
-
