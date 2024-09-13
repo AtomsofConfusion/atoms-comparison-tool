@@ -1,12 +1,10 @@
 import pandas as pd
-pd.set_option('display.max_columns', None)
-pd.set_option('display.width', 1000)
-
 import json
 import re
 from pathlib import Path
+pd.set_option('display.max_columns', None)
+pd.set_option('display.width', 1000)
 
-# orginally clojure_mapping
 combined_mapping = {
     'pre-increment': 'preIncr',
     'operator-precedence': 'operator_precedence',
@@ -24,138 +22,110 @@ combined_mapping = {
     'literal-encoding' : 'literal_encoding'
 }
 
-CLJnCQL = ["CLJ", "CQL"]
-CLJnCNL = ["CLJ", "CNL"]
-CQLnCNL = ["CQL", "CNL"]
-all = ["CLJ", "CQL", "CNL"]
+dataframes = {}
+frame = pd.DataFrame(columns= ["Type", "File", "Line"])
+dataframes["preIncr"] = frame
+dataframes["operator_precedence"] = frame
+dataframes["conditional"] = frame
+dataframes["preprocessor_in_statement"] = frame
+dataframes["logic_as_control_flow"] = frame
+dataframes["type_conversion"] = frame
+dataframes["comma_atoms"] = frame
+dataframes["implicit_predicate"] = frame
+dataframes["postIncr"] = frame
+dataframes["assignment_as_value"] = frame
+dataframes["repurposed_variable"] = frame
 
-def count_plus_specific_columns(row, columns):
-    return (row[columns] == '+').sum()
+which_columns = []
 
-def compare_and_output(output_directory, codeql_system_path, clojure_system_path, coccinelle_system_path, whichtwo, codeQL_directory, clojure_directory, coccinelle_directory):
-    print(whichtwo)
-    dataframes = {}
-    frame = pd.DataFrame(columns= ["Type", "File", "Line"])
-    dataframes["preIncr"] = frame
-    dataframes["operator_precedence"] = frame
-    dataframes["conditional"] = frame
-    dataframes["preprocessor_in_statement"] = frame
-    dataframes["logic_as_control_flow"] = frame
-    dataframes["type_conversion"] = frame
-    dataframes["comma_atoms"] = frame
-    dataframes["implicit_predicate"] = frame
-    dataframes["postIncr"] = frame
-    dataframes["assignment_as_value"] = frame
-    dataframes["repurposed_variable"] = frame
+### CHANGE
+# plan: add more functions here in case more tools are introduced to comparison
+def compare_CQL(path, relative):
+    which_columns.append('CQL')
 
-    which_two = []
+    for file_path in path.glob('*.sarif'):
+        file_content = file_path.read_text()
+        filename = Path(file_path).stem
+        dataframe_key = filename
+        json_value = json.loads(file_content)
+        p = pd.DataFrame(["Type", "File", "Line", "CQL", "CQL_Column", "CQL_Code"])
+        rows = []
+        for i in range(len(json_value["runs"][0]["results"])):
+            s = pd.Series({
+                "Type": filename,
+                "File": json_value["runs"][0]["results"][i]["locations"][0]["physicalLocation"]["artifactLocation"]["uri"], 
+                "Line": json_value["runs"][0]["results"][i]["locations"][0]["physicalLocation"]["region"]["startLine"],
+                "CQL": '+',
+                "CQL_Column": json_value["runs"][0]["results"][i]["locations"][0]["physicalLocation"]["region"].get("startColumn", None),
+                "CQL_Code": json_value["runs"][0]["results"][i]["locations"][0]["physicalLocation"]["contextRegion"]["snippet"]["text"]
+            })
+            rows.append(s)
+        p = pd.concat(rows, axis=1).T
+        
+        p["CQL_Code"] = p["CQL_Code"].apply(lambda x: '\n'.join(x) if isinstance(x, list) else x)
+        p["File"] = p["File"].apply(lambda x: '\n'.join(x) if isinstance(x, list) else x)
+        p["File"] = p["File"].apply(lambda x: re.sub(relative, '', x, count=1))
+        p["CQL_Column"] = p["CQL_Column"].astype(float)
+        toMerge = dataframes[dataframe_key]
+        k = pd.merge(toMerge, p, on = ['File', 'Type', 'Line'], how = 'outer')
+        k['CQL'] = k['CQL'].fillna('-')
+        dataframes[dataframe_key] = k.sort_values(by = ["File", "Line"]).reset_index().drop("index", axis = 1)
 
-    if whichtwo == "CQLvCNL":
-        which_two = CQLnCNL
-    elif whichtwo == "CLJvCQL":
-        which_two = CLJnCQL
-    elif whichtwo == "CLJvCNL":
-        which_two = CLJnCNL
-    else:
-        which_two = all
+def compare_CLJ(path, relative):
+    which_columns.append('CLJ')
 
-    # Load CodeQL .sarif files and store them in dataframes dictionary
-
-    if whichtwo == "CQLvCNL" or whichtwo == "CLJvCQL" or whichtwo == "all":
-        for file_path in Path(codeQL_directory).glob('*.sarif'):
-            file_content = file_path.read_text()
-            filename = Path(file_path).stem
-            dataframe_key = filename
-            json_value = json.loads(file_content)
-            p = pd.DataFrame(["Type", "File", "Line", "CQL", "CQL_Column", "CQL_CodeQL"])
-            rows = []
-            # These are the index paths of the data we are looking for. Each is located inside nested dictionaries.
-            for i in range(len(json_value["runs"][0]["results"])):
-                s = pd.Series({
-                    "Type": filename,
-                    "File": json_value["runs"][0]["results"][i]["locations"][0]["physicalLocation"]["artifactLocation"]["uri"], 
-                    "Line": json_value["runs"][0]["results"][i]["locations"][0]["physicalLocation"]["region"]["startLine"],
-                    "CQL": '+',
-                    "CQL_Column": json_value["runs"][0]["results"][i]["locations"][0]["physicalLocation"]["region"].get("startColumn", None),
-                    "CQL_Code": json_value["runs"][0]["results"][i]["locations"][0]["physicalLocation"]["contextRegion"]["snippet"]["text"].splitlines()[2:-2],
-                })
-                rows.append(s)
-            p = pd.concat(rows, axis=1).T
-            
-            # These lines convert these columns to string format
-            p["CQL_Code"] = p["CQL_Code"].apply(lambda x: '\n'.join(x) if isinstance(x, list) else x)
-            p["File"] = p["File"].apply(lambda x: '\n'.join(x) if isinstance(x, list) else x)
-            p["File"] = p["File"].apply(lambda x: re.sub(codeql_system_path, '', x, count=1))
-            p["CQL_Column"] = p["CQL_Column"].astype(float)
-            dataframes[dataframe_key] = p
-
-    if whichtwo == "CLJvCNL" or whichtwo == "CLJvCQL" or whichtwo == "all":
-    # Load Clojure dataset and print the atoms
-        clojure_master = pd.read_csv(clojure_directory)
-        clojure_master["file"] = clojure_master["file"].apply(lambda x: re.sub(clojure_system_path, '', x, count=1))
-
-    # Prepare Clojure dataset for merge
-
-        clojure_master['atom'] = clojure_master['atom'].map(combined_mapping)
-        clojure_master.rename(columns = {
+    for file_path in Path(path).glob('*.csv'):
+        p = pd.read_csv(file_path)
+        p["file"] = p["file"].apply(lambda x: re.sub(relative, '', x, count=1))
+        p["CLJ"] = '+'
+        p.rename(columns = {
             'atom': 'Type',
             'file': 'File',
             'line': 'Line',
             'code': 'CLJ_Code'
         }, inplace=True)
+        p.drop(columns = ['offset'], inplace = True)
+        p["Type"] = p["Type"].map(combined_mapping)
 
-        clojure_master["CLJ"] = '+'
-
-        clojure_master.drop(columns = ['offset'], inplace = True)
-
-    # Merge Clojure and CodeQL dataframes
         for key, df in dataframes.items():
-            k = pd.merge(clojure_master[clojure_master["Type"] == key], df, on = ['File', 'Type', 'Line'], how = 'outer')
+            k = pd.merge(p[p["Type"] == key], df, on = ['File', 'Type', 'Line'], how = 'outer')
             k['CLJ'] = k['CLJ'].fillna('-')
             dataframes[key] = k.sort_values(by = ["File", "Line"]).reset_index().drop("index", axis = 1)
 
-    # Load Coccinelle dataframes
+def compare_CNL(path, relative):
+    which_columns.append('CNL')
 
-    if whichtwo == "CQLvCNL" or whichtwo == "CLJvCNL" or whichtwo == "all":
-        coccinelle_dataframes = {}
-        for file_path in Path(coccinelle_directory).glob('*.csv'):
-            filename = Path(file_path).stem
-            dataframe_key = filename
-            p = pd.read_csv(file_path)
-            p.columns = ["Type", "File", "Line", "CNL_Column", "CNL_Code"]
-            p["File"] = p["File"].apply(lambda x: re.sub(coccinelle_system_path, '', x, count=1))
-            p["CNL"] = '+'
-            coccinelle_dataframes[dataframe_key] = p
+    coccinelle_dataframes = {}
+    for file_path in path.glob('*.csv'):
+        filename = Path(file_path).stem
+        dataframe_key = filename
+        p = pd.read_csv(file_path)
+        p.columns = ["Type", "File", "Line", "CNL_Column", "CNL_Code"]
 
-        for i in coccinelle_dataframes.values():
-            i['Type'] = i['Type'].map(combined_mapping)
+        p["File"] = p["File"].apply(lambda x: re.sub(relative, '', x, count=1))
+        p["CNL"] = '+'
 
-        # Merge Coccinelle DataFrames
+        coccinelle_dataframes[dataframe_key] = p        
 
-        for i in coccinelle_dataframes.values():
-            key = i.loc[0, "Type"]
-            toMerge = dataframes[key]
-            k = pd.merge(toMerge, i, on = ['File', 'Type', 'Line'], how = 'outer')
-            k['CNL'] = k['CNL'].fillna('-')
-            dataframes[key] = k.sort_values(by = ["File", "Line"]).reset_index().drop("index", axis = 1)
+    for i in coccinelle_dataframes.values():
+        i['Type'] = i['Type'].map(combined_mapping)
+        key = i.loc[0, "Type"]
+        toMerge = dataframes[key]
+        k = pd.merge(toMerge, i, on = ['File', 'Type', 'Line'], how = 'outer')
+        k['CNL'] = k['CNL'].fillna('-')
+        dataframes[key] = k.sort_values(by = ["File", "Line"]).reset_index().drop("index", axis = 1)
 
-    # Output merged CSVs to output_directory
+def count_plus_specific_columns(row, columns):
+    count = 0
+    for col in columns:
+        if col in row.index:
+            count += (row[col] == '+')
+    return count
 
+def merge(output_path):
     for key, df in dataframes.items():
-        df = df.reindex(columns=["Type", "File", "Line", "CLJ", "CQL", "CNL", "CLJ_Code", "CQL_Column", "CQL_Code", "CNL_Column", "CNL_Code"])
-        df = pd.DataFrame(df)
-        if whichtwo == "CLJvCQL":
-            df = df.drop(['CNL', 'CNL_Column', 'CNL_Code'], axis = 1)
-        elif whichtwo == "CLJvCNL":
-            df = df.drop(['CQL', 'CQL_Column', 'CQL_Code'], axis = 1)
-            None
-        elif whichtwo == "CQLvCNL":
-            df = df.drop(['CLJ', 'CLJ_Code'], axis = 1)
-        else:
-            None
-        
-        df = df[df.apply(count_plus_specific_columns, axis=1, columns=which_two) >= 2]
+        df = df[df.apply(count_plus_specific_columns, axis=1, columns=which_columns) >= 2]
         file_name = f'{key}_comparison.csv'
-        path = Path(output_directory, file_name)
+        path = Path(output_path, file_name)
         df.to_csv(path, index = False)
         print(f"{key} has been saved to {file_name}.")
