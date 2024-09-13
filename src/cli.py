@@ -1,71 +1,105 @@
 import sys
 import click
 from pathlib import Path
-from src.comparsion import compare_and_output
+from src.comparison import *
+from src.input_validation import *
 
-def validate_paths(input_path: str, output_path: str, whichtwo) -> None:
+### CHANGE
+# map input tool names to their validation methods
+function_mapping_validate = {
+    "codeQL_data": validate_CQL,
+    "clojure_data": validate_CLJ,
+    "coccinelle_data": validate_CNL,
+}
+
+### CHANGE
+# depending on what we have has inputs, call the corresponding functions
+function_mapping_compare = {
+    "codeQL_data": compare_CQL,
+    "clojure_data": compare_CLJ,
+    "coccinelle_data": compare_CNL,
+}
+
+TEXT = {
+    'blue': '\033[34m',
+    'default': '\033[99m',
+    'grey': '\033[90m',
+    'yellow': '\033[93m',
+    'black': '\033[90m',
+    'cyan': '\033[96m',
+    'green': '\033[92m',
+    'magenta': '\033[95m',
+    'white': '\033[97m',
+    'red': '\033[91m',
+    'bold': '\031[0m',
+}
+
+input_list = []
+
+def unknown(name):
+    pass
+
+def validate_paths(input_path, output_path, exclude_list):
     input_path = Path(input_path)
-    codeQL_directory = Path(input_path, "codeQL_data")
-    clojure_directory = Path(input_path, "clojure_data/atomsClojure.csv")
-    coccinelle_directory = Path(input_path, "coccinelle_data")
+    
+    if not input_path.is_dir():
+        raise FileNotFoundError(f"Input path does not exist: {input_path}")
+    
+    def contains_any(string, items):
+        return any(item in string for item in items)
 
-    codeQL_exists = codeQL_directory.is_dir()
-    clojure_exists = clojure_directory.exists()
-    coccinelle_exists = coccinelle_directory.is_dir()
-
-    if not codeQL_exists and (whichtwo == "CQLvCNL" or whichtwo == "CLJvCQL" or whichtwo == "all"):
-        raise FileNotFoundError(f"\033[91mCodeQL source does not exist: \033[0m{codeQL_directory}")
-    
-    if not clojure_exists and (whichtwo == "CLJvCNL" or whichtwo == "CLJvCQL" or whichtwo == "all"):
-        raise FileNotFoundError(f"\033[91mClojure source does not exist: \033[0m{clojure_directory}")
-    
-    if not coccinelle_exists and (whichtwo == "CQLvCNL" or whichtwo == "CLJvCNL" or whichtwo == "all"):
-        raise FileNotFoundError(f"\033[91mCoccinelle source does not exist: \033[0m{coccinelle_directory}")
-    
-    if not whichtwo:
-        if codeQL_exists and clojure_exists and coccinelle_exists:
-            whichtwo = "all"
-        elif codeQL_exists and clojure_exists:
-            whichtwo = "CLJvCQL"
-        elif coccinelle_exists and clojure_exists:
-            whichtwo = "CLJvCNL"
-        elif codeQL_exists and coccinelle_exists:
-            whichtwo = "CQLvCNL"
-        else:
-            print(f"\033[91mWARNING: \033[0mOnly one or fewer input source for comparsion, and the output could be meaningless.")
-            sys.exit(0)
-        print(f"whichtwo:", whichtwo)
+    for entry in input_path.iterdir():
+        func = function_mapping_validate.get(entry.name, unknown)
+        if not contains_any(entry.name, exclude_list) and func(entry):
+            input_list.append(entry.name)
 
     if output_path:
         output_path = Path(output_path)
         if not output_path.is_dir():        
             output_path.mkdir(parents = True, exist_ok = True)
-            print(f"\033[34mATTENTION: \033[0mnew folder created at: {output_path}")
-
-    if not output_path:
-        output_path = Path(Path.cwd(), "output")
-
+            print(TEXT['blue'] + "ATTENTION: " + "New output folder created at:", output_path)
+    else:
+        output_path = Path.cwd() / "output"
         if not output_path.is_dir():        
             output_path.mkdir(parents = True, exist_ok = True)
-            print(f"\033[34mATTENTION: \033[0mDefault output folder created at:", output_path)
+            print(TEXT['blue'] + "ATTENTION: " + "Default output folder created at:", output_path)
 
-    return output_path, codeQL_directory, clojure_directory, coccinelle_directory, whichtwo
+    return output_path
 
 @click.command()
 @click.option('--input', type = str, required = True, help = 'Directory containing three folders of source data.')
 @click.option('--output', type = str, help = 'Directory to store output files. The input is optional.')
-@click.option('--codeql_relative', type = str, required = True, help = 'Relative path to truncate from file names in the CodeQL data.')
-@click.option('--clojure_relative', type = str, help = 'Relative path to truncate from file names in the Clojure data.')
-@click.option('--coccinelle_relative', type = str, required = True, help = 'Relative path to truncate from file names in the Coccinelle data.')
-@click.option('--whichtwo', type=click.Choice(['CLJvCQL', 'CLJvCNL', 'CQLvCNL', 'all']), help = "This option selects two, or all, of the three tools to be compared. Four possible inputs are supported: 'CLJvCQL', 'CLJvCNL', 'CQLvCNL', and 'all'. If omitted, the program will assign a value to this option by checking input folder availiability.")
-def cli(input, output, codeql_relative, clojure_relative, coccinelle_relative, whichtwo):
-    """The Atoms Comparison tool gathers and compares output from three sources previously developed by the team. Please refer to the README page for more info on each source. To use this project, you will enter four mandatory and two optional options. The usage of each option is listed below. Sample usage: compare --input "/home/usr/Documents/Atoms of Confusion/atoms-comparison-tool" --output "/home/usr/Documents/temp" --codeql "" --clojure "/Users/VSCode/AtomFinder/atom-finder/GitSourceCode/git/" --coccinelle "/home/ubuntu/atoms/projects/git/" --whichtwo CLJvCNL"""
+@click.option('--codeql-relative', type = str, required = True, help = 'Relative path to truncate from file names in the CodeQL data.')
+@click.option('--clojure-relative', type = str, help = 'Relative path to truncate from file names in the Clojure data.')
+@click.option('--coccinelle-relative', type = str, required = True, help = 'Relative path to truncate from file names in the Coccinelle data.')
+@click.option('--exclude', help = "Enter names of the tools that you wish to exclude from comparison. For instance, there are two folders in your input directory. One is named clojure_data, and the other is named clojuredata. Entering 'clojure'(case sensitive) will exclude both folders from the search. If there are more than one key word, be sure to wrap the input in parentheses, and seperate the keys with spaces or commas. Avoid leading or trailing spaces when there is only one key")
+def parse_arguments(input, output, codeql_relative, clojure_relative, coccinelle_relative, exclude):
+    """The Atoms Comparison tool gathers and compares output from three sources previously developed by the team. Please refer to the README page for more info on each source. To use this project, you will enter four mandatory and two optional options. The usage of each option is listed below."""
+
+    exclude_list = []
+    if exclude:
+        exclude_list = re.split(r'[ ,]+', exclude)
+
     try:
-        checked_output_path, codeQL_directory, clojure_directory, coccinelle_directory, whichtwo = validate_paths(input, output, whichtwo)
+        checked_output_path = validate_paths(input, output, exclude_list)
     except FileNotFoundError as e:
         print(e)
         sys.exit(1)
 
-    compare_and_output(checked_output_path, codeql_relative, clojure_relative, coccinelle_relative, whichtwo, codeQL_directory, clojure_directory, coccinelle_directory)
+    print(TEXT['blue'] + " ATTENTION: " + "Input found to include: ", input_list)
+        
+    ### CHANGE
+    # relative path
+    relative_mapping = {
+        "codeQL_data": codeql_relative,
+        "clojure_data": clojure_relative,
+        "coccinelle_data": coccinelle_relative,
+    }
+    
+    for item in input_list:
+        func = function_mapping_compare.get(item)
+        func(Path(input, item), relative_mapping.get(item))
 
+    merge(checked_output_path)
+    
     print(f"Process completed, check output at: \033[1m{checked_output_path}\033[0m")
