@@ -11,7 +11,7 @@
 
 2. Download the Python libraries using "pip install -r requirement.txt".
 
-3. IMPORTANT: By default, we assume the input folder already has three sub-folders, containing the source data for all three tools.
+3. Ensure that there are at least two sub folders containing the source data for comparison.
 
 4. To build the tool, enter the following in terminal. Note that the output directory can be omitted.
 
