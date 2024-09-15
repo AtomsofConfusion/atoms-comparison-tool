@@ -27,11 +27,12 @@ TEXT = {
     'yellow': '\033[93m',
     'black': '\033[90m',
     'cyan': '\033[96m',
-    'green': '\033[92m',
+    'green': '\033[32m',
     'magenta': '\033[95m',
     'white': '\033[97m',
     'red': '\033[91m',
-    'bold': '\031[0m',
+    'bold': '\033[1m',
+    'reset': "\033[0m"
 }
 
 input_list = []
@@ -57,12 +58,12 @@ def validate_paths(input_path, output_path, exclude_list):
         output_path = Path(output_path)
         if not output_path.is_dir():        
             output_path.mkdir(parents = True, exist_ok = True)
-            print(TEXT['blue'] + "ATTENTION: " + "New output folder created at:", output_path)
+            print(TEXT['blue'] + "ATTENTION: " + TEXT['reset'] + "New output folder created at:", output_path)
     else:
         output_path = Path.cwd() / "output"
         if not output_path.is_dir():        
             output_path.mkdir(parents = True, exist_ok = True)
-            print(TEXT['blue'] + "ATTENTION: " + "Default output folder created at:", output_path)
+            print(TEXT['blue'] + "ATTENTION: " + TEXT['reset'] + "Default output folder created at:", output_path)
 
     return output_path
 
@@ -86,8 +87,11 @@ def parse_arguments(input, output, codeql_relative, clojure_relative, coccinelle
         print(e)
         sys.exit(1)
 
-    print(TEXT['blue'] + " ATTENTION: " + "Input found to include: ", input_list)
+    print(TEXT['magenta'] + "ATTENTION: " + TEXT['reset'] + "Input found to include: ", input_list)
         
+    if len(input_list) < 2:
+        raise Exception("Only " + str(len(input_list)) + " valid input sources exist.")
+    
     ### CHANGE
     # relative path
     relative_mapping = {
@@ -102,4 +106,4 @@ def parse_arguments(input, output, codeql_relative, clojure_relative, coccinelle
 
     merge(checked_output_path)
     
-    print(f"Process completed, check output at: \033[1m{checked_output_path}\033[0m")
+    print(TEXT['green'] + "Process completed, check output at: " + TEXT['reset'] + TEXT['bold'] + str(checked_output_path) + TEXT['reset'])
