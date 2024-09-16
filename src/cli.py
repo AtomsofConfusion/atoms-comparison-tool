@@ -5,19 +5,11 @@ from src.comparison import *
 from src.input_validation import *
 
 ### CHANGE
-# map input tool names to their validation methods
-function_mapping_validate = {
-    "codeQL_data": validate_CQL,
-    "clojure_data": validate_CLJ,
-    "coccinelle_data": validate_CNL,
-}
-
-### CHANGE
-# depending on what we have has inputs, call the corresponding functions
-function_mapping_compare = {
-    "codeQL_data": compare_CQL,
-    "clojure_data": compare_CLJ,
-    "coccinelle_data": compare_CNL,
+# 1. validate functions, 2. compare functions
+source_mapping = {
+    "codeQL_data": [validate_CQL, compare_CQL,],
+    "clojure_data": [validate_CLJ, compare_CLJ,],
+    "coccinelle_data": [validate_CNL, compare_CNL,],
 }
 
 TEXT = {
@@ -33,6 +25,7 @@ TEXT = {
     'red': '\033[91m',
     'bold': '\033[1m',
     'reset': "\033[0m"
+
 }
 
 input_list = []
@@ -50,8 +43,8 @@ def validate_paths(input_path, output_path, exclude_list):
         return any(item in string for item in items)
 
     for entry in input_path.iterdir():
-        func = function_mapping_validate.get(entry.name, unknown)
-        if not contains_any(entry.name, exclude_list) and func(entry):
+        function_list = source_mapping.get(entry.name, [])
+        if function_list and not contains_any(entry.name, exclude_list) and function_list[0](entry):
             input_list.append(entry.name)
 
     if output_path:
@@ -67,6 +60,7 @@ def validate_paths(input_path, output_path, exclude_list):
 
     return output_path
 
+### CHANGE
 @click.command()
 @click.option('--input', type = str, required = True, help = 'Directory containing three folders of source data.')
 @click.option('--output', type = str, help = 'Directory to store output files. The input is optional.')
@@ -101,7 +95,7 @@ def parse_arguments(input, output, codeql_relative, clojure_relative, coccinelle
     }
     
     for item in input_list:
-        func = function_mapping_compare.get(item)
+        func = source_mapping[item][1]
         func(Path(input, item), relative_mapping.get(item))
 
     merge(checked_output_path)
