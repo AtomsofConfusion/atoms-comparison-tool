@@ -5,12 +5,15 @@ from src.comparison import *
 from src.input_validation import *
 
 ### CHANGE
-# 1. validate functions, 2. compare functions
+# make sure that the keys matches the name of the folders
 source_mapping = {
-    "codeQL_data": [validate_CQL, compare_CQL,],
-    "clojure_data": [validate_CLJ, compare_CLJ,],
-    "coccinelle_data": [validate_CNL, compare_CNL,],
+    "codeQL_data": [validate_codeql, compare_codeql,],
+    "clojure_data": [validate_csv, compare_clojure,],
+    "coccinelle_data": [validate_csv, compare_coccinelle,],
 }
+
+class InsufficientInputSize(Exception):
+    pass
 
 TEXT = {
     'blue': '\033[34m',
@@ -33,30 +36,30 @@ input_list = []
 def unknown(name):
     pass
 
+def if_contains(key, items):
+    return any(item in key for item in items)
+
 def validate_paths(input_path, output_path, exclude_list):
     input_path = Path(input_path)
     
     if not input_path.is_dir():
-        raise FileNotFoundError(f"Input path does not exist: {input_path}")
-    
-    def contains_any(string, items):
-        return any(item in string for item in items)
+        raise FileNotFoundError(f"{TEXT['red']}Error:{TEXT['reset']} Input path does not exist: {input_path}")
 
     for entry in input_path.iterdir():
         function_list = source_mapping.get(entry.name, [])
-        if function_list and not contains_any(entry.name, exclude_list) and function_list[0](entry):
+        if function_list and not if_contains(entry.name, exclude_list) and function_list[0](entry):
             input_list.append(entry.name)
 
     if output_path:
         output_path = Path(output_path)
         if not output_path.is_dir():        
             output_path.mkdir(parents = True, exist_ok = True)
-            print(TEXT['blue'] + "ATTENTION: " + TEXT['reset'] + "New output folder created at:", output_path)
+            print(f"{TEXT['blue']}ATTENTION:{TEXT['reset']} New output folder created at: {output_path}")
     else:
         output_path = Path.cwd() / "output"
         if not output_path.is_dir():        
             output_path.mkdir(parents = True, exist_ok = True)
-            print(TEXT['blue'] + "ATTENTION: " + TEXT['reset'] + "Default output folder created at:", output_path)
+            print(f"{TEXT['blue']}ATTENTION:{TEXT['reset']} Default output folder created at: {output_path}")
 
     return output_path
 
@@ -65,7 +68,7 @@ def validate_paths(input_path, output_path, exclude_list):
 @click.option('--input', type = str, required = True, help = 'Directory containing three folders of source data.')
 @click.option('--output', type = str, help = 'Directory to store output files. The input is optional.')
 @click.option('--codeql-relative', type = str, required = True, help = 'Relative path to truncate from file names in the CodeQL data.')
-@click.option('--clojure-relative', type = str, help = 'Relative path to truncate from file names in the Clojure data.')
+@click.option('--clojure-relative', type = str, default = "", help = 'Relative path to truncate from file names in the Clojure data.')
 @click.option('--coccinelle-relative', type = str, required = True, help = 'Relative path to truncate from file names in the Coccinelle data.')
 @click.option('--exclude', help = "Enter names of the tools that you wish to exclude from comparison. For instance, there are two folders in your input directory. One is named clojure_data, and the other is named clojuredata. Entering 'clojure'(case sensitive) will exclude both folders from the search. If there are more than one key word, be sure to wrap the input in parentheses, and seperate the keys with spaces or commas. Avoid leading or trailing spaces when there is only one key")
 def parse_arguments(input, output, codeql_relative, clojure_relative, coccinelle_relative, exclude):
@@ -81,10 +84,33 @@ def parse_arguments(input, output, codeql_relative, clojure_relative, coccinelle
         print(e)
         sys.exit(1)
 
-    print(TEXT['magenta'] + "ATTENTION: " + TEXT['reset'] + "Input found to include: ", input_list)
-        
-    if len(input_list) < 2:
-        raise Exception("Only " + str(len(input_list)) + " valid input sources exist.")
+    print(f"{TEXT['magenta']}ATTENTION:{TEXT['reset']} Input found to include: {input_list}")
+    
+    input_list_size = len(input_list)
+    def check_list_size(input_list_size):
+        if input_list_size < 2:
+            expected_inputs = []
+            if exclude:
+                for key in source_mapping:
+                    if exclude and (not exclude in key):
+                        expected_inputs.append(key)
+            else:
+                expected_inputs = source_mapping.keys()
+            
+            if not expected_inputs:
+                raise InsufficientInputSize(f"{TEXT['red']}Error:{TEXT["reset"]} Check your --exclude input, or the source_mappings in cli.py, there does not exist any folder inside your input directory that satisifies as input data.")
+            if input_list_size == 1:
+                raise InsufficientInputSize(f"{TEXT['red']}Error:{TEXT["reset"]} List size is one, currently contains {input_list}. All attainable input folders, according to the source_mappings: {source_mapping.keys()}, and your --exclude option, may include the following: {expected_inputs}.")
+            else:
+                raise InsufficientInputSize(f"{TEXT['red']}Error:{TEXT["reset"]} List size is empty. All attainable input folders, according to the source_mappings: {source_mapping.keys()}, and your --exclude option, may include the following: {expected_inputs}.")
+        else:
+            pass
+
+    try:
+        check_list_size(input_list_size)
+    except InsufficientInputSize as e:
+        print(e)
+        exit(1)
     
     ### CHANGE
     # relative path
