@@ -33,9 +33,6 @@ TEXT = {
 
 input_list = []
 
-def unknown(name):
-    pass
-
 def if_contains(key, items):
     return any(item in key for item in items)
 
