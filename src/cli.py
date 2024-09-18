@@ -94,12 +94,12 @@ def parse_arguments(input, output, codeql_relative, clojure_relative, coccinelle
             else:
                 expected_inputs = source_mapping.keys()
             
-            if not expected_inputs:
-                raise InsufficientInputSize(f"{TEXT['red']}Error:{TEXT["reset"]} Check your --exclude input, or the source_mappings in cli.py, there does not exist any folder inside your input directory that satisifies as input data.")
+            if len(expected_inputs) < 2:
+                raise InsufficientInputSize(f"{TEXT['red']}Error:{TEXT["reset"]} Check your --exclude input, or the source_mappings in cli.py, the most number of inputs possible is only {len(expected_inputs)}. At least 2 are required.")
             if input_list_size == 1:
-                raise InsufficientInputSize(f"{TEXT['red']}Error:{TEXT["reset"]} List size is one, currently contains {input_list}. All attainable input folders, according to the source_mappings: {source_mapping.keys()}, and your --exclude option, may include the following: {expected_inputs}.")
+                raise InsufficientInputSize(f"{TEXT['red']}Error:{TEXT["reset"]} Required input_list size is 2, but currently only contains {input_list}. All input names according to the source_mappings in cli.py are: {source_mapping.keys()}. After considering your --exclude option, the names will then contain the following: {expected_inputs}. Check your input directory to see if any input source folders are missing.")
             else:
-                raise InsufficientInputSize(f"{TEXT['red']}Error:{TEXT["reset"]} List size is empty. All attainable input folders, according to the source_mappings: {source_mapping.keys()}, and your --exclude option, may include the following: {expected_inputs}.")
+                raise InsufficientInputSize(f"{TEXT['red']}Error:{TEXT["reset"]} Required input_list size is 2. Current list size is empty. All input names according to the source_mappings in cli.py are: {source_mapping.keys()}. After considering your --exclude option, the names will then contain the following: {expected_inputs}. Check your input directory to see if any input source folders are missing.")
         else:
             pass
 
