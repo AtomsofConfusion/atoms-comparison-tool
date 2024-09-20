@@ -40,7 +40,7 @@ which_columns = []
 
 ### CHANGE
 # plan: add more functions here in case more tools are introduced to comparison
-def compare_CQL(path, relative):
+def compare_codeql(path, relative):
     which_columns.append('CQL')
 
     for file_path in path.glob('*.sarif'):
@@ -71,7 +71,7 @@ def compare_CQL(path, relative):
         k['CQL'] = k['CQL'].fillna('-')
         dataframes[dataframe_key] = k.sort_values(by = ["File", "Line"]).reset_index().drop("index", axis = 1)
 
-def compare_CLJ(path, relative):
+def compare_clojure(path, relative):
     which_columns.append('CLJ')
 
     for file_path in Path(path).glob('*.csv'):
@@ -92,7 +92,7 @@ def compare_CLJ(path, relative):
             k['CLJ'] = k['CLJ'].fillna('-')
             dataframes[key] = k.sort_values(by = ["File", "Line"]).reset_index().drop("index", axis = 1)
 
-def compare_CNL(path, relative):
+def compare_coccinelle(path, relative):
     which_columns.append('CNL')
 
     coccinelle_dataframes = {}
