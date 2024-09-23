@@ -1,14 +1,17 @@
 from pathlib import Path
 
+
 def validate_csv(path) -> bool:
-    if not any(path.glob('*.csv')):
+    if not any(path.glob("*.csv")):
         return False
     return True
 
+
 def validate_codeql(path) -> bool:
-    if not any(path.glob('*.sarif')):
+    if not any(path.glob("*.sarif")):
         return False
     return True
+
 
 # these may be removed if later clojure and coccinelle inputs still only contains csv files
 
